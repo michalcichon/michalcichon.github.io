@@ -206,9 +206,10 @@ p {
 }
 
 .technologies img {
-  margin-right: 15px;
+  margin-right: 25px;
   margin-bottom: 15px;
   opacity: 0.2;
+  height: 40px;
 }
 
 /* Contact form */
