@@ -4,57 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-/* Links */
-
-/* unvisited link */
-#main-space a:link {
-    color: #555;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-}
-
-/* visited link */
-#main-space a:visited {
-    color: #555;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-}
-
-/* mouse over link */
-#main-space a:hover {
-    color: #222;
-    text-decoration: none;
-    border-bottom: 1px solid #222;
-}
-
-/* selected link */
-#main-space a:active {
-    color: #555;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-}
-
-/* Main */
-
-#main-space {
-  margin: 24px 26px;
-  font-family: 'Raleway';
-  font-size: 100%;
-  line-height: 1.6875;
-}
-
-h1 {
-  font-size: 180%;
-  border-bottom: 2px solid rgba(75,0,130, 0.7);
-  margin-bottom: 30px;
-}
-
-p {
-  font-size: 120%;
-  margin-top: 10px;
-  color: #222;
+  font-family: 'Poiret One';
 }
 
 /* Top Navigation */
@@ -119,7 +69,76 @@ ul.topnav li.icon {
   }
 }
 
+/* My photo */
+
+.my-photo {
+  margin-right: 10px;
+  width: 76px;
+  height: 76px;
+  border-radius: 38px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  vertical-align: middle;
+}
+
+/* Main */
+
+.top-h1 {
+  line-height: 76px;
+  padding-bottom: 10px;
+}
+
+#main-space {
+  margin: 24px 26px;
+  font-family: 'Raleway';
+  font-size: 100%;
+  line-height: 1.6875;
+}
+
+/* Links */
+
+/* unvisited link */
+#main-space a:link {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+/* visited link */
+#main-space a:visited {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+/* mouse over link */
+#main-space a:hover {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
+
+/* selected link */
+#main-space a:active {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+  font-size: 150%;
+  border-bottom: 2px solid rgba(75, 0, 130, 0.65);
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 120%;
+  margin-top: 10px;
+  color: #222;
+}
+
 /* Social Links */
+
 #social-links {
   font-family: 'Roboto';
   margin: 24px 26px;
@@ -178,4 +197,13 @@ ul.topnav li.icon {
   line-height: 40px;
   font-size: 100%;
   margin-left: 50px;
+}
+
+/* Footer */
+
+#footer {
+  padding: 24px 26px;
+  background-color: #999;
+  font-family: 'Raleway';
+  font-size: 80%;
 }
