@@ -199,11 +199,31 @@ p {
   margin-left: 50px;
 }
 
+.technologies {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.technologies img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  opacity: 0.2;
+}
+
+/* Contact form */
+
+#main-space .contact-form {
+  font-family: 'Roboto';
+  font-size: 50%;
+  max-width: 800px;
+}
+
 /* Footer */
 
 #footer {
   padding: 24px 26px;
-  background-color: #999;
+  background-color: #eee;
   font-family: 'Raleway';
   font-size: 80%;
 }
