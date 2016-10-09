@@ -55,6 +55,10 @@ ul.topnav li.icon {
   display: none;
 }
 
+ul.topnav li.icon a {
+  font-size: 15px;
+}
+
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
