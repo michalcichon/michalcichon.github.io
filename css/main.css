@@ -7,6 +7,17 @@ html, body {
   font-family: 'Poiret One';
 }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -85px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 75px;  /*.push must be the same height as .footer */
+}
+
 /* Top Navigation */
 
 ul.topnav {
@@ -83,7 +94,7 @@ ul.topnav li.icon {
 
 /* Main */
 
-.top-h1 {
+#main-space header .top-h1 {
   line-height: 76px;
   padding-bottom: 10px;
 }
@@ -98,28 +109,28 @@ ul.topnav li.icon {
 /* Links */
 
 /* unvisited link */
-#main-space a:link {
+#main-space article a:link {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
 }
 
 /* visited link */
-#main-space a:visited {
+#main-space article a:visited {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
 }
 
 /* mouse over link */
-#main-space a:hover {
+#main-space article a:hover {
     color: #222;
     text-decoration: none;
     border-bottom: 1px solid #222;
 }
 
 /* selected link */
-#main-space a:active {
+#main-space article a:active {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
@@ -185,7 +196,7 @@ p {
 
 #social-links a {
   text-decoration: none;
-  color: #555;
+  color: #888;
 }
 
 #social-links a:hover {
@@ -223,8 +234,11 @@ p {
 /* Footer */
 
 #footer {
-  padding: 24px 26px;
   background-color: #eee;
+}
+
+#footer p {
+  padding: 34px 26px 0 26px;
   font-family: 'Raleway';
   font-size: 80%;
 }
