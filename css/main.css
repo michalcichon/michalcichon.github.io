@@ -4,7 +4,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Poiret One';
 }
 
 .wrapper {
@@ -18,9 +17,32 @@ html, body {
   height: 75px;  /*.push must be the same height as .footer */
 }
 
+#menu-button {
+  display: none;
+  position: absolute;
+  right: 10px;
+  font-family: 'Poiret One';
+  background: rgba(0, 0, 0, 0.7);
+  margin: 10px;
+  float: left;
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  text-decoration: none;
+}
+
+#menu-button a {
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
 #menu {
   position: absolute;
   right: 10px;
+  font-family: 'Poiret One';
 }
 
 #menu ul li {
@@ -48,17 +70,64 @@ html, body {
   -moz-border-radius: 2px;
 }
 
+@media screen and (max-width:680px) {
+  
+  #menu-button {
+    display: inline-block;
+  }
+
+  #menu ul li {
+    display: none;
+  }
+
+  #menu div.arrow {
+    display: none;
+  }
+
+  #menu.responsive {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50px;
+    margin-right: 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+  }
+
+  #menu.responsive ul li {
+    position: relative;
+    /*margin: 10px;*/
+    float: none;
+    display: block;
+    background-color: inherit;
+    margin: 0;
+  }
+
+  #menu.responsive ul li a {
+    display: block;
+    text-align: left;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+
+  }
+
+  #menu.responsive ul li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
 #header {
-  background-image: url('../img/mountains.jpg');
+  background-image: url('../img/mountains-lowres.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
   width: 100%;
   height: 200px;
   text-align: center;
+  margin-bottom: 75px;
 }
 
-.my-photo {
+#my-photo {
   margin-top: 150px;
   width: 100px;
   height: 100px;
@@ -66,72 +135,6 @@ html, body {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   vertical-align: middle;
-}
-
-/* Top Navigation */
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  font-family: 'Poiret One', cursive;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-ul.topnav li a:hover {
-  background-color: #555;
-}
-
-ul.topnav li a.active {
-  background-color: #444;
-}
-
-ul.topnav li.icon {
-  display: none;
-}
-
-ul.topnav li.icon a {
-  font-size: 15px;
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
 }
 
 /* Main */
@@ -143,7 +146,7 @@ ul.topnav li.icon a {
 
 #main-space {
   margin: 24px 26px;
-  font-family: 'Raleway';
+  font-family: 'Roboto Condensed'; /*'Raleway';*/
   font-size: 100%;
   line-height: 1.6875;
 }
@@ -180,14 +183,26 @@ ul.topnav li.icon a {
 
 h1 {
   font-size: 150%;
-  border-bottom: 2px solid rgba(75, 0, 130, 0.65);
-  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 120%;
+  font-size: 100%;
   margin-top: 10px;
   color: #222;
+  text-align: center;
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Social Links */
@@ -209,41 +224,58 @@ p {
   margin-bottom: 20px;
 }
 
-#social-links li.github {
-  background: url("../img/github.png");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  height: 40px;
+#social-links li {
   float: left;
   margin-right: 20px;
 }
 
-#social-links li.linkedin {
+#social-links li:last-child {
+  margin-right: 0;
+}
+
+#social-links li span {
+  display: none;
+}
+
+#social-links li a:hover {
+  opacity: 0.85;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#social-links li a.linkedin {
   background: url("../img/linkedin.png");
-  background-size: 40px 40px;
+  background-size: 50px 50px;
   background-repeat: no-repeat;
-  height: 40px;
-  float: left;
-  margin-right: 20px;
+  height: 50px;
+  width: 50px;
 }
 
-#social-links li.twitter {
-  background: url("../img/twitter.png");
-  background-size: 40px 40px;
+#social-links li a.github {
+  background: url("../img/github.png");
+  background-size: 50px 50px;
   background-repeat: no-repeat;
-  height: 40px;
-  float: left;
-  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+#social-links li a.twitter {
+  background: url("../img/twitter.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
 }
 
 #social-links a {
   text-decoration: none;
-  color: #888;
+  display: inline-block;
 }
 
 #social-links a:hover {
   text-decoration: none;
-  color: #222;
 }
 
 #social-links li span {
@@ -276,11 +308,13 @@ p {
 /* Footer */
 
 #footer {
-  background-color: #eee;
+  background-color: #8151a8;
 }
 
 #footer p {
   padding: 34px 26px 0 26px;
-  font-family: 'Raleway';
+  font-family: 'Roboto';
   font-size: 80%;
+  color: white;
+  text-align: center;
 }

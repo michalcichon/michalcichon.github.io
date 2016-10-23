@@ -1,9 +1,9 @@
 function foldMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var menu = document.getElementById("menu");
+    if (menu.className === "topnav") {
+        menu.className += " responsive";
     } else {
-        x.className = "topnav";
+        menu.className = "topnav";
     }
 }
 
