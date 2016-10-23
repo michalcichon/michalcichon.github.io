@@ -296,6 +296,10 @@ article {
   height: 40px;
 }
 
+.technologies img:last-child {
+  margin-right: 0;
+}
+
 /* Contact form */
 
 #main-space .contact-form {
