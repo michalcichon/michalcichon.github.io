@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Michał Cichoń · iOS developer · about me</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/minified.css?time=20161009">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minified.css?t=20161023">
     <link rel="shortcut icon" href="favicon.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Personal webpage of Michał Cichoń - iOS software developer from Kraków, Poland. Development of Objective-C and Swift iPad and iPhone applications.">
@@ -16,7 +16,7 @@
     <meta property="og:image" content="http://michalcichon.github.io/img/my-photo.jpg">
     <meta property="profile:first_name" content="Michał">
     <meta property="profile:last_name" content="Cichoń">
-    <script src="js/main.min.js?time=20161009"></script>
+    <script src="js/main.min.js?t=20161023"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,26 +30,31 @@
   </head>
   <body>
     <div class="wrapper">
-      <ul class="topnav" id="myTopnav">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a class="active" href="ios-software-developer.html" title="About me">About me</a></li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="foldMenu()" title="Expand menu">&#x2630;</a>
-        </li>
-      </ul>
+      <div id="menu-button">
+        <a href="javascript:void(0);" onclick="foldMenu()" title="Expand menu">&#x2630;</a>
+      </div>
+      <nav id="menu" class="topnav">
+        <ul>
+          <li><a class="active" href="index.html" title="Home">Home</a></li>
+          <li><a href="ios-software-developer.html" title="About me">About me</a></li>
+          <li><a href="contact.html" title="Contact me">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="header">
+        <img id="my-photo" src="img/my-photo.jpg" alt="Michał Cichoń" title="My photo" />
+      </div>
       <div id="main-space">
         <article>
           <header>
-            <h1 class="top-h1">About me</h1>
+            <h1>About me</h1>
           </header>
           <p>I have always been interested in the software development. When I was 10 I wrote my first computer program in Atari BASIC, but it wasn't something spectacular. &#x1F609;</p>
           <p>My first quality code was written on studies at the <a href="http://www.ftj.agh.edu.pl/indexe.html">Faculty of Physics and Applied Computer Science</a> in <a href="http://www.agh.edu.pl/en/">AGH University of Science and Technology</a> &#x1F4DA;.</p>
           <p>During my studies I have been working at <a href="http://www.comarch.com/">Comarch</a>, where I have learned a lot of real programming techniques and met &#x1F34E; technologies.</p>
-          <p>I have a lot of experience in many web technologies like Java, JavaScript (Angular, NodeJS), PHP and I always look for opportunities to master new technologies and programming languages. Nowadays I am focused on &#x1F4F1;&nbsp;software development for iOS devices.</p>  
+          <p>I have an experience in many web technologies like Java, JavaScript (Angular, NodeJS), PHP and I always look for opportunities to master new technologies and programming languages. Now I am focused on &#x1F4F1;&nbsp;software development for iOS devices.</p>  
         </article>
         <div class="technologies">
-          <img src="img/swift.png" alt="Swift" title="Swift" /> <img src="img/objc.png" alt="Objective-C" title="Objective-C" /> <img src="img/node.png" alt="NodeJS" title="NodeJS" /> <img src="img/oracle.png" alt="Oracle SQL" title="Oracle SQL" /> <img src="img/java.png" alt="Java" title="Java" /> <img src="img/ruby.png" alt="Ruby" title="Ruby" /> <img src="img/php.png" alt="PHP" title="PHP" />
+          <img src="img/swift.png" alt="Swift" title="Swift" /> <img src="img/objc.png" alt="Objective-C" title="Objective-C" /> <img src="img/scala.png" alt="Scala" title="Scala" /> <img src="img/node.png" alt="NodeJS" title="NodeJS" /> <img src="img/java.png" alt="Java" title="Java" /> <img src="img/ruby.png" alt="Ruby" title="Ruby" /> <img src="img/php.png" alt="PHP" title="PHP" />
         </div>
       </div>
       <div class="push"></div>

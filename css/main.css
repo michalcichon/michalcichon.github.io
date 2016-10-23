@@ -139,11 +139,6 @@ html, body {
 
 /* Main */
 
-#main-space header .top-h1 {
-  line-height: 76px;
-  padding-bottom: 10px;
-}
-
 #main-space {
   margin: 24px 26px;
   font-family: 'Roboto Condensed'; /*'Raleway';*/
@@ -293,7 +288,6 @@ article {
 .technologies img {
   margin-right: 25px;
   margin-bottom: 15px;
-  opacity: 0.2;
   height: 40px;
 }
 
