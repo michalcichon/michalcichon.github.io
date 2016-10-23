@@ -70,7 +70,11 @@ html, body {
   -moz-border-radius: 2px;
 }
 
-@media screen and (max-width:680px) {
+.burger {
+  height: 12px;
+}
+
+@media screen and (max-width:560px) {
   
   #menu-button {
     display: inline-block;
