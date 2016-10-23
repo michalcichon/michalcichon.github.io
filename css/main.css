@@ -96,7 +96,8 @@ html, body {
 
   #menu.responsive ul li {
     position: relative;
-    /*margin: 10px;*/
+    font-size: 105%;
+    font-weight: bold;
     float: none;
     display: block;
     background-color: inherit;
