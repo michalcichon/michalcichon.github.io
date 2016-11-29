@@ -22,7 +22,7 @@ html, body {
   position: absolute;
   right: 10px;
   font-family: 'Poiret One';
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   margin: 10px;
   float: left;
   font-size: 14px;
@@ -46,7 +46,7 @@ html, body {
 }
 
 #menu ul li {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.77);
   color: white;
   margin: 10px;
   float: left;
@@ -61,6 +61,7 @@ html, body {
   color: white;
   padding: 10px;
   display: block;
+  font-size: 115%;
 }
 
 #menu ul li a:hover {
@@ -89,13 +90,14 @@ html, body {
   }
 
   #menu.responsive {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 50px;
     margin-right: 10px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-right: 2px solid rgba(66, 66, 66, 0.9);
   }
 
   #menu.responsive ul li {
