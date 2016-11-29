@@ -237,12 +237,16 @@ article {
   display: none;
 }
 
+#social-links li a {
+  filter: none;
+}
+
 #social-links li a:hover {
-  opacity: 0.85;
-  transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -webkit-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out;
+  filter: invert(75%) hue-rotate(-90deg);
+  transition: filter .5s ease-out;
+  -moz-transition: filter .5s ease-out;
+  -webkit-transition: filter .5s ease-out;
+  -o-transition: filter .5s ease-out;
 }
 
 #social-links li a.linkedin {
