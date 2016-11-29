@@ -90,14 +90,14 @@ html, body {
   }
 
   #menu.responsive {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 50px;
     margin-right: 10px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-right: 2px solid rgba(66, 66, 66, 0.95);
+    border-right: 2px solid rgba(121, 68, 14, 0.75);
   }
 
   #menu.responsive ul li {
