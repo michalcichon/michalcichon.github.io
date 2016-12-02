@@ -248,7 +248,7 @@ article {
 }
 
 #social-links li a:hover {
-  filter: invert(75%) hue-rotate(-90deg);
+  filter: invert(75%) hue-rotate(180deg);
   transition: filter .5s ease-out;
   -moz-transition: filter .5s ease-out;
   -webkit-transition: filter .5s ease-out;
