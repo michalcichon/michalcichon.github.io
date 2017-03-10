@@ -203,7 +203,7 @@ p {
   font-size: 100%;
   margin-top: 10px;
   color: #222;
-  text-align: left;
+  text-align: justify;
 }
 
 article {
@@ -248,11 +248,11 @@ article {
 }
 
 #social-links li a:hover {
-  filter: invert(75%) hue-rotate(180deg);
-  transition: filter .5s ease-out;
-  -moz-transition: filter .5s ease-out;
-  -webkit-transition: filter .5s ease-out;
-  -o-transition: filter .5s ease-out;
+  filter: grayscale(100%);
+  transition: filter .2s ease-out;
+  -moz-transition: filter .2s ease-out;
+  -webkit-transition: filter .2s ease-out;
+  -o-transition: filter .2s ease-out;
 }
 
 #social-links li a.linkedin {
