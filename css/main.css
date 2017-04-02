@@ -128,7 +128,7 @@ html, body {
 }
 
 #header {
-  background-image: url('../img/mountains-lowres.jpg');
+  background-image: url('../img/color.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
@@ -321,7 +321,7 @@ article {
 /* Footer */
 
 #footer {
-  background-color: #8151a8;
+  background-color: #000000;
 }
 
 #footer p {
