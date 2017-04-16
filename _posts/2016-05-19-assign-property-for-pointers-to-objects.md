@@ -5,7 +5,7 @@ date:   2016-05-19 10:09:00 +0200
 categories: ios
 ---
 
-With Xcode upgrade to 7.3.1 I got a lot of errors from libraries I use in one old project.
+With Xcode upgrade to 7.3.1 I got a lot of errors from libraries I use in one of my older project.
 
 `Declaration uses __weak, but ARC is disabled`
 
@@ -19,6 +19,6 @@ SBJSON was using old concept of dealing with weak references and I saw something
 @property (nonatomic, assign)  SBJsonStreamParserState *state; // Private
 {% endhighlight %}
 
-Pretty strange, isn’t it? We have reference to object and assign property modifier. But it was very common practice in iOS 4 and older when there wasn’t weak modifier.
+Pretty strange, isn’t it? We have reference to a object and assign property modifier. But it was very common practice in iOS 4 and older when there was no weak modifier.
 
-In the today’s SDK we have weak modifier so the bug was easy to fix, but it made me think for a while about iOS SDK evolution. Something that was unnoticed for about 6 years in the project appeared as an error in the newest Xcode. 😀
+In the current Objective-C standard we have weak modifier so the bug was easy to fix, but it made me think for a while about iOS evolution. Something that was unnoticed for about 4 years in the project appeared as an error in the newest Xcode. 😀
