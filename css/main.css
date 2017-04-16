@@ -226,12 +226,21 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
+#main-space article a:link {
+    color: #555;
+    border-bottom: none;
+}
+
 /* visited link */
-#main-space article a:visited, 
-#main-space .home a:visited {
+#main-space article a:visited {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
+}
+
+#main-space .home a:visited {
+    color: #555;
+    border-bottom: none;
 }
 
 /* mouse over link */
@@ -242,6 +251,7 @@ html, body {
 }
 
 #main-space .home a:hover {
+    color: #222;
     border-bottom: none;
 }
 
