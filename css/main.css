@@ -70,7 +70,7 @@ html, body {
   display: none;
   position: absolute;
   right: 10px;
-  font-family: 'HelveticaNeue', 'Helvetica', 'Poiret One';
+  font-family: 'Poiret One';
   background: rgba(0, 0, 0, 0.9);
   margin: 10px;
   float: left;
@@ -91,7 +91,7 @@ html, body {
 #menu {
   position: absolute;
   right: 10px;
-  font-family: 'HelveticaNeue', 'Helvetica', 'Poiret One';
+  font-family: 'Poiret One';
 }
 
 #menu ul li {
@@ -211,7 +211,7 @@ html, body {
 }
 
 #main-space p img {
-    max-width: 600px;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -227,7 +227,8 @@ html, body {
 }
 
 /* visited link */
-#main-space article a:visited {
+#main-space article a:visited, 
+#main-space .home a:visited {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
@@ -240,11 +241,19 @@ html, body {
     border-bottom: 1px solid #222;
 }
 
+#main-space .home a:hover {
+    border-bottom: none;
+}
+
 /* selected link */
 #main-space article a:active {
     color: #555;
     text-decoration: none;
     border-bottom: 1px solid #eee;
+}
+
+#main-space .home a:active {
+    border-bottom: none;
 }
 
 h1 {
