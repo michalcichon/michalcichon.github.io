@@ -45,18 +45,9 @@
         <img id="my-photo" src="{{site.baseurl}}/img/my-photo.jpg" alt="Michał Cichoń" title="My photo" />
       </div>
       <div id="main-space">
-        {{content}}
-
-<!--
-  {% for node in site.pages %}
-    {% if page.url == node.url %}
-      <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-    {% else if node.title.length > 0 %}
-      <li><a href="{{node.url}}">{{node.title}}</a></li>
-    {% endif %}
-  {% endfor %}
-
--->
+        <div id="main-space-content">
+          {{content}}
+        </div>
       </div>
       <div class="push"></div>
     </div>

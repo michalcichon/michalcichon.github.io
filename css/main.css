@@ -197,15 +197,17 @@ html, body {
 }
 
 /* Main */
+#main-space-content {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
 
 #main-space {
   margin: 24px 26px;
   font-family: 'Roboto Condensed'; /*'Raleway';*/
   font-size: 100%;
   line-height: 1.6875;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 #main-space p img {
@@ -389,7 +391,7 @@ p {
 
 .post-meta { font-size: 14px; color: #828282; }
 
-.post-link { display: block; font-size: 24px; }
+.post-link { display: block; }
 
 .post-list h2 {
     text-align: left;
