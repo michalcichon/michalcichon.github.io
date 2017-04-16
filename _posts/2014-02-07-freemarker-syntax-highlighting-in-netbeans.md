@@ -13,9 +13,18 @@ Then you can install plugin named "Freemarker NetBeans Plugin" available here: [
 
 ![Make sure you have these files downloaded.]({{site.url}}/assets/2014-02-07/netbeans1.png)
 
+{:.image-caption}
+*Make sure you have these files downloaded.*
+
 ![Install both of the plugins using menu Tools > Plugins]({{site.url}}/assets/2014-02-07/netbeans1.png)
 
+{:.image-caption}
+*Install both of the plugins using menu Tools > Plugins*
+
 ![Now it looks just fine.]({{site.url}}/assets/2014-02-07/netbeans1.png)
+
+{:.image-caption}
+*Now it looks just fine.*
 
 After the installation make sure you don't have other Freemarker plugins installed. They can cause problems.
 

@@ -208,6 +208,13 @@ html, body {
   margin-bottom: 20px;
 }
 
+#main-space p img {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Links */
 
 /* unvisited link */
@@ -386,6 +393,12 @@ p {
 
 .post-list h2 {
     text-align: left;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: light-grey;
 }
 
 /* Highlighting */
