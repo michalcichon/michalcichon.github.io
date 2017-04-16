@@ -226,7 +226,7 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
-#main-space article a:link {
+#main-space .home a:link {
     color: #555;
     border-bottom: none;
 }
