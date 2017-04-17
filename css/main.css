@@ -330,7 +330,7 @@ p {
 }
 
 #social-links li a.linkedin {
-  background: url("../img/linkedin.png");
+  background: url("../img/linkedin-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
   height: 32px;
@@ -338,7 +338,7 @@ p {
 }
 
 #social-links li a.github {
-  background: url("../img/github.png");
+  background: url("../img/github-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
   height: 32px;
@@ -346,7 +346,7 @@ p {
 }
 
 #social-links li a.twitter {
-  background: url("../img/twitter.png");
+  background: url("../img/twitter-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
   height: 32px;
