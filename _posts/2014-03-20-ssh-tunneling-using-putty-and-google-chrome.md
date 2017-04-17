@@ -41,4 +41,4 @@ Now just provide parameters in Setting window and click on 'OK'.
 
 Make sure you are providing the correct port number. I used 9999 but you can use whatever you want but the same in PuTTY and Chrome.
 
-After these steps you probably have your tunnel set up correctly.
+After these steps you should have your tunnel set up correctly.
