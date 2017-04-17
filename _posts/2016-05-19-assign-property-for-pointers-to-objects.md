@@ -21,4 +21,4 @@ SBJSON was using old concept of dealing with weak references and I saw something
 
 Pretty strange, isn’t it? We have reference to a object and assign property modifier. But it was very common practice in iOS 4 and older when there was no weak modifier.
 
-In the current Objective-C standard we have weak modifier so the bug was easy to fix, but it made me think for a while about iOS evolution. Something that was unnoticed for about 4 years in the project appeared as an error in the newest Xcode. 😀
+In the current Objective-C standard we have weak modifier so the bug was easy to fix, but it made me think for a while about iOS evolution. Something that was unnoticed for about 4 years in the project suddenly appeared as an error in the newest Xcode.
