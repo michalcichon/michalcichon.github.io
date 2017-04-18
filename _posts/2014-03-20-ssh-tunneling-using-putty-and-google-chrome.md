@@ -3,6 +3,7 @@ layout: post
 title:  "SSH Tunneling using PuTTY and Google Chrome"
 date:   2014-03-20 10:09:00 +0200
 categories: tools
+keywords: ssh, tunneling, ssh-tunneling
 ---
 
 Sometimes we need to have a tunnel to pass our internet traffic trough external server. We usually do that when we have some limitations from our internet provider and want to enter pages we normally don't have access. In this short tutorial I will show you how to do that using PuTTY (SSH) and Google Chrome.

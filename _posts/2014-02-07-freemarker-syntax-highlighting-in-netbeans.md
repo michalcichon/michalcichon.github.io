@@ -3,6 +3,7 @@ layout: post
 title:  "Freemarker syntax highlighting in NetBeans"
 date:   2014-02-07 10:09:00 +0200
 categories: tools
+keywords: syntax, netbeans, lexer
 ---
 
 Unlike for Eclipse, installing Freemarker support for NetBeans was quite complicated. Unfortunatelly the official Freemarker's website pointed me to some wrong plugin.

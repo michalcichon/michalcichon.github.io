@@ -3,6 +3,7 @@ layout: post
 title:  "The assign property for pointers to objects"
 date:   2016-05-19 10:09:00 +0200
 categories: ios
+keywords: xcode, assign, weak property
 ---
 
 With Xcode upgrade to 7.3.1 I got a lot of errors from libraries I use in one of my older project.

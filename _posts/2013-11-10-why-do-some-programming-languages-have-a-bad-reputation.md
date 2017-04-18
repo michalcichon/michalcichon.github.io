@@ -3,6 +3,7 @@ layout: post
 title:  "Why do some programming languages have a bad reputation?"
 date:   2013-11-10 10:09:00 +0200
 categories: programming
+keywords: PHP, programming languages
 ---
 
 When I began my big journey of the software development I had only some experience in programming on Atari BASIC. This was the time when Google was starting its business and layouts of websites were created with HTML tables. For me it was very enjoyable to experiment with primitive internet technologies of these days. Since 2003 it was my own way to develop creativity and learn conceptual thinking.
