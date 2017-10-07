@@ -173,6 +173,11 @@ html, body {
   #menu.responsive ul li a:hover {
     background: rgba(0, 0, 0, 0.2);
   }
+
+  #main-space-content .post-thumbnail {
+    float: none;
+    display: block;
+  }
 }
 
 #header {
