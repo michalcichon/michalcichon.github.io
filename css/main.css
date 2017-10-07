@@ -177,6 +177,14 @@ html, body {
   #main-space-content .post-thumbnail {
     float: none;
     display: block;
+    border: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .link-around-image {
+    display: block;
+    background-color: #eee;
   }
 }
 
