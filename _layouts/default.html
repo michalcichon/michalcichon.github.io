@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.min.css?t={{site.time | date: "%Y%m%d"}}">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.min.css?t={{site.time | date_to_xmlschema}}">
     <link rel="shortcut icon" href="{{site.baseurl}}/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
     <meta name="theme-color" content="#ffffff">
@@ -16,7 +16,7 @@
     <meta property="og:image" content="http://michalcichon.github.io/img/my-photo.jpg">
     <meta property="profile:first_name" content="Michał">
     <meta property="profile:last_name" content="Cichoń">
-    <script src="{{site.baseurl}}/js/main.min.js?t={{site.time | date: "%Y%m%d"}}"></script>
+    <script src="{{site.baseurl}}/js/main.min.js?t={{site.time | date_to_xmlschema}}"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
