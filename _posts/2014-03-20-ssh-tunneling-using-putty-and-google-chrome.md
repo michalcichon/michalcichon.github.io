@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "SSH Tunneling using PuTTY and Google Chrome"
+description: "I will show you how to configure a simple SSH tunnel with PuTTY and Google Chrome"
 date:   2014-03-20 10:09:00 +0200
 categories: tools
 keywords: ssh, tunneling, ssh-tunneling

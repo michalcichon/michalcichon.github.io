@@ -416,6 +416,27 @@ p {
     text-align: left;
 }
 
+#main-space-content .post-list p.post-description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#main-space-content .post-list a.no-decoration {
+  text-decoration: none;
+}
+
+#main-space-content .post-list h2 {
+  margin-bottom: 0;
+}
+
+.post-thumbnail {
+  float: left; 
+  margin-right: 10px; 
+  margin-bottom: 20px; 
+  border: 5px solid white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  width: 100px;
+}
+
 .image-caption {
   text-align: center;
   font-size: .8rem;
