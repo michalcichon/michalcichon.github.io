@@ -185,6 +185,11 @@ html, body {
   .link-around-image {
     display: block;
     background-color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  }
+
+  .thumbnail-default-background {
+    background-color: #00721e;
   }
 }
 
@@ -446,7 +451,8 @@ p {
   float: left; 
   margin-right: 10px; 
   margin-bottom: 20px; 
-  border: 5px solid white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  border: 5px solid white; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   width: 100px;
 }
 
