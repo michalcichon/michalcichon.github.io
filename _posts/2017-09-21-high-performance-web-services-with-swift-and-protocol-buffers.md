@@ -6,7 +6,7 @@ date:   2017-09-21 10:09:00 +0200
 categories: ios
 keywords: swift, protobuf, gatling
 thumbnail: 2017-09-21.png
-background: "#fe7434"
+background: "#f05138"
 ---
 
 In the Codete Blog website you can find my new article about implementing webservices in Swift.
