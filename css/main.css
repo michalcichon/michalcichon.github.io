@@ -373,6 +373,14 @@ p {
   width: 32px;
 }
 
+#social-links li a.stackoverflow {
+  background: url("../img/stackoverflow-logo.svg");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+}
+
 #social-links a {
   text-decoration: none;
   display: inline-block;
@@ -453,7 +461,6 @@ p {
   float: left; 
   margin-right: 10px; 
   margin-bottom: 20px; 
-  border: 5px solid white; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   width: 100px;
 }
