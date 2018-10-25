@@ -68,16 +68,17 @@ html, body {
 
 #menu-button {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 10px;
+  top: 10px;
   font-family: 'Poiret One';
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   margin: 10px;
   float: left;
   font-size: 14px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   text-decoration: none;
 }
 
@@ -91,18 +92,26 @@ html, body {
 #menu {
   position: absolute;
   right: 10px;
+  top: 10px;
   font-family: 'Poiret One';
 }
 
+#menu ul {
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
 #menu ul li {
-  background: rgba(0, 0, 0, 0.77);
+  background: rgb(0, 0, 0);
   color: white;
   margin: 10px;
   float: left;
   font-size: 14px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 
 #menu ul li a {
@@ -114,10 +123,10 @@ html, body {
 }
 
 #menu ul li a:hover {
-  background: rgb(0, 0, 0);
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 
 .burger {
@@ -140,13 +149,12 @@ html, body {
 
   #menu.responsive {
     background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 60px;
     margin-right: 10px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-right: 2px solid rgba(88, 88, 88, 0.1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
   }
 
   #menu.responsive ul li:last-child {
@@ -160,7 +168,6 @@ html, body {
     display: block;
     background-color: inherit;
     margin: 0;
-    border-bottom: 1px solid rgba(88, 88, 88, 0.1);
   }
 
   #menu.responsive ul li a {
@@ -173,7 +180,7 @@ html, body {
   }
 
   #menu.responsive ul li a:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(200, 200, 200, 0.1);
   }
 
   #main-space-content .post-thumbnail {
