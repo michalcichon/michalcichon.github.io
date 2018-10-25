@@ -187,7 +187,9 @@ html, body {
   .link-around-image {
     display: block;
     background-color: #eee;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   .thumbnail-default-background {
@@ -441,12 +443,21 @@ p {
 .post-link { display: block; }
 
 .post-list h2 {
-    text-align: left;
+ text-align: left;
+}
+
+.post-list li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+ul.post-list li.post-element {
+  min-height: 100px;
 }
 
 #main-space-content .post-list p.post-description {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 #main-space-content .post-list a.no-decoration {
@@ -460,9 +471,10 @@ p {
 .post-thumbnail {
   float: left; 
   margin-right: 10px; 
-  margin-bottom: 20px; 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  margin-bottom: 0; 
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
   width: 100px;
+  border-radius: 10px;
 }
 
 .image-caption {

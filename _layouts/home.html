@@ -8,7 +8,7 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+      <li class="post-element">
         {% if post.thumbnail %}
           <a class="link-around-image" {% if post.background %}style="background-color: {{post.background}}"{% endif %} href="{{ post.url | relative_url }}"><img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt=""></a>
           {% else %}
@@ -23,7 +23,7 @@ layout: default
         </h2>
         <a class="no-decoration" href="{{ post.url | relative_url }}"><p class="post-description">{{post.description}}</p></a>
       </li>
-      <li style="clear: both"></li>
+      <li style="clear: both; height: 10px;"></li>
     {% endfor %}
   </ul>
 
