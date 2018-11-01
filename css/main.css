@@ -246,6 +246,15 @@ html, body {
     margin-right: auto;
 }
 
+#main-space-content hr {
+  display: block;
+  height: 3px;
+  border: 0;
+  border-top: 3px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+}
+
 /* Links */
 
 /* unvisited link */
@@ -527,8 +536,6 @@ ul.post-list li.post-element {
 #main-space p .image-url:link,
 #main-space p .image-url {
   border-bottom: none;
-  display: block;
-  margin-top: 30px;
 }
 
 /* Highlighting */
