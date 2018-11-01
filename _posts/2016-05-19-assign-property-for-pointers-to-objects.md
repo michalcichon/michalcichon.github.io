@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Assign property for pointers"
-description: "Updating a IDE can bring some interesting side effects."
+description: "Updating an IDE can bring some interesting side effects."
 date:   2016-05-19 10:09:00 +0200
 categories: ios
 keywords: xcode, assign, weak property

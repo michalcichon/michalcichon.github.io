@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why do some programming languages have a bad reputation?"
-description: "PHP, Ruby, Java. Why some languages are recongnized as more professional ones?"
+description: "PHP, Ruby, Java. Why do some languages are recognized as less professional then others?"
 date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
