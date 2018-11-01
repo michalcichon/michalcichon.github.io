@@ -206,6 +206,7 @@ html, body {
 
 #header {
   background-image: url('../img/stars.jpg');
+  background-color: #ddd;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
@@ -508,19 +509,21 @@ ul.post-list li.post-element {
 }
 
 
-.back-button {
+.small-navigation-button {
   font-size: 70%;
   text-align: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.back-button a {
+.small-navigation-button a {
   display: inline-block;
   background-color: #ddd;
   padding: 7px;
   border-radius: 7px;
 }
 
-#main-space article .back-button a:hover {
+#main-space article .small-navigation-button a:hover {
   border-bottom: 1px solid #999;
 }
 
