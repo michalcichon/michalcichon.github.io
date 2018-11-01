@@ -449,11 +449,11 @@ p {
 
 /* Posts */
 
-.post strong {
+#main-space article strong {
   font-weight: bold;
 }
 
-.post em {
+#main-space article em {
   font-style: italic;
 }
 
@@ -535,6 +535,9 @@ ul.post-list li.post-element {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 #main-space p .image-url:hover, 
