@@ -7,7 +7,7 @@ categories: tools
 keywords: syntax, netbeans, lexer
 ---
 
-Unlike for Eclipse, installing Freemarker support for NetBeans was quite complicated. Unfortunatelly the official Freemarker's website pointed me to some wrong plugin.
+Installing Freemarker support for NetBeans was quite complicated. Unfortunately the official Freemarker's website pointed me to a wrong plugin.
 
 To install Freemarker syntax highlighter, first install plugin called "Lexer to NetBeans Bridge". You can find it here: [Lexer to NetBeans Bridges][lexer].
 
@@ -18,12 +18,12 @@ Then you can install plugin named "Freemarker NetBeans Plugin" available here: [
 {:.image-caption}
 *Make sure you have these files downloaded.*
 
-![Install both of the plugins using menu Tools > Plugins]({{site.url}}/assets/2014-02-07/netbeans1.png)
+![Install both of the plugins using the menu option Tools > Plugins]({{site.url}}/assets/2014-02-07/netbeans2.png)
 
 {:.image-caption}
 *Install both of the plugins using menu Tools > Plugins*
 
-![Now it looks just fine.]({{site.url}}/assets/2014-02-07/netbeans1.png)
+![Now it looks just fine.]({{site.url}}/assets/2014-02-07/netbeans3.png)
 
 {:.image-caption}
 *Now it looks just fine.*

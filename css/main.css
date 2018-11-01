@@ -234,7 +234,7 @@ html, body {
 
 #main-space {
   margin: 24px 26px;
-  font-family: 'Roboto Condensed'; /*'Raleway';*/
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.6875;
 }
@@ -255,7 +255,7 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
-#main-space .home a:link {
+#main-space .blog a:link {
     color: #555;
     border-bottom: none;
 }
@@ -267,7 +267,7 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
-#main-space .home a:visited {
+#main-space .blog a:visited {
     color: #555;
     border-bottom: none;
 }
@@ -279,7 +279,7 @@ html, body {
     border-bottom: 1px solid #222;
 }
 
-#main-space .home a:hover {
+#main-space .blog a:hover {
     color: #222;
     border-bottom: none;
 }
@@ -291,7 +291,7 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
-#main-space .home a:active {
+#main-space .blog a:active {
     border-bottom: none;
 }
 
@@ -445,6 +445,14 @@ p {
 
 /* Posts */
 
+.post strong {
+  font-weight: bold;
+}
+
+.post em {
+  font-style: italic;
+}
+
 .post-meta { font-size: 14px; color: #828282; }
 
 .post-link { display: block; }
@@ -488,6 +496,38 @@ ul.post-list li.post-element {
   text-align: center;
   font-size: .8rem;
   color: light-grey;
+}
+
+
+.back-button {
+  font-size: 70%;
+  text-align: right;
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+#main-space article .back-button a:hover {
+  border-bottom: 1px solid #999;
+}
+
+#main-space p .image-url img {
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#main-space p .image-url:hover, 
+#main-space p .image-url:visited,
+#main-space p .image-url:link,
+#main-space p .image-url {
+  border-bottom: none;
+  display: block;
+  margin-top: 30px;
 }
 
 /* Highlighting */

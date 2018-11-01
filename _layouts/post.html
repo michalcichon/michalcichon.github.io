@@ -19,6 +19,10 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="back-button">
+    <a href="{{site.baseurl}}/blog">← Go Back</a>
+  </div>
+
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}

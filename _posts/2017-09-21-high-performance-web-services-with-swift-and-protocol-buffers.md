@@ -5,7 +5,7 @@ description: "In this article I discribe how to implement a web services in Swif
 date:   2017-09-21 10:09:00 +0200
 categories: ios
 keywords: swift, protobuf, gatling
-thumbnail: 2017-09-21.png
+thumbnail: swift.png
 background: "#f05138"
 ---
 
