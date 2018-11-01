@@ -519,6 +519,7 @@ ul.post-list li.post-element {
   height: 50px;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 #main-space p .image-url:hover, 
