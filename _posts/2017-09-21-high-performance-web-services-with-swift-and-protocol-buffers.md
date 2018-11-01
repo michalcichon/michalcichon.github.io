@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My new article on Codete Blog"
-description: "In this article I discribe how to implement web services in Swift using Kitura and Protocol Buffers."
+description: "In this article I discribe how to implement web services in Swift using Kitura and Protocol Buffers"
 date:   2017-09-21 10:09:00 +0200
 categories: ios
 keywords: swift, protobuf, gatling
