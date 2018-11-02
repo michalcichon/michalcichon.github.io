@@ -59,11 +59,11 @@ html, body {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -85px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-  height: 75px;  /*.push must be the same height as .footer */
+  height: 150px;  /*.push must be the same height as .footer */
 }
 
 #menu-button {
@@ -440,10 +440,10 @@ p {
 }
 
 #footer p {
-  padding: 34px 26px 0 26px;
+  padding: 52px 26px 0 26px;
   font-family: 'Roboto';
   font-size: 80%;
-  color: white;
+  color: #eee;
   text-align: center;
 }
 
