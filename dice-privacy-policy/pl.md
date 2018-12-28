@@ -20,7 +20,7 @@ Aplikacja korzysta z usług stron trzecich, które mogą zbierać informacje uż
 
 Link do polityki prywatności zewnętrznych dostawców usług używanych przez aplikację
 
-* [Crashlytics] (https://try.crashlytics.com/terms/privacy-policy.pdf)
+* [Crashlytics](https://try.crashlytics.com/terms/privacy-policy.pdf)
 
 ** Dane dziennika **
 
@@ -63,4 +63,4 @@ Od czasu do czasu mogę aktualizować naszą Politykę prywatności. Dlatego zal
 
 Jeśli masz jakieś pytania lub sugestie dotyczące mojej Polityki prywatności, nie wahaj się ze mną skontaktować.
 
-Ta strona polityki prywatności została utworzona na [privacypolicytemplate.net] (https://privacypolicytemplate.net) i zmodyfikowana / wygenerowana przez [Generator zasad prywatności aplikacji] (https://app-privacy-policy-generator.firebaseapp.com/)
+Ta strona polityki prywatności została utworzona na [privacypolicytemplate.net](https://privacypolicytemplate.net) i zmodyfikowana / wygenerowana przez [Generator zasad prywatności aplikacji](https://app-privacy-policy-generator.firebaseapp.com/)
