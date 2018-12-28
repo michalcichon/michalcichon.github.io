@@ -487,6 +487,10 @@ ul.post-list li.post-element {
   margin-bottom: 0;
 }
 
+#main-space-content strong {
+  font-weight: bold;
+}
+
 .post-thumbnail {
   float: left; 
   margin-right: 20px; 
