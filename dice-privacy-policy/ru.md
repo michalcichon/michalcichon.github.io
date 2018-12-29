@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Russian)
+## Privacy Policy of Dice: shake and roll (Russian)
 
 Michal Cichon создал бесплатное приложение *кость: Нажмите или встряхните*. Данная услуга предоставляется Michal Cichon бесплатно и предназначена для использования как есть.
 

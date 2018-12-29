@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (English)
+## Privacy Policy of Dice: shake and roll (English)
 
 Michal Cichon built the *Dice: shake and roll* app as a Free app. This SERVICE is provided by Michal Cichon at no cost and is intended for use as is.
 

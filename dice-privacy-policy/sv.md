@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Swedish)
+## Privacy Policy of Dice: shake and roll (Swedish)
 
 Michal Cichon byggde *Tärningar: peka eller skaka* app som en gratis app. Denna SERVICE tillhandahålls av Michal Cichon utan kostnad och är avsedd att användas som det är.
 

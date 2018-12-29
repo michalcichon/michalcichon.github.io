@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Romanian)
+## Privacy Policy of Dice: shake and roll (Romanian)
 
 Michal Cichon a construit aplicația *Zaruri* ca aplicație gratuită. Acest SERVICIU este oferit gratuit de Michal Cichon și este destinat utilizării ca atare.
 

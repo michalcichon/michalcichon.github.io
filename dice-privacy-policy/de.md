@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (German)
+## Privacy Policy of Dice: shake and roll (German)
 
 Michal Cichon entwickelte die *Würfel: tippen oder schütteln* als kostenlose App. Dieser SERVICE wird von Michal Cichon kostenlos zur Verfügung gestellt und ist für die Verwendung in der vorliegenden Form vorgesehen.
 

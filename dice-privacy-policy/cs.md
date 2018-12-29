@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Croatian)
+## Privacy Policy of Dice: shake and roll (Croatian)
 
 Michal Cichon je izgradio Kocke aplikaciju kao besplatnu aplikaciju. Uslugu pruža tvrtka Michal Cichon bez ikakvih troškova i namijenjena je za uporabu.
 

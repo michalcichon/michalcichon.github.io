@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Slovak)
+## Privacy Policy of Dice: shake and roll (Slovak)
 
 Michal Cichon vytvoril aplikáciu *Kocky* ako bezplatnú aplikáciu. Táto služba je bezplatne poskytovaná spoločnosťou Michal Cichon a je určená na použitie ako taká.
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Finnish)
+## Privacy Policy of Dice: shake and roll (Finnish)
 
 Michal Cichon rakensi *Noppa: napauta tai ravista* Free App. Tämän palvelun tarjoaa Michal Cichon ilmaiseksi ja on tarkoitettu käytettäväksi sellaisenaan.
 

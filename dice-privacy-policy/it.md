@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake (Italian)
+## Privacy Policy of Dice: shake and roll (Italian)
 
 Michal Cichon ha creato i *Dadi: tocca o agita* app come app gratuita. Questo servizio è fornito da Michal Cichon a costo zero ed è inteso per l'uso così com'è.
 
