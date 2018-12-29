@@ -2,17 +2,17 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake
+## Privacy Policy of Dice: roll and shake (German)
 
-Michal Cichon entwickelte die Dice: Shake and Roll-App als kostenlose App. Dieser SERVICE wird von Michal Cichon kostenlos zur Verfügung gestellt und ist für die Verwendung in der vorliegenden Form vorgesehen.
+Michal Cichon entwickelte die *Würfel: tippen oder schütteln* als kostenlose App. Dieser SERVICE wird von Michal Cichon kostenlos zur Verfügung gestellt und ist für die Verwendung in der vorliegenden Form vorgesehen.
 
 Diese Seite wird verwendet, um Besucher über meine Richtlinien bezüglich der Erfassung, Verwendung und Weitergabe persönlicher Informationen zu informieren, falls jemand sich für die Nutzung meines Dienstes entschieden hat.
 
 Wenn Sie sich für die Nutzung meines Dienstes entscheiden, stimmen Sie der Sammlung und Verwendung von Informationen in Bezug auf diese Richtlinie zu. Die von mir gesammelten persönlichen Informationen werden zur Bereitstellung und Verbesserung des Dienstes verwendet. Ich werde Ihre Informationen nur mit den in dieser Datenschutzrichtlinie beschriebenen Personen verwenden oder weitergeben.
 
-Die in dieser Datenschutzrichtlinie verwendeten Bedingungen haben dieselbe Bedeutung wie in unseren Allgemeinen Geschäftsbedingungen, die unter Dice: shake and roll verfügbar sind, sofern in dieser Datenschutzrichtlinie nichts anderes festgelegt ist.
+Die in dieser Datenschutzrichtlinie verwendeten Bedingungen haben dieselbe Bedeutung wie in unseren Allgemeinen Geschäftsbedingungen, die unter *Würfel: tippen oder schütteln* verfügbar sind, sofern in dieser Datenschutzrichtlinie nichts anderes festgelegt ist.
 
-** Erfassung und Verwendung von Informationen **
+**Erfassung und Verwendung von Informationen**
 
 Für eine bessere Erfahrung bei der Nutzung unseres Dienstes kann es erforderlich sein, dass Sie uns bestimmte personenbezogene Daten zur Verfügung stellen. Die von mir angeforderten Informationen werden auf Ihrem Gerät gespeichert und auf keine Weise von mir erfasst.
 
@@ -20,6 +20,7 @@ Die App verwendet Dienste von Drittanbietern, die Informationen sammeln können,
 
 Link zu den Datenschutzrichtlinien von Drittanbieter, die von der App verwendet werden
 
+* [Fabric](https://fabric.io/privacy)
 * [Crashlytics](https://try.crashlytics.com/terms/privacy-policy.pdf)
 
 **Logdaten**
@@ -47,15 +48,15 @@ Ich möchte die Benutzer dieses Dienstes darüber informieren, dass diese Dritte
 
 Ich schätze Ihr Vertrauen, wenn Sie uns Ihre persönlichen Daten zur Verfügung stellen. Daher bemühen wir uns, kommerziell akzeptable Mittel zu verwenden, um diese zu schützen. Denken Sie jedoch daran, dass keine Übertragungsmethode über das Internet und keine elektronische Speichermethode zu 100% sicher und zuverlässig ist. Ich kann keine absolute Sicherheit garantieren.
 
-** Links zu anderen Seiten **
+**Links zu anderen Seiten**
 
 Dieser Service kann Links zu anderen Websites enthalten. Wenn Sie auf den Link eines Drittanbieters klicken, werden Sie zu dieser Site geleitet. Beachten Sie, dass diese externen Websites nicht von mir betrieben werden. Daher empfehle ich Ihnen dringend, die Datenschutzbestimmungen dieser Websites zu lesen. Ich habe keine Kontrolle über Inhalte, Datenschutzrichtlinien oder Praktiken von Websites oder Diensten von Drittanbietern und übernehme keine Verantwortung dafür.
 
-** Datenschutz für Kinder **
+**Datenschutz für Kinder**
 
 Diese Dienste richten sich nicht an Personen unter 13 Jahren. Ich sammle wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren. Wenn ich feststelle, dass ein Kind unter 13 Jahren mir persönliche Informationen übermittelt hat, lösche ich diese sofort von unseren Servern. Wenn Sie Elternteil oder Erziehungsberechtigter sind und wissen, dass Ihr Kind uns personenbezogene Daten zur Verfügung gestellt hat, wenden Sie sich bitte an mich, damit ich die notwendigen Maßnahmen ergreifen kann.
 
-** Änderungen an dieser Datenschutzerklärung **
+**Änderungen an dieser Datenschutzerklärung**
 
 Ich kann unsere Datenschutzbestimmungen von Zeit zu Zeit aktualisieren. Es wird daher empfohlen, diese Seite regelmäßig auf etwaige Änderungen zu überprüfen. Ich werde Sie über alle Änderungen informieren, indem Sie die neuen Datenschutzbestimmungen auf dieser Seite veröffentlichen. Diese Änderungen werden sofort nach ihrer Veröffentlichung auf dieser Seite wirksam.
 

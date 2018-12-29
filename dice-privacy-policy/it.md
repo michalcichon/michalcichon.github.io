@@ -2,17 +2,17 @@
 layout: default
 ---
 
-## Privacy Policy of Dice: roll and shake
+## Privacy Policy of Dice: roll and shake (Italian)
 
-Michal Cichon ha creato i Dice: shake and roll app come app gratuita. Questo servizio è fornito da Michal Cichon a costo zero ed è inteso per l'uso così com'è.
+Michal Cichon ha creato i *Dadi: tocca o agita* app come app gratuita. Questo servizio è fornito da Michal Cichon a costo zero ed è inteso per l'uso così com'è.
 
 Questa pagina viene utilizzata per informare i visitatori in merito alle mie politiche con la raccolta, l'utilizzo e la divulgazione di informazioni personali se qualcuno ha deciso di utilizzare il mio servizio.
 
 Se scegli di utilizzare il mio servizio, accetti la raccolta e l'utilizzo delle informazioni in relazione a questa politica. Le informazioni personali che raccolgo vengono utilizzate per fornire e migliorare il servizio. Non userò o condividerò le tue informazioni con nessuno eccetto quanto descritto in questa Informativa sulla privacy.
 
-I termini utilizzati nella presente Informativa sulla privacy hanno lo stesso significato dei nostri Termini e condizioni, accessibili ai Dadi: scuotere e rullare se non diversamente definito nella presente Informativa sulla privacy.
+I termini utilizzati nella presente Informativa sulla privacy hanno lo stesso significato dei nostri Termini e condizioni, accessibili ai *Dadi: tocca o agita* se non diversamente definito nella presente Informativa sulla privacy.
 
-** Raccolta e utilizzo delle informazioni **
+**Raccolta e utilizzo delle informazioni**
 
 Per un'esperienza migliore, durante l'utilizzo del nostro Servizio, potrei richiedere all'utente di fornirci alcune informazioni personali identificabili. Le informazioni che richiedo verranno conservate sul tuo dispositivo e non verranno raccolte da me in alcun modo.
 
@@ -20,9 +20,10 @@ L'app utilizza servizi di terze parti che potrebbero raccogliere informazioni ut
 
 Collegamento alla politica sulla privacy dei fornitori di servizi di terze parti utilizzati dall'app
 
+* [Fabric](https://fabric.io/privacy)
 * [Crashlytics](https://try.crashlytics.com/terms/privacy-policy.pdf)
 
-** Dati di registro **
+**Dati di registro**
 
 Voglio informarti che ogni volta che usi il mio servizio, in caso di errore nell'app, raccolgo dati e informazioni (tramite prodotti di terzi) sul tuo telefono chiamato Dati di registro. Questi dati di registro possono includere informazioni quali l'indirizzo IP ("IP") del dispositivo, il nome del dispositivo, la versione del sistema operativo, la configurazione dell'app quando si utilizza il mio servizio, l'ora e la data di utilizzo del servizio e altre statistiche .
 
@@ -47,15 +48,15 @@ Voglio informare gli utenti di questo servizio che queste terze parti hanno acce
 
 Apprezzo la vostra fiducia nel fornirci le vostre informazioni personali, quindi ci stiamo adoperando per utilizzare mezzi commercialmente accettabili per proteggerli. Ma ricorda che nessun metodo di trasmissione su Internet o metodo di archiviazione elettronica è sicuro al 100% e affidabile e non posso garantire la sua assoluta sicurezza.
 
-** Collegamenti ad altri siti **
+**Collegamenti ad altri siti**
 
 Questo servizio può contenere collegamenti ad altri siti. Se fai clic su un link di terze parti, sarai indirizzato a quel sito. Si noti che questi siti esterni non sono gestiti da me. Pertanto, ti consiglio vivamente di rivedere l'Informativa sulla privacy di questi siti web. Non ho alcun controllo e non mi assumo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di qualsiasi sito o servizio di terze parti.
 
-** Privacy dei bambini **
+**Privacy dei bambini**
 
 Questi servizi non sono rivolti a minori di 13 anni. Non raccolgo consapevolmente informazioni di identificazione personale da minori di 13 anni. Nel caso in cui scopro che un minore di 13 anni mi ha fornito informazioni personali, lo cancellerò immediatamente dai nostri server. Se sei un genitore o un tutore e sei consapevole del fatto che tuo figlio ci ha fornito informazioni personali, ti prego di contattarmi in modo da essere in grado di fare le azioni necessarie.
 
-** Modifiche alla presente informativa sulla privacy **
+**Modifiche alla presente informativa sulla privacy**
 
 Posso aggiornare la nostra politica sulla privacy di volta in volta. Pertanto, si consiglia di rivedere periodicamente questa pagina per eventuali modifiche. Ti informerò di eventuali modifiche pubblicando la nuova Informativa sulla privacy in questa pagina. Queste modifiche sono effettive immediatamente dopo essere state pubblicate su questa pagina.
 
