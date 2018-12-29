@@ -364,6 +364,7 @@ p {
 
 #social-links li a {
   filter: none;
+  border-bottom: 0px solid white; /* omg, why 0 is not enough??? */
 }
 
 #social-links li a:hover {
@@ -372,6 +373,11 @@ p {
   -moz-transition: filter .2s ease-out;
   -webkit-transition: filter .2s ease-out;
   -o-transition: filter .2s ease-out;
+  border-bottom: 0px solid white;
+}
+
+#social-links li a:visited {
+  border-bottom: 0px solid white;
 }
 
 #social-links li a.linkedin {
@@ -470,7 +476,15 @@ p {
   font-style: italic;
 }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { 
+  font-size: 14px; 
+  color: #828282; 
+  
+}
+
+.post-list .post-element .post-meta {
+  float: right;
+}
 
 .post-link { display: block; }
 
@@ -490,6 +504,7 @@ ul.post-list li.post-element {
 #main-space-content .post-list p.post-description {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 120px;
 }
 
 #main-space-content .post-list a.no-decoration {
@@ -562,6 +577,16 @@ ul.post-list li.post-element {
 #main-space p .image-url:link,
 #main-space p .image-url {
   border-bottom: none;
+}
+
+@media screen and (max-width:560px) {
+  #main-space-content .post-list p.post-description {
+    margin-left: 0;
+  }
+
+  .post-list .post-element .post-meta { 
+    float: none;
+  }
 }
 
 /* Highlighting */
