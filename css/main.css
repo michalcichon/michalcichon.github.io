@@ -364,7 +364,7 @@ p {
 
 #social-links li a {
   filter: none;
-  border-bottom: 0px solid white; /* omg, why 0 is not enough??? */
+  border-style: none;
 }
 
 #social-links li a:hover {
@@ -373,17 +373,18 @@ p {
   -moz-transition: filter .2s ease-out;
   -webkit-transition: filter .2s ease-out;
   -o-transition: filter .2s ease-out;
-  border-bottom: 0px solid white;
+  border-style: none;
 }
 
 #social-links li a:visited {
-  border-bottom: 0px solid white;
+  border-style: none;
 }
 
 #social-links li a.linkedin {
   background: url("../img/linkedin-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  border-style: none;
   height: 32px;
   width: 32px;
 }
@@ -392,6 +393,7 @@ p {
   background: url("../img/github-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  border-style: none;
   height: 32px;
   width: 32px;
 }
@@ -400,6 +402,7 @@ p {
   background: url("../img/twitter-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  border-style: none;
   height: 32px;
   width: 32px;
 }
@@ -408,6 +411,7 @@ p {
   background: url("../img/stackoverflow-logo.svg");
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  border-style: none;
   height: 32px;
   width: 32px;
 }
