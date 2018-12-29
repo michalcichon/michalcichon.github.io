@@ -457,6 +457,7 @@ p {
   font-size: 80%;
   color: #eee;
   text-align: center;
+  text-shadow: 0px 1px rgba(255,255,255,0.1);
 }
 
 /* Posts */
