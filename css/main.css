@@ -351,12 +351,8 @@ p {
 }
 
 #social-links li {
-  margin-bottom: 20px;
-}
-
-#social-links li {
   float: left;
-  margin-right: 20px;
+  margin-right: 36px;
 }
 
 #social-links li:last-child {
@@ -387,38 +383,38 @@ p {
 
 #social-links li a.linkedin {
   background: url("../img/linkedin-logo.svg");
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   border-style: none;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 #social-links li a.github {
   background: url("../img/github-logo.svg");
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   border-style: none;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 #social-links li a.twitter {
   background: url("../img/twitter-logo.svg");
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   border-style: none;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 #social-links li a.stackoverflow {
   background: url("../img/stackoverflow-logo.svg");
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   border-style: none;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 #social-links a {
@@ -590,6 +586,26 @@ ul.post-list li.post-element {
 #main-space p .image-url:link,
 #main-space p .image-url {
   border-bottom: none;
+}
+
+#main-space h3.check-on-blog {
+  background: rgb(0,0,0); 
+  color: rgb(255,255,255); 
+  opacity: 0.8; 
+  padding-left: 10px; 
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  letter-spacing: 3px; 
+  font-size: 12px; 
+  border-radius: 2px; 
+  text-transform: uppercase;
+  text-shadow: 0 2px rgba(255,255,255,0.1);
+}
+
+#main-space h3.check-on-blog a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 0;
 }
 
 @media screen and (max-width:560px) {

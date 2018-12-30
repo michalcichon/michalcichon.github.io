@@ -19,3 +19,29 @@ layout: default
     <li><a class="linkedin" href="https://www.linkedin.com/in/michalcichon" title="LinkedIn"><span>michalcichon</span></a></li>
   </ul>
 </div>
+
+<h3 class="check-on-blog">
+  <a href="blog">Check on my blog:</a>
+</h3>
+
+<div class="blog">
+  <ul class="post-list">
+    {% assign post = site.posts | first %}
+      <li class="post-element">
+        {% if post.thumbnail %}
+          <a class="link-around-image" {% if post.background %}style="background-color: {{post.background}}"{% endif %} href="{{ post.url | relative_url }}"><img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt=""></a>
+          {% else %}
+          <a class="link-around-image thumbnail-default-background" href="{{ post.url | relative_url }}"><img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/default.png" alt=""></a>
+        {% endif %}
+        
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <a class="no-decoration" href="{{ post.url | relative_url }}"><p class="post-description">{{post.description}}</p></a>
+      </li>
+      <li style="clear: both; height: 10px;"></li>
+  </ul>
+</div>
