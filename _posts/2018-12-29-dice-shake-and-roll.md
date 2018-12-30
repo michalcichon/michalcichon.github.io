@@ -6,6 +6,7 @@ date:   2018-12-29 10:44:00 +0200
 categories: tools
 keywords: dice, roll the dice, shake and roll
 thumbnail: apple.png
+image: "assets/thumbnails/apple.png" # Image for RSS
 background: "#000000"
 published: false
 ---

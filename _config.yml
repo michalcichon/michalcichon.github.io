@@ -18,8 +18,8 @@ author: Michał Cichoń
 description: Personal webpage of Michał Cichoń - iOS software developer from Kraków, Poland. Development of Objective-C and Swift iPad and iPhone applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: michal_cichon
+github_username:  michalcichon
 keywords: Michal, Cichon, Krakow, iOS, CocoaTouch
 
 # Build settings
