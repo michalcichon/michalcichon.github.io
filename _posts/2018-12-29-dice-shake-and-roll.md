@@ -8,7 +8,7 @@ keywords: dice, roll the dice, shake and roll
 thumbnail: apple.png
 image: "assets/thumbnails/apple.png" # Image for RSS
 background: "#000000"
-published: false
+published: true
 ---
 
 I have my own App Store Connect account since 2016 but I used to use it as my playground and testing environment. Sometimes I used this account to prepare test builds for my clients, but most of the time it was quite empty and abandoned. Now I decided to change it so I started to work on some side projects this year. One of them is Dice.
@@ -30,3 +30,6 @@ My goals could be listed as follows:
 - 100% Swift
 
 You can find **Dice: shake and roll** on App Store.
+\\
+\\
+[![Dice: shake and roll]({{site.url}}/assets/appstore-badge.png)](https://itunes.apple.com/us/app/dice-shake-and-roll/id1447906909?ls=1&mt=8)

@@ -589,15 +589,15 @@ ul.post-list li.post-element {
 }
 
 #main-space h3.check-on-blog {
-  background: rgb(0,0,0); 
+  background: rgb(111,111,111); 
   color: rgb(255,255,255); 
-  opacity: 0.8; 
+  /*opacity: 0.6; */
   padding-left: 10px; 
-  padding-top: 2px; 
-  padding-bottom: 2px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
   letter-spacing: 3px; 
-  font-size: 12px; 
-  border-radius: 2px; 
+  font-size: 14px; 
+  border-radius: 10px; 
   text-transform: uppercase;
   text-shadow: 0 2px rgba(255,255,255,0.1);
 }
@@ -615,6 +615,10 @@ ul.post-list li.post-element {
 
   .post-list .post-element .post-meta { 
     float: none;
+  }
+
+  #social-links li {
+    margin-right: 16px;
   }
 }
 
