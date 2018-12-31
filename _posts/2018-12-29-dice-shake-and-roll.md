@@ -17,7 +17,7 @@ I have my own App Store Connect account since 2016 but I used to use it as my pl
 
 **Simplest app on the Earth**
 
-In the first iteration I wanted to keep the design of the app as simple as posible. It has only a toggle to choose single or double dice mode. I wanted to avoid designing complex UI for choosing between variaty of different configurations, die types, rules etc. It should be simple as a dice itself.
+In the first iteration I wanted to keep the design of the app as simple as posible. It has only a toggle to choose single or double dice mode. I wanted to avoid designing complex UI for choosing between variaty of different configurations, die types, rules etc. It should be simple as a die itself.
 
 My goals could be listed as follows:
 - Make the UX as simple as possible
@@ -25,11 +25,11 @@ My goals could be listed as follows:
 - Continuous experience: toggle state should be persisted, so if someone kills the app or something unexpected happens it should start as it was before
 - Available in more than 6 languages (especially in English, Polish, Slovak, Ukrainian, Czech and Russian)
 - Keep it easy to extend: it should be easy to add new functionalities etc.
-- Persist as many statistics as possible to reuse them in next iterations
-- Nice architecture: the app is simple and was developed in hours (not days, weeks or months) but I wanted do this right anyways (BTW I chose the MVVM... And ehm, it has no so many models actually... 😅)
+- Persist as many statistics as possible to reuse them in the next iterations
+- Nice architecture: the app is simple and was developed in hours (not days, weeks or months) but I wanted to do this right anyways (BTW I chose the MVVM... And ehm, it has no so many models actually... 😅)
 - 100% Swift
 
-You can find **Dice: shake and roll** on App Store.
+You can find **Dice: shake and roll** on the App Store.
 \\
 \\
 [![Dice: shake and roll]({{site.url}}/assets/appstore-badge.png)](https://itunes.apple.com/us/app/dice-shake-and-roll/id1447906909?ls=1&mt=8)
