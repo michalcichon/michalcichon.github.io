@@ -3,7 +3,7 @@ layout: post
 title:  "Dice: shake and roll"
 description: "Finally I have published my own app in the App Store. It's a very simple app to simulate a die."
 date:   2018-12-29 10:44:00 +0200
-categories: tools
+categories: ios
 keywords: dice, roll the dice, shake and roll
 thumbnail: apple.png
 image: "assets/thumbnails/apple.png" # Image for RSS
