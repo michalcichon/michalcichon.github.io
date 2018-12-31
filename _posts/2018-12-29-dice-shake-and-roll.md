@@ -32,4 +32,4 @@ My goals could be listed as follows:
 You can find **Dice: shake and roll** on the App Store.
 \\
 \\
-[![Dice: shake and roll]({{site.url}}/assets/appstore-badge.png)](https://itunes.apple.com/us/app/dice-shake-and-roll/id1447906909?ls=1&mt=8)
+[![Dice: shake and roll]({{site.url}}/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://itunes.apple.com/us/app/dice-shake-and-roll/id1447906909?ls=1&mt=8)
