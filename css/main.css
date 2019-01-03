@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, /*ul, li*/,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -591,8 +591,7 @@ ul.post-list li.post-element {
 
 #main-space h3.check-on-blog {
   background: #700; 
-  color: rgb(255,255,255); 
-  /*opacity: 0.6; */
+  color: rgb(255,255,255);
   padding-left: 11px; 
   padding-top: 3px; 
   padding-bottom: 3px; 
