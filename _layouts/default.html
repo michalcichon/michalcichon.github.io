@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="{{site.baseurl}}/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="{{site.description}}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="https://michalcichon.github.io{{page.url}}">
     <meta property="og:image" content="https://michalcichon.github.io/img/michal.jpeg">
     <meta property="profile:first_name" content="Michał">
