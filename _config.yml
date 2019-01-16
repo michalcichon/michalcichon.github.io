@@ -17,7 +17,7 @@ title: Michał Cichoń · iOS Software Engineer
 author: Michał Cichoń
 description: Personal webpage of Michał Cichoń - an iOS Software Engineer from Kraków, Poland. I develop iOS apps in Objective-C and Swift.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://michalcichon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: michal_cichon
 github_username:  michalcichon
 keywords: Michal, Cichon, Krakow, iOS, CocoaTouch
