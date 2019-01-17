@@ -313,6 +313,12 @@ html, body {
     border-bottom: 1px solid #eee;
 }
 
+#main-space article a,
+#main-space article a:hover,
+#main-space article a:active {
+  font-weight: bold;
+}
+
 #main-space .blog a:active {
     border-bottom: none;
 }
