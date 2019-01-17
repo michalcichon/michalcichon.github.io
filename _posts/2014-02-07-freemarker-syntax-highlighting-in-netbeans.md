@@ -8,11 +8,11 @@ keywords: syntax, netbeans, lexer
 comments: true
 ---
 
-Installing Freemarker support for NetBeans was quite complicated. Unfortunately the official Freemarker's website pointed me to a wrong plugin.
+Installing **Freemarker** support for NetBeans was quite complicated when I did it for the first time. Unfortunately the official Freemarker's website pointed me to a wrong plugin.
 
-To install Freemarker syntax highlighter, first install plugin called "Lexer to NetBeans Bridge". You can find it here: [Lexer to NetBeans Bridges][lexer].
+To have Freemarker syntax highlighter correctly configured, you should first install a plugin called "Lexer to NetBeans Bridge". You can find it here: [Lexer to NetBeans Bridges][lexer].
 
-Then you can install plugin named "Freemarker NetBeans Plugin" available here: [Plugin][plugin]
+Then you install plugin named "Freemarker NetBeans Plugin" available here: [Plugin][plugin]
 
 ![Make sure you have these files downloaded.]({{site.url}}/assets/2014-02-07/netbeans1.png)
 
@@ -29,7 +29,7 @@ Then you can install plugin named "Freemarker NetBeans Plugin" available here: [
 {:.image-caption}
 *Now it looks just fine.*
 
-After the installation make sure you don't have other Freemarker plugins installed. They can cause problems.
+After the installation process ends make sure you don't have other Freemarker plugins installed. They can cause some problems, so in my case I had to make a quick cleanup after installing those plugins.
 
 [lexer]: http://bits.netbeans.org/maven2/org/netbeans/modules/org-netbeans-modules-lexer-nbbridge/RELEASE71/
 

@@ -12,7 +12,7 @@ Sometimes we need a tunnel to pass our internet traffic trough some external ser
 
 **Creating SSH Tunnel in PuTTY**
 
-First thing we need to do is creating connection. Open PuTTY and configure your connection providing host address and port number. For SSH we use port 22.
+First thing we need to do is creating connection. Open PuTTY and configure your connection providing host address and port number. For SSH we use port `22`.
 
 ![Step 1]({{site.url}}/assets/2014-03-20/tunnel-1.jpg)
 
@@ -20,7 +20,7 @@ Go to *Connection → SSH → Tunnels* option in the tree view (left panel).
 
 ![Step 2]({{site.url}}/assets/2014-03-20/tunnel-7.png)
 
-Now we need to do as follows: choose *Dynamic*, fill in the source port (for example 9999, but feel free to use any available port) and click *Add* button. Now it should be something in format D{PORT_NUMBER} on the list above. Click on *Open*.
+Now we need to do as follows: choose *Dynamic*, fill in the source port (for example `9999`, but feel free to use any available port) and click *Add* button. Now it should be something in format `D{PORT_NUMBER}` on the list above. Click on **Open**.
 
 Next, log in to your server as usual:
 
@@ -30,20 +30,20 @@ Since now we have our own proxy server on *127.0.0.1:9999*.
 
 **Using a tunnel in Google Chrome**
 
-It's the time for the crucial part of the configuration. We need to configure proxy in Chrome. It is not intuitive because when we want to set it in Chrome by Chrome's setting, it gives Control Panel opened on Networking configuration. We don't want to change configuration for the whole PC but only for Chrome browser so we need to do this other way.
+It's the time for the crucial part of the configuration. We need to configure proxy in Chrome. It is not intuitive because when we want to set it in Chrome by Chrome's setting, it gives Control Panel opened on Networking configuration. We don't want to change the configuration of the whole PC but only for Chrome browser so we need to do this other way.
 
 In Firefox we have a nice configuration manager where we can choose proxy server for Firefox only but there is no such thing in Chrome. The solution is using parameters when we start the browser. We could provide them by the command prompt by going to Google Chrome location and execute:
 
-`chrome.exe --proxy-server="socks5://127.0.0.1:9999"`
+```
+chrome.exe --proxy-server="socks5://127.0.0.1:9999"
+```
 
-But using Windows shortcuts is much easier. Just copy your Chrome shortcut to Desktop and change its name to something like *Chrome - tunneled*. Right click on it and choose `Properties` from the menu  (I have Polish version of Windows so it's `Właściwości` on my PC).
+But using Windows **shortcuts** is much easier. Just copy your Chrome shortcut to Desktop and change its name to something like *Chrome - tunneled*. Right click on it and choose `Properties` from the menu  (I have Polish version of Windows so it's `Właściwości` on my PC).
 
 ![Step 4]({{site.url}}/assets/2014-03-20/tunnel-5.png)
 
-Now just provide parameters in the Setting window and click on *OK*.
+Now just provide parameters in the Setting window as in the screenshot below and click on the **OK** button.
 
 ![Step 5]({{site.url}}/assets/2014-03-20/tunnel-6.png)
 
-Make sure you have provided the correct port number. I used *9999* but you can use whatever you want but use the same in the PuTTY's and Chrome's configuration.
-
-Now you should have your tunnel set up correctly.
+Make sure you have provided the correct port number. I used `9999` but you can use whatever you want. All that counts is to use the same in the PuTTY's and Chrome's configurations.

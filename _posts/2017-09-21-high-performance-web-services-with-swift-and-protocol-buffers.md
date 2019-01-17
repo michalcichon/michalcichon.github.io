@@ -11,7 +11,7 @@ background: "#f05138"
 comments: true
 ---
 
-In the Codete Blog website you can find my new article about implementing webservices in Swift.
+On the Codete Blog website you can find my new article about implementing **webservices in Swift**.
 
 
 > (...) Usually, when designing communication between a server and an iOS application, we choose JSON as a default serialization method. It has a lot of advantages: readability, flexibility and good availability of serializers in the majority of most popular web technologies used. \\
