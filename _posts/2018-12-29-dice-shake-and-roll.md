@@ -9,13 +9,14 @@ thumbnail: apple.png
 image: "assets/thumbnails/apple.png" # Image for RSS
 background: "#000000"
 published: true
+comments: true
 ---
 
 I have my own App Store Connect account since 2016 but I used to use it as my playground and testing environment. Sometimes I used this account to prepare test builds for my clients, but most of the time it was quite empty and abandoned. Now I decided to change it so I started to work on some side projects this year. One of them is Dice.
 
 ![Dice: shake and roll]({{site.url}}/assets/2018-12-29/dice.png)
 
-**Simplest app on the Earth**
+**The simplest app on the Earth**
 
 In the first iteration I wanted to keep the design of the app as simple as posible. It has only a toggle to choose single or double dice mode. I wanted to avoid designing complex UI for choosing between variaty of different configurations, die types, rules etc. It should be simple as a die itself.
 

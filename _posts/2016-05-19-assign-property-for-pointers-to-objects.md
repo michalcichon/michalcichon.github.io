@@ -8,11 +8,14 @@ keywords: xcode, assign, weak property
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
 background: "#d74d00"
+comments: true
 ---
 
 When upgrading Xcode to 7.3.1 I got a lot of errors from libraries I use in one of my older project.
 
-`Declaration uses __weak, but ARC is disabled`
+```
+Declaration uses __weak, but ARC is disabled`
+```
 
 It's a standard error if we are using MRR libraries with weak references in ARC project, so it can be fixed pretty easy. I set **Weak References** in Manual Retain Release to YES in my project and CocoaPods configuration and I expected the error to be solved, but unfortunately the new one appeared. 😅
 

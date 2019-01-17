@@ -8,6 +8,7 @@ keywords: swift, protobuf, gatling
 thumbnail: swift.png
 image: "assets/thumbnails/swift.png" # Image for RSS
 background: "#f05138"
+comments: true
 ---
 
 In the Codete Blog website you can find my new article about implementing webservices in Swift.
