@@ -490,7 +490,7 @@ p {
 
 #main-space article p,
 #main-space article ul li {
-  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 #main-space p.post-meta { 
@@ -526,7 +526,7 @@ ul.post-list li.post-element {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 120px;
-  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 #main-space-content .post-list a.no-decoration {
