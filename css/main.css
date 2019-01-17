@@ -557,6 +557,12 @@ ul.post-list li.post-element {
   margin-bottom: 20px;
 }
 
+.main-separator {
+  font-size: 200%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
 
 #main-space .small-navigation-button {
   font-size: 70%;
