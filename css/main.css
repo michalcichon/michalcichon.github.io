@@ -488,14 +488,15 @@ p {
   font-style: italic;
 }
 
-#main-space article p {
+#main-space article p,
+#main-space article ul li {
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
-.post-meta { 
-  font-size: 14px; 
+#main-space p.post-meta { 
+  font-size: 14px;
   color: #828282; 
-  
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
 .post-list .post-element .post-meta {
@@ -654,6 +655,10 @@ blockquote {
   letter-spacing: -1px; 
   font-style: italic; 
   margin-left: 20px;
+}
+
+blockquote p {
+  text-align: left;
 }
 
 blockquote > :last-child { 
