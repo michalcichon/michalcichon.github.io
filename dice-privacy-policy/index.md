@@ -11,6 +11,7 @@ layout: default
 - [Política de privacidad en español](es.html)
 - [Tietosuojakäytäntö suomeksi](fi.html)
 - [Politique de confidentialité en français](fr.html)
+- [Adatvédelmi irányelvek magyarul](hu.html)
 - [Informativa sulla privacy in italiano](it.html)
 - [Politica de confidențialitate în românește](ro.html)
 - [Политика конфиденциальности на русском языке](ru.html)
