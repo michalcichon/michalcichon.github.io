@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Ukrainian)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Ukrainian)
 
 Michal Cichon побудував Dice: тремтіння і рол додаток як безкоштовний додаток. Ця послуга надається компанією Michal Cichon на безоплатній основі і призначена для використання як є.
 

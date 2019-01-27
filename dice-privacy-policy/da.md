@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Danish)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Danish)
 
 Michal Cichon byggede *Terninger: tryk eller ryste* app som en gratis app. Denne SERVICE leveres af Michal Cichon uden omkostninger og er beregnet til brug som det er.
 

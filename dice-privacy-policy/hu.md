@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Hungarian)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Hungarian)
 
 Michal Cichon építette a *Dobókocka* alkalmazást ingyenes alkalmazásként. Ezt a szervizt a Michal Cichon biztosítja, és ingyenesen használható.
 
@@ -10,7 +9,7 @@ Ez az oldal arra szolgál, hogy tájékoztassa a látogatókat a Személyes adat
 
 Ha úgy dönt, hogy a szolgáltatásomat használja, akkor beleegyezik abba, hogy összegyűjti és felhasználja az ezen irányelvhez kapcsolódó információkat. Az általam gyűjtött személyes adatokat a Szolgáltatás nyújtására és javítására használják. Nem fogom használni vagy megosztani az Ön adatait senkivel, kivéve az Adatvédelmi irányelvekben leírtakat.
 
-Az Adatvédelmi Szabályzatban használt kifejezések jelentése ugyanaz, mint az Általános Szerződési Feltételekben, amely a * Dice: shake és roll * címen érhető el, kivéve, ha az Adatvédelmi Szabályzat másként határozza meg.
+Az Adatvédelmi Szabályzatban használt kifejezések jelentése ugyanaz, mint az Általános Szerződési Feltételekben, amely a *Dobókocka* címen érhető el, kivéve, ha az Adatvédelmi Szabályzat másként határozza meg.
 
 **Információgyűjtés és használat**
 

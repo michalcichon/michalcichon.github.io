@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Spanish)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Spanish)
 
 Michal Cichon creó la aplicación *Dado: toca o sacude* como una aplicación gratuita. Este SERVICIO es provisto por Michal Cichon sin costo y está diseñado para ser utilizado tal como es.
 

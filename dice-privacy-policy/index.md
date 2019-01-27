@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: roll and shake"
 ---
-
-## Privacy Policy of Dice: roll and shake
 
 - [Privacy Policy in English](en.html)
 - [Polityka prywatności po polsku](pl.html)

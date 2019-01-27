@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (French)"
 ---
-
-## Privacy Policy of Dice: shake and roll (French)
 
 Michal Cichon a créé l'application *Dé: appuyez ou secouez* en tant qu'application gratuite. Ce SERVICE est fourni gratuitement par Michal Cichon et est destiné à être utilisé tel quel.
 

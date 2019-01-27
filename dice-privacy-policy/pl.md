@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Polish)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Polish)
 
 Michał Cichoń zbudował aplikację *Kostka* jako darmową aplikację. Usługa ta jest świadczona przez Michała Cichona bez żadnych opłat i jest przeznaczona do użytku w takim stanie.
 

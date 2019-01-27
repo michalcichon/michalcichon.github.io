@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+title: "Privacy Policy of Dice: shake and roll (Czech)"
 ---
-
-## Privacy Policy of Dice: shake and roll (Czech)
 
 Michal Cichon vytvořil aplikaci *Kostky* jako bezplatnou aplikaci. Tato služba je bezplatně poskytována společností Michal Cichon a je určena k použití jako taková.
 
