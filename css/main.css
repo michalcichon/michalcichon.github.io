@@ -611,21 +611,25 @@ ul.post-list li.post-element {
 #main-space h3.check-on-blog {
   background: #58099a; 
   color: rgb(255,255,255);
-  padding-left: 11px; 
+  padding-left: 20px; 
   padding-top: 20px; 
   padding-bottom: 3px; 
   letter-spacing: 3px; 
   font-size: 17px;
   text-transform: uppercase;
   text-shadow: 1px 2px #000;
-  border-bottom: 1px solid #000;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 #main-space h3.check-on-blog a {
   text-decoration: none;
   color: #fff;
   border: 0;
+}
+
+#blog-on-main {
+  border: 5px solid #58099a;
+  padding: 15px;
 }
 
 #disqus_thread {
