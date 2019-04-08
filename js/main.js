@@ -1,11 +1,5 @@
 var menuScrollPosition = 0;
 
-
-var isScrolling;
-
-
-
-
 function getScrollPosition() {
     return window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
 }
@@ -40,16 +34,6 @@ var readyStateCheckInterval = setInterval(function() {
         init();
     }
 }, 10);
-
-// window.addEventListener('scroll', function ( event ) {
-// 	window.clearTimeout( isScrolling );
-// 	isScrolling = setTimeout(function() {
-//         var scroll = getScrollPosition()
-//         if (Math.abs(scroll - menuScrollPosition) > 200) {
-//             closeMenuIfOpened();
-//         }
-// 	}, 66);
-// }, false);
 
 window.addEventListener("scroll", function (event) {
     var scroll = getScrollPosition()
