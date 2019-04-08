@@ -279,7 +279,7 @@ html, body {
 /* unvisited link */
 #main-space a:link,
 #main-space a:visited {
-    color: #555;
+    color: #58099a;
     text-decoration: none;
     border-bottom: 1px solid #eee;
 }
@@ -591,6 +591,51 @@ ul.post-list li.post-element {
   border-bottom: 1px solid #555;
 }
 
+/* Bigger Navigation Button */
+
+#main-space .bigger-navigation-button {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#main-space .bigger-navigation-button a {
+  display: inline-block;
+  background-color: #58099a;
+  padding: 5px 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+#main-space .bigger-navigation-button a:link,
+#main-space .bigger-navigation-button a:visited {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+#main-space .bigger-navigation-button a:hover {
+  color: #fff;
+  background-color: #4b0783;
+  text-decoration: none;
+}
+
+#main-space .green a {
+  background-color: #00721e;
+}
+
+#main-space .green a:link,
+#main-space .green a:visited {
+  background-color: #00721e;
+}
+
+#main-space .green a:hover {
+  background-color: #015e1a;
+}
+
+/**/
+
 #main-space p .image-url img {
   height: 50px;
   display: inline-block;
@@ -630,6 +675,10 @@ ul.post-list li.post-element {
 #blog-on-main {
   padding: 20px;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
+#blog-on-main ul {
+  margin-bottom: 0;
 }
 
 #disqus_thread {
