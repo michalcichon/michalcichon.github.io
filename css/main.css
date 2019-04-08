@@ -672,9 +672,12 @@ ul.post-list li.post-element {
   border: 0;
 }
 
+#blog-on-main-wrapper {
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
 #blog-on-main {
   padding: 20px;
-  box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
 }
 
 #blog-on-main ul {
