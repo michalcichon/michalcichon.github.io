@@ -366,10 +366,6 @@ p {
   margin-right: 0;
 }
 
-#social-links li span {
-  display: none;
-}
-
 #social-links li a {
   filter: none;
   border-style: none;
@@ -436,7 +432,6 @@ p {
 #social-links li span {
   line-height: 40px;
   font-size: 100%;
-  margin-left: 50px;
 }
 
 .technologies {
@@ -811,3 +806,52 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+/* Tooltip */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (max-width:560px) {
+  .tooltiptext {
+    display: none;
+  }
+}
