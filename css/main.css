@@ -171,6 +171,7 @@ html, body {
     top: 60px;
     margin-right: 10px;
     border-radius: 5px;
+    z-index: 1;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
   }
