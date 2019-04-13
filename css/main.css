@@ -429,11 +429,6 @@ p {
   text-decoration: none;
 }
 
-#social-links li span {
-  line-height: 40px;
-  font-size: 100%;
-}
-
 .technologies {
   text-align: center;
   margin-top: 30px;
@@ -590,7 +585,6 @@ ul.post-list li.post-element {
 
 #main-space .bigger-navigation-button {
   font-size: 100%;
-  font-weight: bold;
   text-align: right;
   margin-bottom: 0;
   margin-top: 0;
@@ -599,7 +593,7 @@ ul.post-list li.post-element {
 #main-space .bigger-navigation-button a {
   display: inline-block;
   background-color: #58099a;
-  padding: 5px 12px;
+  padding: 5px 15px;
   border-radius: 2px;
   text-transform: uppercase;
 }
@@ -818,20 +812,23 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 90px;
   background-color: black;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  border-radius: 3px;
+  padding: 5px 0 3px 0;
+  font-size: 11px;
+  text-shadow: 0 1px rgb(20, 20, 20);
   
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -45px;
   margin-top: 10px;
+  opacity: 0.9;
 }
 
 .tooltip .tooltiptext::after {
