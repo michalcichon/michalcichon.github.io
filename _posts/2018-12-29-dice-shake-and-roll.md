@@ -5,6 +5,7 @@ description: "Finally I have published my own app in the App Store. It's a very 
 date:   2018-12-29 10:44:00 +0200
 categories: ios
 keywords: dice, roll the dice, shake and roll
+tags: ios
 thumbnail: apple.png
 image: "assets/thumbnails/apple.png" # Image for RSS
 background: "#000000"

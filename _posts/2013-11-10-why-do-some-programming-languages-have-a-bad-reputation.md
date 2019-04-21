@@ -5,6 +5,7 @@ description: "PHP, Ruby, Java. Why do some languages are recognized as less prof
 date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
+tags: php programming
 comments: true
 ---
 

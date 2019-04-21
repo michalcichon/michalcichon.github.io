@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -13,6 +14,12 @@ layout: default
       {% if page.author %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}</p>
+      <div class="tags">
+        {% for tag in page.tags %}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a href="/tag/{{ tag_name }}"><span class="highligher-rouge"><nobr>#{{ tag_name }}</nobr></span></a>
+        {% endfor %}
+      </div>
   </header>
 
   <div class="post-content" itemprop="articleBody">

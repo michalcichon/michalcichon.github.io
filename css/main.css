@@ -702,6 +702,45 @@ ul.post-list li.post-element {
   }
 }
 
+/* Tags */
+
+.tag-page a {
+  font-weight: bold;
+}
+
+.tags {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background-color: rgba(100,100,100,0.1);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.tags span:hover {
+  background-color: rgb(100,150,150,0.4);
+}
+
+#main-space .tags a,
+#main-space .tags a:hover,
+#main-space .tags a:link,
+#main-space .tags a:visited {
+  text-decoration: none;
+  border: 0;
+  color: black;
+  font-weight: normal;
+  font-size: 80%;
+}
+
+#main-space .tag-page a:hover {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
+
 /* Highlighting */
 
 /** Blockquotes */
