@@ -704,6 +704,10 @@ ul.post-list li.post-element {
 
 /* Tags */
 
+.tag-page {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
 .tag-page a {
   font-weight: bold;
 }
@@ -749,13 +753,15 @@ blockquote {
   border-left: 4px solid #e8e8e8; 
   padding-left: 15px; 
   font-size: 18px; 
-  letter-spacing: -1px; 
+  letter-spacing: 1px; 
   font-style: italic; 
   margin-left: 20px;
+  font-weight: 200;
 }
 
 blockquote p {
   text-align: left;
+  color: #828282;
 }
 
 blockquote > :last-child { 
