@@ -5,6 +5,7 @@ description: "I will show you how to configure a simple SSH tunnel with PuTTY an
 date:   2014-03-20 10:09:00 +0200
 categories: tools
 keywords: ssh, tunneling, ssh-tunneling
+tags: tools
 comments: true
 ---
 

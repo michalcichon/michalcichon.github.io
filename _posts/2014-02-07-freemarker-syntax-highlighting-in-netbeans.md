@@ -5,6 +5,7 @@ description: "NetBeans is one of the best IDE for Java, but configuring it with 
 date:   2014-02-07 10:09:00 +0200
 categories: tools
 keywords: syntax, netbeans, lexer
+tags: programming
 comments: true
 ---
 
