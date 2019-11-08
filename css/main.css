@@ -645,10 +645,11 @@ ul.post-list li.post-element {
 
 #main-space h3.check-on-blog {
   background: #58099a; 
+  background-image: linear-gradient(#58099a, #3e0c67);
   color: rgb(255,255,255);
   padding-left: 20px; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
+  padding-top: 6px; 
+  padding-bottom: 6px; 
   letter-spacing: 3px; 
   font-size: 17px;
   text-transform: uppercase;
