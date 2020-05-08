@@ -5,7 +5,7 @@ description: "Easier way to transform crash logs into more readable form on a lo
 date:   2020-03-18 09:00:00 +0200
 categories: ios
 keywords: crash logs
-tags: ios crash-logs
+tags: ios tools
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
 background: "#d74d00"
