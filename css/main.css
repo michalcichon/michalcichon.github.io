@@ -219,7 +219,7 @@ html, body {
   }
 
   .thumbnail-default-background {
-    background-color: #00721e;
+    background-color: #3d1e6d;
   }
 }
 
@@ -482,6 +482,11 @@ p {
 #main-space article p,
 #main-space article ul li {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#main-space article .post-content h1,
+#main-space article .post-content h2 {
+  text-align: left;
 }
 
 #main-space p.post-meta { 
