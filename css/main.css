@@ -61,11 +61,11 @@ html, body {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -120px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -160px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-  height: 120px;  /*.push must be the same height as .footer */
+  height: 160px;  /*.push must be the same height as .footer */
 }
 
 #menu-button {
@@ -460,13 +460,46 @@ p {
   background-color: #000000;
 }
 
+#footer .footer-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 #footer p {
-  padding: 52px 26px 0 26px;
+  padding: 60px 0 0 0;
   font-family: 'Roboto';
   font-size: 80%;
   color: #eee;
   text-align: center;
   text-shadow: 0px 1px rgba(255,255,255,0.1);
+}
+
+#footer .footer-logo  {
+  filter: invert(100%);
+}
+
+#footer .left {
+  float: left;
+}
+
+#footer .right {
+  float: right;
+}
+
+#footer a {
+  position: relative;
+  display: inline-block;
+}
+
+#footer a:after {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  width: 20px;
+  height: 20px;
 }
 
 /* Posts */
@@ -669,6 +702,7 @@ ul.post-list li.post-element {
 }
 
 #blog-on-main-wrapper {
+  margin-top: 20px;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,-1), 0 6px 20px 0 rgba(0,0,0,0.1);
 }
 
