@@ -58,38 +58,39 @@
       <div class="push"></div>
     </div>
     <div id="footer" class="footer">
-      <div class="footer-wrapper">
-        <div class="left">
-          <p>{{site.author}} &copy; <span id="currentYear">{{ site.time | date: '%Y' }}</span></p>
+      <div class="footer-outer-wrapper">
+        <div class="footer-wrapper">
+          <div class="left">
+            <p>{{site.author}} &copy; <span id="currentYear">{{ site.time | date: '%Y' }}</span></p>
+          </div>
+          <div class="right">
+            <p>
+              <a href="https://twitter.com/michal_cichon">
+                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/twitter-logo.svg" width="20" height="20">
+                  Twitter
+                </object>
+              </a>
+              &nbsp;
+              <a href="https://github.com/michalcichon">
+                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/github-logo.svg" width="20" height="20">
+                  GitHub
+                </object>
+              </a>
+              &nbsp;
+              <a href="https://stackoverflow.com/users/2579827/michal-cichon">
+                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/stackoverflow-logo.svg" width="20" height="20">
+                  Stack Overflow
+                </object>
+              </a>
+              &nbsp;
+              <a href="https://www.linkedin.com/in/michalcichon">
+                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/linkedin-logo.svg" width="20" height="20">
+                  LinkedIn
+                </object>
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="right">
-          <p>
-            <a href="https://twitter.com/michal_cichon">
-              <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/twitter-logo.svg" width="20" height="20">
-                Twitter
-              </object>
-            </a>
-            &nbsp;
-            <a href="https://github.com/michalcichon">
-              <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/github-logo.svg" width="20" height="20">
-                GitHub
-              </object>
-            </a>
-            &nbsp;
-            <a href="https://stackoverflow.com/users/2579827/michal-cichon">
-              <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/stackoverflow-logo.svg" width="20" height="20">
-                Stack Overflow
-              </object>
-            </a>
-            &nbsp;
-            <a href="https://www.linkedin.com/in/michalcichon">
-              <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/linkedin-logo.svg" width="20" height="20">
-                LinkedIn
-              </object>
-            </a>
-          </p>
-        </div>
-        
       </div>
     </div>
   </body>
