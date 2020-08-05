@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Freemarker syntax highlighting in NetBeans"
-description: "NetBeans is one of the best IDE for Java, but configuring it with Freemarker can be painful"
+description: "Installing Freemarker support for NetBeans was quite complicated when I did it for the first time. Unfortunately the official Freemarker's website pointed me to a wrong plugin."
 date:   2014-02-07 10:09:00 +0200
 categories: tools
 keywords: syntax, netbeans, lexer
