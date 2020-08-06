@@ -15,7 +15,7 @@ On my daily basis I use a lot of different tools which I believe boost my produc
 
 ![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.png)
 
-[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is a definitelly a huge boost when I use Terminal. I am not a super user of Unix nevertheless I feel the difference and there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
+[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is a definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference and there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
 
 **Zsh** is available by default on macOS and it is easy to change the default shell with the following command.
 
@@ -23,25 +23,34 @@ On my daily basis I use a lot of different tools which I believe boost my produc
 chsh -s /bin/zsh
 ```
 
-Installing **Oh My Zsh** is also easy and the one-line command that is used to fetch and run the instalation script is available on [their website](https://ohmyz.sh).
+Installing **Oh My Zsh** is also easy and the one-line command used to fetch and run the instalation script is available on [their website](https://ohmyz.sh).
 
 # iTerm, vim and aliases
 
 ![My Vim setup]({{site.url}}/assets/2020-02-17/vim.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan aliquam nibh ut semper. Vivamus nec est id sem maximus aliquam. Aenean eu tortor leo. Sed sed tellus placerat, sollicitudin justo nec, lacinia metus. Donec cursus elementum posuere. Nam laoreet lorem tortor, quis semper odio tempor sed. Proin feugiat porttitor neque, quis tristique dui. Donec posuere, sapien at aliquet feugiat, tortor ex dictum ipsum, ac varius ipsum tortor a nisi. Cras lacinia sollicitudin neque nec pretium. In pellentesque, velit eget fringilla fermentum, metus sapien iaculis nisl, in ultrices lectus sem porta diam. Fusce sollicitudin lorem eu nisl consectetur vulputate. Duis accumsan augue non aliquet consectetur. Maecenas dignissim nulla sed felis sagittis consequat. Sed vitae sapien risus. Phasellus eu pharetra erat. Aenean dapibus ultrices justo ac mattis.
+Sometimes I need to modify files on a remote server. I use my own `.vim` configuration that I created by adjusting some example I found online. On mac I use [**iTerm2**](https://www.iterm2.com) which is, I believe, a nice replacement for the built-in macOS Terminal. It also gives some autocompletion features available by `⌘+;` shortcut, themes etc.
+
+As I abovementioned I'm not a unix power user so I utilize heavely on aliases. In my `.zshrc` you can find a lot of aliases like this one:
+
+```sh
+alias git-remove-issue-branches="git branch | grep \"issue/\" | xargs git branch -D"
+alias git-remove-orig-files="find . -name '*.orig' -delete"
+```
 
 # SourceTree and kdiff3
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.png)
 
-Proin convallis augue nunc, et dignissim nisl interdum id. Mauris tincidunt metus quis feugiat dignissim. Sed vitae suscipit libero. Proin et elit nec neque posuere elementum vitae eu dolor. Donec rutrum tellus eget tempor luctus. Suspendisse accumsan metus id turpis molestie hendrerit. In tempor lacinia gravida. Praesent non condimentum purus. Phasellus ac semper felis. Nam accumsan pretium arcu, quis scelerisque velit porttitor eget. Sed sit amet semper magna. Etiam aliquet lectus nisi, vel scelerisque orci rutrum sit amet. Morbi nec nisl mi. Aliquam ornare turpis et purus accumsan, non posuere urna dignissim.
+I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. Since I started using Git as it became more popular solution for distributed version control system, I have been still using SourceTree as my main tool for Git repositories.
+
+[**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts.
 
 # RescueTime
 
 ![Example of RescueTime report]({{site.url}}/assets/2020-02-17/rescuetime.png)
 
-Cras faucibus orci sem, mollis viverra libero lobortis ut. Ut at metus at nisl dapibus scelerisque. Vestibulum ut ultrices tellus. Quisque vulputate ornare diam eu tristique. Nunc non feugiat purus, a dignissim dolor. Mauris mattis laoreet leo quis bibendum. Donec a tellus tellus. In commodo eros vel elit pellentesque, at ornare quam mollis. Donec ultricies, erat vel pretium ornare, elit orci bibendum quam, sit amet hendrerit tortor mauris id nibh.
+[**RescueTime**](https://rescuetime.com) is a handy tool to keep focus ever day. I usually check my stats when I close my day so I can verify how much time I spend on real development work and I can decide if there is something to improve next day.
 
 # feedly
 
