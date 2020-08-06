@@ -42,9 +42,9 @@ alias git-remove-orig-files="find . -name '*.orig' -delete"
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.png)
 
-I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. Since I started using Git as it became more popular solution for distributed version control system, I have been still using SourceTree as my main tool for Git repositories.
+I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. When I started using Git as it became more popular solution for distributed version control system, I was still using SourceTree as my main tool for Git repositories.
 
-[**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts.
+[**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts. I like the way it allows to check base, local and remote changes on one screen. Simple and useful. 
 
 # RescueTime
 
@@ -56,10 +56,10 @@ I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since i
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/feedly.png)
 
-Cras ac dolor nec justo sollicitudin pretium sit amet sed ligula. Mauris odio metus, auctor elementum dapibus sit amet, aliquam sit amet enim. Aenean ut porta lectus. Fusce porttitor aliquam velit sit amet consectetur. Vivamus congue justo sit amet imperdiet luctus. Proin quis cursus mi, sit amet fringilla risus. Nam ultricies tincidunt lacinia. Nullam eu justo non elit semper tincidunt sed et massa. Fusce quis quam purus. Suspendisse hendrerit fringilla dolor ut porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sit amet mi imperdiet, hendrerit mauris sit amet, semper ex. In maximus metus vel massa aliquet pretium. Curabitur vitae nulla porta, lobortis elit nec, pellentesque sapien. Nunc luctus, turpis id fermentum dignissim, lorem risus placerat ipsum, accumsan dapibus dui mi vel felis. Ut sed ornare augue, in imperdiet lorem.
+Sometimes I need a few minutes to learn about what's happening in the world around me, but I don't like to waste my time searching for information or browsing news websites. That's why I subscribe to some RSS sources that I believe are worth reading. [**feedly**](https://feedly.com/) is a perfect tool to easily manage [RSS](https://en.wikipedia.org/wiki/RSS) I can recommend to everyone who is not afraid of ancient technology like RSS and wants to organize their news sources.
 
 # Basic unlined notebook
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/notebook.jpg)
 
-Cras ac dolor nec justo sollicitudin pretium sit amet sed ligula. Mauris odio metus, auctor elementum dapibus sit amet, aliquam sit amet enim. Aenean ut porta lectus. Fusce porttitor aliquam velit sit amet consectetur. Vivamus congue justo sit amet imperdiet luctus. Proin quis cursus mi, sit amet fringilla risus. Nam ultricies tincidunt lacinia. Nullam eu justo non elit semper tincidunt sed et massa. Fusce quis quam purus. Suspendisse hendrerit fringilla dolor ut porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sit amet mi imperdiet, hendrerit mauris sit amet, semper ex. In maximus metus vel massa aliquet pretium. Curabitur vitae nulla porta, lobortis elit nec, pellentesque sapien. Nunc luctus, turpis id fermentum dignissim, lorem risus placerat ipsum, accumsan dapibus dui mi vel felis. Ut sed ornare augue, in imperdiet lorem.
+The last and the most important tool I use every day is a plain, unlined notebook. I tried many todo apps, Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can't easily substitute. 
