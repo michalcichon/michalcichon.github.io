@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dice: shake and roll"
-description: "Finally I have published my own app in the App Store. It's a very simple app to simulate a die."
+description: "I have my own App Store Connect account since 2016 but I used to use it as my playground and testing environment. Sometimes I used this account to prepare test builds for my clients, but most of the time it was quite empty and abandoned. Now I decided to change it so I started to work on some side projects this year. One of them is Dice..."
 date:   2018-12-29 10:44:00 +0200
 categories: ios
 keywords: dice, roll the dice, shake and roll

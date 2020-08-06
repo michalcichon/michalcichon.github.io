@@ -338,7 +338,7 @@ h2 {
 
 p {
   font-size: 100%;
-  margin-top: 10px;
+  margin-bottom: 10px;
   color: #222;
   text-align: justify;
 }
@@ -528,6 +528,8 @@ p {
 #main-space article .post-content h1,
 #main-space article .post-content h2 {
   text-align: left;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 #main-space p.post-meta { 
@@ -830,6 +832,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .highlighter-rouge {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /** Syntax highlighting styles */

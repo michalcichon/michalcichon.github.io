@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why do some programming languages have a bad reputation?"
-description: "PHP, Ruby, Java. Why do some languages are recognized as less professional then others?"
+description: "If you look at standard PHP functions you will find that there is a horrible mess. There is no naming strategy, functions have different order of parameters, there are many functions that do the same work but exist in the same super big scope..."
 date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
@@ -15,7 +15,7 @@ Some years after my humble beginnings I learned PHP and started designing dynami
 
 Why do some languages have good and others have bad reputation? My first thought was that there are a lot of PHP programmers, everyone can code in it. If there are many beginners writing code in some language then we tend to think of that language as non-professional. There are even some languages which are particularly designed to teach programming like Pascal and almost nobody plans to write commercial programs in them. Of course we have good and complex applications written in Objective Pascal (or Delphi) but the growth of this kind of technologies is getting worst.
 
-The other thing is wrong language design. If you look at standard PHP functions you will find that there is a horrible mess. There is **no naming strategy**, functions have different order of parameters, there are many functions that do the same work but exist in the same super-big scope. The old rule says that when you have garbage in the input you get the same thing in the output. So the people who get messy language tend to don’t pay much attention to write good code. As in the old saying “The fish stinks from the head first”.
+The other thing is wrong language design. If you look at standard PHP functions you will find that there is a horrible mess. There is **no naming strategy**, functions have different order of parameters, there are many functions that do the same work but exist in the same super big scope. The old rule says that when you have garbage in the input you get the same thing in the output. So the people who get messy language tend to don’t pay much attention to write good code. As in the old saying “The fish stinks from the head first”.
 
 There is no problem to write good code in PHP, but programmers don’t get good support from the creators of the language to answer the questions about good practices. The similar problem was with **Perl** which allows programmers to write a code that do the same thing in many, many different ways. Larry Wall, the creator of Perl, prides himself on that saying “There’s more than one way to do it”. But in reality **it’s hard to find the only one best way of implementing**.
 
