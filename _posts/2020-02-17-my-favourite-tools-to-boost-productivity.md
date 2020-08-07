@@ -4,18 +4,18 @@ title:  "My favorite tools to boost productivity"
 description: "On my daily basis I use a lot of different tools which I believe boost my productivity. In this short article I would like to list them and give you a few words on why I choose to use them and how I benefit from using them."
 date:   2020-02-17 09:00:00 +0200
 categories: ios
-keywords: productivity zsh 
+keywords: productivity zsh iTerm2 vim RescueTime SourceTree kdiff3
 tags: tools
 comments: true
 ---
 
-On my daily basis I use a lot of different tools which I believe boost my productivity. In this short article I would like to list them and give you a few words on why I choose to use them and how I benefit from using them.
+On my daily basis I use a lot of different tools which I believe boost my productivity and make my life easier. In this short article I would like to list them and give you a few words on why I choose them and how I benefit from using them.
 
 # Zsh and Oh My Zsh
 
 ![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.png)
 
-[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is a definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference and there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
+[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference and to make things even better there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
 
 **Zsh** is available by default on macOS and it is easy to change the default shell with the following command.
 
