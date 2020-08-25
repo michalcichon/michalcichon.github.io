@@ -15,9 +15,9 @@ On my daily basis I use a lot of different tools which I believe boost my produc
 
 ![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.png)
 
-[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference and to make things even better there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
+[**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference, and additionally there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
 
-**Zsh** is available by default on macOS and it is easy to change the default shell with the following command.
+**Zsh** is available by default on macOS and it is very easy to change the default shell with the following command.
 
 ```bash
 chsh -s /bin/zsh
@@ -29,7 +29,7 @@ Installing **Oh My Zsh** is also easy and the one-line command used to fetch and
 
 ![My Vim setup]({{site.url}}/assets/2020-02-17/vim.png)
 
-Sometimes I need to modify files on a remote server. I use my own `.vim` configuration that I created by adjusting some example I found online. On mac I use [**iTerm2**](https://www.iterm2.com) which is, I believe, a nice replacement for the built-in macOS Terminal. It also gives some autocompletion features available by `⌘+;` shortcut, themes etc.
+Sometimes I need to modify files on a remote server. I use my own `.vim` configuration that I created by adjusting some example I found online. On mac I use [**iTerm2**](https://www.iterm2.com) which is, I believe, a good replacement for the built-in macOS Terminal. It also gives some autocompletion features available by `⌘+;` shortcut, themes etc.
 
 As I abovementioned I'm not a unix power user so I utilize heavely on aliases. In my `.zshrc` you can find a lot of aliases like this one:
 
@@ -38,13 +38,21 @@ alias git-remove-issue-branches="git branch | grep \"issue/\" | xargs git branch
 alias git-remove-orig-files="find . -name '*.orig' -delete"
 ```
 
+Using aliases frees me from having to remember all that long commands. It makes it easier to transfer my local alias definitions to external server or other machine.
+
 # SourceTree and kdiff3
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.png)
 
-I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. When I started using Git as it became more popular solution for distributed version control system, I was still using SourceTree as my main tool for Git repositories.
+I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. When I started using Git as it became a more popular solution for distributed version control system, I was still using SourceTree as my main tool for Git repositories.
 
-[**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts. I like the way it allows to check base, local and remote changes on one screen. Simple and useful. 
+[**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts. I like the way it allows to check base, local and remote changes on one screen. Simple and useful.
+
+# Charles
+
+![SourceTree]({{site.url}}/assets/2020-02-17/charles.png)
+
+[**Charles Proxy**](https://www.charlesproxy.com/) is an absolute must-have when we need to debug connection between clients apps and the backend. It creates a reverse proxy so it is possible to read or intercept and modify requests and responses. It allows to debug HTTP/HTTPS as well as WebSockets connections. Super handy tool I use almost every day.
 
 # RescueTime
 
@@ -62,4 +70,4 @@ Sometimes I need a few minutes to learn about what's happening in the world arou
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/notebook.jpg)
 
-The last and the most important tool I use every day is a plain, unlined notebook. I tried many todo apps, Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can't easily substitute. 
+The last and the most important tool I use every day is a plain, unlined notebook. I tried many todo apps, Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can't easily substitute.
