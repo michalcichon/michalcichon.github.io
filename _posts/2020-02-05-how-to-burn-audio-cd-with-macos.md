@@ -5,7 +5,7 @@ description: "Some of the CD players can't play MP3s but they accept only plain 
 date:   2020-02-05 10:00:00 +0200
 categories: ios
 keywords: macOS AudioCD
-tags: tools
+tags: tools miscellaneous
 published: true
 comments: true
 ---
