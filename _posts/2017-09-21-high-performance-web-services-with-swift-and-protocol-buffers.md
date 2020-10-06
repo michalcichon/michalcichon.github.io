@@ -14,6 +14,7 @@ comments: true
 
 On the Codete Blog website you can find my new article about implementing **webservices in Swift**.
 
+[![Codete Blog]({{site.url}}/assets/2017-09-21/blog.png)](https://codete.com/blog/high-performance-web-services-swift-protocol-buffers/)
 
 > (...) Usually, when designing communication between a server and an iOS application, we choose JSON as a default serialization method. It has a lot of advantages: readability, flexibility and good availability of serializers in the majority of most popular web technologies used. \\
 > In most cases it is sufficient to use JSON, but when we want to send a lot of data in one shot or our services generate a lot of traffic, it can be reasonable to replace JSON with a more efficient method.
