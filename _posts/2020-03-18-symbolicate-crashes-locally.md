@@ -14,13 +14,13 @@ comments: true
 
 Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient for me to symbolicate on my local machine. I used to use a pair of clunky tools to achive that but fortunately there is quite hidden but nice to use tool from Xcode that can be used almost out of the box. 😏
 
-First I had to add the location of `crashsymbolicate` into my PATH. By the way, I use Zsh and [Oh My Zsh](https://ohmyz.sh) which I recommend for all more or less power users of macOS. The easier way to do so is to edit `~/.zshrc` file:
+First I had to add the location of `crashsymbolicate` into my PATH to be able to access the tool from any place in my prompt. By the way, I use Zsh and [Oh My Zsh](https://ohmyz.sh) which I recommend for all "more or less" power users of macOS. The easier way to do so is to edit `~/.zshrc` file:
 
 ```sh
 vim ~/.zshrc
 ```
 
-We extend our `PATH` with an additional `export PATH` part of the config. `crashsymbolicate` is a part of `DVTFoundation` but requires an additional export to the currently use Xcode path, so the easiest way to do so is to set `$(xcode-select --print-path)`. It should be assigned to `DEVELOPER_DIR` variable. Note that we separate paths in the `PATH` variable by a colon (`:`) and in Bash we don't accept whitespace to be inserted between the name of variable and its value.
+We extend our `PATH` with an additional `export PATH` part of the config. `crashsymbolicate` is a part of `DVTFoundation` but requires an additional export to the currently use Xcode's path. The easiest way to do so is to set `$(xcode-select --print-path)`. It should be assigned to `DEVELOPER_DIR` variable. Note that we separate paths in the `PATH` variable by a colon (`:`) and in Bash we don't accept whitespace to be inserted between the name of variable and its value.
 
 ```sh
 # We assign PATH to what we previously have in PATH and the path to DVTFoundation framework separated by a colon
