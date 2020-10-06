@@ -29,7 +29,7 @@ export PATH=/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.fram
 export DEVELOPER_DIR=$(xcode-select --print-path)
 ```
 
-![Configuration of PATH and DEVELOPER_DIR]({{site.url}}/assets/2020-03-18/zshrc.png)
+![Configuration of PATH and DEVELOPER_DIR]({{site.url}}/assets/2020-03-18/zshrc-1.png)
 
 If you still use Bash you can find your `PATH` variable defined in `~/.bashrc` file:
 
