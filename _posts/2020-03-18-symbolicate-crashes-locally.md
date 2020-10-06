@@ -39,7 +39,7 @@ vim ~/.bashrc
 
 Now we can simply go to the location of our crashlog, copy the dSYM into the same location and run the script.
 
-dSYM file can be found in **App Store (formerly iTunes) Connect**. Go to your application page, and on `Activity` tab click on a build and under `Includes Symbols` you should see `Download dSYM` link. If there is none, then you probably should check your build script. It is important to download dSYM from App Store Connect if you build with enabled bitcode (and it is enabled by default), because your binary is recompiled on App Store side and there is no other way to get those dSYMs then from App Store web service. If you don't use bitcode you can use dSYM generated with your build process.
+If you don't have dSYM file, it can be found on **App Store (formerly iTunes) Connect**. Go to your application page, and on `Activity` tab click on a build and under `Includes Symbols` you should see `Download dSYM` link. If there is none, then you probably should check your build script. It is important to download dSYM from App Store Connect if you build with enabled bitcode (and it is enabled by default), because your binary is recompiled on App Store side and there is no other way to get those dSYMs then from App Store web service. If you don't use bitcode you can use dSYM generated with your build process.
 
 ```sh
 symbolicatecrash MyApp.crash MyApp.app.dSYM > desymbolicated.crash
