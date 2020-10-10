@@ -50,6 +50,6 @@ I wrote this article in VS Code. To make sure it's written without spelling erro
 
 ```json
 "spellright.language": [
-        "en-US"
-    ],
+    "en-US"
+]
 ```
