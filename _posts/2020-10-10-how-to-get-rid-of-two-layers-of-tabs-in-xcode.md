@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to get rid of two layers of tabs in Xcode"
-description: ""
+description: "When they introduced document tabs, they don't automatically hide window tabs for users migrating from older versions of Xcode (at least not in my case). It leads to two layers of nested tabs: one level is the bar of window tabs and inside each window tab we have another layer of document tabs..."
 date:   2020-10-10 13:00:00 +0200
 categories: ios
 keywords: xcode tabs windows-tabs document-tabs 'nested tabs'
