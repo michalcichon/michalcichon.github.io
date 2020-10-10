@@ -4,7 +4,7 @@ title:  "How to symbolicate crash logs locally in a more efficient way"
 description: "Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient for me to symbolicate on the local machine. I used to use a pair of clunky tools to achive that but fortunately there is quite hidden but nice to use tool from Xcode that can be used almost out of the box..."
 date:   2020-03-18 09:00:00 +0200
 categories: ios
-keywords: crash logs
+keywords: crash logs, xcode crash logs, crashlogs, symbolicate crashlogs
 tags: ios tools
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS

@@ -4,7 +4,7 @@ title:  "How to burn an Audio CD with macOS"
 description: "Some of the CD players can't play MP3s but they accept only plain old tracks of music placed one by one on the surface of the disc. The maximum length of music that can be burned this way is about 80 minutes. It's way shorter than when we try to save our MP3 files on 700 MB of data disk, but we can be sure that they will be playable on any CD player..."
 date:   2020-02-05 10:00:00 +0200
 categories: ios
-keywords: macOS AudioCD
+keywords: macOS, AudioCD, Audio CD, burning audio on CD
 tags: tools miscellaneous
 published: true
 comments: true
