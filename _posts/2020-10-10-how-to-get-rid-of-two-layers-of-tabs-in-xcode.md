@@ -38,7 +38,7 @@ That's it! The window tab bar is hidden! 🙌
 
 # One more thing 
 
-This is something that may not applied to you particularly. Few Xcode versions before I enabled one option to open debugger in a new tab. I wanted to prevent the debugger from presenting breakpointed code in the currently opened window tab, as it could close something I worked before debugging. Actually since I have hidden the window tab bar I don't need it anymore. To restore it I just had to disable this option.
+This is something that may not apply to you particularly. Few Xcode versions before I enabled one option to open debugger in a new tab. I wanted to prevent the debugger from presenting breakpointed code in the currently opened window tab, as it could close something I worked before debugging. Actually since I have hidden the window tab bar I don't need it anymore. To restore it I just had to disable this option.
 
 ![Stop debugger from opening in a new window tab)]({{site.url}}/assets/2020-10-10/xcode-tabs-4.png)
 
