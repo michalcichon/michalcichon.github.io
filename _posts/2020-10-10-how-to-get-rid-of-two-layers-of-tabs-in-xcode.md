@@ -36,7 +36,10 @@ The option to hide the window tabs bar is located in `View` → `Hide Window Tab
 
 That's it! The window tab bar is hidden! 🙌
 
-<!-- # One more thing 
+# One more thing 
 
+This is something that can not applied to you particularly. Few Xcode versions before I enabled one option to open debugger in a new tab. I wanted to prevent the debugger from presenting breakpointed code in the currently opened window tab, as it could close something I worked before debugging. Actually since I hid the window tab bar I don't need it anymore. To remove this option I just had to disable this option.
 
-# Final notes -->
+![Stop debugger from opening in a new window tab)]({{site.url}}/assets/2020-10-10/xcode-tabs-4.png)
+
+The option to stop opening debugged code in a new window tab is here: `Xcode` → `Preferences...`, then on the `Behaviors` tab find `Running` section and `Pauses` sub-section.
