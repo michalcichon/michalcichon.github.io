@@ -4,7 +4,7 @@ title:  "How to get rid of two layers of tabs in Xcode"
 description: "When they introduced document tabs, they didn't automatically hide window tabs for users migrating from older versions of Xcode (at least not in my case). It leads to two layers of nested tabs: one level is the bar of window tabs and inside each window tab we have another layer of document tabs. I believe it's way too complex..."
 date:   2020-10-10 13:00:00 +0200
 categories: ios
-keywords: Xcode, tabs, windows tabs, document tabs, nested tabs
+keywords: Xcode, tabs, window tabs, document tabs, nested tabs
 tags: ios tools
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
@@ -26,9 +26,9 @@ First of all I did a quick research in the internet, and found one solution from
 
 I believe it's way easier and beneficial to not change Navigation Style to "Open in Place" as Jesses proposed (*as I still want to benefit from tabs in the best possible way*), but to actually hide the window tab bar. The document tab bar is more intelligent compared to the window tab bar. It automatically checks if the document we try to open is already in the bar and detects what documents were only previewed (they are marked with an italic font) and can be closed or rather replaced with another document. It's quite similar behavior to what we have in Sublime Text and VS Code.
 
-To hide the window tab bar we should close other window tabs first (there should be only one window tab on the screen). Please note windows tabs are the first raw, documents tabs are below them. If there are still more then one window tab, the option to hide the bar will be greyed out.
+To hide the window tab bar we should close other window tabs first (there should be only one window tab on the screen). Please note window tabs are the first raw, document tabs are below. If there are still more then one window tab opened, the option to hide the bar will be greyed out.
 
-![Hiding the windows tab bar)]({{site.url}}/assets/2020-10-10/xcode-tabs-2.png)
+![Hiding the window tab bar)]({{site.url}}/assets/2020-10-10/xcode-tabs-2.png)
 
 The option to hide the window tab bar is located in `View` → `Hide Window Tab Bar`. If you would like to make it visible again, there is a reversing option `View` → `Show Window Tab Bar`.
 
@@ -38,7 +38,7 @@ That's it! The window tab bar is hidden! 🙌
 
 # One more thing 
 
-This is something that may not applied to you particularly. Few Xcode versions before I enabled one option to open debugger in a new tab. I wanted to prevent the debugger from presenting breakpointed code in the currently opened window tab, as it could close something I worked before debugging. Actually since I have hidden the window tab bar I don't need it anymore. To remove this option I just had to disable this option.
+This is something that may not applied to you particularly. Few Xcode versions before I enabled one option to open debugger in a new tab. I wanted to prevent the debugger from presenting breakpointed code in the currently opened window tab, as it could close something I worked before debugging. Actually since I have hidden the window tab bar I don't need it anymore. To restore it I just had to disable this option.
 
 ![Stop debugger from opening in a new window tab)]({{site.url}}/assets/2020-10-10/xcode-tabs-4.png)
 
