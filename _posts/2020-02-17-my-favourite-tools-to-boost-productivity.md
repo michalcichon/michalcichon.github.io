@@ -70,4 +70,6 @@ Sometimes I need a few minutes to learn about what's happening in the world arou
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/notebook.jpg)
 
-The last and the most important tool I use every day is a plain, unlined notebook. I tried many todo apps, Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can't easily substitute.
+The last and the most important tool I use every day is a plain, unlined notebook. I tried many apps like Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can’t easily substitute. Usually I start my day of work with creating a TODO list of what I should do so I have a plan for the day. I can keep it open and close to my laptop which is helpful when I need to sketch some more complex logic or idea. 
+
+These are my daily used tools which I believe boost my productivity the most. Of course I have more of them but I wanted to list what I see especially useful. Other things include what I see useful but is not used on a daily basis or super handy build scripts which are automated to the level I don’t need to think about them at all. 😊
