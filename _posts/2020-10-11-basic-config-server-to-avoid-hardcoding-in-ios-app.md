@@ -12,7 +12,11 @@ background: "#d74d00"
 comments: true
 ---
 
-...
+Every information hardcoded in the client application makes it more difficult to update or fix. The problem is getting only worse when we regularly roll out new versions of our application. In this case we need to keep track of every build to be sure we don't shut down any resource we pointed directly in our source code in the previous builds. Hardcoding is generarly a bad idea.
+
+In this short tutorial, I will show you how to build a simple configuration server that helps to avoid hardcoding values on the client side.
+
+I will use Node.js and MariaDB on the backend side.
 
 # Installing dependencies
 
@@ -75,3 +79,19 @@ UPDATE `config` SET `value` = "#87CEFA" WHERE `key` = "app.background.color";
 UPDATE `config` SET `value` = "Can't wait!" WHERE `key` = "app.fun_button.text";
 ```
 
+
+```bash
+npm init
+```
+
+```bash
+npm install express mysql body-parser --save
+```
+
+https://mariadb.com/kb/en/str_to_date/
+
+```sql
+select STR_TO_DATE('2020-10-11T18:37:16.000Z', '%Y-%m-%dT%H:%i:%s%.%#Z') as 'timestamp';
+```
+
+https://stackoverflow.com/questions/46458487/how-to-convert-a-date-string-with-optional-fractional-seconds-using-codable-in-s/46458771#46458771
