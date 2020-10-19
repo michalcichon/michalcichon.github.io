@@ -734,6 +734,7 @@ ul.post-list li.post-element {
 
 #disqus_thread {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width:560px) {
