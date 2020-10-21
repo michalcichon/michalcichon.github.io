@@ -2,12 +2,12 @@
 layout: post
 title: "Basic config server to avoid hardcoding in iOS applications"
 description: "Every information we hardcode in the client application makes it more difficult to update or fix. The problem is getting only worse when we regularly roll out new versions of our application. In this case we would need to keep track of every build to be sure we don't shut down any resource we pointed directly in our source code in the previous builds. Hardcoding is generally a bad idea..."
-date: 2020-10-11 08:00:00 +0200
+date: 2020-10-17 08:00:00 +0200
 categories: ios
 keywords: iOS, hardcoding, config server, mariadb, swift app
-tags: ios tools
-thumbnail: code.png
-image: "assets/thumbnails/code.png" # Image for RSS
+tags: ios backend
+thumbnail: swift.png
+image: "assets/thumbnails/swift.png" # Image for RSS
 background: "#d74d00"
 comments: true
 ---
@@ -105,7 +105,7 @@ INSERT INTO config(`key`, `value`) VALUES ("app.fun_button.url", "https://www.go
 
 I can see in Sequel Pro that my table looks fine.
 
-![Sequel Pro table view)]({{site.url}}/assets/2020-10-11/sequel_pro.png)
+![Sequel Pro table view)]({{site.url}}/assets/2020-10-17/sequel_pro.png)
 
 So far we can update our keys using basic SQL statements but it would be nice to have a REST API to do so.
 
@@ -124,7 +124,7 @@ This are my first steps to Node.js and I inspired a nicely written article by [b
 npm init
 ```
 
-![Init npm)]({{site.url}}/assets/2020-10-11/npm_init.png)
+![Init npm)]({{site.url}}/assets/2020-10-17/npm_init.png)
 
 `npm` asks few questions and creates `package.json` file for us. This is the place where we define dependencies. To add a new dependency we simply execute `npm install` like this:
 
@@ -248,7 +248,7 @@ module.exports = Config;
 I would like to stop here for a moment. Actually I struggle a bit because of this timestamp format. It is a standard ISO-8601 but it is not supported by MariaDB's [STR_TO_DATE](https://mariadb.com/kb/en/str_to_date/) function. I had to use a formatted input but to play with it I simply use this short statement which I run from `Sequel Pro`:
 
 ```sql
-select STR_TO_DATE('2020-10-11T18:37:16.000Z', '%Y-%m-%dT%H:%i:%s%.%#Z') as 'timestamp';
+select STR_TO_DATE('2020-10-17T18:37:16.000Z', '%Y-%m-%dT%H:%i:%s%.%#Z') as 'timestamp';
 ```
 
 The controllers simply handle HTTP requests and call model's methods.
@@ -279,7 +279,7 @@ The full source code will be available on my Github.
 
 As I above-mentioned, I would love to use SwiftUI. It is super exciting that we can actually create a project completely without AppDelegate and UIKit life cycle.
 
-![Creating a new project in Xcode)]({{site.url}}/assets/2020-10-11/xcode-new-project.png)
+![Creating a new project in Xcode)]({{site.url}}/assets/2020-10-17/xcode-new-project.png)
 
 The client app will use `ConfigService` to fetch fresh configuration from the backend side. I would like to trigger it early when the application boots. To demonstrate that config is refreshing UI, I have created a simple demo application with one button that opens a web page. The button's title as well as the main screen background is configurable. I will use the following keys:
 * `app.background.color` that allows modifying the background color
@@ -465,15 +465,15 @@ init() {
 }
 ```
 
-![The application state is refreshed after fetching the config)]({{site.url}}/assets/2020-10-11/app.png)
+![The application state is refreshed after fetching the config)]({{site.url}}/assets/2020-10-17/app.png)
 
 As you can see the app's state is refreshed after the config is fetched. To better illustrate it, we could use [Charles](https://www.charlesproxy.com/) that allows us to see the communication between the client and the server.
 
-![The whole config is fetched for the first time)]({{site.url}}/assets/2020-10-11/charles-1.png)
+![The whole config is fetched for the first time)]({{site.url}}/assets/2020-10-17/charles-1.png)
 
 For the first time the whole configuration is fetched. 
 
-![No need to update anything)]({{site.url}}/assets/2020-10-11/charles-2.png)
+![No need to update anything)]({{site.url}}/assets/2020-10-17/charles-2.png)
 
 But when the config is requested for the last known timestamp, the config is empty as no new updates were done since we fetched it last time.
 
