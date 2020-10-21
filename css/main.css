@@ -24,6 +24,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -719,6 +725,7 @@ ul.post-list li.post-element {
 
 #blog-on-main {
   padding: 20px;
+  background-color: #c000ff0d;
 }
 
 #blog-on-main ul {
@@ -727,6 +734,7 @@ ul.post-list li.post-element {
 
 #disqus_thread {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width:560px) {
