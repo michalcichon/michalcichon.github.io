@@ -8,7 +8,7 @@ keywords: iOS, hardcoding, config server, mariadb, swift app
 tags: ios backend
 thumbnail: swift.png
 image: "assets/thumbnails/swift.png" # Image for RSS
-background: "#d74d00"
+background: "#f05138"
 comments: true
 ---
 
