@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Basic config server to avoid hardcoding in iOS applications (Part 1)"
+title: "Basic config server to avoid hardcoding in iOS applications"
 description: "Every information we hardcode in the client application makes it more difficult to update or fix. The problem is getting only worse when we regularly roll out new versions of our application. In this case we would need to keep track of every build to be sure we don't shut down any resource we pointed directly in our source code in the previous builds. Hardcoding is generally a bad idea..."
 date: 2020-10-11 08:00:00 +0200
 categories: ios
