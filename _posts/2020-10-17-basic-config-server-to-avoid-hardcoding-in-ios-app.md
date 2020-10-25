@@ -358,7 +358,22 @@ func color(key: String, defaultValue: UIColor) -> UIColor {
 }
 ```
 
-The data is internally stored as strings so for incorrect data we can use default values.
+The data is internally stored as strings so for incorrect data we can use default values. To decode hex color in `String` to `UIColor` type that could be used across our iOS app, I have added a simple extension to `UIColor` class:
+
+```swift
+extension UIColor {
+    convenience init?(hexString: String) {
+        let string = hexString.replacingOccurrences(of: "#", with: "")
+        guard string.count == 6 else { return nil }
+        var rgbValue: UInt64 = 0
+        Scanner(string: string).scanHexInt64(&rgbValue)
+        let red = (rgbValue & 0xFF0000) >> 16
+        let green = (rgbValue & 0x00FF00) >> 8
+        let blue = rgbValue & 0x0000FF
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: CGFloat(1.0))
+    }
+}
+```
 
 The method to fetch fresh config utilizes a standard `URLSession` so no additional dependencies are required.
 
@@ -384,11 +399,11 @@ private func fetchConfig() {
 }
 ```
 
-When the app is run for the first time, it fetch the whole config from `http://localhost:3000/config`. But the next time we have stored timestamp of the newest updated element. 
+When the app is run for the first time, it fetches the whole config from `http://localhost:3000/config`. But the next time we have the timestamp of the newest updated element stored locally and we will call it like this: `http://localhost:3000/config/2020-10-17T18:43:19.000Z`.
 
 Unfortunately, the standard formatter for ISO-8601 from `DateFormatter` doesn't allow fractional seconds that are returned from the backend side, so a custom formatter had to be implemented. I used the same approach as [here](https://stackoverflow.com/questions/46458487/how-to-convert-a-date-string-with-optional-fractional-seconds-using-codable-in-s/46458771#46458771).
 
-As you can see after we fetch the data, we `decode` and then `update`.
+As you can see after we fetch the data, we `decode` it and then `update` our local storage.
 
 The method to decode configs uses a standard JSONDecoder but we need to remember about setting `dateDecodingStrategy`. Otherwise the timestamp won't be represented correctly.
 
