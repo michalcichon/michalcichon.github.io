@@ -20,7 +20,7 @@ The process or building a new logic in our programs is never a linear process as
 
 # Git (almost) never lies
 
-If the code I get is distributed to me with _.git_ then I usually start my investigation from the git history. Don't get me wrong here, I don't mean that I check timestamps to calculate the velocity or something that crazy. The history is useful to learn more about candidate's process of thinking and reasoning. Maybe they had some brilliant idea that halfway turned out to no be so cool. Maybe they tried something so hard but gave up at some point. These things are source of some nice follow up when we discuss the solution later in the interview. 
+If the code I get is distributed to me with a git repository then I usually start my investigation from the git history. Don't get me wrong here, I don't mean that I check timestamps to calculate the velocity or something that crazy. The history is useful to learn more about the candidate's process of thinking and reasoning. Maybe they had some brilliant idea that halfway turned out to no be so cool. Maybe they tried something so hard but gave up at some point. These things are source of some nice follow up when we discuss the solution later in the interview. 
 
 ...
 
