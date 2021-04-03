@@ -47,7 +47,7 @@ class AwfulService {
 
 Obviously both classes are awful, and as you can see side effect can happen late (in this silly example after we add more than 16 elements to our globally available collection) so it can be difficult to spot the problem. Imagine if we have an application with thousand of classes using that `secretCollection` directly.
 
-As you can see there is used also one more object usually recognized as an ant-pattern, a singleton. A bad press is mainly because it creates a globally available object than can be access and mutate anywhere in our source code. However it used to be intensively used in mobile development to save resources (I remember when we developed a banking app in 2010s we had to be careful to not create too many amount formatters when we wanted to present hundred of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red light can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singleton testable.
+As you can see there is used also one more object usually recognized as an ant-pattern, a singleton. A bad press is mainly because it creates a globally available object than can be access and mutate anywhere in our source code. However it used to be intensively used in mobile development to save resources (I remember when we developed a banking app in 2010s we had to be careful to not create too many amount formatters when we wanted to present hundreds of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red light can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singleton testable.
 
 ```swift
 class NotTestable {
@@ -103,12 +103,41 @@ Similarly, when we see methods that are unused, we can use them as an additional
 
 Inconsistency in the naming can tell us if the code was written with experience developer or someone without prior experience. Someone who is experienced would tent to use a consistent naming strategy and project structure that has a thoughtful design.
 
+When it comes to application architecture, we would like to see not only new fancy design patterns like VIPER or MVVM being used, but to see why they were used, what are the underlying concepts behind them. We use architecture to solve real problems like layers separation, data security, to improve data flow etc. and not only because we need to delight the academia. 
+
 # Data structures & algorithms
 
 After we investigated the project on high level, trying to spot inconsistencies we can go deeper and analyze how the logic works, what is the data flow throughout the whole project. A red light here could be reinventing commonly known algorithms, reimplementing SDK methods, using inefficient data structures (for example Array instead of Set when we need to store unique objects and we need quick look up).
 
 ```swift
+func getAllUniqueActiveElements1() -> [Item] {
+    var registry = [Item]()
+    let now = Date()
+    let array1 = dataProvider1.filter({ $0.lastAccessDate > now })
+    let array2 = dataProvider2.filter({ $0.lastAccessDate > now })
+    let allElements = array1 + array2
+    for item in allElements {
+        if !registry.contains(item) {
+            registry.append(item)
+        }
+    }
+    return registry
+}
+
+func getAllUniqueActiveElements2(limitDate: Date) -> [Item] {
+    var registry = Set<Item>()
+    let array1 = dataProvider1.filter({ $0.lastAccessDate > now })
+    let array2 = dataProvider2.filter({ $0.lastAccessDate > now })
+    registry.formUnion(array1+array2)
+    return Array(registry)
+}
 ```
+
+Sometimes a not optimal solution is good enough and it can give another opportunity to discuss the implementation details.
+
+# Mobile first
+
+We don't implement things only for sake of doing it. Our apps do amazing things not only because we knew how to implement the most efficient algorithm or because our architecture is extendable and clean. 
 
 <!-- 
 - check git history 
