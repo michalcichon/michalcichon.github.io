@@ -141,4 +141,4 @@ We don't implement things only for sake of doing it. Our apps do amazing things 
 
 # Conclusions
 
-Code evaluation is not an easy task. We as developers are accustomed to different practices and styles in our code bases and usually it is not easy to say what is the best solution for a given problem. However a thorough analysis of the source code can be a good starting point for a more in-depth discussion about implementation details and can be useful source of knowledge about what is level of the source code author.
+Code evaluation is not an easy task. We as developers are accustomed to different practices and styles in our code bases and usually it is not easy to say what is the best solution for a given problem. However a thorough analysis of the source code can be a good starting point for a more in-depth discussion about implementation details and can be useful source of knowledge about what is the level of the source code author.
