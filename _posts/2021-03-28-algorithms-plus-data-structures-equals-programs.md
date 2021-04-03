@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Algorithms + Data structures = Programs"
-description: "I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - crème de la crème of software development - writing programs. This process is almost never a single shot of typing what was thought, running, testing and committing into the repository. It is obviously not as there are always nuances of what should be done..."
+description: "I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - so called crème de la crème of software development which is writing programs. This process is almost never a single shot of typing what was thought, running, testing and committing into the repository. It is obviously not as there are always nuances of what should be done..."
 date:   2021-03-28 09:00:00 +0200
 categories: software-development
 keywords: code review, code evaluation, recruiting software developers
@@ -12,7 +12,7 @@ background: "#f05138"
 comments: true
 ---
 
-**I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - *crème de la crème* of software development - writing programs. This process is almost never a single shot of typing what was thought, running, testing and committing into the repository. It is obviously not as there are always nuances of what should be done, any kind of limitations and as always expectations which can change dynamically.**
+**I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - so called *crème de la crème* of software development which is writing programs. This process is almost never a single shot of typing what was thought, running, testing and committing into the repository. It is obviously not as there are always nuances of what should be done, any kind of limitations and as always expectations which can change dynamically.**
 
 The process or building a new logic in our programs is never a linear process as it has been already mentioned thousand times across articles, books and blog posts like this you are reading at the moment. Fortunately I don’t want to start this topic here all over again. This time I would like to focus on something slightly different but still not something that floats totally separately to that *crème de la crème*. That thing is evaluating someone's code. And what I mean here is not a code review we do for our friendly coworkers we know inside out with all their weird habits. This time I would like to step back for a minute and think about evaluating code for candidates, people we never known or companies that need to evaluate the state of their software to decide if they should invest more into quality.
 
