@@ -24,7 +24,7 @@ If the code I get is distributed to me as a git repository then I usually start 
 
 # Global state and friends
 
-Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping, the idea that a block of code can hide its private variable is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we should prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red light and needs to be investigated, as it is a definitely anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated by any other object, what side effects it can cause etc.
+Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping, the idea that a block of code can hide its private variable is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red light and needs to be investigated, as it is a definitely anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated by any other object, what side effects it can cause etc.
 
 ```swift
 var secretCollection: [String] = []
