@@ -137,16 +137,8 @@ Sometimes a not optimal solution is good enough and it can give another opportun
 
 # Mobile first
 
-We don't implement things only for sake of doing it. Our apps do amazing things not only because we knew how to implement the most efficient algorithm or because our architecture is extendable and clean. 
+We don't implement things only for sake of doing it. Our apps do amazing things not only because we know how to implement the most efficient algorithm or because our architecture is extendable and clean. Our apps do amazing things because they can utilize unique features of mobile devices and the SDKs we get from Apple engineers. If the app utilizes push notifications, it is good to check how the push tokens are registered, what is the data flow of notifications inside the application, if any notification extension is used and how. In almost every app, how the communication between table/collection view and its data sources is designed, how the delegates are invoked and how the state is managed? What is inside `viewDidLoad` and `viewWillAppear` methods? These questions should be always answered.
 
-<!-- 
-- check git history 
-- shared state/singleton why they are not good why they can be helpful (date formatter at Comarch) show how we can test shared state/singletons and what can’t be tested
-- Global state
-- Threads, queues
-- Duplicated code
-- Unused code
-- Consistent naming (if he’s been working for a long time and built it info his muscles or not)
-- Used data structures and algorithms (reinvenions, quality etc)
-- Mobile specific: resources management, UI, SDKs etc
- -->
+# Conclusions
+
+Code evaluation is not an easy task. We as developers are accustomed to different practices and styles in our code bases and usually it is not easy to say what is the best solution for a given problem. However a thorough analysis of the source code can be a good starting point for a more in-depth discussion about implementation details and can be useful source of knowledge about what is someone's level.
