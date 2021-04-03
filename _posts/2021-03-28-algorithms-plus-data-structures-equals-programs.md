@@ -8,23 +8,23 @@ keywords: code review, code evaluation, recruiting software developers
 tags: programming processes
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
-background: "#f05138"
+background: "#d74d00"
 comments: true
 ---
 
 **I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - so called *crème de la crème* of software development which is writing programs. This process is almost never a single shot of typing what was thought, running, testing and committing into the repository. It is obviously not as there are always nuances of what should be done, any kind of limitations and as always expectations which can change dynamically.**
 
-The process or building a new logic in our programs is never a linear process as it has been already mentioned thousand times across articles, books and blog posts like this you are reading at the moment. Fortunately I don’t want to start this topic here all over again. This time I would like to focus on something slightly different but still not something that floats totally separately to that *crème de la crème*. That thing is evaluating someone's code. And what I mean here is not a code review we do for our friendly coworkers we know inside out with all their weird habits. This time I would like to step back for a minute and think about evaluating code for candidates, people we never known or companies that need to evaluate the state of their software to decide if they should invest more into quality.
+The process or building a new logic in our programs is never a linear process as it has been already mentioned thousand times across articles, books and blog posts like this you are reading at the moment. Fortunately I don’t want to start this topic here all over again. This time I would like to focus on something slightly different but still not something that floats totally separately to that *crème de la crème* all software developers love the most. That thing is evaluating a code of other developers. And what I mean here is not a code review we do for our friendly coworkers we know inside out with all their weird habits. This time I would like to step back for a minute and think about evaluating code for candidates, people we never known or companies that need to evaluate the state of their software to decide if they should invest more into quality.
 
-[Nicklaus Wirth](https://en.wikipedia.org/wiki/Niklaus_Wirth) coined that phrase about the relation of programs, algorithms and data structures in 1976. It was 45 years ago but such clever foundations like this would probably never get old. If you think about it for a second it is obviously always true. Every design patters, every function, method and spaghetti code you just wrote to scrape some silly thing from the internet can be divided into two categories: data we manipulate and the logic that is used to do that manipulation. Simple as that.
+[Nicklaus Wirth](https://en.wikipedia.org/wiki/Niklaus_Wirth) coined that phrase about the relation of programs, algorithms and data structures in 1976. It was 45 years ago but such clever foundations like that would probably never get old. If you would think about it for a second it is obviously always true. Every design patters, every function, method and spaghetti code you just wrote to scrape some silly thing from the internet can be divided into two categories: data we manipulate and the logic that is used to do that manipulation. Simple as that.
 
 # Git (almost) never lies
 
-If the code I get is distributed to me with a git repository then I usually start my investigation from the git history. Don't get me wrong here, I don't mean that I check timestamps to calculate the velocity or something that crazy. The history is useful to learn more about the candidate's process of thinking and reasoning. Maybe they had some brilliant idea that halfway turned out to no be so cool. Maybe they tried something so hard but gave up at some point. These things can be a source of some nice follow up when we discuss the solution later in the interview. 
+If the code I get is distributed to me as a git repository then I usually start my investigation from the git history. Don't get me wrong here, I don't mean that I check timestamps to calculate the velocity or something that crazy. The history is useful to learn more about the candidate's process of thinking and reasoning. Maybe they had some brilliant idea that halfway turned out to no be so cool. Maybe they tried something so hard but gave up at some point. These things can be a source of some nice follow up when we discuss the solution later in the interview. 
 
 # Global state and friends
 
-Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping so the idea that a block of code can hide its private variable is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we should prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red light and needs to be investigated, as this is a definitely anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated with any other object, what side effects it can cause etc.
+Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping, the idea that a block of code can hide its private variable is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we should prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red light and needs to be investigated, as it is a definitely anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated by any other object, what side effects it can cause etc.
 
 ```swift
 var secretCollection: [String] = []
@@ -45,9 +45,9 @@ class AwfulService {
 }
 ```
 
-Obviously both classes are awful, and as you can see side effect can happen very late (in this silly example after we add more than 16 elements to our globally available collection) so it can be difficult to spot the problem. Imagine if we have an application with thousand of classes using that `secretCollection` directly.
+Obviously both classes are awful, and as you can see side effects can happen very late (in this silly example after we add more than 16 elements to our globally available collection) so it can be difficult to spot the problem. Imagine we have an application with thousand of classes using that `secretCollection` directly.
 
-As you can see there is used also one more object usually recognized as an ant-pattern, a singleton. It received the bad press mainly because it creates a globally available object than can be access and mutate anywhere in our source code. However it used to be intensively used in mobile development to save resources (I remember when we developed a banking app in 2010s we had to be careful to not create too many amount formatters when we wanted to present hundreds of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red light can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singleton testable.
+As you can see there is used also one more object usually recognized as an ant-pattern, a singleton. It received the bad press mainly because it creates a globally available object that can be accessed and mutated anywhere in our source code. However it used to be intensively used in mobile development to save resources (I remember when we developed a banking app in 2010s we had to be careful to not create too many amount formatters when we wanted to present hundred thousands of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red light can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singletons testable.
 
 ```swift
 class NotTestable {
@@ -83,7 +83,7 @@ As you can see we can use a basic dependency injection pattern to make the code 
 
 # Threads and queues
 
-With Swift and Objective-C standard libraries we get a lot of useful tools to deal with concurrency and asynchronous processing with is quite important when we deal with asynchronous natures of networking and handling UI events. Unfortunately many developers have still issues with using them and understand concepts like thread safety, queues, etc. Usually we can easily spot something matching this pattern:
+With Swift and Objective-C standard libraries we get a lot of useful tools to deal with concurrency and asynchronous processing which is quite important when we deal with asynchronous natures of networking and handling UI events. Unfortunately many developers still have issues using them and understanding concepts like thread safety, queues, etc. Usually we can easily spot something matching the following pattern:
 
 ```swift
 DispatchQueue.main.async {
@@ -91,23 +91,23 @@ DispatchQueue.main.async {
 }
 ```
 
-It can be a code that modifies UITableView stack, that deals with some collection being accessed from multiple threads etc. Dispatching to the main queue is in these cases usually not a good idea.
+It can be a code that modifies UITableView stack, or which deals with some collection being accessed from multiple threads, etc. Dispatching to the main queue is in these cases usually not a good idea.
 
 # Duplicated & unused code
 
-If there are some places with duplicated code, a good question would be why the author of that code decided to leave it as it is. That can tell us a lot about whether the architecture of the solution is thoughtful. If it is only a sake of extracting few parameters to new method that could cover all cases then probably it is not a huge problem. But if there is a lot of duplicates it might indicate more underlaying problems.
+If there are some places with duplicated code, a good question would be why the author of that code decided to leave it as it is. That can tell us a lot about whether the architecture of the solution is thoughtful. If it is only a sake of extracting few parameters to new method that could cover all cases then probably it is not a huge problem. But if there is a lot of duplicates, it might indicate more underlaying problems.
 
-Similarly, when we see methods that are unused, we can use them as an additional story teller about how the solution was handled by the author. Maybe there is commonly known pattern that was used and then modified to fit into the solution but some helper method wasn't removed.
+Similarly, when we see methods that are unused, we can take them as an additional story teller about how the solution was handled by the author. Maybe there is a commonly known pattern that was used and then modified to fit into the solution but some helper method wasn't removed.
 
 # Consistency
 
-Inconsistency in the naming can tell us if the code was written with experience developer or someone without prior experience. Someone who is experienced would tent to use a consistent naming strategy and project structure.
+Inconsistency in the naming can tell us if the code was written by an experience developer or someone without prior experience. Someone who is experienced would tent to use a consistent naming strategy and project structure.
 
-When it comes to application architecture, we would like to see not only new fancy design patterns like VIPER or MVVM being used, but to see why they were used, what are the underlying concepts behind using them in the given project. We use architecture to solve real problems like layers separation, data security, to improve data flow etc. and not only because we need to delight the academia. 
+When it comes to application architecture, we would like to see not only new fancy design patterns like VIPER or MVVM being used, but to see why they were used, what are the underlying concepts behind using them in the given project. We use architecture to solve real problems like layers separation, data security, to improve the data flow etc. and not only because we need to delight the academia. 
 
 # Data structures & algorithms
 
-After we investigated the project on the high level trying to spot inconsistencies, we can go finally a bit deeper and analyze how the logic works, what is the data flow throughout the whole project. A red light here could be reinventing commonly known algorithms, reimplementing SDK methods, using inefficient data structures (for example Array instead of Set when we need to store unique objects and we need quick look up).
+After we investigated the project on the high level trying to spot inconsistencies, we can go finally a bit deeper and analyze how the logic works, what is the data flow throughout the whole project. A red light here could be reinventing commonly known algorithms, reimplementing SDK methods, using inefficient data structures (for example Array instead of Set when we need to store unique objects and we need a quick look-up).
 
 ```swift
 func getAllUniqueActiveElements1() -> [Item] {
