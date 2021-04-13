@@ -24,7 +24,7 @@ If the code I get is distributed to me as a git repository then I usually start 
 
 # Global state and friends
 
-Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping, the idea that a block of code can hide its private variables is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red light and needs to be investigated, as definitely it is an anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated by any other object, what side effects it can cause etc.
+Encapsulation was one of the basic and earliest concepts of Object Oriented Programming, appeared in Simula 62 (59 years ago!) but lexical scoping, the idea that a block of code can hide its private variables is a concept that appeared even earlier in ALGOL 60 (61 years ago, WOW!). The globally mutable state should be avoided as we prefer architecture composed of objects with strictly defined responsibilities. Any global state should be a red flag and needs to be investigated, as definitely it is an anti-pattern in OOD. That's why the second thing I check in the source code is if it has any global variable that can be accessed and mutated by any other object, what side effects it can cause etc.
 
 ```swift
 var secretCollection: [String] = []
@@ -47,7 +47,7 @@ class AwfulService {
 
 Obviously both classes are awful, and as you can see side effects can happen very late (in this silly example after we add more than 16 elements to our globally available collection) so it can be difficult to spot the problem early. Imagine we have an application with thousand of classes using that `secretCollection` directly.
 
-As you can see there is also one more object usually recognized as an ant-pattern, the singleton. It received the bad press mainly because it creates a globally available object that can be accessed and mutated anywhere in our source code. However it used to be intensively applied in mobile development to save resources (I remember when we developed a banking app back then in 2010s we had to be very careful to not create too many amount formatters when we wanted to present hundred thousands of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it has lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red light can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singletons testable.
+As you can see there is also one more object usually recognized as an ant-pattern, the singleton. It received the bad press mainly because it creates a globally available object that can be accessed and mutated anywhere in our source code. However it used to be intensively applied in mobile development to save resources (I remember when we developed a banking app back then in 2010s we had to be very careful to not create too many amount formatters when we wanted to present hundred thousands of transactions in a single table view). Today as brand new phones have thousand times better specs than personal computers a decade ago, it has lost a bit its relevance, but still is quite useful. However, it needs to be used carefully. Other red flag can be: a class with all methods static, a class with all attributes public. When it comes to testing, as we can't really test global state agains all possible use cases, we usually can make at least the code that utilize singletons testable.
 
 ```swift
 class NotTestable {
@@ -107,7 +107,7 @@ When it comes to application architecture, we would like to see not only new fan
 
 # Data structures & algorithms
 
-After we investigated the project on the high level trying to spot inconsistencies, we can go finally a bit deeper and analyze how the logic works, what is the data flow throughout the whole project. A red light here could be reinventing commonly known algorithms, reimplementing SDK methods, using inefficient data structures (for example Array instead of Set when we need to store unique objects and we need a quick look-up).
+After we investigated the project on the high level trying to spot inconsistencies, we can go finally a bit deeper and analyze how the logic works, what is the data flow throughout the whole project. A red flag here could be reinventing commonly known algorithms, reimplementing SDK methods, using inefficient data structures (for example Array instead of Set when we need to store unique objects and we need a quick look-up).
 
 ```swift
 func getAllUniqueActiveElements1() -> [Item] {
