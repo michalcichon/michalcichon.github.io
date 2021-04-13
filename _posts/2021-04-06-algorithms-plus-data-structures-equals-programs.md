@@ -63,7 +63,7 @@ class ALittleBitMoreTestable {
     let elementsManager: ElementsManagerProtocol
 
     convenience init() {
-        self.init(databaseService: databaseService, elementsManager: elementsManager)
+        self.init(databaseService: DatabaseService.shared, elementsManager: ElementsManager.shared)
     }
 
     init(databaseService: DatabaseServiceProtocol, elementsManager: ElementsManagerProtocol) {
