@@ -975,6 +975,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
   #header {
     background-color: rgb(32, 32, 32);
+    background-blend-mode: hard-light;
   }
 
   #main-space a:link,
@@ -1087,6 +1088,5 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
   #footer {
     background-color: #111;
-    background-blend-mode: hard-light;
   }
 }
