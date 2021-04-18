@@ -1089,4 +1089,23 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   #footer {
     background-color: #111;
   }
+
+  @media screen and (max-width:560px) {
+    #menu.responsive {
+      background-color: rgba(18, 18, 18, 1);
+    }
+
+    #menu.responsive ul li a {
+      color: #fff;
+    }
+  
+    #menu.responsive ul li a:hover {
+      background: rgba(50, 50, 50, 0.1);
+    }
+  
+    .link-around-image {
+      background-color: #111;
+      box-shadow: 0 0px 0px 0 rgba(255,255,255,-1), 0 6px 20px 0 rgba(255,255,255,0.1);
+    }
+  }
 }
