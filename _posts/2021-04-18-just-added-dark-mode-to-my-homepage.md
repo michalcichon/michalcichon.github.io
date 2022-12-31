@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Just added the dark mode to my website 🎉"
-description: "Just added the dark mode to my website"
 description: "I woke up this morning and noticed that my website has no dark mode. Had to fix that issue immediately with some simple CSS. 😂"
 date:   2021-04-18 09:00:00 +0200
 categories: miscellaneous
