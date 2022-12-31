@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How to symbolicate crash logs locally in a more efficient way"
-description: "Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient for me to symbolicate on the local machine. I used to use a pair of clunky tools to achive that but fortunately there is quite hidden but nice to use tool from Xcode that can be used almost out of the box..."
+title:  "How to symbolicate crash logs more efficiently"
+description: "Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient to symbolicate on the local machine. I used to use a pair of clunky tools to achieve it but fortunately there is quite hidden but easy to use tool from Xcode that can be used almost out of the box..."
 date:   2020-03-18 09:00:00 +0200
 categories: ios
 keywords: crash logs, xcode crash logs, crashlogs, symbolicate crashlogs
@@ -12,15 +12,15 @@ background: "#d74d00"
 comments: true
 ---
 
-Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient for me to symbolicate on my local machine. I used to use a pair of clunky tools to achive that but fortunately there is quite hidden but nice to use tool from Xcode that can be used almost out of the box. 😏
+Usually my crash logs get symbolicated on external services like Fabric or Firebase but from time to time it's more convenient for me to symbolicate on my local machine. I used to use a pair of clunky tools to achieve it but fortunately there is quite hidden but easy to use tool from Xcode that can be used almost out of the box. 😏
 
-First I had to add the location of `crashsymbolicate` into my PATH to be able to access the tool from any place in my prompt. By the way, I use Zsh and [Oh My Zsh](https://ohmyz.sh) which I recommend for all "more or less" power users of macOS. The easier way to do so is to edit `~/.zshrc` file:
+First I had to add the location of `crashsymbolicate` into my `PATH` to be able to access the tool from any place in my prompt. By the way, I use Zsh and [Oh My Zsh](https://ohmyz.sh) I can recommend it to all "more or less" power users of macOS. The easier way to do so is to edit `~/.zshrc` file:
 
 ```sh
 vim ~/.zshrc
 ```
 
-We extend our `PATH` with an additional `export PATH` part of the config. `crashsymbolicate` is a part of `DVTFoundation` but requires an additional export to the currently use Xcode's path. The easiest way to do so is to set `$(xcode-select --print-path)`. It should be assigned to `DEVELOPER_DIR` variable. Note that we separate paths in the `PATH` variable by a colon (`:`) and in Bash we don't accept whitespace to be inserted between the name of variable and its value.
+We extend our `PATH` with an additional `export PATH` part of the config. `crashsymbolicate` is a part of `DVTFoundation` but requires an additional export to the currently used Xcode's path. The easiest way to do so is to set `$(xcode-select --print-path)`. It should be assigned to `DEVELOPER_DIR` variable. Note that we separate paths in the `PATH` variable by a colon (`:`) and in Bash we don't accept whitespace to be inserted between the name of a variable and its value.
 
 ```sh
 # We assign PATH to what we previously have in PATH and the path to DVTFoundation framework separated by a colon
