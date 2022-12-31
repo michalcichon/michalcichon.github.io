@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Just added the dark mode to my website 🎉"
-description: "I woke up this morning and noticed that my website has no dark mode. Had to fix that issue immediately with some simple CSS. 😂"
+title:  "Welcome the dark mode 🎉"
+description: "I woke up this morning and noticed that my website has no dark mode. I couldn't keep it as it is without fixing it with a simple CSS change. 😂"
 date:   2021-04-18 09:00:00 +0200
 categories: miscellaneous
 keywords: darkmode, dark mode, css
