@@ -44,6 +44,8 @@ The **Nintendo DSi** is as well a totally new buy. I bought it very cheap and in
 
 ![NES Cartridges]({{site.url}}/assets/2023-02-10/NES_Carts.jpg)
 
-
+Maybe my collection of Famicom cartridges is not super huge but I collected almost all my favorite games I played as a child. Unfortunately I don't have my cartridges I owned as a kid, so I had to buy them. My favorite games are definitely: Super Mario Bros. (the very first game I ever played on a game console!), Tiny Toon Adventures (this game was on my very first cartridge bought with my mom). I have also a few Chinese "reproductions" from AliExpress. 
 
 ![Raspberry Pi]({{site.url}}/assets/2023-02-10/Raspberry_Pi.jpg)
+
+The last but for sure not least is my Raspberry Pi 3 model B+. This is not a retro computer (if you look closer, the board is from 2017), but I use it to emulate a number of different retro systems like: NES (Pegasus runs games a bit slower than the original system), SNES, Sega Genesis, PC Engine, Atari VCS.
