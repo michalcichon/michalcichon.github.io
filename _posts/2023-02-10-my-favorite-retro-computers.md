@@ -20,7 +20,7 @@ The video and sound capabilities were very limited in this 8-bit system, but in 
 
 ![Pegasus IQ-502]({{site.url}}/assets/2023-02-10/Pegasus_IQ-502.jpg)
 
-My first personal computer was **Atari 800XL** which I got from my uncle as my cousins were already on Commodore Amiga 500, so the old 8-bit machine was just gathering dust. I had no software so I had to write my own programs to have any fun from it. The Atari 800XL is a continuation of designed in 1979 Atari 8-bit systems and uses the same CPU, but has much more RAM, 64 KB. I could use a tape recorder to persist my own programs, which was super handy compared to Pegasus which used only read-only cartridges.
+My first personal computer was **Atari 800XL** which I got from my uncle as my cousins were already on Commodore Amiga 500, so the old 8-bit machine was just gathering dust. I had no software so I had to write my own programs to have any fun from it. The Atari 800XL is a continuation of designed in 1979 Atari 8-bit systems and uses the same CPU, but has much more RAM, 64 KB. I could use a tape recorder to persist my own programs, which was super handy compared to the Pegasus which used only read-only cartridges.
 
 ![Atari 800XL]({{site.url}}/assets/2023-02-10/Atari800XL.jpg)
 
@@ -50,6 +50,6 @@ Maybe my collection of Famicom cartridges is not super huge but I collected almo
 
 ![Raspberry Pi]({{site.url}}/assets/2023-02-10/Raspberry_Pi.jpg)
 
-The last but for sure not least is my Raspberry Pi 3 model B+. This is not a retro computer (if you look closer, the board is from 2017), but I use it to emulate a number of different retro systems like: NES (Pegasus runs games a bit slower than the original system), SNES, Sega Genesis, PC Engine, Atari VCS.
+The last but for sure not least is my Raspberry Pi 3 model B+. This is not a retro computer (if you look closer, the board is from 2017), but I use it to emulate a number of different retro systems like: NES (the Pegasus runs games a bit slower than the original system), SNES, Sega Genesis, PC Engine, Atari VCS.
 
 I am very sentimental about these old computers. Since I still have some room for them I won't give them away for now, but I definitely won't extend my collection anytime soon. 😄
