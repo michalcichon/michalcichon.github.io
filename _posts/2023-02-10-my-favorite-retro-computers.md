@@ -22,7 +22,7 @@ My first personal computer was Atari 800XL which I got from my uncle as my cousi
 
 ![Atari 800XL]({{site.url}}/assets/2023-02-10/Atari800XL.jpg)
 
-When I got my first PC, I packed everything and put it in the attic, so then I found it back years later, around 2018.
+When I got my first PC, I packed everything and put it in the attic, so then I found it back years later, around 2018. My Atari works fine to this very day, and sometimes I plug it to my modern TV via some sort of video converter or to the HDMI monitor via my old Pioneer DVD Recorder.
 
 ![Commodore 64]({{site.url}}/assets/2023-02-10/Commodore64.jpg)
 
