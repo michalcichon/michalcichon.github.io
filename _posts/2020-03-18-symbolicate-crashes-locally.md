@@ -8,7 +8,7 @@ keywords: crash logs, xcode crash logs, crashlogs, symbolicate crashlogs
 tags: ios tools
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
-background: "#d74d00"
+background: "#ffffff"
 comments: true
 ---
 
