@@ -26,6 +26,8 @@ When I got my first PC, I packed everything and put it in the attic, so then I f
 
 ![Commodore 64]({{site.url}}/assets/2023-02-10/Commodore64.jpg)
 
+The Commodore 64 is a completely new buy. I haven't owned any Commodore back then in 90s and I didn't even see it in 90s, but I heard many stories that some of my friends saw this computer in action. I was always impressed by the number of available software and games on this system. My C64 is called C64-C and it's a newer version from the early 90s but fully compatible with "bread bin" Commodore 64 from 1982. Its motherboard was a bit rearranged and made shorter (e.g. less RAM chips as a single piece could contain more memory), and the SID audio chip has been improved.
+
 ![Nintendo DSi]({{site.url}}/assets/2023-02-10/Nintendo_DSi.jpg)
 
 ![NES Cartridges]({{site.url}}/assets/2023-02-10/NES_Carts.jpg)
