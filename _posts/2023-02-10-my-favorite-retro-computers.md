@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "My favorite retro computers"
-description: "In my collection of retro devices I have a couple of iconic computers and consoles."
+title:  "My favorite retro computers 🕹"
+description: "In my collection of retro devices I have a couple of iconic computers and consoles including Atari 800XL and Commodore 64."
 date:   2023-02-10 21:00:00 +0200
 thumbnail: commodore.png
 image: "assets/thumbnails/commodore.png" # Image for RSS
