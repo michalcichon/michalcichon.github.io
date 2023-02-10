@@ -28,7 +28,7 @@ When I got my first PC around 2001, I packed everything and put it in the attic,
 
 ![Commodore 64]({{site.url}}/assets/2023-02-10/Commodore64.jpg)
 
-The **Commodore 64** is a completely new buy. I haven't owned any Commodore computer back then in the 90s and I didn't even see back then, but I have heard many stories from some of my friends that had seen this computer in action. I was always impressed by the number of available software and games for this system. My C64 is usually referred as the C64-C and it's a newer revision from the early 90s but fully compatible with the old "bread bin" Commodore 64 from 1982. Its motherboard was a bit rearranged and made shorter (e.g. less RAM chips as a single piece could contain more memory), and the SID audio chip has been improved.
+The **Commodore 64** is a completely new buy. I haven't owned any Commodore computer back then in the 90s and I didn't even see any of them back then, but I have heard many stories from some of my friends that had seen this computer in action. I was always impressed by the number of available software and games for this system. My C64 is usually referred as the C64-C and it's a newer revision from the early 90s but fully compatible with the old "bread bin" Commodore 64 from 1982. Its motherboard was a bit rearranged and shortened (e.g. less RAM chips as a single piece could contain more memory), and the SID audio chip has been improved.
 
 I love the sound of the SID chip. It has 3 voices which can independently generate one of 4 types of waves: sawtooth, triangle, rectangle, and white noise. It utilizes a coupe of analog filters so every SID sounds a bit differently.
 
