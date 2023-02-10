@@ -8,7 +8,7 @@ keywords: Xcode, tabs, window tabs, document tabs, nested tabs
 tags: ios tools
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
-background: "#d74d00"
+background: "#ffffff"
 comments: true
 ---
 

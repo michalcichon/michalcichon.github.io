@@ -7,6 +7,9 @@ categories: miscellaneous
 keywords: darkmode, dark mode, css
 tags: miscellaneous
 comments: true
+thumbnail: darkmode.jpeg
+image: "assets/thumbnails/darkmode.jpeg" # Image for RSS
+background: "#ffffff"
 ---
 
 ![Dark mode]({{site.url}}/assets/2021-04-18/darkmode.png)

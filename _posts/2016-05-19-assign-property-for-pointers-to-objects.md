@@ -8,7 +8,7 @@ keywords: xcode, assign, weak property
 tags: ios programming
 thumbnail: code.png
 image: "assets/thumbnails/code.png" # Image for RSS
-background: "#d74d00"
+background: "#ffffff"
 comments: true
 ---
 
