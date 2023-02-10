@@ -49,3 +49,5 @@ Maybe my collection of Famicom cartridges is not super huge but I collected almo
 ![Raspberry Pi]({{site.url}}/assets/2023-02-10/Raspberry_Pi.jpg)
 
 The last but for sure not least is my Raspberry Pi 3 model B+. This is not a retro computer (if you look closer, the board is from 2017), but I use it to emulate a number of different retro systems like: NES (Pegasus runs games a bit slower than the original system), SNES, Sega Genesis, PC Engine, Atari VCS.
+
+I am very sentimental about these old computers. Since I still have some room for them I won't give them away for now, but I definitely won't extend my collection anytime soon. 😄
