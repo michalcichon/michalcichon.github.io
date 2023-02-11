@@ -32,7 +32,7 @@ When I got my first PC around 2001, I packed everything and put it in the attic,
 
 The **Commodore 64** is a brand-new purchase. Although I didn't have a Commodore computer in the 1990s and I never even saw one in person, I had heard many tales from people who had. The variety of apps and games that were readily available for this system always astounded me. My C64, also known as the C64-C, is a later model from the early 1990s that is still fully compatible with the original "bread bin" Commodore 64 from 1982. The SID audio chip has been upgraded, and the motherboard has been slightly reconfigured and condensed (fewer RAM chips are used because a single component can hold more memory).
 
-![Commodore 64 (closer look)]({{site.url}}/assets/2023-02-10/Commodore64-2.jpg)
+![Commodore 64 (closer look)]({{site.url}}/assets/2023-02-10/Commodore64-3.jpg)
 
 I love the sound of the SID chip.  It features three voices, each of which may produce one of the four wave types: sawtooth, triangle, rectangle, and white noise. Because it makes use of several analog filters, each SID has a somewhat different sound.
 
@@ -59,3 +59,15 @@ The last but for sure not least, is my Raspberry Pi 3 model B+. This is not a re
 What I like the most about these 8-bit machines is that, despite their limited video and sound capabilities, they can be used to create impressive games and demos. We still have a thriving community around these machines, and every year, new games are released. We now have instances of applications using the C64 and Atari 800XL's more sophisticated graphic modes since our understanding of how to use the hardware has developed over the past 40 years.
 
 I am very sentimental about these old computers. Since I still have some room for them, I won't give them away for now, but I definitely won't extend my collection anytime soon. 😄
+
+## Learn more...
+
+Find out more interesting facts about retro computers in the videos listed below.
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/BpXFB8ZEH30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/aZE0ziQLVqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/vH-D6GdkyCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/s2bTQK6vbKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
