@@ -12,6 +12,8 @@ tags: retro gaming computing
 comments: true
 ---
 
+## Retrocomputing. To be frank, every computer sooner or later becomes retro, but I find a lot of fun working with these 8-bit machines from the 80s and early 90s.
+
 I started collecting my retro computers somehow by accident. My first game console was the **Pegasus IQ-502** which I got from my parents around 1994. The console was technically a Nintendo Entertainment System clone produced by the Taiwanese company Micro Genius, and was very popular in the early 90s in Poland, before the anti-piracy law was introduced to the Polish legal system.
 
 The main chip of the unit was the UA6527P which was a DIL-40 CPU clocked at 1.77 MHz. It was a copy of the Ricoh RP2A03 used in the Nintendo Family Computer (Famicom) and the RP2A07 in the NES console (PAL) using the MOS 6502.
@@ -37,6 +39,8 @@ I utilize two separate devices to load programs: **Tapecart**, which emulates a 
 You can find the footage of me playing some C64 games below (I used my Pioneer DVR-645 to capture it).
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/LaTrxRJUdHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Back in the 90s, there was a big competition between Atari and Commodore users (ZX Spectrum was not very popular when I was a kid, and new 16-bit and 32-bit computers were just around the corner), but I am fascinated by both of them. The Commodore's tape loading mechanism was easier to improve without hardware modifications and was more reliable (Atari could not load programs every 1 of 10 attempts because of some issues in the design). The Atari sounds a bit more like the arcade machine, but Commodore's fantastic sound capabilities allowed it to create music, which was a big breakthrough.
 
 ![Nintendo DSi]({{site.url}}/assets/2023-02-10/Nintendo_DSi.jpg)
 
