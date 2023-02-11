@@ -32,6 +32,8 @@ When I got my first PC around 2001, I packed everything and put it in the attic,
 
 The **Commodore 64** is a brand-new purchase. Although I didn't have a Commodore computer in the 1990s and I never even saw one in person, I had heard many tales from people who had. The variety of apps and games that were readily available for this system always astounded me. My C64, also known as the C64-C, is a later model from the early 1990s that is still fully compatible with the original "bread bin" Commodore 64 from 1982. The SID audio chip has been upgraded, and the motherboard has been slightly reconfigured and condensed (fewer RAM chips are used because a single component can hold more memory).
 
+![Commodore 64 (closer look)]({{site.url}}/assets/2023-02-10/Commodore64-2.jpg)
+
 I love the sound of the SID chip.  It features three voices, each of which may produce one of the four wave types: sawtooth, triangle, rectangle, and white noise. Because it makes use of several analog filters, each SID has a somewhat different sound.
 
 I utilize two separate devices to load programs: **Tapecart**, which emulates a tape dataset, and **SD2IEC**, which emulates an IEC device. The Commodore disk drive isn't entirely compatible with it, however many D64 images of C64 disks are fully functional or have been patched.
