@@ -54,4 +54,6 @@ Maybe my collection of Famicom cartridges is not super huge, but I collected alm
 
 The last but for sure not least, is my Raspberry Pi 3 model B+. This is not a retro computer (if you look closer, the board is from 2017), but I use it to emulate a number of different retro systems like: NES (the Pegasus runs games a bit slower than the original system), SNES, Sega Genesis, PC Engine, and Atari VCS.
 
+What I like the most about these 8-bit machines is that, despite their limited video and sound capabilities, they can be used to create impressive games and demos. We still have a thriving community around these machines, and every year, new games are released. We now have instances of applications using the C64 and Atari 800XL's more sophisticated graphic modes since our understanding of how to use the hardware has developed over the past 40 years.
+
 I am very sentimental about these old computers. Since I still have some room for them, I won't give them away for now, but I definitely won't extend my collection anytime soon. 😄
