@@ -16,7 +16,7 @@ comments: true
 
 I started collecting my retro computers somehow by accident. My first game console was the **Pegasus IQ-502** which I got from my parents around 1994. The console was technically a Nintendo Entertainment System clone produced by the Taiwanese company Micro Genius, and was very popular in the early 90s in Poland, before the anti-piracy law was introduced to the Polish legal system.
 
-The main chip of the unit was the UA6527P which was a DIL-40 CPU clocked at 1.77 MHz. It was a copy of the Ricoh RP2A03 used in the Nintendo Family Computer (Famicom) and the RP2A07 in the NES console (PAL) using the MOS 6502.
+The main chip of the unit was the UA6527P which was a DIL-40 CPU clocked at 1.77 MHz. It was a copy of the Ricoh RP2A03 used in the Nintendo Family Computer (Famicom) and the RP2A07 in the NES console (PAL) using the MOS 6502. The Pegasus was superior to the original Famicom in some ways. The original system has no composite video output, only RF, which, in theory, gives worse video quality. In reality, I saw no difference when I connected my Pegasus to our family Panasonic CRT TV using any of those. Actually, I kept it permanently connected to the TV via our VCR, which accepted a second RF signal because it required fewer cables.
 
 The video and sound capabilities of this 8-bit system were a bit limited, but unlike systems like the MSX, it had smooth vertical scrolling, which was used in many platform games.
 
