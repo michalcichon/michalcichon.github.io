@@ -16,13 +16,15 @@ comments: true
 
 I started collecting my retro computers somehow by accident. My first game console was the **Pegasus IQ-502** which I got from my parents around 1994. The console was technically a Nintendo Entertainment System clone produced by the Taiwanese company Micro Genius, and was very popular in the early 90s in Poland, before the anti-piracy law was introduced to the Polish legal system.
 
-The main chip of the unit was the UA6527P which was a DIL-40 CPU clocked at 1.77 MHz. It was a copy of the Ricoh RP2A03 used in the Nintendo Family Computer (Famicom) and the RP2A07 in the NES console (PAL) using the MOS 6502. The Pegasus was superior to the original Famicom in some ways. The original system has no composite video output, only RF, which, in theory, gives worse video quality. In reality, I saw no difference when I connected my Pegasus to our family Panasonic CRT TV using any of those. Actually, I kept it permanently connected to the TV via our VCR, which accepted a second RF signal because it required fewer cables.
+The main chip of the unit was the UA6527P which was a DIL-40 CPU clocked at 1.77 MHz. It was a copy of the Ricoh RP2A03 used in the Nintendo Family Computer (Famicom) and the RP2A07 in the NES console (PAL) using the MOS 6502. It had 2 KB of RAM and 2 KB of video RAM. The Pegasus was superior to the original Famicom in some ways. The original system has no composite video output, only RF, which, in theory, gives worse video quality. In reality, I saw no difference when I connected my Pegasus to our family Panasonic CRT TV using any of those. Actually, I kept it permanently connected to the TV via our VCR, which accepted a second RF signal because it required fewer cables.
 
 The video and sound capabilities of this 8-bit system were a bit limited, but unlike systems like the MSX, it had smooth vertical scrolling, which was used in many platform games.
 
 ![Pegasus IQ-502]({{site.url}}/assets/2023-02-10/Pegasus_IQ-502.jpg)
 
-My first personal computer was the **Atari 800XL**, which I got from my uncle because my cousins were already on the Commodore Amiga 500, so the old 8-bit machine was just gathering dust. I had no software, so I had to write my own programs to get any enjoyment out of them. The Atari 800XL is a continuation of Atari 8-bit systems designed in 1979 and uses the same CPU but has much more RAM, 64 KB. I could use a tape recorder to persist my own programs, which was super handy compared to the Pegasus, which used only read-only cartridges.
+As a kid I considered home consoles to be devices of lower value compared to home computers. They had no keyboard and no way to write your own programs. My first personal computer was the **Atari 800XL**, which I got from my uncle because my cousins were already on the Commodore Amiga 500, so the old 8-bit machine was just gathering dust. I had no software, so I had to write my own programs to get any enjoyment out of them. The Atari 800XL is a continuation of Atari 8-bit systems designed in 1979 and uses the same CPU but has much more RAM, 64 KB. I could use a tape recorder to persist my own programs, which was super handy compared to the Pegasus, which used only read-only cartridges.
+
+Atari's main chips are: MOS 6502 clocked at 1.77 MHz (in PAL, the NTSC version was slightly faster), ROM containing the OS on 10 KB. It has two video chips: ANTIC (8 graphics modes with a resolution of 40×24 to 320×192 pixels in 2 or 4 colors) and GTIA (11 graphics modes with resolutions from 40×24 to 320×192 pixels in 2, 4 or 16 colors). It can render a huge number of 256 colors on the screen.
 
 ![Atari 800XL]({{site.url}}/assets/2023-02-10/Atari800XL.jpg)
 
@@ -32,9 +34,13 @@ When I got my first PC around 2001, I packed everything and put it in the attic,
 
 The **Commodore 64** is a brand-new purchase. Although I didn't have a Commodore computer in the 1990s and I never even saw one in person, I had heard many tales from people who had. The variety of apps and games that were readily available for this system always astounded me. My C64, also known as the C64-C, is a later model from the early 1990s that is still fully compatible with the original "bread bin" Commodore 64 from 1982. The SID audio chip has been upgraded, and the motherboard has been slightly reconfigured and condensed (fewer RAM chips are used because a single component can hold more memory).
 
+The video capabilities of the Atari 800XL and Commodore 64 are difficult to compare. On the one hand, Atari could render more colors: 256 vs. only 16 colors on the C64 and had more video modes. On the other hand, the C64 has better sprites, which are super helpful when we work on games. To tell what is better, more colorful graphics in higher resolution or less colorful but more detailed, is a matter for a never-ending discussion.
+
+Both computers have the same CPU (Atari's is slightly modified unit, and C64 has a bit slower clock) and the same amount of the RAM. 
+
 ![Commodore 64 (closer look)]({{site.url}}/assets/2023-02-10/Commodore64-3.jpg)
 
-I love the sound of the SID chip.  It features three voices, each of which may produce one of the four wave types: sawtooth, triangle, rectangle, and white noise. Because it makes use of several analog filters, each SID has a somewhat different sound.
+I love the sound of the SID chip. It features three voices, each of which may produce one of the four wave types: sawtooth, triangle, rectangle, and white noise. Because it makes use of several analog filters, each SID has a somewhat different sound.
 
 I utilize two separate devices to load programs: **Tapecart**, which emulates a tape dataset, and **SD2IEC**, which emulates an IEC device. The Commodore disk drive isn't entirely compatible with it, however many D64 images of C64 disks are fully functional or have been patched.
 
