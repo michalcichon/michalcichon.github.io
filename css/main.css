@@ -74,6 +74,12 @@ html, body {
   height: 160px;  /*.push must be the same height as .footer */
 }
 
+.qr-code {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 #menu-button {
   display: none;
   position: fixed;
