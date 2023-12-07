@@ -1072,6 +1072,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
       border-bottom: 1px solid #999;
   }
 
+  #blog-on-main {
+    background-color: #222;
+  }
+
   pre, code { 
     border: 1px solid #2e2e2e; 
     background-color: #110;
