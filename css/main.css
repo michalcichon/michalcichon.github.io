@@ -160,7 +160,7 @@ html, body {
   height: 15px;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:770px) {
   
   #menu-button {
     display: inline-block;
@@ -240,18 +240,61 @@ html, body {
   background-position: center center; 
   width: 100%;
   height: 200px;
-  text-align: center;
   margin-bottom: 75px;
 }
 
+#header-wrapper {
+  margin: 0px 20px;
+}
+
+#header-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#header-content h1 {
+  font-size: 35px;
+}
+
+#header-content h2 {
+  font-size: 25px;
+}
+
+#header-content h1,
+#header-content h2 {
+  text-align: left;
+  margin: 10px;
+  font-family: 'Poppins';
+  font-weight: 900;
+  color: white;
+}
+
+#header-image {
+  float: left;
+}
+
+#header-name {
+  margin-left: 20px;
+  margin-top: 52px;
+  float: left;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-shadow: black 1px 0 10px;
+}
+
 #my-photo {
-  margin-top: 150px;
+  float: left;
+  margin-top: 50px;
   width: 100px;
   height: 100px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   vertical-align: middle;
+  text-align: left;
 }
 
 /* Main */
@@ -740,7 +783,7 @@ ul.post-list li.post-element {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:770px) {
   #main-space-content .post-list p.post-description {
     margin-left: 0;
   }
@@ -961,7 +1004,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   visibility: visible;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:770px) {
   .tooltiptext {
     display: none;
   }
@@ -982,6 +1025,11 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   #header {
     background-color: rgb(32, 32, 32);
     background-blend-mode: hard-light;
+  }
+
+  #header-name {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
   }
 
   #main-space a:link,
@@ -1096,7 +1144,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
     background-color: #111;
   }
 
-  @media screen and (max-width:560px) {
+  @media screen and (max-width:770px) {
     #menu.responsive {
       background-color: rgba(18, 18, 18, 1);
     }

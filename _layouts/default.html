@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed%7CPoppins&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.min.css?t={{site.time | date_to_xmlschema}}">
     <link rel="icon" type="image/png" sizes="64x64" href="{{site.baseurl}}/icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/apple-touch-icon.png">
@@ -47,7 +47,19 @@
         </ul>
       </nav>
       <div id="header">
-        <a href="{{site.baseurl}}/#photo"><img id="my-photo" src="{{site.baseurl}}/img/michal.jpeg" alt="Michał Cichoń" title="My photo" /></a>
+        <div id="header-wrapper">
+          <div id="header-content">
+            <div id="header-image">
+              <a href="{{site.baseurl}}/#photo">
+                <img id="my-photo" src="{{site.baseurl}}/img/michal.jpeg" alt="Michał Cichoń" title="My photo" />
+              </a>
+            </div>
+            <div id="header-name">
+              <h1>Michał Cichoń</h1>
+              <h2>iOS Software Developer</h2>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="main-space">
         <div id="main-space-content">
