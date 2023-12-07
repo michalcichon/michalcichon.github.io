@@ -1073,7 +1073,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   }
 
   #blog-on-main {
-    background-color: #222;
+    background-color: #111;
   }
 
   pre, code { 
@@ -1145,10 +1145,24 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   .highlight .il { color: #099; }
 
   #footer {
-    background-color: #222;
+    background-color: #111;
   }
 
   @media screen and (max-width:770px) {
+
+    #header-name {
+      margin-left: 15px;
+      margin-top: 64px;
+    }
+
+    #header-content h1 {
+      font-size: 25px;
+    }
+    
+    #header-content h2 {
+      font-size: 15px;
+    }
+
     #menu.responsive {
       background-color: rgba(18, 18, 18, 1);
     }
