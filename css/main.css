@@ -1187,6 +1187,17 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 }
 
 @media screen and (max-width:400px) {
+
+  #my-photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  #header-name {
+    margin-top: 46px;
+    margin-left: 6px;
+  }
+
   #header-content h1 {
     font-size: 22px;
   }
