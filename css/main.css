@@ -1191,10 +1191,11 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   #my-photo {
     width: 60px;
     height: 60px;
+    margin-top: 70px;
   }
 
   #header-name {
-    margin-top: 46px;
+    margin-top: 75px;
     margin-left: 6px;
   }
 
