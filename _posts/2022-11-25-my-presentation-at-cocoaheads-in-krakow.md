@@ -8,7 +8,7 @@ image: "assets/thumbnails/swift.png" # Image for RSS
 background: "#f05138"
 categories: ios
 keywords: cocoaheads, ios, conference 
-tags: ios swift programming
+tags: ios swift programming events
 comments: true
 ---
 
