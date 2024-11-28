@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Basic config server to avoid hardcoding in iOS applications"
-description: "Every information we hardcode in the client application makes it more difficult to update or fix. The problem is getting only worse when we regularly roll out new versions of our application. In this case we would need to keep track of every build to be sure we don't shut down any resource we pointed directly in our source code in the previous builds. Hardcoding is generally a bad idea..."
+title: "Basic Configuration Server to Avoid Hardcoding in iOS Applications"
+description: "Hardcoding any information in a client application makes it more difficult to update or fix. The problem worsens when we regularly roll out new versions of the application. In such cases, we would need to track every build to ensure we don’t shut down any resources directly referenced in our source code from previous builds. Hardcoding is generally a bad idea...."
 date: 2020-10-17 08:00:00 +0200
 categories: ios
 keywords: iOS, hardcoding, config server, mariadb, swift app
@@ -12,13 +12,13 @@ background: "#f05138"
 comments: true
 ---
 
-***Every information we hardcode in the client application makes it more difficult to update or fix. The problem is getting only worse when we regularly roll out new versions of our application. In this case we would need to keep track of every build to be sure we don't shut down any resource we pointed directly in our source code in the previous builds. Hardcoding is generally a bad idea.***
+***Hardcoding any information in a client application makes it more difficult to update or fix. The problem worsens when we regularly roll out new versions of the application. In such cases, we would need to track every build to ensure we don’t shut down any resources directly referenced in our source code from previous builds. Hardcoding is generally a bad idea.***
 
-In this short tutorial, I will show you how to build a simple configuration server that helps to avoid hardcoding values on the client side.
+In this short tutorial, I will demonstrate how to build a simple configuration server to help avoid hardcoding values on the client side.
 
 # Dependencies
 
-I would like to build something simple with technologies I know more or less from my previous experiences but I have never used heavily. I would pick Node.js stack with Express that will give me neat results pretty quickly. I have used Node.js once when attending to some course few years ago. I have also used MySQL before but never an open source fork MariaDB, so I would like to give it a try too. On the client side I would love to finally build something with SwiftUI. Overall it gives me the following dependencies:
+I want to build something simple using technologies I am somewhat familiar with from past experiences, but have never used extensively. I’ll choose a Node.js stack with Express, as it allows me to achieve neat results quickly. I previously worked with Node.js during a course I attended a few years ago. I’ve also used MySQL before but never its open-source fork, MariaDB, so I’d like to give it a try. On the client side, I’d love to finally build something with SwiftUI. This brings me to the following dependencies:
 
 * Node.JS
 * Express
@@ -28,7 +28,7 @@ I would like to build something simple with technologies I know more or less fro
 
 # Database
 
-I will start with data. MariaDB is open source and installation instructions as well as binaries can be found on its [website](https://mariadb.org/download/). However, installing it on macOS is very easy with [brew](https://brew.sh/):
+I will start with the data. MariaDB is open source, and installation instructions, as well as binaries, can be found on its [official website](https://mariadb.org/download/). However, installing it on macOS is very easy using [Homebrew](https://brew.sh/):
 
 ```bash
 brew install mariadb
@@ -63,11 +63,11 @@ I changed the root's password with the following command:
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MySecretPassw0rd!';
 ```
 
-We should not use root account in real life, but for the demo it is just fine. I won't use my running locally MariaDB instance on the production. 😅
+We should not use the root account in real-life scenarios, but it's fine for the demo. I won't use my locally running MariaDB instance in production. 😅
 
 # Database Schema
 
-I would like sort of key-value storage that can be fetched from the backend side and stored in a local database. Additionally I would like to keep track of the updates so I won't fetch configurations I already have on my device up-to-date.
+I would like a key-value storage system that can be fetched from the backend and stored in a local database. Additionally, I want to track updates to ensure that I don't fetch configurations that are already up-to-date on my device.
 
 We could build more complex versioning system. But I would keep it simple and use timestamps. Thanks to `DEFAULT` statement, `updated_at` field will be automatically updated by MariaDB engine every time a row in `config` table is updated.
 
@@ -117,7 +117,7 @@ UPDATE `config` SET `value` = "Can't wait!" WHERE `key` = "app.fun_button.text";
 
 # Backend Application
 
-This are my first steps to Node.js and I get inspired by a nicely written article by [bezkoder](https://bezkoder.com/node-js-rest-api-express-mysql/). I start new project with `npm` which I believe is the standard for Node.js applications.
+These are my first steps with Node.js, and I was inspired by a well-written article by [bezkoder](https://bezkoder.com/node-js-rest-api-express-mysql/). I started a new project using `npm`, which I believe is the standard for Node.js applications.
 
 
 ```bash
@@ -132,13 +132,15 @@ npm init
 npm install express mysql body-parser --save
 ```
 
-I started by defining the project structure. I would like to keep it simple but also to have it nicely organized. I created a main `server.js` file and `app` folder with the following sub-folders:
-* config (*where I will keep the database config*)
-* controllers
-* models
-* routes
+I started by defining the project structure. I wanted to keep it simple yet nicely organized. I created a main `server.js` file and an `app` folder with the following sub-folders:
 
-`server.js` is very simple entry point where Express is initialized with parsers and routers.
+- `config` (*where I will keep the database configuration*)  
+- `controllers`  
+- `models`  
+- `routes`  
+
+The `server.js` file serves as a very simple entry point where Express is initialized with parsers and routers.
+
 
 ```js
 const express = require("express");
@@ -245,7 +247,7 @@ Config.getAfter = (timestamp, result) => {
 module.exports = Config;
 ```
 
-I would like to stop here for a moment. Actually I struggled a bit because of this timestamp format. It is a standard ISO-8601 but it is not supported by MariaDB's [STR_TO_DATE](https://mariadb.com/kb/en/str_to_date/) function. I had to use a formatted input but to get the right format I played with it a bit by using this short statement which I ran from `Sequel Pro`:
+I'd like to pause here for a moment. I actually struggled a bit with the timestamp format. While it follows the ISO-8601 standard, it is not supported by MariaDB's [STR_TO_DATE](https://mariadb.com/kb/en/str_to_date/) function. I had to use a formatted input, and to get the correct format, I experimented a bit using this short statement, which I ran from `Sequel Pro`:
 
 ```sql
 select STR_TO_DATE('2020-10-17T18:37:16.000Z', '%Y-%m-%dT%H:%i:%s%.%#Z') as 'timestamp';
@@ -281,12 +283,14 @@ As I above-mentioned, I would love to use SwiftUI. It is super exciting that we 
 
 ![Creating a new project in Xcode)]({{site.url}}/assets/2020-10-17/xcode-new-project.png)
 
-The client app will use `ConfigService` to fetch fresh configuration from the backend side. I would like to trigger it early when the application boots. To demonstrate that the config is refreshing UI, I have created a simple demo application with one button that opens a web page. The button's title as well as the main screen background is configurable. I will use the following keys:
-* `app.background.color` that allows modifying the background color
-* `app.fun_button.text` - the button's text
-* `app.fun_button.url` - the button's url
+The client app will use `ConfigService` to fetch fresh configuration from the backend. I want to trigger this process early when the application boots. To demonstrate how the configuration refreshes the UI, I have created a simple demo application with one button that opens a web page. The button's title, as well as the main screen background, is configurable. I will use the following keys:
 
-The model confirms to Codable to make it easy to encode and decode from JSON.
+- `app.background.color` - modifies the background color  
+- `app.fun_button.text` - the button's text  
+- `app.fun_button.url` - the button's URL  
+
+The model conforms to `Codable` to make it easy to encode and decode from JSON.
+
 
 ```swift
 struct Config: Codable {
@@ -399,13 +403,13 @@ private func fetchConfig() {
 }
 ```
 
-When the app is run for the first time, it fetches the whole config from `http://localhost:3000/config`. But the next time we have the timestamp of the newest updated element stored locally and we will call it like this: `http://localhost:3000/config/2020-10-17T18:43:19.000Z`.
+When the app is run for the first time, it fetches the entire configuration from `http://localhost:3000/config`. On subsequent runs, the timestamp of the newest updated element is stored locally, and the app will call the endpoint like this: `http://localhost:3000/config/2020-10-17T18:43:19.000Z`.
 
-Unfortunately, the standard formatter for ISO-8601 from `DateFormatter` doesn't allow fractional seconds that are returned from the backend side, so a custom formatter had to be implemented. I used the same approach as [here](https://stackoverflow.com/questions/46458487/how-to-convert-a-date-string-with-optional-fractional-seconds-using-codable-in-s/46458771#46458771).
+Unfortunately, the standard ISO-8601 formatter from `DateFormatter` doesn't support fractional seconds returned from the backend, so a custom formatter had to be implemented. I used the approach described [here](https://stackoverflow.com/questions/46458487/how-to-convert-a-date-string-with-optional-fractional-seconds-using-codable-in-s/46458771#46458771).
 
-As you can see after we fetch the data, we `decode` it and then `update` our local storage.
+After fetching the data, we `decode` it and then `update` our local storage.
 
-The method to decode configs uses a standard JSONDecoder but we need to remember about setting `dateDecodingStrategy`. Otherwise the timestamp won't be represented correctly.
+The method to decode configurations uses a standard `JSONDecoder`, but it’s important to set the `dateDecodingStrategy`. Without it, the timestamp won't be represented correctly.
 
 ```swift
 private func decodedConfigs(data: Data) -> [Config] {
@@ -468,9 +472,11 @@ class ContentViewModel: ObservableObject {
 }
 ```
 
-As you can see they are computed properties and use `ConfigService`'s shared instance to get the fresh config but we also provide some default values in case there is no values in the `ConfigService`'s data store.
+As you can see, these are computed properties that use the `ConfigService`'s shared instance to fetch the latest configuration. We also provide default values in case there are no values in the `ConfigService`'s data store.
 
-`ConfigService` is independent from SwiftUI but we notify by `NotificationCenter` and we utilize `objectWillChange` to make a manual update to `ContentViewModel`. It is important to dispatch to the main queue as it will trigger UI changes and the notification center will send from a background queue. `@objc` is required for `onConfigUpdate` method because otherwise it won't be visible by `#selector`.
+`ConfigService` is independent of SwiftUI, but we notify changes using `NotificationCenter` and utilize `objectWillChange` to manually update the `ContentViewModel`. It’s important to dispatch updates to the main queue, as this will trigger UI changes, and `NotificationCenter` sends notifications from a background queue. 
+
+The `@objc` attribute is required for the `onConfigUpdate` method because, without it, the method won't be visible to `#selector`.
 
 ```swift
 init() {
@@ -484,23 +490,24 @@ init() {
 }
 ```
 
-![The application state is refreshed after fetching the config)]({{site.url}}/assets/2020-10-17/app.png)
+![The application state is refreshed after fetching the config]({{site.url}}/assets/2020-10-17/app.png)
 
-As you can see the app's state is refreshed after the config is fetched. To better illustrate it, we could use [Charles](https://www.charlesproxy.com/) that allows us to see the communication between the client and the server.
+As you can see, the app's state is refreshed after the config is fetched. To better illustrate this, we could use [Charles](https://www.charlesproxy.com/), which allows us to monitor the communication between the client and the server.
 
-![The whole config is fetched for the first time)]({{site.url}}/assets/2020-10-17/charles-1.png)
+![The whole config is fetched for the first time]({{site.url}}/assets/2020-10-17/charles-1.png)
 
-For the first time the whole configuration is fetched. 
+For the first time, the entire configuration is fetched.
 
-![No need to update anything)]({{site.url}}/assets/2020-10-17/charles-2.png)
+![No need to update anything]({{site.url}}/assets/2020-10-17/charles-2.png)
 
-But when the config is requested for the last known timestamp, the config is empty as no new updates were done since we fetched it last time.
+However, when the config is requested for the last known timestamp, the response is empty because no new updates have been made since the last fetch.
 
-The full source code of the server and the client app are available on [Github repo](https://github.com/michalcichon/basic-config). Feel free to study, fetch and play with it.
+The full source code for both the server and the client app is available on the [GitHub repository](https://github.com/michalcichon/basic-config). Feel free to explore, fetch, and experiment with it.
 
-# How we could improve it. The next steps
+# How We Could Improve It: Next Steps
 
-This is just a basic presentation of the config server approach. We could definitely improve it by:
-- Adding indexes to the database, for example on `update_at` to improved the look-up of the newest key-values.
-- Replacing MariaDB with some key-value optimized system
-- Introducing a semantic versioning system
+This is just a basic demonstration of the config server approach. There are several ways we could improve it:
+
+- Adding indexes to the database, such as on `update_at`, to improve the lookup of the newest key-values.
+- Replacing MariaDB with a key-value optimized system.
+- Introducing a semantic versioning system.
