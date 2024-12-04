@@ -20,13 +20,13 @@ Our aim is to test a concept of the full-stack Swift in a real application. In a
 
 # Swift on the server
 
-When Apple made Swift an open-source software at the end of 2015[1], it became clear that it would open the language to new application areas. The natural consequence was to start the development of new web frameworks in Swift, which would make it possible to implement backend and iOS applications in the same language.
+When Apple made Swift an open-source software at the end of 2015[[1]](#ref1), it became clear that it would open the language to new application areas. The natural consequence was to start the development of new web frameworks in Swift, which would make it possible to implement backend and iOS applications in the same language.
 
 Swift with its strongly typed model and modern features can be a great replacement for the variety of more dynamic languages. Designers of Swift tried to make it safer to write code. Besides the mentioned strong typing, we also get options that simplify operating with nullability, redesigned and safer statements – for example, the switch statement that has to be exhaustive, error handling, and more.
 
-Apple is not alone in showing interest in Swift. IBM seems to invest a lot of resources to integrate Swift with its cloud platform called Bluemix. What is worth mentioning is IBM Swift Sandbox[2], which is still in beta but allows us to run Swift code remotely from a web browser. And, last but not least, Kitura[3], one of the most dynamically developed Swift frameworks.
+Apple is not alone in showing interest in Swift. IBM seems to invest a lot of resources to integrate Swift with its cloud platform called Bluemix. What is worth mentioning is IBM Swift Sandbox[[2]](#ref2), which is still in beta but allows us to run Swift code remotely from a web browser. And, last but not least, Kitura[[3]](#ref3), one of the most dynamically developed Swift frameworks.
 
-At the time of writing this article, there were 4 major web frameworks for Swift: Perfect[4], Kitura, Vapor[5], and Zewo[6]. They all can be run on both macOS and Linux and have strong communities behind them. We will focus on Kitura because of its similarity to the Express framework[7], great support, and easy configuration.
+At the time of writing this article, there were 4 major web frameworks for Swift: Perfect[[4]](#ref4), Kitura, Vapor[[5]](#ref5), and Zewo[[6]](#ref6). They all can be run on both macOS and Linux and have strong communities behind them. We will focus on Kitura because of its similarity to the Express framework[[7]](#ref7), great support, and easy configuration.
 
 With Swift on the server, it is now possible to become a full-stack developer without half measures in the form of the hybrid application development nor simply dealing with the JavaScript stack. It gives us more flexibility to choose well-matched solutions. It also gives an opportunity for iOS developers to test themselves on the server-side programming, giving more options to create a feature-oriented, multidisciplinary team. 
 
@@ -36,7 +36,7 @@ Moreover, it is now easier for iOS developers to create stubs in case of a tempo
 
 Usually, when designing communication between a server and an iOS application, we choose JSON as a default serialization method. It has a lot of advantages: readability, flexibility, and good availability of serializers in the majority of most popular web technologies used. In most cases, it is sufficient to use JSON, but when we want to send a lot of data in one shot or our services generate a lot of traffic, it can be reasonable to replace JSON with a more efficient method.
 
-Protocol Buffers[8], a method of serializing data developed by Google, has been used internally by the company for about seven years and then publicly published in 2008. It has a lot of advantages compared to JSON, worth mentioning:
+Protocol Buffers[[8]](#ref8), a method of serializing data developed by Google, has been used internally by the company for about seven years and then publicly published in 2008. It has a lot of advantages compared to JSON, worth mentioning:
 - Protocol Buffers comes with the concept of schema. If we want to serialize data in order to send it through the network, we need to define its data type first.
 - Every message defined by a schema is strongly typed. In contrast to JSON, every field in the schema has its own data type that cannot be changed. No more unspecified changes of data type between revisions of the API!
 - A message can be composed of simple data types or other messages.
@@ -88,7 +88,7 @@ message AccountList {
 
 Every schema definition should start with the version indication. In our example, we used Protocol Buffers in version 3. Next, we defined three message types: Transaction, Account and AccountList.
 
-Fields in the message are strongly typed and numbered. In the Protocol Buffers documentation[9] you can find a list of available data types. Most of them are self-explanatory: double, float, string, int32, int64, uint64, etc. The numeric tag should be unique within the type definition and is placed after the field name and the equality sign.
+Fields in the message are strongly typed and numbered. In the Protocol Buffers documentation[[9]](#ref9) you can find a list of available data types. Most of them are self-explanatory: double, float, string, int32, int64, uint64, etc. The numeric tag should be unique within the type definition and is placed after the field name and the equality sign.
 
 Defining enums is similar to defining messages, the only difference is that we don’t place a type before a name. Complex data types can be defined inline, just before the use. In our example we defined `TransactionType` as an enum with two possible values: Credit and Debit so we can distinguish between incomes and outcomes in the transaction list. 
 
@@ -96,7 +96,7 @@ Arrays can be defined by the repeated keyword which should be placed before a ty
 
 To transform our definitions to the form that could be used by serializers and to generate the managing code we need to install `protoc compiler`. To use them inside a Swift application we need also the Swift Protobuf library.
 
-First, we install the compiler via Homebrew[10]:
+First, we install the compiler via Homebrew[[10]](#ref10)[10]:
 
 `brew install protobuf-swift`
 
@@ -411,11 +411,11 @@ Now we can open a browser and go to http://localhost:8080 address to see Kitura�
 ![Fig 2. Kitura is working]({{site.url}}/assets/2017-09-21/Fig_2_kitura_running.png)
 *<center>Fig 2. Kitura is working</center>*
 
-The article includes only fragments of the original solution. The full source code of the server application is available on Github[11].
+The article includes only fragments of the original solution. The full source code of the server application is available on Github[[11]](#ref11).
 
 ## iOS application
 
-The source code of the iOS application is also available on Github[11]. We decided to use the Alamofire library to simplify the networking layer and use some built-in diagnostic features. To manage dependencies we used Cocoapods.
+The source code of the iOS application is also available on Github[[11]](#ref11). We decided to use the Alamofire library to simplify the networking layer and use some built-in diagnostic features. To manage dependencies we used Cocoapods.
 
 ```ruby
 use_frameworks!
@@ -512,9 +512,9 @@ For the sample data, the payloads for Protocol Buffers are two times smaller tha
 
 ## Load tests
 
-We also wanted to test our sample server in more extreme conditions to look at how it would behave for 20, 50, 100, 200, and 300 users using our API in the local environment simultaneously. We chose to use Gatling[12] framework as it is very easy to record and run load tests locally.
+We also wanted to test our sample server in more extreme conditions to look at how it would behave for 20, 50, 100, 200, and 300 users using our API in the local environment simultaneously. We chose to use Gatling[[12]](#ref12) framework as it is very easy to record and run load tests locally.
 
-Gatling is available as a zip archive containing binaries and dependencies, so it is ready to use just after download. The bin directory contains two executable scripts: gatling.sh and recorder.sh. Gatling Recorder is a handy tool for recording simulators in a form of Scala[13] script.
+Gatling is available as a zip archive containing binaries and dependencies, so it is ready to use just after download. The bin directory contains two executable scripts: gatling.sh and recorder.sh. Gatling Recorder is a handy tool for recording simulators in a form of Scala[[13]](#ref13) script.
 
 ![Fig 5. Gatling Recorder]({{site.url}}/assets/2017-09-21/Fig_5_gatling_recorder_(edited).png)
 *<center>Fig 5. Gatling Recorder</center>*
@@ -534,7 +534,7 @@ To prepare the Protobuf scenario, we repeated the procedure from starting a new 
 ![Fig 7. Accept header modified by ModifyHeaders plugin]({{site.url}}/assets/2017-09-21/Fig_7_firefox_ModifyHeaders_plugin.png)
 *<center>Fig 7. Accept header modified by ModifyHeaders plugin</center>*
 
-Having two simulations in the output folder allows us to create a Gatling project and adapt them to cover our cases of using the API simultaneously by more than one user. To do that, we used SBT[14] and IntelliJ IDEA[15]. SBT is a build tool for Scala that simplifies all processes required for building Scala projects including dependency management, testing, and deployment.
+Having two simulations in the output folder allows us to create a Gatling project and adapt them to cover our cases of using the API simultaneously by more than one user. To do that, we used SBT[[14]](#ref14) and IntelliJ IDEA[[15]](#ref15). SBT is a build tool for Scala that simplifies all processes required for building Scala projects including dependency management, testing, and deployment.
 
 SBT and Scala are available as an IntelliJ plugin. After creating SBT project, we added the required dependencies in the `build.sbt` file:
 
@@ -594,7 +594,7 @@ class TransactionsJSONSimulation extends Simulation {
 }
 ```
 
-`TransactionsProtobufSimulator` is analogical, but has a different `acceptHeader`. By increasing and decreasing the atOnceUsers method parameter we can change the number of users using our API at the same time during the simulation. The source code of the whole Gatling project is available on GitHub[11].
+`TransactionsProtobufSimulator` is analogical, but has a different `acceptHeader`. By increasing and decreasing the atOnceUsers method parameter we can change the number of users using our API at the same time during the simulation. The source code of the whole Gatling project is available on GitHub[[11]](#ref11).
 
 To run the simulation we open the terminal and run the sbt from the project level:
 
@@ -654,35 +654,35 @@ Despite the fact that Swift frameworks are still in dynamic development, and the
 
 ## References
 
-[1] https://developer.apple.com/swift/blog/?id=34 
+<a name="ref1">[1] https://developer.apple.com/swift/blog/?id=34</a>
 
-[2] https://swift.sandbox.bluemix.net/#/repl
+<a name="ref2">[2] https://swift.sandbox.bluemix.net/#/repl</a>
 
-[3] http://www.kitura.io
+<a name="ref3">[3] http://www.kitura.io</a>
 
-[4] http://perfect.org
+<a name="ref4">[4] http://perfect.org</a>
 
-[5] http://vapor.codes
+<a name="ref5">[5] http://vapor.codes</a>
 
-[6] http://zewo.io
+<a name="ref6">[6] http://zewo.io</a>
 
-[7] https://expressjs.com
+<a name="ref7">[7] https://expressjs.com</a>
 
-[8] https://developers.google.com/protocol-buffers
+<a name="ref8">[8] https://developers.google.com/protocol-buffers</a>
 
-[9] https://developers.google.com/protocol-buffers/docs/proto 
+<a name="ref9">[9] https://developers.google.com/protocol-buffers/docs/proto</a>
 
-[10] https://brew.sh
+<a name="ref10">[10] https://brew.sh</a>
 
-[11] https://github.com/codete/protobuf-samples
+<a name="ref11">[11] https://github.com/codete/protobuf-samples</a>
 
-[12] http://gatling.io
+<a name="ref12">[12] http://gatling.io</a>
 
-[13] https://www.scala-lang.org 
+<a name="ref13">[13] https://www.scala-lang.org</a>
 
-[14] http://www.scala-sbt.org
+<a name="ref14">[14] http://www.scala-sbt.org</a>
 
-[15] https://www.jetbrains.com/idea/download 
+<a name="ref15">[15] https://www.jetbrains.com/idea/download</a>
 
 
 <hr>
