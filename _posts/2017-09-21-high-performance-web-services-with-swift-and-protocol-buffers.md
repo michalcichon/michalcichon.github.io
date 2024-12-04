@@ -672,35 +672,35 @@ Despite the fact that Swift frameworks are still in dynamic development, and the
 
 ## References
 
-<a name="ref1">[1] https://developer.apple.com/swift/blog/?id=34</a>
+<a name="ref1">[1] https://developer.apple.com/swift/blog/?id=34</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref2">[2] https://swift.sandbox.bluemix.net/#/repl</a>
+<a name="ref2">[2] https://swift.sandbox.bluemix.net/#/repl</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref3">[3] http://www.kitura.io</a>
+<a name="ref3">[3] http://www.kitura.io</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref4">[4] http://perfect.org</a>
+<a name="ref4">[4] http://perfect.org</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref5">[5] http://vapor.codes</a>
+<a name="ref5">[5] http://vapor.codes</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref6">[6] http://zewo.io</a>
+<a name="ref6">[6] http://zewo.io</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref7">[7] https://expressjs.com</a>
+<a name="ref7">[7] https://expressjs.com</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref8">[8] https://developers.google.com/protocol-buffers</a>
+<a name="ref8">[8] https://developers.google.com/protocol-buffers</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref9">[9] https://developers.google.com/protocol-buffers/docs/proto</a>
+<a name="ref9">[9] https://developers.google.com/protocol-buffers/docs/proto</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref10">[10] https://brew.sh</a>
+<a name="ref10">[10] https://brew.sh</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref11">[11] https://github.com/codete/protobuf-samples</a>
+<a name="ref11">[11] https://github.com/codete/protobuf-samples</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref12">[12] http://gatling.io</a>
+<a name="ref12">[12] http://gatling.io</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref13">[13] https://www.scala-lang.org</a>
+<a name="ref13">[13] https://www.scala-lang.org</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref14">[14] http://www.scala-sbt.org</a>
+<a name="ref14">[14] http://www.scala-sbt.org</a> [<a href="javascript:history.go(-1)">↑</a>]
 
-<a name="ref15">[15] https://www.jetbrains.com/idea/download</a>
+<a name="ref15">[15] https://www.jetbrains.com/idea/download</a> [<a href="javascript:history.go(-1)">↑</a>]
 
 
 <hr>
