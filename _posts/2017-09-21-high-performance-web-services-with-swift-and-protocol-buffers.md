@@ -96,7 +96,7 @@ Arrays can be defined by the repeated keyword which should be placed before a ty
 
 To transform our definitions to the form that could be used by serializers and to generate the managing code we need to install `protoc compiler`. To use them inside a Swift application we need also the Swift Protobuf library.
 
-First, we install the compiler via Homebrew[[10]](#ref10)[10]:
+First, we install the compiler via Homebrew[[10]](#ref10):
 
 `brew install protobuf-swift`
 
