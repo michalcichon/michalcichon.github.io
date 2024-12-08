@@ -16,7 +16,7 @@ comments: true
 
 In this short tutorial, I will demonstrate how to build a simple configuration server to help avoid hardcoding values on the client side.
 
-# Dependencies
+## Dependencies
 
 I want to build something simple using technologies I am somewhat familiar with from past experiences, but have never used extensively. I’ll choose a Node.js stack with Express, as it allows me to achieve neat results quickly. I previously worked with Node.js during a course I attended a few years ago. I’ve also used MySQL before but never its open-source fork, MariaDB, so I’d like to give it a try. On the client side, I’d love to finally build something with SwiftUI. This brings me to the following dependencies:
 
@@ -26,7 +26,7 @@ I want to build something simple using technologies I am somewhat familiar with 
 * Swift
 * SwiftUI
 
-# Database
+## Database
 
 I will start with the data. MariaDB is open source, and installation instructions, as well as binaries, can be found on its [official website](https://mariadb.org/download/). However, installing it on macOS is very easy using [Homebrew](https://brew.sh/):
 
@@ -65,7 +65,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MySecretPassw0rd!';
 
 We should not use the root account in real-life scenarios, but it's fine for the demo. I won't use my locally running MariaDB instance in production. 😅
 
-# Database Schema
+## Database Schema
 
 I would like a key-value storage system that can be fetched from the backend and stored in a local database. Additionally, I want to track updates to ensure that I don't fetch configurations that are already up-to-date on my device.
 
@@ -115,7 +115,7 @@ UPDATE `config` SET `value` = "#87CEFA" WHERE `key` = "app.background.color";
 UPDATE `config` SET `value` = "Can't wait!" WHERE `key` = "app.fun_button.text";
 ```
 
-# Backend Application
+## Backend Application
 
 These are my first steps with Node.js, and I was inspired by a well-written article by [bezkoder](https://bezkoder.com/node-js-rest-api-express-mysql/). I started a new project using `npm`, which I believe is the standard for Node.js applications.
 
@@ -277,7 +277,7 @@ exports.findAfter = (req, res) => {
 
 The full source code will be available on my [Github](https://www.github.com/michalcichon).
 
-# Client Application
+## Client Application
 
 As I above-mentioned, I would love to use SwiftUI. It is super exciting that we can actually create a project completely without AppDelegate and UIKit life cycle.
 
@@ -504,7 +504,7 @@ However, when the config is requested for the last known timestamp, the response
 
 The full source code for both the server and the client app is available on the [GitHub repository](https://github.com/michalcichon/basic-config). Feel free to explore, fetch, and experiment with it.
 
-# How We Could Improve It: Next Steps
+## How We Could Improve It: Next Steps
 
 This is just a basic demonstration of the config server approach. There are several ways we could improve it:
 

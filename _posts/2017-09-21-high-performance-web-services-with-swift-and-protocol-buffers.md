@@ -18,7 +18,7 @@ Swift gives us a lot of modern features that allow us to write safer and more el
 
 Our aim is to test a concept of the full-stack Swift in a real application. In addition, we want to investigate replacing the typically used serialization method of JSON with the more modern Protocol Buffers and see how it affects the performance of web services.
 
-# Swift on the server
+## Swift on the server
 
 When Apple made Swift an open-source software at the end of 2015[[1]](#ref1), it became clear that it would open the language to new application areas. The natural consequence was to start the development of new web frameworks in Swift, which would make it possible to implement backend and iOS applications in the same language.
 
@@ -32,7 +32,7 @@ With Swift on the server, it is now possible to become a full-stack developer wi
 
 Moreover, it is now easier for iOS developers to create stubs in case of a temporary lack of server-side development in the early stage of a project.
 
-# Protocol Buffers
+## Protocol Buffers
 
 Usually, when designing communication between a server and an iOS application, we choose JSON as a default serialization method. It has a lot of advantages: readability, flexibility, and good availability of serializers in the majority of most popular web technologies used. In most cases, it is sufficient to use JSON, but when we want to send a lot of data in one shot or our services generate a lot of traffic, it can be reasonable to replace JSON with a more efficient method.
 
@@ -45,7 +45,7 @@ Protocol Buffers[[8]](#ref8), a method of serializing data developed by Google, 
 
 Protocol Buffers can be used with many web technologies. There are serializers, deserializers, and code generators for the majority of programming languages including Java, C++, C#, Python, Go, Ruby and JavaScript.
 
-# Message definitions
+## Message definitions
 
 To test the concept of the full-stack development in Swift with the use of Protocol Buffers we created the sample server and the iOS application. They communicated via HTTP so they had to have a common proto schema. We started with defining the schema for our sample server. It was a simple web service to serve a list of bank accounts and transactions.
 
@@ -126,7 +126,7 @@ protoc --swift_out=Sources/ DataModel.proto
 
 And that’s it! We are free to use our model in web and mobile applications.
 
-# Let’s write some code
+## Let’s write some code
 
 We started with the server implementation. To simplify the process of creating the project structure, we used Swift Package Manager:
 
@@ -660,7 +660,7 @@ They also include charts for the number of active users along with the simulatio
 
 The JSON endpoints needed more time to respond and failed earlier. The Protocol Buffers endpoints could handle more requests per second. They also had significantly smaller minimal and mean response times. More interestingly, the minimum response time before timeouts decreased from 178 to 107 ms, and maximum response times increased less dynamically.
 
-# Conclusions 
+## Conclusions 
 
 Open Source Swift created a great opportunity for the development of new frameworks for web applications. We observe a stable growth of these solutions and hope they will be more commonly used in the nearest future.
 

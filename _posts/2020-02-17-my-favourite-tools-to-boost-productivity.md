@@ -11,7 +11,7 @@ comments: true
 
 On my daily basis I use a lot of different tools which I believe boost my productivity and make my life easier. In this short article I would like to list them and give you a few words on why I choose them and how I benefit from using them.
 
-# Zsh and Oh My Zsh
+## Zsh and Oh My Zsh
 
 ![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.png)
 
@@ -25,7 +25,7 @@ chsh -s /bin/zsh
 
 Installing **Oh My Zsh** is also easy and the one-line command used to fetch and run the instalation script is available on [their website](https://ohmyz.sh).
 
-# iTerm, vim and aliases
+## iTerm, vim and aliases
 
 ![My Vim setup]({{site.url}}/assets/2020-02-17/vim.png)
 
@@ -40,7 +40,7 @@ alias git-remove-orig-files="find . -name '*.orig' -delete"
 
 Using aliases frees me from having to remember all that long commands. It makes it easier to transfer my local alias definitions to external server or other machine.
 
-# SourceTree and kdiff3
+## SourceTree and kdiff3
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.png)
 
@@ -48,25 +48,25 @@ I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since i
 
 [**kdiff3**](https://kdiff3.sourceforge.net) is with me for even longer time as I installed it for the first time on my computer at work 9 years ago. I love how it automatically resolves merge conflicts. I like the way it allows to check base, local and remote changes on one screen. Simple and useful.
 
-# Charles
+## Charles
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/charles.png)
 
 [**Charles Proxy**](https://www.charlesproxy.com/) is an absolute must-have when we need to debug connection between clients apps and the backend. It creates a reverse proxy so it is possible to read or intercept and modify requests and responses. It allows to debug HTTP/HTTPS as well as WebSockets connections. Super handy tool I use almost every day.
 
-# RescueTime
+## RescueTime
 
 ![Example of RescueTime report]({{site.url}}/assets/2020-02-17/rescuetime.png)
 
 [**RescueTime**](https://rescuetime.com) is a handy tool to keep focus ever day. I usually check my stats when I close my day so I can verify how much time I spend on real development work and I can decide if there is something to improve next day.
 
-# feedly
+## feedly
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/feedly.png)
 
 Sometimes I need a few minutes to learn about what's happening in the world around me, but I don't like to waste my time searching for information or browsing news websites. That's why I subscribe to some RSS sources that I believe are worth reading. [**feedly**](https://feedly.com/) is a perfect tool to easily manage [RSS](https://en.wikipedia.org/wiki/RSS) I can recommend to everyone who is not afraid of ancient technology like RSS and wants to organize their news sources.
 
-# Basic unlined notebook
+## Basic unlined notebook
 
 ![SourceTree]({{site.url}}/assets/2020-02-17/notebook.jpg)
 
