@@ -84,7 +84,7 @@ At some point, they called me asking for a concrete deadline to present the new 
 
 I uploaded the application to a test server and waited for feedback. I knew that some features on the new CMS were running slowly, but I hoped it was due to my old computer and that it would perform much better on the actual server. Unfortunately, I knew very little about SQL query optimization at the time, and my assumption turned out to be wrong.
 
-## No issue tickets at all
+# No issue tickets at all
 
 I expected the feedback wouldn’t be perfect and assumed I’d have a few things to fix—like the issue with image upload speed, for example. But for several days, there was complete silence. I didn’t receive any list of errors to address.
 
