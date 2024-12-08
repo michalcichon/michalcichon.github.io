@@ -635,6 +635,7 @@ ul.post-list li.post-element {
   margin-bottom: 0;
   margin-left: 120px;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 120%;
 }
 
 #main-space-content .post-list a.no-decoration {
