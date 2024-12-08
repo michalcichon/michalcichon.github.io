@@ -27,7 +27,7 @@ My main goal at the time was to gain some IT experience. I was worried about fin
 
 In the end, I did learn a lot—just not in the way I expected. But more on that later. Stay with me.
 
-# Perfect job
+# The perfect job
 
 One day, I came across a job listing that I believed was perfect for me. It was for a PHP developer, open to candidates with or without prior work experience, and the only requirement was to complete a home assignment. I was familiar with the company—or rather, I knew the website they operated. I imagined they had a large team of software engineers I could learn from. I was thrilled and couldn’t wait to prepare what they were asking for.
 
