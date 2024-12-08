@@ -27,7 +27,7 @@ My main goal at the time was to gain some IT experience. I was worried about fin
 
 In the end, I did learn a lot—just not in the way I expected. But more on that later. Stay with me.
 
-# The perfect job
+## The perfect job
 
 One day, I came across a job listing that I believed was perfect for me. It was for a PHP developer, open to candidates with or without prior work experience, and the only requirement was to complete a home assignment. I was familiar with the company—or rather, I knew the website they operated. I imagined they had a large team of software engineers I could learn from. I was thrilled and couldn’t wait to prepare what they were asking for.
 
@@ -37,7 +37,7 @@ To my surprise, the meeting was conducted by the CEO of the company—and he was
 
 We shook hands and parted ways in a friendly atmosphere. A few days later, I received a call asking if we could meet at the company’s headquarters to discuss the details of our collaboration.
 
-# Headquarters
+## Headquarters
 
 On my way to the company’s headquarters, I met the second programmer who was going to work with me on the project. He was much older than me and not very talkative. I decided it didn’t matter, as I would soon meet the whole team and was confident I’d find someone to connect with.
 
@@ -51,7 +51,7 @@ I felt a bit disappointed because I had secretly hoped to work on the forum impr
 
 In the end, I thought I’d at least get the other programmer’s phone number before we each went our separate ways. However, as it turned out, I never ended up using it.
 
-# Sweat on the keyboard
+## Sweat on the keyboard
 
 For me, the summer holidays had just begun, so I had plenty of time to focus on my new project. It turned out that my task was to adapt another CMS that was already successfully in use at the company. However, from the very start, it was clear that it would require significant modifications. Most notably, the website it was originally designed for was much simpler.
 
@@ -72,7 +72,7 @@ I worked like this for about a month. I was dehydrated, constantly sleep-deprive
 
 They wanted to see a demo of my work, but I wasn’t ready because most of the functionalities were still in their early stages. However, for the first time, I got to see the old CMS being used by an editor and heard firsthand what they were complaining about. I regretted that such a confrontation hadn’t happened earlier because, for the first time, I actually learned something meaningful about the application I was supposed to fix.
 
-# You just need to try harder
+## You just need to try harder
 
 Encouraged by a brief conversation with the editor, I decided to take a short break to improve my well-being. I went for a long walk in the forest and finally breathed in some fresh air. I took a full day off from the computer, only to wake up early the next day and tackle more issues with the “new” CMS.
 
@@ -84,7 +84,7 @@ At some point, they called me asking for a concrete deadline to present the new 
 
 I uploaded the application to a test server and waited for feedback. I knew that some features on the new CMS were running slowly, but I hoped it was due to my old computer and that it would perform much better on the actual server. Unfortunately, I knew very little about SQL query optimization at the time, and my assumption turned out to be wrong.
 
-# No issue tickets at all
+## No issue tickets at all
 
 I expected the feedback wouldn’t be perfect and assumed I’d have a few things to fix—like the issue with image upload speed, for example. But for several days, there was complete silence. I didn’t receive any list of errors to address.
 
@@ -92,7 +92,7 @@ Instead, a few days later, I received an email from the CEO informing me that wh
 
 I even considered giving the money back, feeling like I had let them down so badly, but several people advised me against it.
 
-# What Did This Experience Teach Me?
+## What Did This Experience Teach Me?
 
 First and foremost, if I were to take on a similar project today, I would spend the first few days fully focused on gathering requirements instead of trying to figure everything out on my own. This would involve reaching out to people who worked with the CMS daily, as well as decision-makers who had chosen to fund the project. It took me a long time to realize that my job wasn’t just about writing code. I also learned the importance of respecting my own time, valuing others’ time, ensuring the quality of the code I deliver, and taking care of my health.
 
@@ -111,13 +111,13 @@ In summary:
 - **Undefined deadlines**: A lack of clear deadlines or specific expectations created unnecessary stress and uncertainty.
 - Most likely, the decision to use an existing CMS from another portal wasn’t the best idea. This decision should have been challenged, and alternatives considered—such as implementing the problematic functionalities from scratch or performing a thorough overhaul of the existing CMS, which could also have been done in phases.
 
-# What Does This Experience Teach Me About Young People Without Experience?
+## What Does This Experience Teach Me About Young People Without Experience?
 
 Over the past 15 years, I’ve worked with many developers, both juniors and those with over 20 years of experience. There were juniors who learned very quickly and delivered excellent results from the start, but that’s not always the case.
 
 If I had someone back then to teach me good practices, advise me on the right tools—like for example using a code repository—explain that working late into the night isn’t a great idea, encourage me to challenge others’ ideas when necessary (like for example using the “new” CMS), and help me think about breaking a large task into smaller parts with clear milestones, this project most likely wouldn’t have ended in such a failure.
 
-# Final thoughts
+## Final thoughts
 
 Some people, especially those without much experience, prefer to try solving a problem on their own rather than seeking help from others. As experienced engineers, we sometimes need to take the initiative and encourage our younger colleagues to adopt a more proactive approach.
 
