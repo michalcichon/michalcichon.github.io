@@ -12,7 +12,7 @@ image: "assets/thumbnails/darkmode.jpeg" # Image for RSS
 background: "#ffffff"
 ---
 
-![Dark mode]({{site.url}}/assets/2021-04-18/darkmode.png)
+![Dark mode]({{site.url}}/assets/2021-04-18/darkmode.webp)
 
 My website is just a simple GitHub Page with a basic blog so I decided to keep it simple and not go with any more sophisticated Dark Mode management. It works with the preferred OS settings. 🙂
 

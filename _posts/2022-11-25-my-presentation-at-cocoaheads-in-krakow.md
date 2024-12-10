@@ -14,13 +14,13 @@ comments: true
 
 Last week, on Tuesday, I had the distinct privilege of presenting my topic at the **CocoaHeads meetup** conference in Kraków.
 
-[![CocoaHeads 40]({{site.url}}/assets/2022-11-25/cocoaheads1.png)](https://www.meetup.com/cocoaheads-krakow/events/289522297/)
+[![CocoaHeads 40]({{site.url}}/assets/2022-11-25/cocoaheads1.webp)](https://www.meetup.com/cocoaheads-krakow/events/289522297/)
 
 This was the 40th edition of the meetup, hosted this time at the Brainly office in Zabłocie, Kraków. **CocoaHeads** is a premier event, crafted by the iOS community for its members, bringing together the most experienced and insightful software developers specializing in iOS technologies.
 
 My presentation centered on Swift interoperability, exploring transitions from commonly used Objective-C to Swift, and delving into the cutting-edge and promising capabilities of C++ to Swift interoperability.
 
-![Swift interoperability in a nutshell]({{site.url}}/assets/2022-11-25/cocoaheads2.png)
+![Swift interoperability in a nutshell]({{site.url}}/assets/2022-11-25/cocoaheads2.webp)
 
 This was a groundbreaking experience for me as it marked my first presentation at an iOS-specific conference. I am eager to engage further in these kinds of events.
 
