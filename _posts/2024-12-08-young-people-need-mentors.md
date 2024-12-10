@@ -13,7 +13,7 @@ comments: true
 **And they need them quickly. In a complex world where it’s not always clear which direction things are moving, the ability to ask the right questions at the right moment is something we primarily learn through experience.**
 
 
-![Tired and sleeping]({{site.url}}/assets/2024-12-08/a_tired_young_man.png)
+![Tired and sleeping]({{site.url}}/assets/2024-12-08/a_tired_young_man.webp)
 
 This text isn’t a made-up story. It’s about myself over 15 years ago, doing my best to gain experience in IT. It’s a reflection on what I did and why, the consequences of my actions, and what I learned from that experience.
 
