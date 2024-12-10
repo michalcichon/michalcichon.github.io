@@ -15,7 +15,7 @@ comments: true
 
 I have my own **App Store Connect** account since 2016 but I used to use it as my playground and testing environment. Sometimes I used this account to prepare test builds for my clients, but most of the time it was quite empty and abandoned. Now I decided to change it so I started to work on some side projects this year. One of them is Dice.
 
-![Dice: shake and roll]({{site.url}}/assets/2018-12-29/dice.png)
+![Dice: shake and roll]({{site.url}}/assets/2018-12-29/dice.webp)
 
 **The simplest app on the Earth**
 

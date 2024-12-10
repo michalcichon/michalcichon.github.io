@@ -18,24 +18,24 @@ On macOS which I have been using for more than 6 years now, I always have to loo
 
 The first step is to copy MP3 files to Music (iTunes). There are two ways of doing it: via coping to `Automatically add to Music` folder. I always have problem to locate it, so I simply use `⌘ + Spacebar` shortcut to find it.
 
-![Step 1: Copy audio files to Music via Automatically add to Music folder]({{site.url}}/assets/2020-02-05/audiocd-1b.png)
+![Step 1: Copy audio files to Music via Automatically add to Music folder]({{site.url}}/assets/2020-02-05/audiocd-1b.webp)
 
 Or simply by dragging files directly to Music app.
 
-![Step 1: Copy audio files to Music]({{site.url}}/assets/2020-02-05/audiocd-1.png)
+![Step 1: Copy audio files to Music]({{site.url}}/assets/2020-02-05/audiocd-1.webp)
 
 I always found the first method to be easier but actually it depends on someone's preferences.
 
 When we have files in Music app (as a list of files or, as in my example as an album recongnized by Music), we create a playlist. I don't know why, but there is somehow no easy way to burn albums, they prefer to have your files in playlist when they allow you to burn. So the next step is creating a playlist.
 
-![Step 2: Create a playlist]({{site.url}}/assets/2020-02-05/audiocd-2.png)
+![Step 2: Create a playlist]({{site.url}}/assets/2020-02-05/audiocd-2.webp)
 
 We click with the right mouse button (or control+click) and choose `Add to Playlist` and `New Playlist`. A new playlist should be presented on the Playlist pane located on the left side of the window. We right click again (or control+click) and click on `Burn playlist to Disc...`.
 
-![Step 3: Burn playlist to disc]({{site.url}}/assets/2020-02-05/audiocd-3.png)
+![Step 3: Burn playlist to disc]({{site.url}}/assets/2020-02-05/audiocd-3.webp)
 
 In the last step we can tune options like preferred speed or the length of gaps between songs. That's quite intruiding that some albums, like for example "The Dark Side of the Moon" by Pink Floyd has this kind of gapless playback.
 
-![Step 4: Burn Settings]({{site.url}}/assets/2020-02-05/audiocd-4.png)
+![Step 4: Burn Settings]({{site.url}}/assets/2020-02-05/audiocd-4.webp)
 
 And that's it. After clicking on `Burn`, all we need is to wait for our the Audio CD to be burned.

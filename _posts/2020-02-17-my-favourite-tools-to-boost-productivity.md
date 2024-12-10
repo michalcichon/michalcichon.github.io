@@ -13,7 +13,7 @@ On my daily basis I use a lot of different tools which I believe boost my produc
 
 ## Zsh and Oh My Zsh
 
-![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.png)
+![Oh My Zsh]({{site.url}}/assets/2020-02-17/zsh.webp)
 
 [**Z shell (Zsh)**](https://en.wikipedia.org/wiki/Z_shell) is a nice replacement for the standard Bash shell. I like the way **Z shell** recursively expands and completes paths and variables, and how it deals with the spelling correction. This is definitelly a huge boost when I use Terminal. I am not a power user of Unix nevertheless I feel the difference, and additionally there is [**Oh My Zsh**](https://ohmyz.sh) that helps configuring Zsh to make the overall experience even better. I highly recommend these tools.
 
@@ -27,7 +27,7 @@ Installing **Oh My Zsh** is also easy and the one-line command used to fetch and
 
 ## iTerm, vim and aliases
 
-![My Vim setup]({{site.url}}/assets/2020-02-17/vim.png)
+![My Vim setup]({{site.url}}/assets/2020-02-17/vim.webp)
 
 Sometimes I need to modify files on a remote server. I use my own `.vim` configuration that I created by adjusting some example I found online. On mac I use [**iTerm2**](https://www.iterm2.com) which is, I believe, a good replacement for the built-in macOS Terminal. It also gives some autocompletion features available by `⌘+;` shortcut, themes etc.
 
@@ -42,7 +42,7 @@ Using aliases frees me from having to remember all that long commands. It makes 
 
 ## SourceTree and kdiff3
 
-![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.png)
+![SourceTree]({{site.url}}/assets/2020-02-17/sourcetree.webp)
 
 I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since its first release in 2013 when I used it to work with Mercurial repositories. When I started using Git as it became a more popular solution for distributed version control system, I was still using SourceTree as my main tool for Git repositories.
 
@@ -50,25 +50,25 @@ I have been using [**SourceTree**](https://www.sourcetreeapp.com) almost since i
 
 ## Charles
 
-![SourceTree]({{site.url}}/assets/2020-02-17/charles.png)
+![SourceTree]({{site.url}}/assets/2020-02-17/charles.webp)
 
 [**Charles Proxy**](https://www.charlesproxy.com/) is an absolute must-have when we need to debug connection between clients apps and the backend. It creates a reverse proxy so it is possible to read or intercept and modify requests and responses. It allows to debug HTTP/HTTPS as well as WebSockets connections. Super handy tool I use almost every day.
 
 ## RescueTime
 
-![Example of RescueTime report]({{site.url}}/assets/2020-02-17/rescuetime.png)
+![Example of RescueTime report]({{site.url}}/assets/2020-02-17/rescuetime.webp)
 
 [**RescueTime**](https://rescuetime.com) is a handy tool to keep focus ever day. I usually check my stats when I close my day so I can verify how much time I spend on real development work and I can decide if there is something to improve next day.
 
 ## feedly
 
-![SourceTree]({{site.url}}/assets/2020-02-17/feedly.png)
+![SourceTree]({{site.url}}/assets/2020-02-17/feedly.webp)
 
 Sometimes I need a few minutes to learn about what's happening in the world around me, but I don't like to waste my time searching for information or browsing news websites. That's why I subscribe to some RSS sources that I believe are worth reading. [**feedly**](https://feedly.com/) is a perfect tool to easily manage [RSS](https://en.wikipedia.org/wiki/RSS) I can recommend to everyone who is not afraid of ancient technology like RSS and wants to organize their news sources.
 
 ## Basic unlined notebook
 
-![SourceTree]({{site.url}}/assets/2020-02-17/notebook.jpg)
+![SourceTree]({{site.url}}/assets/2020-02-17/notebook.webp)
 
 The last and the most important tool I use every day is a plain, unlined notebook. I tried many apps like Evernote, OneNote etc. but the flexibility that comes with using a basic paper and pen is something I can’t easily substitute. Usually I start my day of work with creating a TODO list of what I should do so I have a plan for the day. I can keep it open and close to my laptop which is helpful when I need to sketch some more complex logic or idea. 
 

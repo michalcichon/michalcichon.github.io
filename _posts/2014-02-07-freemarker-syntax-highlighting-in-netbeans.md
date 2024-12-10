@@ -15,17 +15,17 @@ To have Freemarker syntax highlighter correctly configured, you should first ins
 
 Then you install plugin named "Freemarker NetBeans Plugin" available here: [Plugin][plugin]
 
-![Make sure you have these files downloaded.]({{site.url}}/assets/2014-02-07/netbeans1.png)
+![Make sure you have these files downloaded.]({{site.url}}/assets/2014-02-07/netbeans1.webp)
 
 {:.image-caption}
 *Make sure you have these files downloaded.*
 
-![Install both of the plugins using the menu option Tools > Plugins]({{site.url}}/assets/2014-02-07/netbeans2.png)
+![Install both of the plugins using the menu option Tools > Plugins]({{site.url}}/assets/2014-02-07/netbeans2.webp)
 
 {:.image-caption}
 *Install both of the plugins using menu Tools > Plugins*
 
-![Now it looks just fine.]({{site.url}}/assets/2014-02-07/netbeans3.png)
+![Now it looks just fine.]({{site.url}}/assets/2014-02-07/netbeans3.webp)
 
 {:.image-caption}
 *Now it looks just fine.*

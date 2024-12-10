@@ -23,13 +23,13 @@ First thing we need to do is creating connection. Open PuTTY and configure your 
 
 Go to *Connection → SSH → Tunnels* option in the tree view (left panel).
 
-![Step 2]({{site.url}}/assets/2014-03-20/tunnel-7.png)
+![Step 2]({{site.url}}/assets/2014-03-20/tunnel-7.webp)
 
 Now we need to do as follows: choose *Dynamic*, fill in the source port (for example `9999`, but feel free to use any available port) and click *Add* button. Now it should be something in format `D{PORT_NUMBER}` on the list above. Click on **Open**.
 
 Next, log in to your server as usual:
 
-![Step 3]({{site.url}}/assets/2014-03-20/tunnel-8.png)
+![Step 3]({{site.url}}/assets/2014-03-20/tunnel-8.webp)
 
 Since now we have our own proxy server on *127.0.0.1:9999*.
 
@@ -45,11 +45,11 @@ chrome.exe --proxy-server="socks5://127.0.0.1:9999"
 
 But using Windows **shortcuts** is much easier. Just copy your Chrome shortcut to Desktop and change its name to something like *Chrome - tunneled* to identify it easier. Then right click on it and choose `Properties` from the menu  (`Właściwości` on the screenshot).
 
-![Step 4]({{site.url}}/assets/2014-03-20/tunnel-5.png)
+![Step 4]({{site.url}}/assets/2014-03-20/tunnel-5.webp)
 
 Now provide parameters in the Setting window as in the screenshot below. 
 
-![Step 5]({{site.url}}/assets/2014-03-20/tunnel-6.png)
+![Step 5]({{site.url}}/assets/2014-03-20/tunnel-6.webp)
 
 In the `Target` ("Element docelowy" on the screenshot) field we add `proxy-server` parameter. We don't change the existing text but we add the text below just after `chrome.exe"`:
 
