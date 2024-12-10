@@ -105,7 +105,7 @@ INSERT INTO config(`key`, `value`) VALUES ("app.fun_button.url", "https://www.go
 
 I can see in Sequel Pro that my table looks fine.
 
-![Sequel Pro table view)]({{site.url}}/assets/2020-10-17/sequel_pro.png)
+![Sequel Pro table view)]({{site.url}}/assets/2020-10-17/sequel_pro.webp)
 
 So far we can update our keys using basic SQL statements but it would be nice to have a REST API to do so.
 
@@ -124,7 +124,7 @@ These are my first steps with Node.js, and I was inspired by a well-written arti
 npm init
 ```
 
-![Init npm)]({{site.url}}/assets/2020-10-17/npm_init.png)
+![Init npm)]({{site.url}}/assets/2020-10-17/npm_init.webp)
 
 `npm` asks few questions and creates `package.json` file for us. This is the place where we define dependencies. To add a new dependency we simply execute `npm install` like this:
 
@@ -281,7 +281,7 @@ The full source code will be available on my [Github](https://www.github.com/mic
 
 As I above-mentioned, I would love to use SwiftUI. It is super exciting that we can actually create a project completely without AppDelegate and UIKit life cycle.
 
-![Creating a new project in Xcode)]({{site.url}}/assets/2020-10-17/xcode-new-project.png)
+![Creating a new project in Xcode)]({{site.url}}/assets/2020-10-17/xcode-new-project.webp)
 
 The client app will use `ConfigService` to fetch fresh configuration from the backend. I want to trigger this process early when the application boots. To demonstrate how the configuration refreshes the UI, I have created a simple demo application with one button that opens a web page. The button's title, as well as the main screen background, is configurable. I will use the following keys:
 
@@ -490,15 +490,15 @@ init() {
 }
 ```
 
-![The application state is refreshed after fetching the config]({{site.url}}/assets/2020-10-17/app.png)
+![The application state is refreshed after fetching the config]({{site.url}}/assets/2020-10-17/app.webp)
 
 As you can see, the app's state is refreshed after the config is fetched. To better illustrate this, we could use [Charles](https://www.charlesproxy.com/), which allows us to monitor the communication between the client and the server.
 
-![The whole config is fetched for the first time]({{site.url}}/assets/2020-10-17/charles-1.png)
+![The whole config is fetched for the first time]({{site.url}}/assets/2020-10-17/charles-1.webp)
 
 For the first time, the entire configuration is fetched.
 
-![No need to update anything]({{site.url}}/assets/2020-10-17/charles-2.png)
+![No need to update anything]({{site.url}}/assets/2020-10-17/charles-2.webp)
 
 However, when the config is requested for the last known timestamp, the response is empty because no new updates have been made since the last fetch.
 
