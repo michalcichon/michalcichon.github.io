@@ -6,7 +6,7 @@ date:   2024-12-08 06:00:00 +0200
 categories: software-development
 keywords: mentoring, experience, it
 tags: miscellaneous programming processes
-image: "assets/2024-12-08/a_tired_young_man.png" # Image for RSS
+image: "assets/2024-12-08/a_tired_young_man.webp" # Image for RSS
 comments: true
 ---
 
