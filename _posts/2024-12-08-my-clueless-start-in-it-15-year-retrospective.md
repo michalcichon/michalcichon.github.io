@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Young people need mentors"
-description: "And they need them quickly. In a complex world where it’s not always clear which direction things are moving, the ability to..."
+title:  "My Clueless Start in IT: A 15-Year Retrospective"
+description: "Fifteen years ago, I took my first, clumsy steps into the world of IT. In this post, I look back on the mistakes I made, the lessons I learned the hard way, and how those early failures shaped the developer I am today."
 date:   2024-12-08 06:00:00 +0200
 categories: software-development
 keywords: mentoring, experience, it
@@ -10,7 +10,7 @@ image: "assets/2024-12-08/a_tired_young_man.webp" # Image for RSS
 comments: true
 ---
 
-**And they need them quickly. In a complex world where it’s not always clear which direction things are moving, the ability to ask the right questions at the right moment is something we primarily learn through experience.**
+**Fifteen years ago, I took my first, clumsy steps into the world of IT. In this post, I look back on the mistakes I made, the lessons I learned the hard way, and how those early failures shaped the developer I am today.**
 
 
 ![Tired and sleeping]({{site.url}}/assets/2024-12-08/a_tired_young_man.webp)
@@ -119,6 +119,8 @@ If I had someone back then to teach me good practices, advise me on the right to
 
 ## Final thoughts
 
-Some people, especially those without much experience, prefer to try solving a problem on their own rather than seeking help from others. As experienced engineers, we sometimes need to take the initiative and encourage our younger colleagues to adopt a more proactive approach.
+Some people, especially those without much experience, might prefer to try solving a problem on their own rather than seeking help from others. As experienced engineers, we sometimes need to take the initiative and encourage our younger colleagues to adopt a more proactive approach.
 
 No one is perfect, especially at the beginning. However, giving someone with the potential to grow a few good tips on how to work better often yields results much faster than you might expect.
+
+Looking back, I realize how valuable those early struggles were — not because they were pleasant, but because they shaped the way I think, learn, and collaborate today. If sharing my mistakes helps even one person avoid a detour or gain confidence in asking for help, then it’s worth every cringeworthy memory.
