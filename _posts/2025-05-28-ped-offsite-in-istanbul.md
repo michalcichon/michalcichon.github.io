@@ -6,6 +6,7 @@ date:   2025-05-28 06:00:00 +0200
 categories: software-development
 keywords: ped, offsite
 tags: events
+image: "assets/2025-05-28/image0.webp" # Image for RSS
 comments: true
 ---
 
