@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 – Page Not Found</title>
+  <!-- LCD-like font for scores -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+    html, body { height: 100%; margin: 0; }
     body {
       background: black;
       display: flex;
@@ -24,21 +25,10 @@
       gap: 16px;
       text-align: center;
     }
-    h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      line-height: 1.2;
-    }
-    canvas {
-      border: 1px solid white;
-      display: block;
-    }
-    p {
-      margin: 0;
-    }
-    a {
-      color: white;
-    }
+    h1 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
+    canvas { border: 1px solid white; display: block; }
+    p { margin: 0; }
+    a { color: white; }
   </style>
 </head>
 <body>
@@ -47,18 +37,23 @@
 
     <canvas width="400" height="400" id="game"></canvas>
 
-    <p>
-      <a href="/">Return to homepage</a>
-    </p>
+    <p><a href="/">Return to homepage</a></p>
   </div>
 
   <script>
   var canvas = document.getElementById('game');
   var context = canvas.getContext('2d');
 
+  // grid size and frame throttling
   var grid = 16;
   var count = 0;
 
+  // score state
+  var score = 0;
+  var HIGH_SCORE_KEY = 'snakeHighScore';
+  var highScore = Number(localStorage.getItem(HIGH_SCORE_KEY)) || 0;
+
+  // snake state
   var snake = {
     x: 160,
     y: 160,
@@ -67,67 +62,133 @@
     cells: [],
     maxCells: 4
   };
+
+  // apple state
   var apple = { x: 320, y: 320 };
 
+  // returns a random integer in [min, max)
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
+  // draw the score and high score in the top-right corner
+  function drawScores() {
+    var text1 = 'Score: ' + score;
+    var text2 = 'High: ' + highScore;
+
+    // use LCD-like font only for HUD; fall back to monospace if unavailable
+    context.font = '16px "Share Tech Mono", monospace';
+    context.textAlign = 'right';
+    context.textBaseline = 'top';
+
+    // measure the wider of the two lines for a background box
+    var w = Math.max(context.measureText(text1).width, context.measureText(text2).width);
+    var padX = 6, padY = 6, lineH = 18;
+    var boxW = w + padX * 2;
+    var boxH = lineH * 2 + padY * 2;
+    var boxX = canvas.width - boxW - 6;
+    var boxY = 6;
+
+    // semi-transparent background for readability
+    context.fillStyle = 'rgba(0,0,0,0.5)';
+    context.fillRect(boxX, boxY, boxW, boxH);
+
+    // render text
+    context.fillStyle = 'white';
+    context.fillText(text1, canvas.width - 6 - padX, boxY + padY);
+    context.fillText(text2, canvas.width - 6 - padX, boxY + padY + lineH);
+  }
+
+  // resets the snake to starting state
+  function resetSnake() {
+    snake.x = 160;
+    snake.y = 160;
+    snake.cells = [];
+    snake.maxCells = 4;
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+
+  // main game loop
   function loop() {
     requestAnimationFrame(loop);
+
+    // slow down to ~15 FPS
     if (++count < 4) return;
-
     count = 0;
-    context.clearRect(0,0,canvas.width,canvas.height);
 
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    // move snake
     snake.x += snake.dx;
     snake.y += snake.dy;
 
+    // screen wrapping
     if (snake.x < 0) snake.x = canvas.width - grid;
     else if (snake.x >= canvas.width) snake.x = 0;
-
     if (snake.y < 0) snake.y = canvas.height - grid;
     else if (snake.y >= canvas.height) snake.y = 0;
 
-    snake.cells.unshift({x: snake.x, y: snake.y});
+    // record head position
+    snake.cells.unshift({ x: snake.x, y: snake.y });
 
+    // trim tail
     if (snake.cells.length > snake.maxCells) snake.cells.pop();
 
+    // draw apple
     context.fillStyle = 'red';
-    context.fillRect(apple.x, apple.y, grid-1, grid-1);
+    context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
+    // draw snake and handle interactions
     context.fillStyle = 'green';
     snake.cells.forEach(function(cell, index) {
-      context.fillRect(cell.x, cell.y, grid-1, grid-1);
+      context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
 
+      // eating an apple -> increase score immediately,
+      // but DO NOT update high score yet (only on collision/end)
       if (cell.x === apple.x && cell.y === apple.y) {
         snake.maxCells++;
+        score += 100;
+
+        // respawn apple at a random grid position
         apple.x = getRandomInt(0, 25) * grid;
         apple.y = getRandomInt(0, 25) * grid;
       }
 
+      // self-collision check
       for (var i = index + 1; i < snake.cells.length; i++) {
         if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-          snake.x = 160;
-          snake.y = 160;
-          snake.cells = [];
-          snake.maxCells = 4;
-          snake.dx = grid;
-          snake.dy = 0;
+
+          // update high score ON GAME OVER only
+          if (score > highScore) {
+            highScore = score;
+            localStorage.setItem(HIGH_SCORE_KEY, String(highScore));
+          }
+
+          // reset current round
+          resetSnake();
+          score = 0;
+
+          // respawn apple
           apple.x = getRandomInt(0, 25) * grid;
           apple.y = getRandomInt(0, 25) * grid;
         }
       }
     });
+
+    // overlay scores last so they sit above everything
+    drawScores();
   }
 
+  // arrow key controls; prevent reversing direction on same axis
   document.addEventListener('keydown', function(e) {
-    if (e.which === 37 && snake.dx === 0) { snake.dx = -grid; snake.dy = 0; }
-    else if (e.which === 38 && snake.dy === 0) { snake.dy = -grid; snake.dx = 0; }
-    else if (e.which === 39 && snake.dx === 0) { snake.dx = grid; snake.dy = 0; }
-    else if (e.which === 40 && snake.dy === 0) { snake.dy = grid; snake.dx = 0; }
+    if (e.which === 37 && snake.dx === 0) { snake.dx = -grid; snake.dy = 0; }     // left
+    else if (e.which === 38 && snake.dy === 0) { snake.dy = -grid; snake.dx = 0; } // up
+    else if (e.which === 39 && snake.dx === 0) { snake.dx = grid; snake.dy = 0; }  // right
+    else if (e.which === 40 && snake.dy === 0) { snake.dy = grid; snake.dx = 0; }  // down
   });
 
+  // kick off the loop
   requestAnimationFrame(loop);
   </script>
 </body>
