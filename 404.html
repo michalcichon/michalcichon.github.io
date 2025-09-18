@@ -17,7 +17,6 @@
       justify-content: center;
       color: white;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      /* improve touch scrolling behavior overall */
       -webkit-tap-highlight-color: transparent;
     }
     .game-wrap {
@@ -70,9 +69,7 @@
 <body>
   <div class="game-wrap">
     <h1>404 – Page Not Found</h1>
-
     <canvas width="400" height="400" id="game"></canvas>
-
     <p><a href="/">Return to homepage</a></p>
   </div>
 
@@ -85,9 +82,13 @@
   var canvas = document.getElementById('game');
   var context = canvas.getContext('2d');
 
-  // grid size and frame throttling
+  // grid size
   var grid = 16;
-  var count = 0;
+
+  // --- Fixed timestep in ms (logic runs at a constant rate) ---
+  var TICK_MS = 1000 / 15; // 15 ticks per second; change for faster/slower game
+  var last = performance.now();
+  var acc  = 0;
 
   // score state (high score updates ONLY on collision / end of round)
   var score = 0;
@@ -120,7 +121,7 @@
     var text1 = 'Score: ' + score;
     var text2 = 'High: ' + highScore;
 
-    // use LCD-like font only for HUD; fall back to monospace if unavailable
+    // LCD-like font for HUD; fallback to monospace if unavailable
     context.font = '16px "Share Tech Mono", monospace';
     context.textAlign = 'right';
     context.textBaseline = 'top';
@@ -155,13 +156,8 @@
 
   // helper: set direction with safeguards (one turn per tick + no 180° reverse)
   function setDirection(nx, ny) {
-    // reject further turns until next processed tick
-    if (!canTurn) return;
-
-    // disallow immediate 180° reversal relative to current velocity
-    if (nx === -snake.dx && ny === -snake.dy) return;
-
-    // apply new direction if it actually changes movement
+    if (!canTurn) return; // reject further turns until next processed tick
+    if (nx === -snake.dx && ny === -snake.dy) return; // no immediate reversal
     if (nx !== snake.dx || ny !== snake.dy) {
       snake.dx = nx;
       snake.dy = ny;
@@ -173,28 +169,19 @@
   function angleToDirection(angle) {
     // normalize angle to [-PI, PI)
     var a = Math.atan2(Math.sin(angle), Math.cos(angle));
-
-    // 4-way split: Right (-45°..45°), Down (45°..135°), Left (135°..-135°), Up (-135°..-45°)
-    if (a >= -Math.PI/4 && a < Math.PI/4)       return {dx: grid, dy: 0};   // right
-    if (a >= Math.PI/4 && a < 3*Math.PI/4)      return {dx: 0, dy: grid};   // down
-    if (a >= -3*Math.PI/4 && a < -Math.PI/4)    return {dx: 0, dy: -grid};  // up
+    // 4-way split: Right (-45..45), Down (45..135), Left (135..-135), Up (-135..-45)
+    if (a >= -Math.PI/4 && a <  Math.PI/4)  return {dx: grid, dy: 0};   // right
+    if (a >=  Math.PI/4 && a <  3*Math.PI/4) return {dx: 0, dy: grid};   // down
+    if (a >= -3*Math.PI/4 && a < -Math.PI/4) return {dx: 0, dy: -grid};  // up
     return {dx: -grid, dy: 0}; // left
   }
 
-  // main game loop
-  function loop() {
-    requestAnimationFrame(loop);
-
-    // slow down to ~15 FPS
-    if (++count < 4) return;
-    count = 0;
-
-    // at the start of a processed tick, allow exactly one turn
+  // --- Logic update step (runs at fixed rate) ---
+  function tick() {
+    // allow exactly one turn per processed tick
     canTurn = true;
 
-    context.clearRect(0, 0, canvas.width, canvas.height);
-
-    // move snake
+    // move snake one grid cell
     snake.x += snake.dx;
     snake.y += snake.dy;
 
@@ -210,49 +197,69 @@
     // trim tail
     if (snake.cells.length > snake.maxCells) snake.cells.pop();
 
+    // apple collision (check head only)
+    if (snake.x === apple.x && snake.y === apple.y) {
+      snake.maxCells++;
+      score += 100;
+      // respawn apple at a random grid position
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+
+    // self-collision: head vs body
+    for (var i = 1; i < snake.cells.length; i++) {
+      if (snake.x === snake.cells[i].x && snake.y === snake.cells[i].y) {
+        // update high score ON GAME OVER only
+        if (score > highScore) {
+          highScore = score;
+          localStorage.setItem(HIGH_SCORE_KEY, String(highScore));
+        }
+        // reset current round
+        resetSnake();
+        score = 0;
+        // respawn apple
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+        break;
+      }
+    }
+  }
+
+  // --- Draw current frame (called once per requestAnimationFrame) ---
+  function render() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
     // draw apple
     context.fillStyle = 'red';
     context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
-    // draw snake and handle interactions
+    // draw snake
     context.fillStyle = 'green';
-    snake.cells.forEach(function(cell, index) {
+    snake.cells.forEach(function(cell) {
       context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
-
-      // eating an apple -> increase score immediately,
-      // but DO NOT update high score yet (only on collision/end)
-      if (cell.x === apple.x && cell.y === apple.y) {
-        snake.maxCells++;
-        score += 100;
-
-        // respawn apple at a random grid position
-        apple.x = getRandomInt(0, 25) * grid;
-        apple.y = getRandomInt(0, 25) * grid;
-      }
-
-      // self-collision check
-      for (var i = index + 1; i < snake.cells.length; i++) {
-        if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-
-          // update high score ON GAME OVER only
-          if (score > highScore) {
-            highScore = score;
-            localStorage.setItem(HIGH_SCORE_KEY, String(highScore));
-          }
-
-          // reset current round
-          resetSnake();
-          score = 0;
-
-          // respawn apple
-          apple.x = getRandomInt(0, 25) * grid;
-          apple.y = getRandomInt(0, 25) * grid;
-        }
-      }
     });
 
-    // overlay scores last so they sit above everything
+    // HUD
     drawScores();
+  }
+
+  // Main loop: accumulate real time, run fixed ticks, then render once
+  function loop(now) {
+    requestAnimationFrame(loop);
+
+    var dt = now - last;
+    last = now;
+    acc += dt;
+
+    // prevent death spiral after long tab sleep
+    if (acc > 1000) acc = 1000;
+
+    while (acc >= TICK_MS) {
+      tick();
+      acc -= TICK_MS;
+    }
+
+    render();
   }
 
   // keyboard controls; allow only one turn per tick, no 180° reversals
@@ -266,36 +273,33 @@
   }, { passive: true });
 
   // --- Touch device detection and joystick setup ---
-  // We treat devices with coarse pointer as "mobile".
+  // Treat devices with a coarse pointer as "mobile".
   var isTouchDevice = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
 
-  // Initialize joystick if on touch device
   if (isTouchDevice) {
     var joy = document.getElementById('joystick');
     var stick = document.getElementById('joystickStick');
     joy.style.display = 'block';
 
-    // center and radius
+    // center and radius of the joystick base (in viewport coords)
     var center = { x: 0, y: 0 };
     var baseRadius = 0;
-    var stickMax = 28; // max stick travel from center in px (visual only)
+    var stickMax = 28; // max visual stick travel from center in px
     var active = false;
 
-    // helpers to get local touch position relative to joystick center
+    // compute current center/radius from layout
     function updateCenterAndRadius() {
       var rect = joy.getBoundingClientRect();
       center.x = rect.left + rect.width / 2;
       center.y = rect.top + rect.height / 2;
       baseRadius = Math.min(rect.width, rect.height) / 2;
     }
-    // run once and on resize/scroll orientation changes
     updateCenterAndRadius();
     window.addEventListener('resize', updateCenterAndRadius);
     window.addEventListener('scroll', updateCenterAndRadius, { passive: true });
 
-    // apply stick visual offset
+    // apply visual offset to the stick (clamped to stickMax)
     function setStick(dx, dy) {
-      // clamp to stickMax
       var len = Math.hypot(dx, dy);
       if (len > stickMax) {
         var k = stickMax / len;
@@ -304,7 +308,7 @@
       stick.style.transform = 'translate(' + dx + 'px,' + dy + 'px)';
     }
 
-    // interpret a touch as direction (with deadzone)
+    // interpret a touch as a cardinal direction (with deadzone)
     function handleTouch(x, y) {
       var dx = x - center.x;
       var dy = y - center.y;
@@ -313,18 +317,18 @@
       var dz = Math.max(12, baseRadius * 0.18);
       var dist = Math.hypot(dx, dy);
 
-      // move stick visually
+      // move stick visually while active
       if (active) setStick(dx, dy);
 
       if (dist < dz) return; // ignore inside deadzone
 
       // compute angle and map to 4-way direction
-      var angle = Math.atan2(dy, dx); // radians
+      var angle = Math.atan2(dy, dx);
       var dir = angleToDirection(angle);
       setDirection(dir.dx, dir.dy);
     }
 
-    // touch handlers
+    // touch / mouse handlers
     function onStart(ev) {
       active = true;
       var t = ev.touches ? ev.touches[0] : ev;
@@ -344,19 +348,18 @@
       ev.preventDefault();
     }
 
-    // bind events (touch + optional mouse for emulators)
+    // bind events (touch + optional mouse for desktop testing)
     joy.addEventListener('touchstart', onStart, { passive: false });
-    joy.addEventListener('touchmove', onMove,   { passive: false });
-    joy.addEventListener('touchend', onEnd,     { passive: false });
-    joy.addEventListener('touchcancel', onEnd,  { passive: false });
+    joy.addEventListener('touchmove',  onMove,  { passive: false });
+    joy.addEventListener('touchend',   onEnd,   { passive: false });
+    joy.addEventListener('touchcancel',onEnd,   { passive: false });
 
-    // optional mouse support (useful for testing on desktop)
     joy.addEventListener('mousedown', onStart);
     document.addEventListener('mousemove', onMove);
     document.addEventListener('mouseup', onEnd);
   }
 
-  // kick off the loop
+  // start the main loop
   requestAnimationFrame(loop);
   </script>
 </body>
