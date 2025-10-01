@@ -40,6 +40,8 @@ I believed this was just a small CSS issue that ChatGPT could easily fix. So I p
 It looks promising, but unfortunately, when I click on a card and it flips, I still see the back of the card instead of its face. The face should be an emoji on a white background.
 ```
 
+And here is what I received:
+
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-2.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -89,7 +91,7 @@ Issues:
 
 Unfortunately, none of this brought me closer to a proper solution.
 
-You can find my full series of prompts and attempts in this repo: https://github.com/michalcichon/memo-game. 
+You can find my full series of prompts and attempts in this repo: https://github.com/michalcichon/memo-game/commits/main/. 
 
 ## Gemini
 
@@ -113,7 +115,7 @@ The code was split into three files — `index.html`, `script.js`, and `style.cs
   Your browser does not support the video tag.
 </video>
 
-You can find the full code here: https://github.com/michalcichon/memo-game-gemini
+You can find the full code here: https://github.com/michalcichon/memo-game-gemini.
 
 ## Claude
 
