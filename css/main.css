@@ -909,6 +909,14 @@ code {
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
+video {
+  width: 100%;
+  height: auto;
+  background:#eee; 
+  border-radius: 8px; 
+  display:block;
+}
+
 .language-wrapped-text {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
