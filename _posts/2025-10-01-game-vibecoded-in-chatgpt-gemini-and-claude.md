@@ -106,7 +106,7 @@ Create a memory game:
 - Assume a grid of 5×4 cards.
 ```
 
-And to my surprise, Gemini provided a working solution right from the start.
+And to my surprise, Gemini provided a [working solution]({{site.url}}/assets/2025-10-01/memory-game-gemini.html) right from the start.
 
 The code was split into three files — `index.html`, `script.js`, and `style.css` — which felt more structured and used significantly fewer CSS tricks. Most importantly, it worked surprisingly well.
 
@@ -119,7 +119,7 @@ You can find the full code here: https://github.com/michalcichon/memo-game-gemin
 
 ## Claude
 
-To get a broader picture of LLM capabilities, I ran another test — this time with Claude. Using the same prompt, and to my surprise again, Claude generated a working solution immediately as well.
+To get a broader picture of LLM capabilities, I ran another test — this time with Claude. Using the same prompt, and to my surprise again, Claude generated a [working solution]({{site.url}}/assets/2025-10-01/memory-game-claude.html) immediately as well.
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/claude.mp4" type="video/mp4">
@@ -140,7 +140,7 @@ Please fix this implementation of the memory game. Issues:
 * When the card is revealed, it shows the card’s face, but it is not vertically centered, and the white background is not the same size as the whole card.
 ```
 
-In the response, I received a clean, working solution that seemed to fix all the issues listed previously. You can find the diff of the changes [here](https://github.com/michalcichon/memo-game/commit/eb328312d094eb0af4f1cb93219b32638742863d). 
+In the response, I received a clean, [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_gemini.html) that seemed to fix all the issues listed previously. You can find the diff of the changes [here](https://github.com/michalcichon/memo-game/commit/eb328312d094eb0af4f1cb93219b32638742863d). 
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/fixed-by-gemini.mp4" type="video/mp4">
@@ -157,7 +157,7 @@ I tried the same prompt in Claude, and the first attempt was broken — the game
 It doesn't work. Can you check?
 ```
 
-And this time, Claude provided a working solution.
+And this time, Claude provided a [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude2.html).
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/fixed-by-claude.mp4" type="video/mp4">
@@ -186,3 +186,5 @@ Implementing a game with LLMs was a fun and instructive experience. I was a bit 
 I will definitely take a closer look at LLMs and try to incorporate them into my daily work. At the moment, I use ChatGPT and Copilot, but I haven’t yet integrated them fully into my IDEs.
 
 Even with deeper LLM integration, the developer is still in the driver’s seat, and it’s essential to review and verify the generated code before using it in production. Nevertheless, I plan to explore stronger integration with LLM solutions like Gemini or Claude.
+
+And you can play the game [here]({{site.url}}/assets/2025-10-01/memory-game-claude.html). 🙂
