@@ -40,20 +40,27 @@ I believed this was just a small CSS issue that ChatGPT could easily fix. So I p
 It looks promising, but unfortunately, when I click on a card and it flips, I still see the back of the card instead of its face. The face should be an emoji on a white background.
 ```
 
-But the result was quite strange. Now, all cards were visible from the start, so the whole game was pointless.
-
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-I tried a couple of times to fix it by prompting ChatGPT again, but it didn’t seem to work. Either all cards were face-up from the beginning, or the back was still visible even after flipping.
-
-Here are some of the prompts I used:
+The new solution wasn’t that bad — the game was playable, but the emoji positioning and missing flip animation made it feel unfinished. I wanted a more polished result, so I prompted:
 
 ```
 The faces are now displayed, but their size (including the white background) is much smaller than the back and aligned to the top. The face and the back of a card should be the same size, and the emoji should be centered inside the card. I also noticed that the flip animation is gone, which I liked very much.
 ```
+
+This time, the result was quite strange — all the cards were visible from the start, which made the whole game pointless.
+
+<video controls playsinline width="100%">
+  <source src="{{site.url}}/assets/2025-10-01/chatgpt-3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+I tried a couple of times to fix it by prompting ChatGPT again, but it didn’t seem to work. Either all the cards were face-up from the beginning, or the back side was still visible even after flipping.
+
+Here are some of the prompts I used:
 
 ```
 This version is even more broken: 
