@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Game — Vanilla JS (5×4)</title>
+  <style>
+    :root {
+      --gap: 12px;
+      --card-w: 110px; /* Adjusts responsively below */
+      --card-h: 140px;
+      --purple: #7c3aed; /* solid purple back */
+      --bg: #0b1020;
+      --panel: #11162a;
+      --text: #e6e8ee;
+      --muted: #a9b1c7;
+      --accent: #22c55e;
+      --danger: #ef4444;
+      --shadow: 0 6px 24px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1000px 800px at 20% 10%, #151a2d, #0b1020 60%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .game {
+      width: min(100%, 760px);
+      display: grid;
+      gap: var(--gap);
+      grid-template-rows: auto 1fr auto;
+      container-type: inline-size;
+    }
+
+    .panel {
+      background: color-mix(in oklab, var(--panel) 92%, black 8%);
+      border: 1px solid color-mix(in oklab, var(--panel), white 10%);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .title { font-weight: 700; letter-spacing: 0.2px; }
+    .stats { display: flex; gap: 14px; font-weight: 600; color: var(--muted); }
+    .stats b { color: var(--text); }
+
+    .controls { display: flex; gap: 10px; }
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      background: #1b2340;
+      color: var(--text);
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid #26305a;
+    }
+    button:hover { filter: brightness(1.06); }
+    button:active { transform: translateY(1px); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--gap);
+      perspective: 1000px;
+    }
+
+    @container (max-width: 640px) {
+      :root { --gap: 10px; }
+    }
+
+    /* Card */
+    .card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 11/14; /* keeps cards proportional */
+      border-radius: calc(var(--radius) * .9);
+      transform-style: preserve-3d;
+      transition: transform 420ms cubic-bezier(.2,.8,.2,1), opacity 200ms;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      outline: none;
+      border: 1px solid rgba(255,255,255,.06);
+      background: transparent;
+    }
+
+    .card-inner {
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+      transition: transform 420ms cubic-bezier(.2,.8,.2,1);
+      border-radius: inherit;
+      overflow: clip;
+    }
+
+    .face, .back {
+      position: absolute; inset: 0;
+      display: grid; place-items: center;
+      backface-visibility: hidden;
+      border-radius: inherit;
+    }
+
+    .back {
+      background: var(--purple);
+      font-size: 24px;
+    }
+    .back::after { /* subtle pattern */
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(12px 12px at 20% 30%, rgba(255,255,255,.22), transparent 60%),
+                  radial-gradient(10px 10px at 70% 60%, rgba(0,0,0,.2), transparent 60%);
+      mix-blend-mode: soft-light;
+      opacity: .35;
+    }
+
+    .face {
+      transform: rotateY(180deg);
+      font-size: clamp(26px, 10cqw, 42px);
+      background: linear-gradient(180deg, #0e1530, #0c1125);
+    }
+
+    .card[aria-pressed="true"] .card-inner,
+    .card.flipped .card-inner { transform: rotateY(180deg); }
+
+    .card.matched { pointer-events: none; opacity: 0; visibility: hidden; transition: opacity 260ms ease 120ms, visibility 0s linear 380ms; }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+  <main class="game" aria-label="Memory game" aria-live="polite">
+    <header class="panel">
+      <div class="title">Memory Game <span class="sr-only">— 5 by 4 grid</span></div>
+      <div class="stats">
+        <div>Moves: <b id="moves">0</b></div>
+        <div>Pairs: <b id="pairs">0</b>/10</div>
+        <div>Time: <b id="time">0:00</b></div>
+      </div>
+      <div class="controls">
+        <button id="reset" type="button" title="Restart (shuffle)">↻ Restart</button>
+      </div>
+    </header>
+
+    <section id="grid" class="grid" role="grid" aria-rowcount="4" aria-colcount="5"></section>
+
+    <footer class="panel" style="justify-content:center; gap:8px;">
+      <span>Match all pairs. Click cards to flip. Matched pairs disappear.</span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const EMOJIS = [
+        '🍎','🍌','🍒','🍇','🍉',
+        '🥕','🌽','🥦','🍄','🥑',
+        '🐶','🐱','🦊','🐼','🦄',
+        '⭐','⚡','❤️','🎲','🎯'
+      ];
+      // Pick 10 unique emojis (fruits, veg, animals, symbols) out of the list above.
+      // If EMOJIS has more than 10, slice; otherwise use as-is.
+      const UNIQUE_COUNT = 10;
+
+      const $grid = document.getElementById('grid');
+      const $moves = document.getElementById('moves');
+      const $pairs = document.getElementById('pairs');
+      const $time  = document.getElementById('time');
+      const $reset = document.getElementById('reset');
+
+      let first = null;
+      let second = null;
+      let lock = false;
+      let moves = 0;
+      let foundPairs = 0;
+      let startTs = null;
+      let timerId = null;
+
+      function formatTime(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        return `${m}:${String(s).padStart(2,'0')}`;
+      }
+
+      function startTimer() {
+        if (timerId) clearInterval(timerId);
+        startTs = Date.now();
+        timerId = setInterval(() => {
+          const sec = Math.floor((Date.now() - startTs) / 1000);
+          $time.textContent = formatTime(sec);
+        }, 1000);
+      }
+
+      function stopTimer() {
+        if (timerId) clearInterval(timerId);
+        timerId = null;
+      }
+
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function createCard(emoji, index) {
+        const btn = document.createElement('button');
+        btn.className = 'card';
+        btn.setAttribute('type', 'button');
+        btn.setAttribute('role', 'gridcell');
+        btn.setAttribute('aria-pressed', 'false');
+        btn.dataset.value = emoji;
+        btn.dataset.index = index;
+        btn.innerHTML = `
+          <div class="card-inner">
+            <div class="back" aria-hidden="true"></div>
+            <div class="face" aria-hidden="true">${emoji}</div>
+          </div>
+        `;
+        btn.addEventListener('click', onFlip);
+        return btn;
+      }
+
+      function onFlip(e) {
+        const card = e.currentTarget;
+        if (lock || card.classList.contains('matched')) return;
+        if (card === first) return; // prevent double-clicking same
+
+        card.classList.add('flipped');
+        card.setAttribute('aria-pressed', 'true');
+
+        if (!first) {
+          first = card;
+          if (!timerId) startTimer();
+          return;
+        }
+
+        second = card;
+        lock = true;
+        moves += 1; $moves.textContent = moves;
+
+        const match = first.dataset.value === second.dataset.value;
+        if (match) {
+          // Disappear both after a tiny delay for feedback
+          setTimeout(() => {
+            first.classList.add('matched');
+            second.classList.add('matched');
+            foundPairs += 1; $pairs.textContent = foundPairs;
+            resetPick();
+            if (foundPairs === UNIQUE_COUNT) {
+              stopTimer();
+              announceWin();
+            }
+          }, 140);
+        } else {
+          setTimeout(() => {
+            first.classList.remove('flipped');
+            second.classList.remove('flipped');
+            first.setAttribute('aria-pressed', 'false');
+            second.setAttribute('aria-pressed', 'false');
+            resetPick();
+          }, 700);
+        }
+      }
+
+      function resetPick() {
+        [first, second] = [null, null];
+        lock = false;
+      }
+
+      function announceWin() {
+        const elapsed = $time.textContent;
+        const msg = `You won in ${moves} moves, time ${elapsed}!`;
+        // Non-blocking toast
+        const toast = document.createElement('div');
+        toast.textContent = msg + '  Click Restart to play again.';
+        toast.style.position = 'fixed';
+        toast.style.insetInline = '0';
+        toast.style.bottom = '18px';
+        toast.style.margin = '0 auto';
+        toast.style.width = 'fit-content';
+        toast.style.maxWidth = '90vw';
+        toast.style.padding = '10px 14px';
+        toast.style.borderRadius = '999px';
+        toast.style.background = 'linear-gradient(180deg,#102048,#0c1a38)';
+        toast.style.border = '1px solid #253a74';
+        toast.style.color = 'white';
+        toast.style.boxShadow = '0 10px 30px rgba(0,0,0,.4)';
+        toast.style.zIndex = '9999';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 5000);
+      }
+
+      function setup() {
+        // Reset state
+        first = second = null; lock = false; moves = 0; foundPairs = 0;
+        $moves.textContent = '0';
+        $pairs.textContent = '0';
+        $time.textContent = '0:00';
+        stopTimer();
+
+        // Build deck: 10 pairs → 20 cards
+        const base = EMOJIS.slice(0, UNIQUE_COUNT);
+        const deck = shuffle([...base, ...base].map((v, i) => ({ v, i })));
+
+        // Render grid
+        $grid.innerHTML = '';
+        deck.forEach(({ v }, idx) => $grid.appendChild(createCard(v, idx)));
+      }
+
+      $reset.addEventListener('click', setup);
+      setup();
+    })();
+  </script>
+</body>
+</html>

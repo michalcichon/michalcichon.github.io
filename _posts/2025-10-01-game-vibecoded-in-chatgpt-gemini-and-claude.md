@@ -322,3 +322,110 @@ index 4306d2c..ef2e44f 100644
 +</html>
 \ No newline at end of file
 ```
+
+## Appendix 2: All links in one place
+
+- [ChatGPT - 1st version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-1.html) for the prompt:
+
+```wrapped-text
+Create a memory game:
+- It should run in a web browser.
+- Ideally, use vanilla JavaScript and HTML, but you may use a library if it makes sense.
+- For simplicity, assume the back of the cards is just a solid purple color, and the fronts feature emojis (fruits, vegetables, animals, symbols).
+- When a pair is matched, both cards should disappear.
+- Assume a grid of 5×4 cards.
+```
+
+- [ChatGPT - 2nd version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-2.html) for the prompt:
+
+```wrapped-text
+It looks promising, but unfortunately, when I click on a card and it flips, I still see the back of the card instead of its face. The face should be an emoji on a white background.
+```
+
+- [ChatGPT - 3rd version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-3.html) for the prompt:
+
+```wrapped-text
+The faces are now displayed, but their size (including the white background) is much smaller than the back and aligned to the top. The face and the back of a card should be the same size, and the emoji should be centered inside the card. I also noticed that the flip animation is gone, which I liked very much.
+```
+
+- [ChatGPT - 4th version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-4.html) for the prompt:
+
+```wrapped-text
+This version is even more broken:
+- It shows the faces instead of the backs at the start of the game, so I can see where each emoji is. Before flipping a card, we should display the backs of all cards. Then, after clicking, the flip animation should run and the face should be revealed. Only when two cards match should they disappear.
+- The emoji is not vertically centered. The white background of the face should be the same size as the back.
+```
+
+- [ChatGPT - 5th version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-5.html) for the prompt:
+
+```wrapped-text
+Issues:
+- Card faces are visible before flipping them.
+- When a card is flipped, it shows the same emoji side but mirrored. Instead, before flipping, it should display the purple back, and after flipping, it should show the card face.
+- On the card face side, the emojis are still not centered, the white area is too small, and the emoji itself is also small. The emoji should be centered both vertically and horizontally, and the face should have the same size and corner radius as the back.
+```
+
+- [ChatGPT - 6th version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-6.html) for the prompt:
+
+```wrapped-text
+I replaced the CSS (style block) as you advised and found the following issues: After flipping a card, it doesn’t show the face but the back again. I can’t verify anything further because I can’t see the card face anymore.
+```
+
+- [ChatGPT - 7th version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-7.html) for the prompt:
+
+```wrapped-text
+Issues:
+- After flipping a card, I still see the back — nothing has changed.
+- I can’t verify anything further.
+```
+
+- [ChatGPT - 8th version]({{site.url}}/assets/2025-10-01/memory-game-chatgpt-8.html) for the prompt:
+
+```wrapped-text
+Issues:
+- In this version, we (again) can see the face of the card before flipping it.
+- After flipping, the card looks the same but mirrored. Instead, it should show the face after flipping and the back before flipping.
+```
+
+- [Gemini's version]({{site.url}}/assets/2025-10-01/memory-game-gemini.html) for the prompt:
+
+```wrapped-text
+Create a memory game:
+- It should run in a web browser.
+- Ideally, use vanilla JavaScript and HTML, but you may use a library if it makes sense.
+- For simplicity, assume the back of the cards is just a solid purple color, and the fronts feature emojis (fruits, vegetables, animals, symbols).
+- When a pair is matched, both cards should disappear.
+- Assume a grid of 5×4 cards.
+```
+
+- [Claude's version]({{site.url}}/assets/2025-10-01/memory-game-claude.html) for the prompt:
+
+```wrapped-text
+Create a memory game:
+- It should run in a web browser.
+- Ideally, use vanilla JavaScript and HTML, but you may use a library if it makes sense.
+- For simplicity, assume the back of the cards is just a solid purple color, and the fronts feature emojis (fruits, vegetables, animals, symbols).
+- When a pair is matched, both cards should disappear.
+- Assume a grid of 5×4 cards.
+```
+
+- [Gemini's fix for the ChatGPT version]({{site.url}}/assets/2025-10-01/memory_game_fixed_gemini.html) for the prompt:
+
+```wrapped-text
+Please fix this implementation of the memory game. Issues:
+* The flip animation is not visible after clicking on a card.
+* When the card is revealed, it shows the card’s face, but it is not vertically centered, and the white background is not the same size as the whole card.
+```
+- [Claude's fix (broken) for the ChatGPT version]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude.html) for the prompt:
+
+```wrapped-text
+Please fix this implementation of the memory game. Issues:
+* The flip animation is not visible after clicking on a card.
+* When the card is revealed, it shows the card’s face, but it is not vertically centered, and the white background is not the same size as the whole card.
+```
+
+- [Claude's 2nd fix for the ChatGPT version]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude2.html) for the prompt:
+
+```wrapped-text
+It doesn't work. Can you check?
+```
