@@ -29,7 +29,7 @@ Create a memory game:
 
 The first iteration was not totally wrong, but it was a bit useless. After flipping a card, we still saw the back side, which turned the whole thing into more of a guessing game — we had no idea what element was actually on the face of the card.
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-1.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-1.jpg">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -42,7 +42,7 @@ It looks promising, but unfortunately, when I click on a card and it flips, I st
 
 And here is what I received:
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-2.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-2.jpg">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -55,7 +55,7 @@ The faces are now displayed, but their size (including the white background) is 
 
 This time, the result was quite strange — all the cards were visible from the start, which made the whole game pointless.
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-3.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/chatgpt-3.jpg">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-3.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -110,7 +110,7 @@ And to my surprise, Gemini provided a [working solution]({{site.url}}/assets/202
 
 The code was split into three files — `index.html`, `script.js`, and `style.css` — which felt more structured and used significantly fewer CSS tricks. Most importantly, it worked surprisingly well.
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/gemini.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/gemini.jpg">
   <source src="{{site.url}}/assets/2025-10-01/gemini.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -121,7 +121,7 @@ You can find the full code here: https://github.com/michalcichon/memo-game-gemin
 
 To get a broader picture of LLM capabilities, I ran another test — this time with Claude. Using the same prompt, and to my surprise again, Claude generated a [working solution]({{site.url}}/assets/2025-10-01/memory-game-claude.html) immediately as well.
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/claude.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/claude.jpg">
   <source src="{{site.url}}/assets/2025-10-01/claude.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -142,7 +142,7 @@ Please fix this implementation of the memory game. Issues:
 
 In the response, I received a clean, [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_gemini.html) that seemed to fix all the issues listed previously. You can find the diff of the changes [here](https://github.com/michalcichon/memo-game/commit/eb328312d094eb0af4f1cb93219b32638742863d). 
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/fixed-by-gemini.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/fixed-by-gemini.jpg">
   <source src="{{site.url}}/assets/2025-10-01/fixed-by-gemini.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -159,7 +159,7 @@ It doesn't work. Can you check?
 
 And this time, Claude provided a [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude2.html) ([git diff](https://github.com/michalcichon/memo-game/commit/e01a4503f349aaf3888f6593d38abcad4dd2fe08)).
 
-<video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/fixed-by-claude.jpg">
+<video controls playsinline preload="metadata" poster="{{site.url}}/assets/2025-10-01/fixed-by-claude.jpg">
   <source src="{{site.url}}/assets/2025-10-01/fixed-by-claude.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
