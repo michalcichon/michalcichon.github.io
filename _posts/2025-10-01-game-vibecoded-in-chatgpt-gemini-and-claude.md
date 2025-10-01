@@ -189,6 +189,8 @@ Even with deeper LLM integration, the developer is still in the driver’s seat,
 
 And you can play the game [here]({{site.url}}/assets/2025-10-01/memory-game-claude.html). 🙂
 
+---
+
 ## Appendix 1: Gemini's fix
 
 ```diff
