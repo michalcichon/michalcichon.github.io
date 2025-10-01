@@ -929,6 +929,50 @@ video {
   overflow-x: visible;
 }
 
+/** Start: diff **/
+
+/* Podstawowe kolory dla diffów Rouge */
+.language-diff .highlight .gd { 
+  color: #b91c1c;                 /* czerwony tekst */
+  background: #fee2e2;            /* jasnoczerwone tło */
+  border-left: 4px solid #ef4444; /* pasek po lewej */
+  padding-left: 8px;
+}
+.language-diff .highlight .gi { 
+  color: #166534;                 /* zielony tekst */
+  background: #dcfce7;            /* jasnozielone tło */
+  border-left: 4px solid #22c55e; 
+  padding-left: 8px;
+}
+
+/* Nagłówki hunków i metadane z diffów */
+.language-diff .highlight .gh { color: #475569; background: #f1f5f9; }
+.language-diff .highlight .p  { color: inherit; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .language-diff .highlight .gd { 
+    color: #fecaca; 
+    background: #451a1a; 
+    border-left-color: #f87171; 
+  }
+  .language-diff .highlight .gi { 
+    color: #bbf7d0; 
+    background: #052e1c; 
+    border-left-color: #34d399; 
+  }
+  .language-diff .highlight .gh { color: #cbd5e1; background: #0f172a; }
+}
+
+/* (opcjonalnie) ogólne poprawki wyglądu bloku */
+.language-diff pre { 
+  margin: 0; 
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  overflow: auto;
+}
+
+/** End: diff **/
+
 .highlighter-rouge {
   margin-top: 10px;
   margin-bottom: 10px;

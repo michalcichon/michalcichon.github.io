@@ -151,13 +151,13 @@ Gemini also provided a detailed explanation of what was wrong and how it was fix
 
 ![Gemini Summary]({{site.url}}/assets/2025-10-01/gemini-summary.webp)
 
-I tried the same prompt in Claude, and the first attempt was broken — the game didn’t work at all. Then I simply prompted:
+I tried the same prompt in Claude, and the [first attempt](https://github.com/michalcichon/memo-game/commit/faaf144285499baa4f13dd066fbc8f57f0df1f48) was broken — the game didn’t work at all. Then I simply prompted:
 
 ```wrapped-text
 It doesn't work. Can you check?
 ```
 
-And this time, Claude provided a [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude2.html).
+And this time, Claude provided a [working solution]({{site.url}}/assets/2025-10-01/memory_game_fixed_claude2.html) ([git diff](https://github.com/michalcichon/memo-game/commit/e01a4503f349aaf3888f6593d38abcad4dd2fe08)).
 
 <video controls playsinline loop preload="metadata" poster="{{site.url}}/assets/2025-10-01/fixed-by-claude.jpg">
   <source src="{{site.url}}/assets/2025-10-01/fixed-by-claude.mp4" type="video/mp4">
@@ -188,3 +188,137 @@ I will definitely take a closer look at LLMs and try to incorporate them into my
 Even with deeper LLM integration, the developer is still in the driver’s seat, and it’s essential to review and verify the generated code before using it in production. Nevertheless, I plan to explore stronger integration with LLM solutions like Gemini or Claude.
 
 And you can play the game [here]({{site.url}}/assets/2025-10-01/memory-game-claude.html). 🙂
+
+## Appendix 1: Gemini's fix
+
+```diff
+diff --git a/vanilla_js_memory_game_5_4_emoji_cards.html b/vanilla_js_memory_game_5_4_emoji_cards.html
+index 4306d2c..ef2e44f 100644
+--- a/vanilla_js_memory_game_5_4_emoji_cards.html
++++ b/vanilla_js_memory_game_5_4_emoji_cards.html
+@@ -34,55 +34,70 @@
+   /* Card */
+   .card { position: relative; width: 100%; aspect-ratio: 11/14; border-radius: calc(var(--radius) * .9); box-shadow: var(--shadow); cursor: pointer; outline: none; border: 1px solid rgba(255,255,255,.06); background: transparent; display: block; }
+ 
+-  /* Rotate ONLY the inner wrapper */
++
++  /* --- FIXES START HERE --- */
++
++  /* The inner wrapper now handles the 3D space and animation */
+   .card-inner {
+-      position: absolute;
+-      inset: 0;
++      position: relative;
++      width: 100%;
++      height: 100%;
+       border-radius: inherit;
+-      overflow: hidden;
++      transition: transform 0.6s;
++      transform-style: preserve-3d;
++      -webkit-transform-style: preserve-3d;
+     }
+-  /* flip handled by cross-fading sides, not rotating wrapper (avoids backface bugs) */
+ 
+-  /* Both sides fill entire card and are centered */
++  /* When flipped, rotate the inner wrapper */
++  .card.flipped .card-inner,
++  .card[aria-pressed="true"] .card-inner {
++    transform: rotateY(180deg);
++  }
++
++  /* Both sides are positioned absolutely to fill the inner wrapper */
+   .face, .back {
+-      background: var(--purple);
+-      transform: rotateY(0deg);
+-      opacity: 1;
+-    }
+-    .back::after {
+-      content: "";
+-      position: absolute; inset: 0;
+-      background:
+-        radial-gradient(12px 12px at 20% 30%, rgba(255,255,255,.22), transparent 60%),
+-        radial-gradient(10px 10px at 70% 60%, rgba(0,0,0,.2), transparent 60%);
+-      mix-blend-mode: soft-light;
+-      opacity: .35;
+-      pointer-events: none;
+-    }
++    position: absolute;
++    inset: 0;
++    width: 100%;
++    height: 100%;
++    border-radius: inherit;
++    overflow: hidden;
++    backface-visibility: hidden;
++    -webkit-backface-visibility: hidden;
++    /* This centers the content (the emoji) on the card face */
++    display: grid;
++    place-items: center;
++  }
+ 
+-  /* Back visible initially */
+-  .back { background: var(--purple); transform: rotateY(0deg); -webkit-transform: rotateY(0deg); }
+-  .back::after { content:""; position:absolute; inset:0; background: radial-gradient(12px 12px at 20% 30%, rgba(255,255,255,.22), transparent 60%), radial-gradient(10px 10px at 70% 60%, rgba(0,0,0,.2), transparent 60%); mix-blend-mode: soft-light; opacity:.35; pointer-events:none; }
++  /* Back side styling (no transform needed here) */
++  .back {
++    background: var(--purple);
++  }
++  .back::after {
++    content: "";
++    position: absolute; inset: 0;
++    background:
++      radial-gradient(12px 12px at 20% 30%, rgba(255,255,255,.22), transparent 60%),
++      radial-gradient(10px 10px at 70% 60%, rgba(0,0,0,.2), transparent 60%);
++    mix-blend-mode: soft-light;
++    opacity: .35;
++    pointer-events: none;
++  }
+ 
+-  /* Face hidden initially; also visibility toggled for robustness */
++  /* Face side styling */
+   .face {
+-      background: #ffffff;
+-      color: #111;
+-      transform: rotateY(180deg);
+-      opacity: 0;
+-      font-size: clamp(40px, 28cqw, 72px);
+-    }
+-  .card.flipped .face, .card[aria-pressed="true"] .face { visibility: visible; }
+-  .card.flipped .back,  .card[aria-pressed="true"] .back  { visibility: hidden; }
++    background: #ffffff;
++    color: #111;
++    font-size: clamp(40px, 28cqw, 72px);
++    /* Initially rotated to face away from the viewer */
++    transform: rotateY(180deg);
++  }
++
++  /* --- FIXES END HERE --- */
+ 
+-  /* Flipped state: show face, hide back */
+-    .card.flipped .face,
+-    .card[aria-pressed="true"] .face { transform: rotateY(0deg); opacity: 1; }
+-    .card.flipped .back,
+-    .card[aria-pressed="true"] .back  { transform: rotateY(180deg); opacity: 0; }
+ 
+-    /* Matched state */
+-    .card.matched { pointer-events: none; opacity: 0; visibility: hidden; transition: opacity 260ms ease 120ms, visibility 0s linear 380ms; }
++  /* Matched state */
++  .card.matched { pointer-events: none; opacity: 0; visibility: hidden; transition: opacity 260ms ease 120ms, visibility 0s linear 380ms; }
+ 
+   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+ </style>
+@@ -170,6 +185,7 @@
+         card.setAttribute('aria-pressed', 'false');
+         card.dataset.value = emoji;
+         card.dataset.index = index;
++        // Note: The inner div structure is slightly different now
+         card.innerHTML = `
+           <div class="card-inner">
+             <div class="back" aria-hidden="true"></div>
+@@ -278,4 +294,4 @@
+     })();
+   </script>
+ </body>
+-</html>
++</html>
+\ No newline at end of file
+```
