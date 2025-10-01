@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I have vibe-coded a game in ChatGPT, Claude and Gemini"
+title:  "How I Vibe-Coded a Game Using ChatGPT, Claude, and Gemini"
 description: ""
 date:   2025-10-01 06:00:00 +0200
 categories: programming
@@ -27,29 +27,29 @@ Create a memory game:
 - Assume a grid of 5×4 cards.
 ```
 
-And the first iteration is not totally wrong but a bit useless. After flipping a card we still see the back of a card which makes it more like a guess game, because we don't know what elements is actually on the card face. 
+The first iteration was not totally wrong, but it was a bit useless. After flipping a card, we still saw the back side, which turned the whole thing into more of a guessing game — we had no idea what element was actually on the face of the card.
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-I believed this is just some silly issue in the CSS and ChatGPT should fix it easily. So I prompted:
+I believed this was just a small CSS issue that ChatGPT could easily fix. So I prompted:
 
 ```
 It looks promising, but unfortunately, when I click on a card and it flips, I still see the back of the card instead of its face. The face should be an emoji on a white background.
 ```
 
-But the result was quite strange. Starting now, all cards were visible from scratch so the whole game was pointless. 
+But the result was quite strange. Now, all cards were visible from the start, so the whole game was pointless.
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/chatgpt-2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-I tried couple of time to fix it by prompting ChatGPT but I seemed not to work. The cards were all face up, or the the back was visible after flipping.
+I tried a couple of times to fix it by prompting ChatGPT again, but it didn’t seem to work. Either all cards were face-up from the beginning, or the back was still visible even after flipping.
 
-Here I list the prompt I have used:
+Here are some of the prompts I used:
 
 ```
 The faces are now displayed, but their size (including the white background) is much smaller than the back and aligned to the top. The face and the back of a card should be the same size, and the emoji should be centered inside the card. I also noticed that the flip animation is gone, which I liked very much.
@@ -80,11 +80,13 @@ Issues:
 - After flipping, the card looks the same but mirrored. Instead, it should show the face after flipping and the back before flipping.
 ```
 
-Unfortunately it didn't bring me any closer to the proper solution. My entire struggles with the ChatGPT prompting you can find in this repo: https://github.com/michalcichon/memo-game. 
+Unfortunately, none of this brought me closer to a proper solution.
+
+You can find my full series of prompts and attempts in this repo: https://github.com/michalcichon/memo-game. 
 
 ## Gemini
 
-I wasn't happy with the results coded by ChatGPT so I moved now to Gemini (2.5 Pro). I sent the same prompt:
+I wasn’t happy with the results from ChatGPT, so I moved on to Gemini (2.5 Pro). I sent the same prompt:
 
 ```
 Create a memory game: 
@@ -95,24 +97,27 @@ Create a memory game:
 - Assume a grid of 5×4 cards.
 ```
 
-And to my surprise, Gemini provided me with the proper solution from the get go. 
+And to my surprise, Gemini provided a working solution right from the start.
 
-The code was not in one file but in three separate files: index.html, script.js and style.css. It looked a bit more structured and used significantly less CSS tricks. But it worked surprisingly well. 
+The code was split into three files — `index.html`, `script.js`, and `style.css` — which felt more structured and used significantly fewer CSS tricks. Most importantly, it worked surprisingly well.
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/gemini.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-The whole code you can find here: https://github.com/michalcichon/memo-game-gemini
+You can find the full code here: https://github.com/michalcichon/memo-game-gemini
 
 ## Claude
 
-To have the broader picture of LLMs capabilities I performed another test, this time with Claude. The same prompt and to my surprice, Claude generated a working solution immediately as well. 
+To get a broader picture of LLM capabilities, I ran another test — this time with Claude. Using the same prompt, and to my surprise again, Claude generated a working solution immediately as well.
 
 <video controls playsinline width="100%">
   <source src="{{site.url}}/assets/2025-10-01/claude.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-This solution I like the most and Claude should get extra points for making the game reactive so the game area shrinks when there is less space in the browser window. Here is the Gemini's solution code: https://github.com/michalcichon/memo-game-gemini. 
+I liked Claude’s solution the most. It deserves extra points for making the game responsive — the grid shrinks dynamically when there’s less space in the browser window.
+
+You can find the solution here: https://github.com/michalcichon/memo-game-gemini. 
+
