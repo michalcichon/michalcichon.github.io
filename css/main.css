@@ -917,8 +917,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 video {
   width: 100%;
   height: auto;
-  background:#eee; 
-  border-radius: 8px; 
+  background: #eee;
   display:block;
 }
 
