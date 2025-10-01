@@ -172,7 +172,7 @@ Here’s a summary of the changes made by Claude:
 
 They are actually quite similar. We can identify some clear similarities:
 
-- Both rotate .card-inner rather than flipping front/back independently.
+- Both rotate `.card-inner` rather than flipping front/back independently.
 - Both add `transform-style: preserve-3d` to the rotating container and animate with transition.
 - Both use a rule equivalent to `.card.flipped .card-inner { transform: rotateY(180deg);` }.
 - Both rely on `backface-visibility: hidden;` for `.face` and `.back`.
