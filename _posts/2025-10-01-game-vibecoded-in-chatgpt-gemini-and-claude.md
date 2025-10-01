@@ -128,7 +128,7 @@ To get a broader picture of LLM capabilities, I ran another test — this time w
 
 I liked Claude’s solution the most. It deserves extra points for making the game responsive — the grid shrinks dynamically when there’s less space in the browser window.
 
-You can find the solution here: https://github.com/michalcichon/memo-game-gemini. 
+You can find the solution here: https://github.com/michalcichon/memo-game-claude. 
 
 # Fixing ChatGPT’s Mistakes
 
