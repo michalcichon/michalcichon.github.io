@@ -909,6 +909,13 @@ code {
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
+.language-wrapped-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  overflow-x: visible;
+}
+
 .highlighter-rouge {
   margin-top: 10px;
   margin-bottom: 10px;
