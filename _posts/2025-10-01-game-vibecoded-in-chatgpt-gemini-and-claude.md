@@ -6,7 +6,7 @@ date:   2025-10-01 06:00:00 +0200
 categories: programming
 keywords: programming, vibe-coding, games, memory game, memo game
 tags: programming
-image: "assets/2025-10-01/thumbnail.webp" # Image for RSS
+image: "assets/2025-10-01/thumbnail.png" # Image for RSS
 comments: true
 ---
 
