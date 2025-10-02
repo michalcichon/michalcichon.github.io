@@ -913,7 +913,11 @@ code {
   font-family: Menlo, Monaco, Courier;
 }
 
-pre { padding: 8px 12px; overflow-x: auto; }
+pre { 
+  padding: 8px 12px; 
+  margin-bottom: 8px;
+  overflow-x: auto; 
+}
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 video {
