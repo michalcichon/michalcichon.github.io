@@ -237,11 +237,14 @@ html, body {
 }
 
 #header {
-  background-image: url('../img/stars.jpg');
-  background-color: #ddd;
+  background-color: #a72dc7;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; 
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.734), rgba(0,0,0,.45)),
+    url('../img/stars.jpg');
+  background-position: center;
+  background-blend-mode: multiply; 
   width: 100%;
   height: 200px;
   margin-bottom: 40px;
@@ -286,7 +289,6 @@ html, body {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  text-shadow: black 1px 0 10px;
 }
 
 #my-photo {
@@ -1104,11 +1106,6 @@ video {
     color: white;
   }
 
-  #header {
-    background-color: rgb(32, 32, 32);
-    background-blend-mode: hard-light;
-  }
-
   #header-name {
     color: white;
   }
@@ -1252,9 +1249,7 @@ video {
 @media screen and (max-width:500px) {
 
   #my-photo {
-    width: 60px;
-    height: 60px;
-    margin-top: 70px;
+    margin-top: 56px;
   }
 
   #header-name {
@@ -1268,6 +1263,42 @@ video {
   
   #header-content h2 {
     font-size: 12px;
+  }
+
+  #header-content {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    container-type: inline-size;
+  }
+
+  #header-image img {
+    width: clamp(90px, 10cqw, 96px);
+    height: auto;
+    border-radius: 50%;
+    display: block;
+  }
+
+  #header-name h1 {
+    margin: 0;
+    line-height: 1.05;
+    text-wrap: balance;
+    font-size: clamp(20px, 9cqw, 32px);
+    font-weight: 800;
+  }
+
+  #header-name h2 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: clamp(12px, 6cqw, 20px);
+    font-weight: 500;
+    opacity: .85;
+  }
+
+  #header-name { 
+    min-width: 0; 
   }
 
 }
