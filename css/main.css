@@ -918,7 +918,12 @@ pre {
   margin-bottom: 8px;
   overflow-x: auto; 
 }
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+pre > code { 
+  border: 0; 
+  padding-right: 0;  
+  padding-left: 0; 
+}
 
 video {
   width: 100%;
