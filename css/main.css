@@ -84,6 +84,10 @@ html, body {
   margin: 0 auto;
 }
 
+.post-header h1 {
+  text-align: left;
+}
+
 #menu-button {
   display: none;
   position: fixed;

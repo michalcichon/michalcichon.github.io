@@ -12,7 +12,7 @@ tags: retro gaming computing
 comments: true
 ---
 
-## Retrocomputing. Frankly, every computer inevitably becomes retro, but I particularly enjoy working with these 8-bit machines from the 1980s and early '90s.
+**Retrocomputing. Frankly, every computer inevitably becomes retro, but I particularly enjoy working with these 8-bit machines from the 1980s and early '90s.**
 
 I began collecting retro computers somewhat by accident. My first game console was the Pegasus IQ-502, which my parents gave me around 1994. This console was a Nintendo Entertainment System clone produced by the Taiwanese company Micro Genius. It became very popular in Poland in the early '90s, before anti-piracy laws were introduced into the Polish legal system.
 
