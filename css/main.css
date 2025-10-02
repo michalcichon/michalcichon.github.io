@@ -1269,7 +1269,7 @@ video {
     margin-inline: auto;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     container-type: inline-size;
   }
 
@@ -1299,5 +1299,9 @@ video {
   #header-name { 
     min-width: 0; 
   }
+
+  #header-wrapper { 
+    margin: 0 12px; 
+  } 
 
 }
