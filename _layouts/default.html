@@ -7,35 +7,110 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-HCHGNHTHFC');
+      gtag('config', 'G-HCHGNHTHFC', { 'anonymize_ip': true });
     </script>
+
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed%7CPoppins&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.min.css?t={{site.time | date_to_xmlschema}}">
-    <link rel="icon" type="image/png" sizes="64x64" href="{{site.baseurl}}/icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/apple-touch-icon.png">
-    <link rel="me" href="https://mastodon.social/@mcichon">
-    <link rel="me" href="https://x.com/michal_cichon">
-    <meta name="msapplication-square70x70logo" content="{{site.baseurl}}/ms-icon-70.png">
-    <meta name="msapplication-square150x150logo" content="{{site.baseurl}}/ms-icon-150.png">
-    <meta name="msapplication-square310x310logo" content="{{site.baseurl}}/ms-icon-310.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary meta -->
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+    <meta name="author" content="Michał Cichoń">
+
+    <!-- Helpers for absolute URLs -->
+    {%- assign abs_url = page.url | absolute_url -%}
+    {%- assign og_img = page.image | default: 'img/michal.jpeg' -%}
+    {%- assign og_img_abs = og_img | absolute_url -%}
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ abs_url }}"/>
+
+    <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="https://michalcichon.github.io{{page.url}}">
-    <meta property="og:image" content="{% if page.image %}https://michalcichon.github.io/{{ page.image }}{% else %}https://michalcichon.github.io/img/michal.jpeg{% endif %}">
-    <meta property="og:type" content="article">
-    <meta property="profile:first_name" content="Michał">
-    <meta property="profile:last_name" content="Cichoń">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:url" content="{{ abs_url }}">
+    <meta property="og:image" content="{{ og_img_abs }}">
+    <meta property="og:image:alt" content="Thumbnail for: {{ page.title | default: site.title }}">
+    <meta property="og:type" content="{% if page.layout == 'post' or page.collection == 'posts' %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="{{ site.lang | default: 'en_US' }}">
+
+    <!-- Article meta (only for posts) -->
+    {% if page.layout == 'post' or page.collection == 'posts' %}
+      <meta property="article:author" content="{{ site.url }}/">
+      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+      {% if page.last_modified_at %}
+        <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+      {% endif %}
+      {% if page.tags %}
+        {% for t in page.tags %}
+          <meta property="article:tag" content="{{ t }}">
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+
+    <!-- Twitter -->
+    {% if site.twitter_username %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="{{ og_img_abs }}">
+    {% endif %}
+
+    <!-- Robots & RSS -->
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ '/feed.xml' | absolute_url }}" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/icon.png' | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | absolute_url }}">
+    <meta name="msapplication-square70x70logo" content="{{ '/ms-icon-70.png' | absolute_url }}">
+    <meta name="msapplication-square150x150logo" content="{{ '/ms-icon-150.png' | absolute_url }}">
+    <meta name="msapplication-square310x310logo" content="{{ '/ms-icon-310.png' | absolute_url }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Identity -->
+    <link rel="me" href="https://mastodon.social/@mcichon">
+    <link rel="me" href="https://x.com/{{ site.twitter_username | default: 'michal_cichon' }}">
     <meta name="fediverse:creator" content="@mcichon@mastodon.social">
-    <script src="{{site.baseurl}}/js/main.min.js?t={{site.time | date_to_xmlschema}}"></script>
+
+    <!-- Performance (fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Styles & fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CPoiret+One%7CRoboto%7CRoboto+Condensed%7CPoppins&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}?t={{ site.time | date_to_xmlschema }}">
+
+    <!-- Article JSON-LD -->
+    {% if page.layout == 'post' or page.collection == 'posts' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ abs_url }}" },
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "image": {{ og_img_abs | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+      "author": { "@type": "Person", "name": "Michał Cichoń", "url": "{{ site.url }}/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "logo": { "@type": "ImageObject", "url": "{{ '/icon.png' | absolute_url }}" }
+      }
+    }
+    </script>
+    {% endif %}
+
+    <!-- JS -->
+    <script src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
   </head>
   <body>
     <div class="wrapper">
