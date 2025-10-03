@@ -28,6 +28,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans",
+       "Helvetica Neue", Arial, sans-serif; text-rendering: optimizeLegibility; 
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -93,7 +95,6 @@ html, body {
   position: fixed;
   right: 10px;
   top: 10px;
-  font-family: "Helvetica", "Arial", sans-serif;
   background: rgba(0, 0, 0, 0.7);
   margin: 10px;
   float: left;
@@ -115,7 +116,6 @@ html, body {
   position: absolute;
   right: 10px;
   top: 10px;
-  font-family: "Helvetica","Arial",sans-serif;
 }
 
 #menu ul, 
@@ -211,7 +211,6 @@ html, body {
     text-align: left;
     color: #000;
     padding: 10px 20px 10px 20px;
-    font-family: "Helvetica", "Arial", sans-serif;
     font-weight: 200;
   }
 
@@ -275,7 +274,6 @@ html, body {
 #header-content h2 {
   text-align: left;
   margin: 10px;
-  font-family: 'Poppins';
   font-weight: 900;
   color: white;
 }
@@ -318,9 +316,12 @@ html, body {
     max-width: 800px;
 }
 
+#main-space-content header h1 {
+  font-weight: 600;
+}
+
 #main-space {
   margin: 20px 20px;
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.6875;
 }
@@ -425,93 +426,6 @@ p {
   text-align: justify;
 }
 
-/* Social Links */
-
-#social-links {
-  font-family: 'Roboto';
-  margin: 24px 26px;
-  text-align: center;
-}
-
-#social-links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-#social-links li {
-  float: left;
-  margin-right: 36px;
-}
-
-#social-links li:last-child {
-  margin-right: 0;
-}
-
-#social-links li a {
-  filter: none;
-  border-style: none;
-}
-
-#social-links li a:hover {
-  filter: grayscale(100%);
-  transition: filter .2s ease-out;
-  -moz-transition: filter .2s ease-out;
-  -webkit-transition: filter .2s ease-out;
-  -o-transition: filter .2s ease-out;
-  border-style: none;
-}
-
-#social-links li a:visited {
-  border-style: none;
-}
-
-#social-links li a.linkedin {
-  background: url("../img/linkedin-logo.svg");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 40px;
-  width: 40px;
-}
-
-#social-links li a.github {
-  background: url("../img/github-logo.svg");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 40px;
-  width: 40px;
-}
-
-#social-links li a.twitter {
-  background: url("../img/twitter-logo.svg");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 40px;
-  width: 40px;
-}
-
-#social-links li a.stackoverflow {
-  background: url("../img/stackoverflow-logo.svg");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 40px;
-  width: 40px;
-}
-
-#social-links a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-#social-links a:hover {
-  text-decoration: none;
-}
-
 .technologies {
   text-align: center;
   margin-top: 30px;
@@ -531,7 +445,6 @@ p {
 /* Contact form */
 
 #main-space .contact-form {
-  font-family: 'Roboto';
   font-size: 50%;
   max-width: 800px;
 }
@@ -553,7 +466,6 @@ p {
 
 #footer p {
   padding: 60px 0 0 0;
-  font-family: 'Roboto';
   font-size: 80%;
   color: #eee;
   text-align: center;
@@ -604,7 +516,6 @@ p {
 
 #main-space article p,
 #main-space article ul li {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 120%;
 }
 
@@ -619,7 +530,6 @@ p {
 #main-space p.post-meta { 
   font-size: 14px;
   color: #828282; 
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
 .post-list .post-element .post-meta {
@@ -649,7 +559,6 @@ ul.post-list li.post-element {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 120px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 120%;
 }
 
@@ -659,7 +568,7 @@ ul.post-list li.post-element {
 
 #main-space-content .post-list h2 {
   margin-bottom: 10px;
-  line-height: 140%;
+  line-height: 120%;
 }
 
 #main-space-content strong {
@@ -825,10 +734,6 @@ ul.post-list li.post-element {
     float: none;
   }
 
-  #social-links li {
-    margin-right: 16px;
-  }
-
   .technologies img {
     margin-right: 15px;
   }
@@ -841,10 +746,6 @@ ul.post-list li.post-element {
 }
 
 /* Tags */
-
-.tag-page {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
 
 .tag-page a {
   font-weight: bold;
@@ -912,13 +813,14 @@ pre, code {
   border: 1px solid #e8e8e8; 
   border-radius: 3px; 
   background-color: #eef;
+  font-family: "JetBrains Mono", "Fira Code",
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "DejaVu Sans Mono", "Noto Mono",
+    "Courier New", monospace;
+  font-variant-ligatures: contextual common-ligatures discretionary-ligatures;
 }
 
 code { padding: 1px 5px; }
-
-code {
-  font-family: Menlo, Monaco, Courier;
-}
 
 pre { 
   padding: 8px 12px; 
@@ -948,21 +850,19 @@ video {
 
 /** Start: diff **/
 
-/* Podstawowe kolory dla diffów Rouge */
 .language-diff .highlight .gd { 
-  color: #b91c1c;                 /* czerwony tekst */
-  background: #fee2e2;            /* jasnoczerwone tło */
-  border-left: 4px solid #ef4444; /* pasek po lewej */
+  color: #b91c1c;
+  background: #fee2e2;
+  border-left: 4px solid #ef4444;
   padding-left: 8px;
 }
 .language-diff .highlight .gi { 
-  color: #166534;                 /* zielony tekst */
-  background: #dcfce7;            /* jasnozielone tło */
+  color: #166534;                 
+  background: #dcfce7;            
   border-left: 4px solid #22c55e; 
   padding-left: 8px;
 }
 
-/* Nagłówki hunków i metadane z diffów */
 .language-diff .highlight .gh { color: #475569; background: #f1f5f9; }
 .language-diff .highlight .p  { color: inherit; }
 
@@ -981,10 +881,8 @@ video {
   .language-diff .highlight .gh { color: #cbd5e1; background: #0f172a; }
 }
 
-/* (opcjonalnie) ogólne poprawki wyglądu bloku */
 .language-diff pre { 
   margin: 0; 
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   overflow: auto;
 }
 
