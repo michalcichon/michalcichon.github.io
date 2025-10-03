@@ -10,6 +10,29 @@
       gtag('config', 'G-HCHGNHTHFC', { 'anonymize_ip': true });
     </script>
 
+    <script>
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a[data-event]');
+      if (!a) return;
+
+      const ds = a.dataset;
+      const params = {
+        link_url: a.href || '',
+        link_text: (a.textContent || '').trim(),
+        section: ds.section,      // eg. 'topnav', 'blog_teaser', 'header'
+        element: ds.element,      // eg. 'home', 'blog', 'photo', 'name'
+        position: ds.position,    // optional: 'menu', 'teaser', 'footer'
+        content: ds.content       // eg. 'title', 'thumb', 'desc', 'more_button'
+      };
+
+      Object.keys(params).forEach(k => (params[k] == null || params[k] === '') && delete params[k]);
+
+      if (typeof gtag === 'function') {
+        gtag('event', ds.event || 'ui_click', params);
+      }
+    }, { capture: true });
+  </script>
+
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,22 +142,22 @@
       </div>
       <nav id="menu" class="topnav">
         <ul>
-          <li><a href="{{site.baseurl}}/" title="Home">Home</a></li>
-          <li><a href="{{site.baseurl}}/blog/" title="Blog">Blog</a></li>
-          <li><a href="{{site.baseurl}}/about-me/" title="About me">About me</a></li>
-          <li><a href="{{site.baseurl}}/contact/" title="Contact me">Contact</a></li>
+          <li><a href="{{site.baseurl}}/" title="Home" data-event="nav_click" data-section="topnav" data-element="home"  data-position="menu">Home</a></li>
+          <li><a href="{{site.baseurl}}/blog/" title="Blog" data-event="nav_click" data-section="topnav" data-element="blog"  data-position="menu">Blog</a></li>
+          <li><a href="{{site.baseurl}}/about-me/" title="About me" data-event="nav_click" data-section="topnav" data-element="about" data-position="menu">About me</a></li>
+          <li><a href="{{site.baseurl}}/contact/" title="Contact me" data-event="nav_click" data-section="topnav" data-element="contact" data-position="menu">Contact</a></li>
         </ul>
       </nav>
       <div id="header">
         <div id="header-wrapper">
           <div id="header-content">
             <div id="header-image">
-              <a href="{{site.baseurl}}/">
+              <a href="{{site.baseurl}}/" data-event="home_click" data-section="header" data-element="photo" data-position="hero">
                 <img id="my-photo" src="{{site.baseurl}}/img/michal.jpeg" alt="Michał Cichoń" title="My photo" />
               </a>
             </div>
             <div id="header-name">
-              <a href="{{site.baseurl}}/">
+              <a href="{{site.baseurl}}/" data-event="home_click" data-section="header" data-element="name" data-position="hero">
                 <h1>Michał Cichoń</h1>
                 <h2>iOS Software Developer</h2>
               </a>
