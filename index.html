@@ -13,48 +13,31 @@ layout: default
 
 <div id="blog-on-main-wrapper">
   <h3 class="check-on-blog">
-    <a href="{{site.baseurl}}/blog?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=cta_h3">Read on my blog</a>
+    <a href="{{site.baseurl}}/blog/">Read on my blog</a>
   </h3>
 
   <div id="blog-on-main" class="blog">
     <ul class="post-list">
       {% assign post = site.posts | first %}
-      <li class="post-element">
-        {% if post.thumbnail %}
-          <a class="link-around-image"
-            {% if post.background %}style="background-color: {{post.background}}"{% endif %}
-            href="{{ post.url | relative_url }}?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=thumb">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt="">
-          </a>
-        {% else %}
-          <a class="link-around-image thumbnail-default-background"
-            href="{{ post.url | relative_url }}?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=thumb">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/default.png" alt="">
-          </a>
-        {% endif %}
+        <li class="post-element">
+          {% if post.thumbnail %}
+            <a class="link-around-image" {% if post.background %}style="background-color: {{post.background}}"{% endif %} href="{{ post.url | relative_url }}"><img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt=""></a>
+            {% else %}
+            <a class="link-around-image thumbnail-default-background" href="{{ post.url | relative_url }}"><img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/default.png" alt=""></a>
+          {% endif %}
+          
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        
-        <h2>
-          <a class="post-link"
-            href="{{ post.url | relative_url }}?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=title">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-
-        <a class="no-decoration"
-          href="{{ post.url | relative_url }}?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=desc">
-          <p class="post-description">{{ post.description }}</p>
-        </a>
-      </li>
-      <li style="clear: both; height: 1px; margin-bottom: 1px;"></li>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
+          <a class="no-decoration" href="{{ post.url | relative_url }}"><p class="post-description">{{post.description}}</p></a>
+        </li>
+        <li style="clear: both; height: 1px; margin-bottom: 1px;"></li>
     </ul>
     <div class="bigger-navigation-button">
-      <a href="{{site.baseurl}}/blog/?utm_source=site&utm_medium=home_teaser&utm_campaign=blog_teaser&utm_content=more_button#more">
-        More blog posts...
-      </a>
+      <a href="{{site.baseurl}}/blog/">More blog posts...</a>
     </div>
-</div>
-
+  </div>
 </div>
