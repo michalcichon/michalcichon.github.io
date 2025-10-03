@@ -174,7 +174,7 @@ They are actually quite similar. We can identify some clear similarities:
 
 - Both rotate `.card-inner` rather than flipping front/back independently.
 - Both add `transform-style: preserve-3d` to the rotating container and animate with transition.
-- Both use a rule equivalent to `.card.flipped .card-inner { transform: rotateY(180deg);` }.
+- Both use a rule equivalent to `.card.flipped .card-inner { transform: rotateY(180deg); }`.
 - Both rely on `backface-visibility: hidden;` for `.face` and `.back`.
 - Both make `.face` and `.back` fill the card (absolute positioning with insets).
 - Both ensure emoji/content is perfectly centered.
