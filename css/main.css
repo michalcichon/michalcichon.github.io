@@ -295,6 +295,10 @@ html, body {
   -moz-border-radius: 10px;
 }
 
+#header-name a {
+  text-decoration: none;
+}
+
 #my-photo {
   float: left;
   margin-top: 40px;
