@@ -93,7 +93,7 @@ html, body {
   position: fixed;
   right: 10px;
   top: 10px;
-  font-family: 'Poiret One';
+  font-family: "Helvetica", "Arial", sans-serif;
   background: rgba(0, 0, 0, 0.7);
   margin: 10px;
   float: left;
@@ -115,7 +115,7 @@ html, body {
   position: absolute;
   right: 10px;
   top: 10px;
-  font-family: 'Poiret One';
+  font-family: "Helvetica","Arial",sans-serif;
 }
 
 #menu ul, 
