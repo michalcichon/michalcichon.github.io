@@ -10,4 +10,6 @@ tags: miscellaneous
 comments: true
 ---
 
-A few months ago, I bought a computer. In theory, it was supposed to be our “home computer,” something we could use until my wife gets a new laptop from her work. It also ran Windows, so we could use applications that don’t run on my Mac — for example, some scientific programs my wife normally uses at work — and, potentially, a few games.
+A few months ago, I bought a computer. In theory, it was supposed to be our “home computer” - something we could use until my wife gets a new laptop from her work. It also ran Windows, so we could use applications that don’t run on my Mac — for example, some scientific programs my wife normally uses at work — and, potentially, a few games. In practice, however, the computer just ended up collecting dust at the bottom of my drawer.
+
+
