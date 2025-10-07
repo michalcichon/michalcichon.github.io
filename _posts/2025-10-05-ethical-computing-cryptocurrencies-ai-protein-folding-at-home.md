@@ -26,7 +26,22 @@ I think that, in some way, having such a computer forced me to think about using
 
 This is what tiggers like best: creating abstract representations of value out of bare metal, with GPUs glowing red-hot. I can almost smell the dust coming from the fans spinning wildly. Or is it really?
 
-## Ugly side of the computing power
+## Ugly side of computing power
+
+Every kind of power comes with a price — and I don’t just mean electricity bills or hardware costs. Computers, like any other tools, can be used only for a limited time. Just like other resources such as time or money, they can be spent for a specific purpose — and they are not limitless. When I spend five bucks on a chocolate bar, I can’t spend the same money again on charity. Similarly, when my GPU is busy mining another altcoin, it can’t render game graphics or perform any other, more or less valuable, work.
+
+The story of Beverly Morris[^bbc-water] from rural Georgia shows another, far less abstract side of our digital hunger. Her quiet countryside home turned into a place where even drinking water became uncertain — not because of drought or farming, but because of a nearby data centre owned by Meta. Facilities like this one power our online lives and AI tools, but they also consume enormous amounts of water to keep their processors cool. The cloud may sound weightless, yet it has a heavy physical footprint — millions of gallons of water evaporating each day to make sure we can scroll, stream, and chat without interruption. What looks like progress in one window may, quite literally, dry out the world in another.
+
+Operating AI brings similar problems, as it requires a great deal of power. In Boxtown, a predominantly Black neighborhood in Memphis, residents began reporting worsening respiratory problems and foul gas smells after Elon Musk’s xAI facility began operating[^xai-memphis]. Researchers found nitrogen dioxide levels spiking near the site. The community alleges that the data centre and its power turbines are being imposed on them with little transparency or accountability.
+
+Looking back at the birth of the internet — or even the first sparks of ARPANET — it’s hard not to notice a pattern: the more power we crave, the heavier the footprint we leave behind. At some point, we’ll have to face these consequences, because if we don’t, the next wave of progress might come at a price we can no longer ignore.
+
+## The spark that lights the fire
+
+We can’t fix the world in a single day, but we can start a change within ourselves. Each time we mindlessly scroll through social media, we might pause and ask: how much energy was spent building the algorithmic feed that keeps us watching? Maybe our attention could be invested in something more meaningful. Wherever there’s demand, there will always be supply — and I truly believe that real change begins the moment we choose to stop doing one thing and start doing another.
 
 
+## References
 
+[^bbc-water]: “I can’t drink the water – life next to a US data centre,” BBC News (10 July 2025). <https://www.bbc.com/news/articles/cy8gy7lv448o>
+[^xai-memphis]: “Elon Musk’s xAI Sparks Health and Environmental Concerns in Memphis,” *TIME* (30 September 2025). <https://time.com/7308925/elon-musk-memphis-ai-data-center>

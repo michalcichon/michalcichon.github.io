@@ -90,6 +90,23 @@ html, body {
   text-align: left;
 }
 
+.footnotes { font-size: 0.95em; color: #555; }
+.footnotes hr { display:none; }
+.footnotes ol { margin-left: 1.2em; }
+.footnote-backref { text-decoration: none; }
+
+/* Inline footnote refs */
+#main-space article sup,
+#main-space article a.footnote,        /* kramdown */
+#main-space article sup.footnote-ref { /* some themes use this */
+  vertical-align: baseline;    /* cancel UA default */
+  position: relative;
+  top: -0.35em;                /* tweak: -0.25em to -0.45em */
+  font-size: 0.75em;           /* smaller than text */
+  line-height: 0;              /* avoid increasing line height */
+  margin-left: 0.15em;         /* tiny spacing before [1] */
+}
+
 #menu-button {
   display: none;
   position: fixed;
