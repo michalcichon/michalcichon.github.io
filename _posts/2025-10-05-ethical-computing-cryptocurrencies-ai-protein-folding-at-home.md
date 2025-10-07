@@ -58,7 +58,7 @@ Before you start folding, I recommend doing two things:
 1. Create an account so you can monitor your (or rather, your machine’s) progress.
 2. Enable GPU computing in the settings to allow your graphics card to handle more demanding computational tasks.
 
-The registration form is available by clicking “Login” and then “Register New Account.” Before doing that, I recommend creating a passkey. A passkey is a unique identifier that ties your contributions directly to your account. You can generate one here: [https://apps.foldingathome.org/getpasskey](https://apps.foldingathome.org/getpasskey), and then return to the registration form where adding it is optional — but highly recommended.
+The registration form is available by clicking “**Login**” and then “**Register New Account**”. Before doing that, I recommend creating a passkey. A passkey is a unique identifier that ties your contributions directly to your account. You can generate one here: [https://apps.foldingathome.org/getpasskey](https://apps.foldingathome.org/getpasskey), and then return to the registration form where adding it is optional — but highly recommended.
 
 ![Folding@Home: registration]({{site.url}}/assets/2025-10-05/registration.png)
 
