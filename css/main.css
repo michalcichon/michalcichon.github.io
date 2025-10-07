@@ -90,6 +90,25 @@ html, body {
   text-align: left;
 }
 
+.footnotes { font-size: 0.95em; color: #555; }
+.footnotes hr { display:none; }
+.footnotes ol { margin-left: 1.2em; }
+.footnote-backref { text-decoration: none; }
+
+#main-space article { font-size: 1.2rem; }
+
+/* Inline footnote refs */
+#main-space article sup,
+#main-space article a.footnote,        /* kramdown */
+#main-space article sup.footnote-ref { /* some themes use this */
+  vertical-align: baseline;    /* cancel UA default */
+  position: relative;
+  top: -0.35em;                /* tweak: -0.25em to -0.45em */
+  font-size: 0.75em;           /* smaller than text */
+  line-height: 0;              /* avoid increasing line height */
+  margin-left: 0.15em;         /* tiny spacing before [1] */
+}
+
 #menu-button {
   display: none;
   position: fixed;
@@ -519,11 +538,6 @@ p {
   font-style: italic;
 }
 
-#main-space article p,
-#main-space article ul li {
-  font-size: 120%;
-}
-
 #main-space article .post-content h1,
 #main-space article .post-content h2 {
   text-align: left;
@@ -564,7 +578,6 @@ ul.post-list li.post-element {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 120px;
-  font-size: 120%;
 }
 
 #main-space-content .post-list a.no-decoration {
@@ -1219,3 +1232,60 @@ video {
   } 
 
 }
+
+/* Ordered lists inside article */
+#main-space article ol {
+  list-style: none;         /* remove native marker */
+  padding-left: 0;          /* reset from your global reset */
+  counter-reset: li;
+}
+
+#main-space article ol > li {
+  position: relative;
+  counter-increment: li;
+  padding-left: 2.2em;      /* space for the number */
+  margin: 0 0 .5em 0;
+}
+
+#main-space article ol > li::before {
+  content: counter(li) ".";
+  position: absolute;
+  left: 0;
+  width: 1.8em;             /* reserve number column */
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: #666;
+}
+
+/* Nested lists: indent a bit more */
+#main-space article ol ol > li { padding-left: 2.6em; }
+#main-space article ol ol > li::before { width: 2.2em; }
+
+/* Unordered lists inside article — align with custom OL numbers */
+#main-space article ul {
+  list-style: none;
+  padding-left: 0;     /* start flush with the text column */
+  margin: 0 0 1em 0;
+}
+
+#main-space article ul > li {
+  position: relative;
+  padding-left: 2.2em; /* same as OL li padding-left */
+  margin: 0 0 .5em 0;
+}
+
+#main-space article ul > li::before {
+  content: "•";        /* custom bullet */
+  position: absolute;
+  left: 0;
+  width: 1.8em;        /* same width as OL number column */
+  text-align: right;
+  line-height: 1;
+  color: #666;         /* tweak as you like; in dark mode it inherits */
+  /* Optional: tabular alignment feel */
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nested UL: nudge in a bit more and use a hollow bullet */
+#main-space article ul ul > li { padding-left: 2.6em; }
+#main-space article ul ul > li::before { content: "◦"; width: 2.2em; }
