@@ -95,6 +95,8 @@ html, body {
 .footnotes ol { margin-left: 1.2em; }
 .footnote-backref { text-decoration: none; }
 
+#main-space article { font-size: 1.2rem; }
+
 /* Inline footnote refs */
 #main-space article sup,
 #main-space article a.footnote,        /* kramdown */
@@ -1230,8 +1232,6 @@ video {
   } 
 
 }
-
-#main-space article { font-size: 1.2rem; }
 
 /* Ordered lists inside article */
 #main-space article ol {
