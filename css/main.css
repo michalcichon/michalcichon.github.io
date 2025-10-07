@@ -1236,3 +1236,31 @@ video {
   } 
 
 }
+
+/* Ordered lists inside article */
+#main-space article ol {
+  list-style: none;         /* remove native marker */
+  padding-left: 0;          /* reset from your global reset */
+  counter-reset: li;
+}
+
+#main-space article ol > li {
+  position: relative;
+  counter-increment: li;
+  padding-left: 2.2em;      /* space for the number */
+  margin: 0 0 .5em 0;
+}
+
+#main-space article ol > li::before {
+  content: counter(li) ".";
+  position: absolute;
+  left: 0;
+  width: 1.8em;             /* reserve number column */
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: #666;
+}
+
+/* Nested lists: indent a bit more */
+#main-space article ol ol > li { padding-left: 2.6em; }
+#main-space article ol ol > li::before { width: 2.2em; }

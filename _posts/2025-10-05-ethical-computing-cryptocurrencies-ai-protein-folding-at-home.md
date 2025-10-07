@@ -40,6 +40,24 @@ Looking back at the birth of the internet — or even the first sparks of ARPANE
 
 We can’t fix the world in a single day, but we can start a change within ourselves. Each time we mindlessly scroll through social media, we might pause and ask: how much energy was spent building the algorithmic feed that keeps us watching? Maybe our attention could be invested in something more meaningful. Wherever there’s demand, there will always be supply — and I truly believe that real change begins the moment we choose to stop doing one thing and start doing another.
 
+## Do What Matters with Small Steps
+
+Going back to my dust-collecting PC, I wanted to put it to good use and contribute something positive to the world — so I ran Folding@Home.
+If you haven’t heard of it, Folding@Home is a distributed computing project that lets anyone donate their computer’s idle processing power to help scientists simulate protein folding and study diseases such as cancer, Alzheimer’s, and COVID-19.
+
+Installing it on Windows is extremely simple. Installers are available for macOS, Linux, and Windows on the project’s website: https://foldingathome.org/start-folding/.
+
+As my gaming laptop runs Windows, I followed the Windows instructions.
+
+The installer works like any standard Windows setup — if you don’t need to change the installation directory, just click Next a few times, and eventually you’ll see a list of your machines.
+
+![Folding@Home: machines]({{site.url}}/assets/2025-10-05/machines.png)
+
+Before you start folding, I recommend doing two things:
+
+1. Create an account so you can monitor your (or rather, your machine’s) progress.
+2. Enable GPU computing in the settings to allow your graphics card to handle more demanding computational tasks.
+
 
 ## References
 
