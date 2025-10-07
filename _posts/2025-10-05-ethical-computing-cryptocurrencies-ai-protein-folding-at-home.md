@@ -76,17 +76,24 @@ Next, click the small cog icon next to your machine list to open the settings. T
 
 ![Folding@Home: settings]({{site.url}}/assets/2025-10-05/settings.png)
 
-Then you can click on "Fold All" and watch the progress on the same page. 
+Then click “**Fold All**” and watch your progress right on the same page.
 
 ![Folding@Home: running]({{site.url}}/assets/2025-10-05/running.png)
 
-You can always check your progress on this page: [https://v8-4.foldingathome.org/stats](https://v8-4.foldingathome.org/stats).
+You can always check your overall progress here: [https://v8-4.foldingathome.org/stats](https://v8-4.foldingathome.org/stats).
 
 ![Folding@Home: stats]({{site.url}}/assets/2025-10-05/stats.png)
 
-And if you're interested what you can see after clicking on "WU Award" then I would say it's rather old-fashioned certificate. 😉
+And if you’re curious what appears after clicking “**WU Award**” it’s basically a rather old-fashioned certificate. 😉
 
 ![Folding@Home: certificate]({{site.url}}/assets/2025-10-05/certificate.jpg)
+
+You can pause or stop folding anytime — either from the web panel or via the app’s context menu. No problem at all.
+
+## Where to go from here?
+
+
+
 
 ## References
 
