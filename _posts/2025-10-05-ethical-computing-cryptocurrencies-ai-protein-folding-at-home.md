@@ -16,13 +16,13 @@ A few months ago, I bought a computer. In theory, it was supposed to be our “h
 
 I don’t like wasting resources — whether it’s running water, our valuable time, or a powerful GPU sitting idle, waiting for a task. It’s always a bit painful to see. This makes me reflect on how we use our computers and what it actually means to use their resources wisely.
 
-## How about digging up a few coins while taking a break from gaming?
+## How about doing some crypto mining during my gaming break?
 
 This was my first idea — why not just play some games? After all, this computer was literally built for gaming. So I tried a few newer titles that need a strong GPU, and it was fun — but honestly, I’m more into retro games. And, you know, to play *Heroes of Might and Magic III* or *The Secret of Monkey Island*, you really don’t need the latest NVIDIA hardware.
 
 You might ask, then, why did I buy something I don’t really need? That’s a fair question. I think we were just worried that a weaker computer wouldn’t be able to handle more complex scientific computations if my wife suddenly needed it.
 
-I think that, in some way, having such a computer forced me to think about using resources more wisely. Don’t get me wrong — I don’t mean that playing games is wrong. In fact, I believe it can be quite valuable to spend time with friends playing, or simply to relax after work. Why not? “Everything is for people” as my mum used to say. I guess I’ve just always preferred to create some kind of measurable value out of the tools I have. That's why I started mining crypto.
+I think that, in some way, having such a computer forced me to think about using resources more wisely. Don’t get me wrong — I don’t mean that playing games is wrong. In fact, I believe it can be quite valuable to spend time with friends playing, or simply to relax after work. Why not? “Everything is for people” as my mum used to say. I guess I’ve just always preferred to create some kind of measurable value out of the tools I have. That's why... I started mining crypto.
 
 This is what tiggers like best: creating abstract representations of value out of bare metal, with GPUs glowing red-hot. I can almost smell the dust coming from the fans spinning wildly. Or is it really?
 
@@ -88,6 +88,10 @@ And if you’re curious what appears after clicking “**WU Award**” it’s ba
 
 ![Folding@Home: certificate]({{site.url}}/assets/2025-10-05/certificate.jpg)
 
+But what’s really cool is that you can take a peek at the protein being simulated on your machine!
+
+![Folding@Home: certificate]({{site.url}}/assets/2025-10-05/protein.webp)
+
 You can pause or stop folding anytime — either from the web panel or via the app’s context menu. No problem at all.
 
 ## Where to go from here?
@@ -96,7 +100,7 @@ Should you now delete all your games, remove your social media apps, get rid of 
 
 But I do believe we have the power to change our environment — bit by bit — and make it a better place.
 
-Real change rarely comes from grand gestures; it begins with awareness, curiosity, and the willingness to do one small thing differently. Maybe it’s using your computer for something meaningful, supporting ethical technology, or simply pausing before the next scroll. These moments may feel insignificant, but together they form the spark that lights the fire.
+Real change rarely comes from grand gestures — it begins with awareness, curiosity, and the willingness to do one small thing differently. Maybe it’s using your computer for something meaningful, supporting ethical technology, or simply pausing before the next scroll. These moments may feel insignificant, but together they form the spark that lights the fire.
 
 ## References
 
