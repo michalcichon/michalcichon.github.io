@@ -536,12 +536,6 @@ p {
   font-style: italic;
 }
 
-#main-space article p,
-#main-space article ul li,
-#main-space article ol li {
-  font-size: 120%;
-}
-
 #main-space article .post-content h1,
 #main-space article .post-content h2 {
   text-align: left;
@@ -582,7 +576,6 @@ ul.post-list li.post-element {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 120px;
-  font-size: 120%;
 }
 
 #main-space-content .post-list a.no-decoration {
@@ -1237,6 +1230,8 @@ video {
   } 
 
 }
+
+#main-space article { font-size: 1.2rem; }
 
 /* Ordered lists inside article */
 #main-space article ol {
