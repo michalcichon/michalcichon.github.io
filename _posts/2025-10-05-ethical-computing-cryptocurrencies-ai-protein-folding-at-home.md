@@ -45,7 +45,7 @@ We can’t fix the world in a single day, but we can start a change within ourse
 Going back to my dust-collecting PC, I wanted to put it to good use and contribute something positive to the world — so I ran Folding@Home.
 If you haven’t heard of it, Folding@Home is a distributed computing project that lets anyone donate their computer’s idle processing power to help scientists simulate protein folding and study diseases such as cancer, Alzheimer’s, and COVID-19.
 
-Installing it on Windows is extremely simple. Installers are available for macOS, Linux, and Windows on the project’s website: https://foldingathome.org/start-folding/.
+Installing it on Windows is extremely simple. Installers are available for macOS, Linux, and Windows on the project’s website: [https://foldingathome.org/start-folding/](https://foldingathome.org/start-folding/).
 
 As my gaming laptop runs Windows, I followed the Windows instructions.
 
@@ -58,6 +58,35 @@ Before you start folding, I recommend doing two things:
 1. Create an account so you can monitor your (or rather, your machine’s) progress.
 2. Enable GPU computing in the settings to allow your graphics card to handle more demanding computational tasks.
 
+The registration form is available by clicking “Login” and then “Register New Account.” Before doing that, I recommend creating a passkey. A passkey is a unique identifier that ties your contributions directly to your account. You can generate one here: [https://apps.foldingathome.org/getpasskey](https://apps.foldingathome.org/getpasskey), and then return to the registration form where adding it is optional — but highly recommended.
+
+![Folding@Home: registration]({{site.url}}/assets/2025-10-05/registration.png)
+
+* E-mail — your e-mail address. It can be different from the one you used when creating your passkey, but it doesn’t have to be.
+* Passphrase — simply your password (not the passkey!).
+* Username — any string between 2 and 100 characters (😅). It doesn’t have to be unique — you can even use your dog’s name if you like! You can also type Anonymous to stay anonymous.
+* Team — if you’re part of a team, you can enter its number here. Otherwise, leave it as 0.
+* Passkey — the one you received in your e-mail after creating it.
+
+After completing the registration, you’ll need to click the activation link sent to your e-mail to activate your account. Once that’s done, you can log in.
+
+If for any reason you lose the link to the web panel, you can simply visit [https://v8-4.foldingathome.org](https://v8-4.foldingathome.org).
+
+Next, click the small cog icon next to your machine list to open the settings. There, you can enable GPU processing, adjust the number of CPU cores to use, and tweak other available options.
+
+![Folding@Home: settings]({{site.url}}/assets/2025-10-05/settings.png)
+
+Then you can click on "Fold All" and watch the progress on the same page. 
+
+![Folding@Home: running]({{site.url}}/assets/2025-10-05/running.png)
+
+You can always check your progress on this page: [https://v8-4.foldingathome.org/stats](https://v8-4.foldingathome.org/stats).
+
+![Folding@Home: stats]({{site.url}}/assets/2025-10-05/stats.png)
+
+And if you're interested what you can see after clicking on "WU Award" then I would say it's rather old-fashioned certificate. 😉
+
+![Folding@Home: certificate]({{site.url}}/assets/2025-10-05/certificate.jpg)
 
 ## References
 
