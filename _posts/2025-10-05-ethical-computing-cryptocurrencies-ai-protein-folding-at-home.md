@@ -6,7 +6,7 @@ date:   2025-10-05 06:00:00 +0200
 categories: technology
 keywords: folding@home, cryptocurrencies, gpu, computing
 tags: miscellaneous
-image: "assets/2025-10-05/cover.web" # Image for RSS
+image: "assets/2025-10-05/cover.jpg" # Image for RSS
 comments: true
 ---
 
@@ -92,8 +92,11 @@ You can pause or stop folding anytime — either from the web panel or via the a
 
 ## Where to go from here?
 
+Should you now delete all your games, remove your social media apps, get rid of every bad habit, and devote all your resources to saving the planet? Probably not.
 
+But I do believe we have the power to change our environment — bit by bit — and make it a better place.
 
+Real change rarely comes from grand gestures; it begins with awareness, curiosity, and the willingness to do one small thing differently. Maybe it’s using your computer for something meaningful, supporting ethical technology, or simply pausing before the next scroll. These moments may feel insignificant, but together they form the spark that lights the fire.
 
 ## References
 
