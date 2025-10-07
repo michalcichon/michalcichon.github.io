@@ -4,7 +4,7 @@ title:  "Ethical computing: cryptocurrencies, AI and protein folding at home"
 description: "I bought a gaming PC — and ended up questioning how we use our computers, our time, and our energy. From games to crypto mining, this is a story about finding purpose in computing."
 date:   2025-10-05 06:00:00 +0200
 categories: technology
-keywords: folding@home, cryptocurrencies, gpu
+keywords: folding@home, cryptocurrencies, gpu, computing
 tags: miscellaneous
 image: "assets/2025-10-05/cover.web" # Image for RSS
 comments: true
@@ -22,6 +22,11 @@ This was my first idea — why not just play some games? After all, this compute
 
 You might ask, then, why did I buy something I don’t really need? That’s a fair question. I think we were just worried that a weaker computer wouldn’t be able to handle more complex scientific computations if my wife suddenly needed it.
 
-I think that, in some way, having such a computer forced me to think about using resources more wisely. Don’t get me wrong — I don’t mean that playing games is wrong. In fact, I believe it can be quite valuable to spend time with friends playing, or simply to relax after work. Why not? “Everything is for people,” as my mum used to say. I guess I’ve just always preferred to create some kind of measurable value out of the tools I have. That's why I started mining crypto.
+I think that, in some way, having such a computer forced me to think about using resources more wisely. Don’t get me wrong — I don’t mean that playing games is wrong. In fact, I believe it can be quite valuable to spend time with friends playing, or simply to relax after work. Why not? “Everything is for people” as my mum used to say. I guess I’ve just always preferred to create some kind of measurable value out of the tools I have. That's why I started mining crypto.
 
-This is what tiggers like best: creating abstract representations of value out of bare metal, with GPUs glowing red-hot. I can almost smell the dust coming from the fans spinning wildly. Or is it really? I did the math and actually 
+This is what tiggers like best: creating abstract representations of value out of bare metal, with GPUs glowing red-hot. I can almost smell the dust coming from the fans spinning wildly. Or is it really?
+
+## Ugly side of the computing power
+
+
+
