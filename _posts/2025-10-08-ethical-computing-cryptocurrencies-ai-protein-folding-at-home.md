@@ -16,7 +16,7 @@ A few months ago, I bought a computer. In theory, it was supposed to be our “h
 
 I don’t like wasting resources — whether it’s running water, our valuable time, or a powerful GPU sitting idle, waiting for a task. It’s always a bit painful to see. This makes me reflect on how we use our computers and what it actually means to use their resources wisely.
 
-## How about doing some crypto mining during my gaming break?
+## Why Not Just Play Games?
 
 This was my first idea — why not just play some games? After all, this computer was literally built for gaming. So I tried a few newer titles that need a strong GPU, and it was fun — but honestly, I’m more into retro games. And, you know, to play *Heroes of Might and Magic III* or *The Secret of Monkey Island*, you really don’t need the latest NVIDIA hardware.
 
@@ -26,7 +26,7 @@ I think that, in some way, having such a computer forced me to think about using
 
 This is what tiggers like best: creating abstract representations of value out of bare metal, with GPUs glowing red-hot. I can almost smell the dust coming from the fans spinning wildly. Or is it really?
 
-## Ugly side of computing power
+## The Ugly Side of Computing Power
 
 Every kind of power comes with a price — and I don’t just mean electricity bills or hardware costs. Computers, like any other tools, can be used only for a limited time. Just like other resources such as time or money, they can be spent for a specific purpose — and they are not limitless. When I spend five bucks on a chocolate bar, I can’t spend the same money again on charity. Similarly, when my GPU is busy mining another altcoin, it can’t render game graphics or perform any other, more or less valuable, work.
 
@@ -36,7 +36,7 @@ Operating AI brings similar problems, as it requires a great deal of power. In B
 
 Looking back at the birth of the internet — or even the first sparks of ARPANET — it’s hard not to notice a pattern: the more power we crave, the heavier the footprint we leave behind. At some point, we’ll have to face these consequences, because if we don’t, the next wave of progress might come at a price we can no longer ignore.
 
-## The spark that lights the fire
+## A Spark That Lights the Fire
 
 We can’t fix the world in a single day, but we can start a change within ourselves. Each time we mindlessly scroll through social media, we might pause and ask: how much energy was spent building the algorithmic feed that keeps us watching? Maybe our attention could be invested in something more meaningful. Wherever there’s demand, there will always be supply — and I truly believe that real change begins the moment we choose to stop doing one thing and start doing another.
 
@@ -100,7 +100,7 @@ What makes Folding@Home truly remarkable is its real-world impact. The data gene
 
 It’s true that universities and research centers have access to powerful supercomputers, but their time is extremely limited and expensive. Folding@Home works differently — it combines the unused processing power of thousands of ordinary computers around the world into one massive distributed network. This allows scientists to run many small protein simulations in parallel, exploring far more possibilities than a single supercomputer could handle alone. In other words, every participant helps turn downtime and idle energy into valuable scientific computation.
 
-## Where to go from here?
+## Where Do We Go from Here?
 
 Should you now delete all your games, remove your social media apps, get rid of every bad habit, and devote all your resources to saving the planet? Probably not.
 
