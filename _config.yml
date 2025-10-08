@@ -28,6 +28,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+
+paginate: 10
+paginate_path: /blog/page:num

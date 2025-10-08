@@ -295,6 +295,7 @@ DEPENDENCIES
   fiddle
   github-pages (~> 228)
   jekyll-feed
+  jekyll-paginate
   jekyll-sitemap
   reduce
   webrick
