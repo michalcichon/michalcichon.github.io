@@ -6,7 +6,7 @@ date:   2025-10-09 06:00:00 +0200
 categories: software-development
 keywords: overengineering, underengineering, software development
 tags: programming technology software-development
-image: "assets/2025-10-15/cover.jpg" # Image for RSS
+image: "assets/2025-10-15/cover.png" # Image for RSS
 comments: true
 ---
 
