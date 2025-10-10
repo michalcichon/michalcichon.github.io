@@ -44,3 +44,5 @@ Ideas to mention:
 - sometimes junior can understand something wrongly like that ticket i work on as a junior to allow the java app running on websphere to accept extra parameters. i build the whole system and docs and scripts to do so but i haven't noticed that websphere has something like parameters we can configure for the app. we just needed to agree on param naming and use it in the app side. 
 
 - time range struggle where we had to thnk about the api first and it naturally moved us closer to the valid solution, but i started from the internal implementation, tried to reuse the time field, and then created a very dramatic synchronization logic as a separate complment, but it turned out that starting from a simple api, then implementing it and reuse only what it make sense to reuse, and it turned out the time field itself does not make any sense. 
+
+- ApiError we get form the backend side as json was used as our iternal error, and we started to create the same objects on our side and mixed both in one object
