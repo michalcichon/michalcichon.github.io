@@ -107,6 +107,10 @@ But we can also easily go too far in the other direction. Imagine we have two en
 
 A few weeks (or months) later, it turns out that the relationship between them was only _illusory_. By then, we’ve written a lot of new code that depends on this false inheritance. Now we not only have to split these DTOs again, but also rewrite much of the code that was built on top of that mistaken relationship.
 
+Recently, I discovered a similar issue in the codebase I work on. A struct named ApiError, conforming to Error, was actually a REST API response type that also conformed to Decodable. It was being reused as an error type. Inside that struct, you could find both fields coming from the backend and additional fields used for internal error handling.
+
+Fortunately, we caught it early — before too much dependent code was written outside of our networking layer.
+
 ## Final thought
 
 Finding balance between too engineered and ... might be challenging. We love future-proof code bases.
