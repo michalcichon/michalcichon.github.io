@@ -2,15 +2,15 @@
 layout: post
 title:  "Finding the Sweet Spot: Between Overengineered and Underengineered Code"
 description: "There’s a moment in every developer’s career when you realize that both too little and too much engineering hurt a project just the same — only in different ways."
-date:   2025-10-09 06:00:00 +0200
+date:   2025-10-11 15:00:00 +0200
 categories: software-development
 keywords: overengineering, underengineering, software development
 tags: programming technology software-development
-image: "assets/2025-10-15/cover.png" # Image for RSS
+image: "assets/2025-10-11/cover.jpg" # Image for RSS
 comments: true
 ---
 
-![A way to choose]({{site.url}}/assets/2025-10-15/cover.webp)
+![A way to choose]({{site.url}}/assets/2025-10-11/cover.webp)
 
 We start with a simple idea — just a few lines of code. A few weeks later, someone adds a new feature, and suddenly that “temporary” solution you wrote on a Friday evening has become a critical dependency. Sounds familiar?
 
