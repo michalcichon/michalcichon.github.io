@@ -57,13 +57,13 @@ That experience taught me that reuse isn’t always the best choice, but **think
 Once, I was involved in developing an iOS banking application. We had a really nice API for creating forms, mainly used for transfers. The API was well thought out and required very little effort to build a new form. I don’t remember the exact code, but it looked something like this (though at that time it was written in Objective-C):
 
 ```swift
-let internalTransferForm = FormBuilder()
+var internalTransferForm = FormBuilder()
 
 let firstNameField = FormField(name: "first_name", type: .string)
 let lastNameField  = FormField(name: "last_name", type: .string)
 let ibanField = FormField("iban", type: .iban)
 
-internalTransferForm.addFields(firstNameField, lastNameField, ibanField)
+internalTransferForm.addFields([firstNameField, lastNameField, ibanField])
 
 view.addSubview(internalTransferForm)
 
@@ -72,7 +72,15 @@ view.addSubview(internalTransferForm)
 It worked almost magically, handling things like signing, validation, and submission under the hood.
 Or at least — it did, until we had to add a field that wasn’t sent to the backend or signed at all, but still needed to behave like a regular form field on the client side.
 
+We struggled for a few days with that new requirement, considering whether to add a boolean flag to our `FormField` definition that would mark fields as `nonSendable` or `clientOnly`, and then extend our coordinator to handle that new parameter. But that approach would have required changes in many places across the codebase.
 
+Then one of the junior developers suggested that we could simply use the `UITableView` API directly and add the field there — after all, our `Form` was essentially a `UITableView` under the hood. We gave it a try, and it worked perfectly.
+
+In the end, we never needed another field like that again, so extending our entire `FormField` abstraction for this single case would have been a poor decision. Sometimes, the pragmatic shortcut really is the right one.
+
+## Final thought
+
+Finding balance between too engineered and ... might be challenging. We love future-proof code bases.
 
 
 ---
