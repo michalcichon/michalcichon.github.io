@@ -1261,31 +1261,19 @@ video {
 #main-space article ol ol > li { padding-left: 2.6em; }
 #main-space article ol ol > li::before { width: 2.2em; }
 
-/* Unordered lists inside article — align with custom OL numbers */
 #main-space article ul {
-  list-style: none;
-  padding-left: 0;     /* start flush with the text column */
+  list-style: disc;
+  padding-left: 2.2em;
   margin: 0 0 1em 0;
 }
 
-#main-space article ul > li {
-  position: relative;
-  padding-left: 2.2em; /* same as OL li padding-left */
-  margin: 0 0 .5em 0;
+#main-space article ul > li { padding-left: 0; }
+
+#main-space article ul > li::marker {
+  color: #666;
 }
 
-#main-space article ul > li::before {
-  content: "•";        /* custom bullet */
-  position: absolute;
-  left: 0;
-  width: 1.8em;        /* same width as OL number column */
-  text-align: right;
-  line-height: 1;
-  color: #666;         /* tweak as you like; in dark mode it inherits */
-  /* Optional: tabular alignment feel */
-  font-variant-numeric: tabular-nums;
+#main-space article ul ul {
+  list-style: circle;
+  padding-left: 2.6em;
 }
-
-/* Nested UL: nudge in a bit more and use a hollow bullet */
-#main-space article ul ul > li { padding-left: 2.6em; }
-#main-space article ul ul > li::before { content: "◦"; width: 2.2em; }
