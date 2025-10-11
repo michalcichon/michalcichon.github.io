@@ -18,6 +18,10 @@ So next time, you try to make it better — adding layers, abstractions, interfa
 
 There’s a moment in every developer’s career when you realize that both too little and too much engineering hurt a project just the same — only in different ways. Welcome to the never-ending dance between underengineering and overengineering.
 
+## Don’t try to foresee too much
+
+We all want a future-proof codebase, but in reality every codebase has an expiration date. iOS is a great example: when Apple introduced Swift, many of us were excited—and also asked, why? We already had Xcode, Objective-C, simulators, Instruments—why did we need anything else? Suddenly there was a new language, and we faced the prospect of fewer and fewer developers comfortable with Objective-C while sitting on a huge Objective-C codebase. Requirements change, goals change, and standards evolve, so pieces inevitably get rewritten. Large platforms show this clearly: the Linux kernel, for instance, has replaced or refactored much of its early code over the years as it has grown. The lesson: build for the near-term horizon, and be ready to evolve.
+
 ---
 
 ---
