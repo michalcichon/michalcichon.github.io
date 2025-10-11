@@ -113,32 +113,8 @@ Fortunately, we caught it early — before too much dependent code was written o
 
 ## Final thought
 
-Finding balance between too engineered and ... might be challenging. We love future-proof code bases.
+Finding the balance between the simplest implementation and something overly engineered can be challenging. We all aim to build future-proof codebases, but it’s hard to truly foresee the future. What we can always do, though, is ask ourselves a few simple questions: Can I explain this code to someone in five minutes? Is the API easy to extend? How easily could this code adapt to a constantly evolving environment?
 
+We should never feel unhappy about what we push to our repositories. If something requires cutting corners due to time constraints, we should at least ensure that what we add is easy to reverse — something we can later replace with a more durable implementation.
 
----
-
----
-
-Intuitively, when I have two equally good ideas how to implement something bigger, but one is based on inheritance and the latter based on composition, I usually go with composition. But there can be a catch, if we go too deep into decomposing a functionality into too small peaces, it can be challenging to figure out how to use it. 
-
----
-
-I think one of the nicer ideas about how to make the system more maintainable is by thinking about APIs and contracts. For example when we want to introduce a functionality of a horizontally scrollable container, there are things we should consider:
-- The configuration should be simple and we should be allowed to place there any ViewController we want with a small effort (like for example adding a protocol confirmation).
-- The API should be simple and possible to be used in one place. If we need to setup multiple different layers, bindings in a few different places and also add a new case to a few enums just to be able to place a ViewController into a container then we can notice two things: we produce way too many lines of code to configure each case we want to instantiate a new container, and it's way to complex for the rest of the team to use it.
-
-
---
-
-Ideas to mention:
-
-
-- automatic forms in that healthcare project we couldn't really work with and we abandoned creating a custom forms.
-
-- Rather we don't go with this one: feed type in the social media app vs horizontally scrollable feeds and filters
-
-- sometimes junior can understand something wrongly like that ticket i work on as a junior to allow the java app running on websphere to accept extra parameters. i build the whole system and docs and scripts to do so but i haven't noticed that websphere has something like parameters we can configure for the app. we just needed to agree on param naming and use it in the app side. 
-
-- ApiError we get form the backend side as json was used as our iternal error, and we started to create the same objects on our side and mixed both in one object
-
+There’s nothing more persistent than a temporary solution but if we stay aware of it, document it, and design for change, it doesn’t have to haunt us forever. Good engineering isn’t about avoiding compromises. It’s about making them consciously.
