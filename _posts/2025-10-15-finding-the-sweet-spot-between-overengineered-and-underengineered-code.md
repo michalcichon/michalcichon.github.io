@@ -43,6 +43,23 @@ The result was not great:
 - The implementation was scattered across multiple files instead of being self-contained.
 - The new component was complex to use — we had to create two independent date fields and then manually bind them through my abstraction layer.
 
+Apart from that, integrating my code into the dashboard turned out to be a nightmare:
+
+```html
+<div class="dateButtons">
+    <span buttons-radio
+        model="dateRange"
+        options="dateRanges">
+    </span>
+    <button 
+        ng-class='{active: highlighted}'
+        date-range-picker 
+        highlighted='customDateHighlighted'
+        date-range="customDateRange"><img src="" />
+    </button>
+</div>
+```
+
 One of my senior colleagues suggested a complete rewrite and came up with this simple Angular API:
 
 ```html
@@ -78,6 +95,18 @@ Then one of the junior developers suggested that we could simply use the `UITabl
 
 In the end, we never needed another field like that again, so extending our entire `FormField` abstraction for this single case would have been a poor decision. Sometimes, the pragmatic shortcut really is the right one.
 
+## Keep it DRY, but not _super_ DRY
+
+“Don’t repeat yourself” is a wonderful principle. In a perfect world, we’d anticipate every future use case, and our code would be perfectly composed into small, reusable components — with no duplication at all.
+
+I’ve seen too many codebases that ignore this rule, and the result is always the same: a nightmare to change anything. When we try to add new logic in one place, we suddenly have to update it everywhere.
+
+The real problem appears when we notice that we need to add that new logic in places A, B, and C — but not in D. That’s when we realize something isn’t quite right.
+
+But we can also easily go too far in the other direction. Imagine we have two entities — let’s say two DTOs — that looked identical at the time we implemented them, so we decided to extract their common fields into a parent class.
+
+A few weeks (or months) later, it turns out that the relationship between them was only _illusory_. By then, we’ve written a lot of new code that depends on this false inheritance. Now we not only have to split these DTOs again, but also rewrite much of the code that was built on top of that mistaken relationship.
+
 ## Final thought
 
 Finding balance between too engineered and ... might be challenging. We love future-proof code bases.
@@ -100,14 +129,12 @@ I think one of the nicer ideas about how to make the system more maintainable is
 
 Ideas to mention:
 
-- Example form the banking app developementl where we had a nice form implementation, it worked pretty well with authorization and calculating HMAC for each request, but suddenly we had to add a new form with one element from outside of the transaction. And that was paintful: should we introduce a new type of field `non-sendable`, `not-encodable` or `client-only`? That abstraction was super complex. I explained that idea to a junior developer and he struggled 2 weeks working on it. Then we decided to simply use a standard tablewview api to add that extra cell, because forms were tableview under the hood and it was simple and worked pretty well. So instead of adding sopme super advanced abstraction and many new cases on many levels / layer of our system, we make it simple. Then we never had a similar issue like this. I think that new field was some sort of checkbox or label.
 
 - automatic forms in that healthcare project we couldn't really work with and we abandoned creating a custom forms.
 
-- feed type in the social media app vs horizontally scrollable feeds and filters
+- Rather we don't go with this one: feed type in the social media app vs horizontally scrollable feeds and filters
 
 - sometimes junior can understand something wrongly like that ticket i work on as a junior to allow the java app running on websphere to accept extra parameters. i build the whole system and docs and scripts to do so but i haven't noticed that websphere has something like parameters we can configure for the app. we just needed to agree on param naming and use it in the app side. 
 
-- time range struggle where we had to thnk about the api first and it naturally moved us closer to the valid solution, but i started from the internal implementation, tried to reuse the time field, and then created a very dramatic synchronization logic as a separate complment, but it turned out that starting from a simple api, then implementing it and reuse only what it make sense to reuse, and it turned out the time field itself does not make any sense. 
-
 - ApiError we get form the backend side as json was used as our iternal error, and we started to create the same objects on our side and mixed both in one object
+
