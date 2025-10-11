@@ -24,7 +24,11 @@ We all want a future-proof codebase, but in reality every codebase has an expira
 
 Requirements change, goals change, and standards evolve, so pieces inevitably get rewritten. Large platforms show this clearly: the Linux kernel, for instance, has replaced or refactored much of its early code over the years as it has grown. The lesson: build for the near-term horizon, and be ready to evolve.
 
+## But don’t block yourself
 
+Like in chess, good coding requires strategy. At first glance, “too complex” and “too simple” code seem like opposites, but if we accept change as inevitable, what really matters isn’t complexity — it’s adaptability. Adding a new feature should require as few modifications as possible and shouldn’t break existing contracts. And if we do make a mistake and need to rewrite a component, it’s far better when the code is simple, with minimal dependencies and layers.
+
+That’s why it’s usually better to start simple, but with room to change and evolve. For example, if we need to add a flag to our API that identifies a user as a moderator, it often makes more sense to introduce a more flexible parameter like `roles` (a collection) instead of a plain boolean `is_moderator`. Then, if we need to support additional roles in the future, we can simply add new ones instead of cluttering the API with more boolean flags.
 
 ---
 
