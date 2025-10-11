@@ -30,6 +30,52 @@ Like in chess, good coding requires strategy. At first glance, “too complex”
 
 That’s why it’s usually better to start simple, but with room to change and evolve. For example, if we need to add a flag to our API that identifies a user as a moderator, it often makes more sense to introduce a more flexible parameter like `roles` (a collection) instead of a plain boolean `is_moderator`. Then, if we need to support additional roles in the future, we can simply add new ones instead of cluttering the API with more boolean flags.
 
+If we design our code to be more extensible, we might only need to write a small “plugin” or a new class that reuses existing components, without worrying that the entire codebase becomes more complex. It’s already complex because we’ve *pulled that complexity forward*—we’ve extracted it from the future code we’re now implementing.
+
+## Think about contracts
+
+One of the best ways to make a system more maintainable is to think in terms of APIs and contracts.
+When you start working on a complex feature, the first question should be: *how will this code be used in the existing codebase?* That mindset can simplify a lot from the very beginning.
+
+I remember when I was a junior full-stack developer (Java + JavaScript) working in a team of more experienced engineers. I was tasked with building a **date-range component** for a banking application. I assumed I could reuse as much code as possible, so I looked at the existing date picker and created an abstraction that could handle a date range instead of a single date.
+
+The result was not great:
+- The implementation was scattered across multiple files instead of being self-contained.
+- The new component was complex to use — we had to create two independent date fields and then manually bind them through my abstraction layer.
+
+One of my senior colleagues suggested a complete rewrite and came up with this simple Angular API:
+
+```html
+<div date-range-selector="dateRange" date-ranges="dateRanges"></div>
+```
+
+I was surprised that the internal implementation didn’t reuse the existing date field at all — it was actually **much simpler** than mine.
+That experience taught me that reuse isn’t always the best choice, but **thinking about how others will use your code always is**.
+
+## Be pragmatic
+
+Once I was involved in the development of an iOS banking application. We had quite a nice API to create forms, used mainly to create transfers. The API was well thought, it required really a small effort to create a new form. I can't recall the original code but it looked like this (but back then it was Objective-C):
+
+```swift
+let internalTransferForm = FormBuilder()
+
+let firstNameField = FormField(name: "first_name", type: .string)
+let lastNameField  = FormField(name: "last_name", type: .string)
+let ibanField = FormField("iban", type: .iban)
+
+internalTransferForm.addFields(firstNameField, lastNameField, ibanField)
+
+view.addSubview(internalTransferForm)
+
+```
+
+And it worked magically with all . Or actually it worked until we had to create a form with a field that would not be
+
+
+... here to write about that client side field from the banking app
+
+
+
 ---
 
 ---
