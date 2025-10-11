@@ -54,7 +54,7 @@ That experience taught me that reuse isn’t always the best choice, but **think
 
 ## Be pragmatic
 
-Once I was involved in the development of an iOS banking application. We had quite a nice API to create forms, used mainly to create transfers. The API was well thought, it required really a small effort to create a new form. I can't recall the original code but it looked like this (but back then it was Objective-C):
+Once, I was involved in developing an iOS banking application. We had a really nice API for creating forms, mainly used for transfers. The API was well thought out and required very little effort to build a new form. I don’t remember the exact code, but it looked something like this (though at that time it was written in Objective-C):
 
 ```swift
 let internalTransferForm = FormBuilder()
@@ -69,10 +69,9 @@ view.addSubview(internalTransferForm)
 
 ```
 
-And it worked magically with all . Or actually it worked until we had to create a form with a field that would not be
+It worked almost magically, handling things like signing, validation, and submission under the hood.
+Or at least — it did, until we had to add a field that wasn’t sent to the backend or signed at all, but still needed to behave like a regular form field on the client side.
 
-
-... here to write about that client side field from the banking app
 
 
 
