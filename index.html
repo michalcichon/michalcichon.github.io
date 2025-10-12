@@ -8,7 +8,7 @@ redirect_from:
 
 <div class="blog">
   <ul class="post-grid">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li class="post-card">
         <a class="post-card__link" 
           href="{{ post.url | relative_url }}" 
@@ -38,6 +38,19 @@ redirect_from:
       </li>
     {% endfor %}
   </ul>
+
+  <nav class="pagination" aria-label="Pagination">
+    {% if paginator.previous_page %}
+      <a class="pagination__link" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Newer</a>
+    {% endif %}
+
+    <span class="pagination__info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a class="pagination__link" href="{{ paginator.next_page_path | relative_url }}" rel="next">Older →</a>
+    {% endif %}
+  </nav>
+
 
   <div class="post-footer-actions">
     <div class="rss-button">

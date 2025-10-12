@@ -1638,3 +1638,93 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   border-bottom: 0 !important;
   text-decoration: none !important;
 }
+
+/* Pagination – light/dark theme via CSS variables */
+:root {
+  --pg-bg:        #f8f9fb;
+  --pg-text:      #111827;
+  --pg-muted:     #6b7280;
+  --pg-border:    #e5e7eb;
+  --pg-link-bg:   #ffffff;
+  --pg-link-text: #1f2937;
+  --pg-link-bdr:  #e5e7eb;
+  --pg-link-hbg:  #f3f4f6;
+  --pg-accent:    #6d28d9; /* violet-ish accent */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pg-bg:        #0b1220;
+    --pg-text:      #e5e7eb;
+    --pg-muted:     #9ca3af;
+    --pg-border:    #273043;
+    --pg-link-bg:   #0f172a;
+    --pg-link-text: #e5e7eb;
+    --pg-link-bdr:  #273043;
+    --pg-link-hbg:  #111827;
+    --pg-accent:    #a78bfa;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 1.25rem 0 2rem;
+  padding: 0.75rem 1rem;
+
+  color: var(--pg-text);
+  background: var(--pg-bg);
+  border: 1px solid var(--pg-border);
+  border-radius: 14px;
+}
+
+/* Ensure global link styles don't leak in */
+.pagination a,
+.pagination a:link,
+.pagination a:visited,
+.pagination a:hover,
+.pagination a:active,
+.pagination a:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: var(--pg-link-text);
+}
+
+.pagination__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  padding: 0.55rem 0.9rem;
+  background: var(--pg-link-bg);
+  border: 1px solid var(--pg-link-bdr);
+  border-radius: 999px;
+
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 140ms ease, transform 80ms ease, border-color 140ms ease;
+}
+
+.pagination__link:hover {
+  background: var(--pg-link-hbg);
+  transform: translateY(-1px);
+}
+
+.pagination__link:active {
+  transform: translateY(0);
+}
+
+.pagination__link:focus-visible {
+  outline: 2px solid var(--pg-accent);
+  outline-offset: 2px;
+}
+
+.pagination__info {
+  color: var(--pg-muted);
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+}

@@ -29,6 +29,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+
+paginate: 9
+paginate_path: "/page:num/"
