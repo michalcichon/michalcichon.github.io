@@ -373,7 +373,7 @@ html, body {
 
 #comments-wrapper {
   padding-bottom: 12px;
-  padding-top: 12px;
+  padding-top: 24px;
 }
 
 /* Links */
@@ -1394,6 +1394,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   overflow: hidden;
   font-size: 120%;
   font-weight: 600;
+  text-align: left;
 }
 .post-card__date {
   font-size: 0.9rem;
