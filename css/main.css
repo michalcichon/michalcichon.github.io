@@ -1473,3 +1473,66 @@ p.lead { margin-top: 0; color: var(--card-muted); }
     height: 90px;
   }
 }
+
+/* === RSS BUTTON === */
+
+.rss-button {
+  display: inline-block;
+}
+
+.rss-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+
+  padding: .8rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  background: linear-gradient(180deg, #34d399, #10b981);
+  color: #083b2b;
+  border: 1px solid #0ea371;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.rss-button a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35);
+}
+.rss-button a:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+}
+
+.rss-button a:focus-visible {
+  outline: 2px solid #064e3b;
+  outline-offset: 3px;
+}
+
+.rss-icon {
+  display: block;
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  .rss-button a {
+    background: linear-gradient(180deg, #0f6b4d, #0b5b43);
+    border-color: #0aa176;
+    color: #e6fff6;
+    box-shadow: 0 2px 12px rgba(0,0,0,.5);
+  }
+  .rss-icon {
+    filter: brightness(1.2);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 520px) {
+  .rss-button { display: block; }
+  .rss-button a { justify-content: center; width: 100%; }
+}

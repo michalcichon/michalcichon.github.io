@@ -1,60 +1,49 @@
 ---
 layout: default
 ---
-<article>
-  <div class="post-content">
-    <h1>Hey! 👋</h1>
-    <p>My name is <a href="https://www.linkedin.com/in/michalcichon">Michał Cichoń</a> and I am a software engineer based in <a href="https://en.wikipedia.org/wiki/Krak%C3%B3w" title="Kraków">Kraków</a>, <a href="https://en.wikipedia.org/wiki/Poland" title="Poland">Poland</a>.</p>
-    <p>With over 15 years of experience in web and mobile development, I specialize in building iPhone and iPad applications using <strong>Objective-C</strong> and <strong>Swift</strong>.</p>
-    <p>I currently work in a small team developing a social media application, where we make data-driven decisions using A/B testing and advanced tracking.</p>
-    <p>Throughout my career as an iOS Software Developer, I have collaborated with major financial institutions in Poland and Croatia, biomedical companies, and startups from New York and Berlin. My work spans a diverse range of projects—from small, agile ventures to large-scale applications serving millions of users.</p>
-  </div>
-</article>
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 
-<div id="blog-on-main-wrapper">
-  <h3 class="check-on-blog">
-    <a href="{{site.baseurl}}/blog/">Read on my blog</a>
-  </h3>
-  <div id="blog-on-main" class="blog">
-    <ul class="post-list">
-      {% assign post = site.posts | first %}
-      <li class="post-element">
-        {% if post.thumbnail %}
-          <a class="link-around-image"
-            {% if post.background %}style="background-color: {{post.background}}"{% endif %}
-            href="{{ post.url | relative_url }}"
-            data-event="blog_teaser_click" data-section="blog_teaser" data-element="post" data-content="thumb">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt="">
-          </a>
-        {% else %}
-          <a class="link-around-image thumbnail-default-background"
-            href="{{ post.url | relative_url }}"
-            data-event="blog_teaser_click" data-section="blog_teaser" data-element="post" data-content="thumb">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/default.png" alt="">
-          </a>
-        {% endif %}
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h2>
-          <a class="post-link"
-            href="{{ post.url | relative_url }}"
-            data-event="blog_teaser_click" data-section="blog_teaser" data-element="post" data-content="title">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-        <a class="no-decoration"
-          href="{{ post.url | relative_url }}"
-          data-event="blog_teaser_click" data-section="blog_teaser" data-element="post" data-content="desc">
-          <p class="post-description">{{ post.description }}</p>
+<div class="blog">
+  <ul class="post-grid">
+    {% for post in site.posts %}
+      <li class="post-card">
+        <a class="post-card__link" 
+          href="{{ post.url | relative_url }}" 
+          data-event="blog_list_click" 
+          data-section="blog_index" 
+          data-element="post" 
+          data-content="thumb" 
+          data-position="{{ forloop.index }}">
+          {% if post.image %}
+            <div class="post-card__cover">
+              <img
+                class="post-card__img"
+                src="{{ post.image | relative_url }}"
+                alt="{{ post.image_alt | default: post.title | escape }}"
+                loading="lazy"
+                decoding="async">
+            </div>
+          {% else %}
+            <span class="post-card__cover"></span>
+          {% endif %}
+          <div class="post-card__body">
+            <h2 class="post-card__title">{{ post.title | escape }}</h2>
+            <time class="post-card__date" datetime="{post.date}">{{ post.date | date: date_format }}</time>
+            <p class="post-card__excerpt">{{ post.description }}</p>
+          </div>
         </a>
       </li>
-      <li style="clear: both; height: 1px; margin-bottom: 1px;"></li>
-    </ul>
-    <div class="bigger-navigation-button">
-      <a href="{{site.baseurl}}/blog/"
-        data-event="blog_teaser_more" data-section="blog_teaser" data-element="more_button" data-position="teaser">
-        More blog posts...
-      </a>
-    </div>
+    {% endfor %}
+  </ul>
+
+  <div class="rss-button">
+    <a href="/feed.xml"
+      data-event="subscribe_click"
+      data-section="blog_index"
+      data-element="rss"
+      data-position="bottom_button">
+      <img src="/img/feed-icon.svg" alt="" class="rss-icon" width="18" height="18" loading="lazy" decoding="async">
+      Subscribe via RSS
+    </a>
   </div>
 </div>
