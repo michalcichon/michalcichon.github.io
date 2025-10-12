@@ -1277,3 +1277,139 @@ video {
   list-style: circle;
   padding-left: 2.6em;
 }
+
+
+/* POST CARDS */
+
+:root {
+  --card-bg: #fff;
+  --card-fg: #111;
+  --card-muted: #666;
+  --card-border: rgba(0,0,0,0.08);
+  --radius: 16px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,0.10);
+  --page-bg: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg: #171717;
+    --card-fg: #eaeaea;
+    --card-muted: #aaa;
+    --card-border: rgba(255,255,255,0.06);
+    --page-bg: #0c0c0c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--card-fg);
+  background: var(--page-bg);
+}
+.wrap {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 {
+  font-size: clamp(1.4rem, 1.6vw + 1rem, 2rem);
+  margin: 0 0 1rem;
+}
+p.lead { margin-top: 0; color: var(--card-muted); }
+
+/* GRID */
+.post-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr; /* < 500px: 1 kolumna */
+}
+/* 500px+ = automatyczny układ 2-3 kolumn (min 260px szerokości karty) */
+@media (min-width: 500px) {
+  .post-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+/* 900px+ = stałe 3 kolumny */
+@media (min-width: 800px) {
+  .post-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* 1400px+ = 4 kolumny
+@media (min-width: 1400px) {
+  .post-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+/* CARD */
+.post-card { margin: 0; }
+.post-card__link {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  color: var(--card-fg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  height: 100%;
+}
+.post-card__link:hover,
+.post-card__link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(0,0,0,0.12);
+}
+@media (prefers-color-scheme: dark) {
+  .post-card__link:hover,
+  .post-card__link:focus-visible {
+    border-color: rgba(255,255,255,0.12);
+  }
+}
+.post-card__cover {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--cover, #e2e8f0);
+  display: block;
+}
+.post-card__body {
+  padding: 0.9rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.post-card__title {
+  font-size: clamp(1.05rem, 1.1vw + 0.8rem, 1.25rem);
+  line-height: 1.25;
+  margin: 0 0 0.15rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-card__date {
+  font-size: 0.9rem;
+  color: var(--card-muted);
+}
+.post-card__excerpt {
+  margin: 0.15rem 0 0 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-card__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .post-card__link { transition: none; }
+}
