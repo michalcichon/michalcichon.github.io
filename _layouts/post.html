@@ -43,6 +43,21 @@ layout: default
 
 </article>
 
-<div class="bigger-navigation-button">
-  <a href="{{site.baseurl}}/blog/#show_more">Show more blog posts...</a>
+<div class="post-footer-actions">
+  <div class="show-more-button">
+    <a class="btn btn--purple" href="{{ site.baseurl }}/blog/#show_more">
+      Show more blog posts…
+    </a>
+  </div>
+
+  <div class="rss-button">
+    <a class="btn btn--solid" href="/feed.xml"
+       data-event="subscribe_click"
+       data-section="blog_index"
+       data-element="rss"
+       data-position="bottom_button">
+      <img src="/img/feed-icon.svg" alt="" class="btn__icon" width="18" height="18" loading="lazy" decoding="async">
+      Subscribe via RSS
+    </a>
+  </div>
 </div>

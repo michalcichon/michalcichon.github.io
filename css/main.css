@@ -1474,65 +1474,157 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   }
 }
 
-/* === RSS BUTTON === */
-
-.rss-button {
-  display: inline-block;
+/* === layout kontenera – obok siebie === */
+.post-footer-actions{
+  display:flex;
+  gap:.75rem;
+  align-items:center;
+  justify-content:center;   /* lub: flex-start / space-between */
+  flex-wrap:wrap;            /* pozwól zawijać na bardzo wąskich ekranach */
+  margin-top:2rem;
 }
 
-.rss-button a {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
+/* === wspólna baza dla obu przycisków === */
+.show-more-button a,
+.rss-button a,
+.btn{
+  --btn-radius: 999px;
+  --btn-pad-y: .8rem;
+  --btn-pad-x: 1.15rem;
 
-  padding: .8rem 1.15rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 1;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  border-radius: var(--btn-radius);
+  font-weight:600;
+  line-height:1;
+  text-decoration:none;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, border-color .15s ease;
+}
+
+/* stałe rozmiaru ikonki */
+.btn__icon{
+  width:1.1em; height:1.1em; display:block; flex-shrink:0;
+}
+
+/* wariant „solid” (RSS) */
+.btn--solid{
   background: linear-gradient(180deg, #34d399, #10b981);
-  color: #083b2b;
-  border: 1px solid #0ea371;
-  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25);
-  transition: transform .15s ease, box-shadow .15s ease;
+  color:#083b2b;
+  border:1px solid #0ea371;
+  box-shadow:0 2px 10px rgba(16,185,129,.25);
 }
-
-.rss-button a:hover {
+.btn--solid:hover{
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35);
+  box-shadow:0 6px 18px rgba(16,185,129,.35);
 }
-.rss-button a:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+.btn--solid:active{ transform:none; box-shadow:0 3px 10px rgba(16,185,129,.3); }
+.btn--solid:focus-visible{ outline:2px solid #064e3b; outline-offset:3px; }
+
+/* wariant „ghost” (Show more) – spójny kontur */
+.btn--ghost{
+  background: transparent;
+  color: var(--card-fg, #111);
+  border:1px solid var(--card-border, rgba(0,0,0,.12));
+  box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+.btn--ghost:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,.03);
+}
+.btn--ghost:active{ transform:none; }
+.btn--ghost:focus-visible{ outline:2px solid currentColor; outline-offset:3px; }
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark){
+  .btn--solid{
+    background: linear-gradient(180deg, #0f6b4d, #0b5b43);
+    color:#e6fff6;
+    border-color:#0aa176;
+    box-shadow:0 2px 12px rgba(0,0,0,.5);
+  }
+  .btn--solid:hover{ box-shadow:0 8px 22px rgba(0,0,0,.6); }
+
+  .btn--ghost{
+    color: var(--card-fg, #eaeaea);
+    border-color: var(--card-border, rgba(255,255,255,.12));
+    background: rgba(255,255,255,.03);
+  }
+  .btn--ghost:hover{
+    background: rgba(255,255,255,.06);
+  }
 }
 
-.rss-button a:focus-visible {
-  outline: 2px solid #064e3b;
+/* opcjonalnie: na bardzo wąskich ekranach pełna szerokość */
+@media (max-width: 420px){
+  .post-footer-actions{ justify-content:stretch; }
+  .post-footer-actions > *{ flex:1 1 100%; }
+  .post-footer-actions a{ justify-content:center; width:100%; }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .btn{ transition:none; }
+}
+
+/* Wymuś biały tekst w przyciskach (nadpisuje style linków z posta) */
+.post-footer-actions .btn,
+.post-footer-actions .btn:link,
+.post-footer-actions .btn:visited,
+.post-footer-actions .btn:hover,
+.post-footer-actions .btn:active,
+.post-footer-actions .btn:focus {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* Dla wariantu „ghost” zapewnij ciemniejsze tło, żeby biały był czytelny */
+.post-footer-actions .btn--ghost {
+  background: rgba(0,0,0,0.6);
+  border-color: rgba(255,255,255,0.35);
+}
+@media (prefers-color-scheme: dark) {
+  .post-footer-actions .btn--ghost {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.25);
+  }
+}
+
+/* --- Purple gradient variant --- */
+.btn--purple{
+  background: linear-gradient(180deg, #8b5cf6, #6d28d9); /* light mode */
+  border: 1px solid #5b21b6;
+  box-shadow: 0 2px 10px rgba(109, 40, 217, 0.25);
+  color: #fff; /* i tak masz wymuszone w kontenerze, ale zostawiam dla pewności */
+}
+
+.btn--purple:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(109, 40, 217, 0.35);
+  filter: saturate(1.05);
+}
+
+.btn--purple:active{
+  transform: none;
+  box-shadow: 0 3px 10px rgba(109, 40, 217, 0.30);
+}
+
+.btn--purple:focus-visible{
+  outline: 2px solid #4c1d95; /* ciemny fiolet pod WCAG */
   outline-offset: 3px;
 }
 
-.rss-icon {
-  display: block;
-  width: 1.1em;
-  height: 1.1em;
-  flex-shrink: 0;
-}
-
-/* DARK MODE */
-@media (prefers-color-scheme: dark) {
-  .rss-button a {
-    background: linear-gradient(180deg, #0f6b4d, #0b5b43);
-    border-color: #0aa176;
-    color: #e6fff6;
+/* Dark mode – ciemniejsze odcienie, nadal „fioletowe” */
+@media (prefers-color-scheme: dark){
+  .btn--purple{
+    background: linear-gradient(180deg, #5b21b6, #3b0ea4);
+    border-color: #2e0b86;
     box-shadow: 0 2px 12px rgba(0,0,0,.5);
   }
-  .rss-icon {
-    filter: brightness(1.2);
+  .btn--purple:hover{
+    box-shadow: 0 8px 22px rgba(0,0,0,.6);
   }
 }
 
-/* MOBILE */
-@media (max-width: 520px) {
-  .rss-button { display: block; }
-  .rss-button a { justify-content: center; width: 100%; }
-}
