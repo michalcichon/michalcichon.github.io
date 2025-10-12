@@ -1628,3 +1628,12 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   }
 }
 
+#main-space .btn,
+#main-space .btn:link,
+#main-space .btn:visited,
+#main-space .btn:hover,
+#main-space .btn:active,
+#main-space .btn:focus {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
