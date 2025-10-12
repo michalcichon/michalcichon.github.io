@@ -26,6 +26,14 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="post-bio">
+    <img src="{{site.baseurl}}/img/michal.jpeg" alt="Michał Cichoń" class="post-bio__avatar" loading="lazy" decoding="async">
+    <div class="post-bio__text">
+      <p><strong>Michał Cichoń</strong> is a Kraków-based iOS developer who’s been crafting web and mobile apps for over 15 years.</p>
+      <p>He enjoys turning complex ideas into simple, useful experiences for everyday users.</p>
+    </div>
+  </div>
+
   {% if page.comments %}
   <div id="comments-wrapper">
     {% include giscus.html %}

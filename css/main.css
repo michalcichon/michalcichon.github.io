@@ -1414,3 +1414,62 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 @media (prefers-reduced-motion: reduce) {
   .post-card__link { transition: none; }
 }
+
+/* === POST BIO === */
+
+.post-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.post-bio__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.post-bio__text {
+  line-height: 1.6;
+  color: var(--card-fg);
+  font-size: 0.95rem;
+}
+
+.post-bio__text p {
+  margin: 0 0 0.5rem 0;
+}
+
+.post-bio__text strong {
+  font-weight: 600;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  .post-bio {
+    background: #1d1d1d;
+    border-color: rgba(255,255,255,0.08);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .post-bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .post-bio__avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
