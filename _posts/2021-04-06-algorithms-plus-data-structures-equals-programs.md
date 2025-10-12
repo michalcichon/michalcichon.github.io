@@ -6,9 +6,6 @@ date:   2021-04-06 09:00:00 +0200
 categories: software-development
 keywords: code review, code evaluation, recruiting software developers
 tags: programming processes software-development
-thumbnail: code.png
-image: "assets/thumbnails/code.png" # Image for RSS
-background: "#ffffff"
 comments: true
 ---
 

@@ -6,9 +6,6 @@ date: 2020-10-17 08:00:00 +0200
 categories: ios
 keywords: iOS, hardcoding, config server, mariadb, swift app
 tags: ios backend
-thumbnail: swift.png
-image: "assets/thumbnails/swift.png" # Image for RSS
-background: "#f05138"
 comments: true
 ---
 

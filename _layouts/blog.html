@@ -37,40 +37,6 @@ layout: default
           </div>
         </a>
       </li>
-      <!-- <li class="post-element">
-        {% if post.thumbnail %}
-          <a class="link-around-image"
-             {% if post.background %}style="background-color: {{post.background}}"{% endif %}
-             href="{{ post.url | relative_url }}"
-             data-event="blog_list_click" data-section="blog_index" data-element="post" data-content="thumb" data-position="{{ forloop.index }}">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/{{post.thumbnail}}" alt="">
-          </a>
-        {% else %}
-          <a class="link-around-image thumbnail-default-background"
-             href="{{ post.url | relative_url }}"
-             data-event="blog_list_click" data-section="blog_index" data-element="post" data-content="thumb" data-position="{{ forloop.index }}">
-            <img class="post-thumbnail" src="{{site.url}}/assets/thumbnails/default.png" alt="">
-          </a>
-        {% endif %}
-
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link"
-             href="{{ post.url | relative_url }}"
-             data-event="blog_list_click" data-section="blog_index" data-element="post" data-content="title" data-position="{{ forloop.index }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-
-        <a class="no-decoration"
-           href="{{ post.url | relative_url }}"
-           data-event="blog_list_click" data-section="blog_index" data-element="post" data-content="desc" data-position="{{ forloop.index }}">
-          <p class="post-description">{{ post.description }}</p>
-        </a>
-      </li>
-      <li style="clear: both; height: 10px;"></li> -->
     {% endfor %}
   </ul>
 
