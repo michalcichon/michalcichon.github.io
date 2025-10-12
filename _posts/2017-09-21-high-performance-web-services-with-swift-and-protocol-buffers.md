@@ -6,9 +6,6 @@ date:   2017-09-21 10:09:00 +0200
 categories: ios
 keywords: swift, protobuf, gatling
 tags: ios swift programming
-thumbnail: swift.png
-image: "assets/thumbnails/swift.png" # Image for RSS
-background: "#f05138"
 comments: true
 ---
 

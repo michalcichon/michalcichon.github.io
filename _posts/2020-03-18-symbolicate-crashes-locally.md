@@ -6,9 +6,6 @@ date:   2020-03-18 09:00:00 +0200
 categories: ios
 keywords: crash logs, xcode crash logs, crashlogs, symbolicate crashlogs
 tags: ios tools
-thumbnail: code.png
-image: "assets/thumbnails/code.png" # Image for RSS
-background: "#ffffff"
 comments: true
 ---
 

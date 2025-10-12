@@ -3,7 +3,6 @@ layout: post
 title:  "CodeteCON #KRK5"
 description: "Another great tech conference in Kraków took place on November 15th. That was a great opportunity to share knowledge and meet people from the industry."
 date:   2019-11-20 21:00:00 +0200
-background: "#f05138"
 categories: events
 keywords: codete, codetecon, conference 
 tags: programming events

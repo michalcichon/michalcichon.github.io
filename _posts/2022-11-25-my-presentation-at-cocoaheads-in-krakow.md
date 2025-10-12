@@ -3,8 +3,6 @@ layout: post
 title:  "I have presented at CocoaHeads in Kraków!"
 description: "Last week on Tuesday I had a great opportunity to present my own topic at the CocoaHeads meetup conference in Kraków."
 date:   2022-11-25 21:00:00 +0200
-thumbnail: swift.png
-image: "assets/thumbnails/swift.png" # Image for RSS
 background: "#f05138"
 categories: ios
 keywords: cocoaheads, ios, conference 
