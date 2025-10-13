@@ -1407,6 +1407,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: left;
 }
 .post-card__link:focus-visible {
   outline: 2px solid currentColor;
