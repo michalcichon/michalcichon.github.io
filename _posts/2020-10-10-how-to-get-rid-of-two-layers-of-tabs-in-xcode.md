@@ -9,6 +9,18 @@ tags: ios tools
 comments: true
 ---
 
+## Update 2025 & tl;dr;
+
+Just to clarify — this trick still works in Xcode 26. 🙂
+
+![Hiding the window tab bar in 2025 (Xcode 26)]({{site.url}}/assets/2020-10-10/update_2025.webp)
+
+You can hide the window tab bar by choosing `View` → `Hide Window Tab Bar`.
+
+To show it again, simply go to `View` → `Show Window Tab Bar`.
+
+---
+
 There is one thing that annoyed me a bit when I start using the new Xcode 12 but not to the level I had to fix it ASAP. I would like to share as I found there is an easy fix (ufff, fortunately 😅) that can be applied and it actually improves the overall flow.
 
 ## Window tabs vs document tabs
