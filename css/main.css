@@ -1525,7 +1525,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 .btn--solid{
   background: linear-gradient(180deg, #34d399, #10b981);
   color:#083b2b;
-  border:1px solid #0ea371;
+  border:1px solid #0ea371 !important;
   box-shadow:0 2px 10px rgba(16,185,129,.25);
 }
 .btn--solid:hover{
@@ -1539,7 +1539,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 .btn--ghost{
   background: transparent;
   color: var(--card-fg, #111);
-  border:1px solid var(--card-border, rgba(0,0,0,.12));
+  border:1px solid var(--card-border, rgba(0,0,0,.12)) !important;
   box-shadow:0 2px 10px rgba(0,0,0,.06);
 }
 .btn--ghost:hover{
@@ -1561,7 +1561,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 
   .btn--ghost{
     color: var(--card-fg, #eaeaea);
-    border-color: var(--card-border, rgba(255,255,255,.12));
+    border-color: var(--card-border, rgba(255,255,255,.12)) !important;
     background: rgba(255,255,255,.03);
   }
   .btn--ghost:hover{
@@ -1595,19 +1595,19 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 /* Dla wariantu „ghost” zapewnij ciemniejsze tło, żeby biały był czytelny */
 .post-footer-actions .btn--ghost {
   background: rgba(0,0,0,0.6);
-  border-color: rgba(255,255,255,0.35);
+  border-color: rgba(255,255,255,0.35) !important;
 }
 @media (prefers-color-scheme: dark) {
   .post-footer-actions .btn--ghost {
     background: rgba(255,255,255,0.08);
-    border-color: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.25) !important;
   }
 }
 
 /* --- Purple gradient variant --- */
 .btn--purple{
   background: linear-gradient(180deg, #8b5cf6, #6d28d9); /* light mode */
-  border: 1px solid #5b21b6;
+  border: 1px solid #5b21b6 !important;
   box-shadow: 0 2px 10px rgba(109, 40, 217, 0.25);
   color: #fff; /* i tak masz wymuszone w kontenerze, ale zostawiam dla pewności */
 }
@@ -1640,7 +1640,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   }
 }
 
-#main-space .btn,
+/* #main-space .btn,
 #main-space .btn:link,
 #main-space .btn:visited,
 #main-space .btn:hover,
@@ -1648,7 +1648,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 #main-space .btn:focus {
   border-bottom: 0 !important;
   text-decoration: none !important;
-}
+} */
 
 /* Pagination – light/dark theme via CSS variables */
 :root {
@@ -1700,8 +1700,8 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 .pagination a:hover,
 .pagination a:active,
 .pagination a:focus {
-  text-decoration: none !important;
-  border-bottom: none !important;
+  /* text-decoration: none !important; */
+  /* border-bottom: none !important; */
   color: var(--pg-link-text);
 }
 
@@ -1712,7 +1712,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 
   padding: 0.55rem 0.9rem;
   background: var(--pg-link-bg);
-  border: 1px solid var(--pg-link-bdr);
+  border: 1px solid var(--pg-link-bdr) !important;
   border-radius: 999px;
 
   font-weight: 600;
