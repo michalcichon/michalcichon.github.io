@@ -1175,6 +1175,16 @@ video {
 
 @media screen and (max-width:500px) {
 
+  #main-space article h1,
+  #main-space article .post-content h1 {
+    font-size: 180%;
+  }
+  
+  #main-space article h2,
+  #main-space article .post-content h2 {
+    font-size: 160%;
+  }
+
   #my-photo {
     margin-top: 56px;
   }
