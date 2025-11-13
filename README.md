@@ -64,17 +64,10 @@ That script:
 
 ## 🪄 Deployment
 
-The site is automatically built and deployed by **GitHub Pages** from the `main` branch.
-
-To publish new content:
-
-1. Commit and push changes to `main`
-2. GitHub Pages will rebuild and update your live site at
-   👉 [https://michalcichon.github.io](https://michalcichon.github.io)
+The site is automatically built and deployed by **GitHub Pages** from the `master` branch.
 
 ---
 
 ## 📄 License
 
 This blog’s content © [Michał Cichoń](https://michalcichon.github.io), unless otherwise stated.
-Code portions and configuration may be shared under an open-source license (add one if applicable).
