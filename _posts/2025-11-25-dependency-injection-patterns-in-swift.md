@@ -20,7 +20,7 @@ One of the biggest advantages of using dependency injection is that it makes our
 
 By depending on abstractions rather than concrete implementations, each component can focus solely on its own responsibilities, without knowing the details of how other parts of the system are managed. This makes it easier to reuse components across different parts of an app. We can easily replace services with mocks during testing or switch implementations when requirements change.
 
-## Simple example
+## Basic example of how to use initializer-based dependency injection
 
 Imagine that we use in our `ViewModel`, a couple of services which are singletons. Instead of referencing them directly in the method definition like this:
 
@@ -121,6 +121,7 @@ Then we can implement MockUserService and the real UserService independently, wi
 ```swift
 
 // Protocols
+
 protocol UserServiceProtocol {
     var currentUser: User { get }
     func fetchUserData() async
@@ -134,6 +135,59 @@ protocol PremiumServiceProtocol {
 // Real implementations
 
 class UserService: UserServiceProtocol {
-    
+
+    var currentUser: User {
+        persistence.currentUser
+    }
+
+    func fetchUserData() async {
+        if let user: User = try? await network.request("/user/me") {
+            persistence.saveUser(user)
+        }
+    }
 }
+
+class PremiumService: PremiumServiceProtocol {
+    
+    func grantSuperPowers(to user: User) {
+        var updated = user
+        updated.isPremium = true
+        database.saveUser(updated)
+    }
+
+    func purchase(_ product: Product) async throws {
+        try await storeKit.startPurchase(productId: product.id)
+    }
+}
+
+// Mock implementations
+
+class MockUserService: UserServiceProtocol {
+
+    var currentUser: User = User(id: "test-id", name: "TestUser", isPremium: false)
+    var fetchUserDataCalled = false
+
+    func fetchUserData() async {
+        fetchUserDataCalled = true
+        // Instant predictable mock result
+        currentUser = User(id: "mock-123", name: "MockUser", isPremium: true)
+    }
+}
+
+class MockPremiumService: PremiumServiceProtocol {
+    var grantedUsers: [User] = []
+    var purchasedProducts: [Product] = []
+
+    func grantSuperPowers(to user: User) {
+        grantedUsers.append(user)
+    }
+
+    func purchase(_ product: Product) {
+        purchasedProducts.append(product)
+    }
+}
+
 ```
+
+What we have here is called initializer-based dependency injection because we pass our dependencies through the initializer. However, there are several other ways to handle dependency injection, which I will briefly explain in the next sections.
+
