@@ -10,7 +10,7 @@ image: "assets/2025-11-25/cover.jpeg" # Image for RSS
 comments: true
 ---
 
-**One of the most useful patterns in software development — and one that is available in many languages, not just Swift — is dependency injection. When I first learned about it over a decade ago, I started using it everywhere possible. It's a simple idea with a surprisingly big impact. Here's why it's worth mastering.**
+**One of the most useful patterns in software development — and one that is available in many languages, not just Swift — is dependency injection. When I first learned about it over a decade ago, I started using it everywhere possible. It’s a simple idea with a surprisingly big impact. Here’s why it’s worth mastering.**
 
 ![Contemplating my code before morning coffee]({{site.url}}/assets/2025-11-25/cover.webp)
 
@@ -72,7 +72,7 @@ class ExampleViewModel {
 }
 ```
 
-It's already looks much better. Now we can create mock variants of these classes for our tests using inheritance like this:
+It’s already looks much better. Now we can create mock variants of these classes for our tests using inheritance like this:
 
 ```swift
 class MockUser: UserService {
@@ -189,7 +189,11 @@ class MockPremiumService: PremiumServiceProtocol {
 
 ```
 
-What we have here is called initializer-based dependency injection because we pass our dependencies through the initializer. However, there are several other ways to handle dependency injection, which I will briefly explain in the next sections.
+What we have here is called **initializer-based dependency injection** because we pass our dependencies through the initializer. In my opinion, it’s the best basic way to implement dependency injection for iOS applications. It’s a simple concept that anyone can learn quickly. It offers excellent testability: all dependencies are injected at object creation, so tests can consistently provide mocks or stubs. There’s no risk of uninitialized dependencies, which makes tests more reliable.
+
+It’s also characterized by strong modularity. Components are fully decoupled from concrete implementations, and each dependency is clearly defined in the initializer, making it easy to swap implementations.
+
+However, there are several other ways to handle dependency injection, which I will briefly explain in the next sections.
 
 ## Property injection 
 
@@ -215,7 +219,13 @@ vm.premiumService = PremiumService.shared
 vm.adService = AdService.shared
 ```
 
-This kind of dependency injection is usually seen in views containing IBOutlets, or in cases where we depend on view components that need to be initialized first. It's more flexible because we don’t have to pass dependencies through the initializer—the injection timing is more flexible. However, this comes at a cost: there’s a risk of calling dependencies before they are injected, which can crash the app. It’s also harder to enforce correctness. That’s why I prefer the initializer-based dependency injection described in the previous section.
+This kind of dependency injection is usually seen in views containing IBOutlets, or in cases where we depend on view components that need to be initialized first. It’s more flexible because we don’t have to pass dependencies through the initializer—the injection timing is more flexible. However, this comes at a cost: there’s a risk of calling dependencies before they are injected, which can crash the app. It’s also harder to enforce correctness. That’s why I prefer the initializer-based dependency injection described in the previous section.
+
+It can be handy for testing, as we can easily swap dependencies after object creation, but it’s also easier to break and make our tests flaky.
+
+It’s not optimal in terms of modularity because objects rely on external code to inject dependencies before use. The contract of required dependencies is less explicit, making it easier to misuse the component.
+
+In my opinion, code clarity can also suffer because readers of our source code must track when and where dependencies are injected.
 
 ## Method injection 
 
@@ -242,6 +252,10 @@ vm.makeUserHappy(
 ```
 
 This kind of dependency injection is more functional. We don’t need to store our dependencies as properties, and it’s also easy to test methods implemented this way. On the other hand, calling these methods can become quite verbose. It’s also not very optimal if we want to call the method from many different places. In that case, the problem of keeping everything consistent is simply delegated elsewhere, and we still need to manage it somewhere.
+
+It’s very testable. Each method call receives its dependencies explicitly, making it easy to test in isolation. However, it may take some extra effort to setup dependencies in our tests. 
+
+In terms of modularity, we also can find a strong advantage of this approach. Objects don’t need to store dependencies as properties, reducing hidden state. But on the other hand, it can become cumbersome if multiple methods need the same dependencies repeatedly.
 
 ## Summary
 
