@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dependency injection patterns in Swift"
-description: ""
+description: "When I first learned about it over a decade ago, I started using it everywhere possible. It’s a simple idea with a surprisingly big impact."
 date:   2025-11-25 15:00:00 +0200
 categories: software-development
 keywords: swift, dependency injection, di, design patterns
