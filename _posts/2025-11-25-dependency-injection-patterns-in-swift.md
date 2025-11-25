@@ -20,7 +20,7 @@ One of the biggest advantages of using dependency injection is that it makes our
 
 By depending on abstractions rather than concrete implementations, each component can focus solely on its own responsibilities, without knowing the details of how other parts of the system are managed. This makes it easier to reuse components across different parts of an app. We can easily replace services with mocks during testing or switch implementations when requirements change.
 
-## Basic example of how to use initializer-based dependency injection
+## A basic example of how to use initializer-based dependency injection
 
 Imagine that we use in our `ViewModel`, a couple of services which are singletons. Instead of referencing them directly in the method definition like this:
 
@@ -191,3 +191,54 @@ class MockPremiumService: PremiumServiceProtocol {
 
 What we have here is called initializer-based dependency injection because we pass our dependencies through the initializer. However, there are several other ways to handle dependency injection, which I will briefly explain in the next sections.
 
+## Property injection 
+
+```swift
+class ExampleViewModel {
+
+    // Dependencies are optional until injected
+    var userService: UserServiceProtocol!
+    var premiumService: PremiumServiceProtocol!
+    var adService: AdServiceProtocol!
+
+    func makeUserHappy() {
+        let currentUser = userService.currentUser
+        premiumService.grantSuperPowers(to: currentUser)
+        adService.removeAds()
+    }
+}
+
+// Somewhere else 
+let vm = ExampleViewModel()
+vm.userService = UserService.shared
+vm.premiumService = PremiumService.shared
+vm.adService = AdService.shared
+```
+
+This kind of dependency injection is usually seen in views containing IBOutlets, or in cases where we depend on view components that need to be initialized first. It's more flexible because we don’t have to pass dependencies through the initializer—the injection timing is more flexible. However, this comes at a cost: there’s a risk of calling dependencies before they are injected, which can crash the app. It’s also harder to enforce correctness. That’s why I prefer the initializer-based dependency injection described in the previous section.
+
+## Method injection 
+
+```swift
+class ExampleViewModel {
+    func makeUserHappy(
+        userService: UserServiceProtocol,
+        premiumService: PremiumServiceProtocol,
+        adService: AdServiceProtocol
+    ) {
+        let currentUser = userService.currentUser
+        premiumService.grantSuperPowers(to: currentUser)
+        adService.removeAds()
+    }
+}
+
+// Usage:
+let vm = ExampleViewModel()
+vm.makeUserHappy(
+    userService: UserService.shared,
+    premiumService: PremiumService.shared,
+    adService: AdService.shared
+)
+```
+
+This kind of dependency injection is more functional. We don’t need to store our dependencies as properties, and it’s also easy to test methods implemented this way. On the other hand, calling these methods can become quite verbose. It’s also not very optimal if we want to call the method from many different places. In that case, the problem of keeping everything consistent is simply delegated elsewhere, and we still need to manage it somewhere.
