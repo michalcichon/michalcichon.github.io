@@ -242,3 +242,9 @@ vm.makeUserHappy(
 ```
 
 This kind of dependency injection is more functional. We don’t need to store our dependencies as properties, and it’s also easy to test methods implemented this way. On the other hand, calling these methods can become quite verbose. It’s also not very optimal if we want to call the method from many different places. In that case, the problem of keeping everything consistent is simply delegated elsewhere, and we still need to manage it somewhere.
+
+## Summary
+
+There are three basic approaches to dependency injection in Swift. What do you think about these approaches? Do you use dependency injection in your projects? Or maybe you use a dependency injection framework—if so, what do you think about these lightweight approaches?
+
+Regardless of the approach you choose, the key is to make your code more modular, testable, and maintainable. Even lightweight dependency injection can significantly improve the architecture of your Swift projects without adding unnecessary complexity. Experiment with different techniques and see which one fits your team and project style best.
