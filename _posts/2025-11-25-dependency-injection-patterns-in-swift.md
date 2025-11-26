@@ -100,9 +100,9 @@ class ExampleViewModel {
     private let premiumService: PremiumServiceProtocol
     private let adService: AdServiceProtocol
 
-    init(userService: UserService = UserService.shared, 
-         premiumService: PremiumService = PremiumService.shared,
-         adService: AdService = AdService.shared) {
+    init(userService: UserServiceProtocol = UserService.shared, 
+         premiumService: PremiumServiceProtocol = PremiumService.shared,
+         adService: AdServiceProtocol = AdService.shared) {
             self.userService = userService
             self.premiumService = premiumService
             self.adService = adService
@@ -116,7 +116,7 @@ class ExampleViewModel {
 }
 ```
 
-Then we can implement MockUserService and the real UserService independently, without needing to mix parts of the real service into the mock — which is exactly what tends to happen when relying on inheritance.
+Then we can implement `MockUserService` and the real `UserService` independently, without needing to mix parts of the real service into the mock — which is exactly what tends to happen when relying on inheritance.
 
 ```swift
 
