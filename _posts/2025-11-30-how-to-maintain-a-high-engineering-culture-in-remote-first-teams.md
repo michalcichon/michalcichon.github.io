@@ -9,3 +9,8 @@ tags: processes software-development
 image: "assets/2025-11-30/cover.jpeg" # Image for RSS
 comments: true
 ---
+
+* regular syncs
+* making sure everyone is engaged and knows the goals (kick offs, daily stand-ups)
+* helping others to grow, get on board
+* avoiding private messaging, open and honest
