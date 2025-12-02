@@ -1,0 +1,6 @@
+---
+layout: none
+permalink: /feed.rss
+---
+
+{% raw %}{% include feed.xml %}{% endraw %}
