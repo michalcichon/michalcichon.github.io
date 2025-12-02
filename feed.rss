@@ -1,6 +1,5 @@
 ---
 layout: none
 permalink: /feed.rss
+redirect_to: /feed.xml
 ---
-
-{% raw %}{% include feed.xml %}{% endraw %}
