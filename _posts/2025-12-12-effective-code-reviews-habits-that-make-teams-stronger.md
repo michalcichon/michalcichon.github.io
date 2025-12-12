@@ -58,6 +58,18 @@ Huge pull requests are stressful. Both to write and to review. They slow everyth
 
 Whenever possible, work iteratively. Break larger tasks into smaller PRs: setup, core logic, UI layer, tests, cleanup, etc. Small PRs are easier to understand, faster to review, and far less likely to introduce bugs.
 
+When we work on feature branches, and we see the feature we're working on is simply too big for a single pull request, it might make sense to open a base branch where we point our iterations. Then when the whole feature is done under the base feature branch (so we merged Part 1 and Part 2), we can create a new combined pull request pointing `develop`.
+
+```
+develop
+   |
+   +--- XYZ-123-My-New-Feature-Base
+         |
+         +--- XYZ-123-My-New-Feature-Part-1
+         |
+         +--- XYZ-123-My-New-Feature-Part-2
+```
+
 ## Avoid “LGTM” Without Any Comments
 
 ![LGTM]({{site.url}}/assets/2025-12-12/LGTM.png)
