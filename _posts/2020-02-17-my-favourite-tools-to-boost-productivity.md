@@ -6,6 +6,7 @@ date:   2020-02-17 09:00:00 +0200
 categories: ios
 keywords: productivity, zsh, iTerm2, vim, RescueTime, SourceTree, kdiff3
 tags: tools miscellaneous
+image: "assets/2020-02-17/notebook.webp" # Image for RSS
 comments: true
 ---
 

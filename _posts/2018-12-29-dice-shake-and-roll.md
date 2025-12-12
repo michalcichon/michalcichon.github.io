@@ -7,6 +7,7 @@ categories: ios
 keywords: dice, roll the dice, shake and roll
 tags: ios
 published: true
+image: "assets/2018-12-29/dice.webp" # Image for RSS
 comments: true
 ---
 
