@@ -10,6 +10,8 @@ image: "assets/2025-12-30/cover.jpg" # Image for RSS
 comments: true
 ---
 
+**During the pandemic, many of us started working remotely.**
+
 ![Paris Street; Rainy Day - Gustave Caillebotte]({{site.url}}/assets/2025-12-30/cover.jpg)
 
 
