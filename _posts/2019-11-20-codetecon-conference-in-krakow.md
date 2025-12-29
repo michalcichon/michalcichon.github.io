@@ -6,6 +6,7 @@ date:   2019-11-20 21:00:00 +0200
 categories: events
 keywords: codete, codetecon, conference 
 tags: programming events
+image: "assets/2019-11-20/IMG_2462.jpeg" # Image for RSS
 comments: true
 ---
 

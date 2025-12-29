@@ -6,8 +6,8 @@ date:   2021-04-18 09:00:00 +0200
 categories: miscellaneous
 keywords: darkmode, dark mode, css
 tags: miscellaneous
+image: "assets/2021-04-18/darkmode.webp" # Image for RSS
 comments: true
-thumbnail: darkmode.jpeg
 ---
 
 ![Dark mode]({{site.url}}/assets/2021-04-18/darkmode.webp)

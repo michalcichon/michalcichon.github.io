@@ -7,6 +7,7 @@ categories: ios
 keywords: macOS, AudioCD, Audio CD, burning audio on CD
 tags: tools miscellaneous
 published: true
+image: "assets/2020-02-05/audiocd-4.webp" # Image for RSS
 comments: true
 ---
 

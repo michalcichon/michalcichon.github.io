@@ -348,10 +348,11 @@ html, body {
 
 #main-space p img,
 #main-space figure img {
-    max-width: 90%;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 12px;
 }
 
 #main-space p img {
@@ -825,7 +826,7 @@ blockquote > :last-child {
 pre, code { 
   font-size: 14px; 
   border: 1px solid #e8e8e8; 
-  border-radius: 3px; 
+  border-radius: 12px; 
   background-color: #eef;
   font-family: "JetBrains Mono", "Fira Code",
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,

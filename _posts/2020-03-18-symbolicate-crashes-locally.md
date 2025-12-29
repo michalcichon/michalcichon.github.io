@@ -6,6 +6,7 @@ date:   2020-03-18 09:00:00 +0200
 categories: ios
 keywords: crash logs, xcode crash logs, crashlogs, symbolicate crashlogs
 tags: ios tools
+image: "assets/2020-03-18/zshrc-1.webp" # Image for RSS
 comments: true
 ---
 

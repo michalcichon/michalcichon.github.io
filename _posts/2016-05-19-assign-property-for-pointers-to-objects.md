@@ -6,8 +6,11 @@ date:   2016-05-19 10:09:00 +0200
 categories: ios
 keywords: xcode, assign, weak property
 tags: ios programming
+image: "assets/2016-05-19/cover.jpg" # Image for RSS
 comments: true
 ---
+
+![Apple Macintosh]({{site.url}}/assets/2016-05-19/cover.jpg)
 
 When I lately upgraded Xcode to 7.3.1 I suddenly got a lot of errors in one of my older project I wanted to rebuild.
 

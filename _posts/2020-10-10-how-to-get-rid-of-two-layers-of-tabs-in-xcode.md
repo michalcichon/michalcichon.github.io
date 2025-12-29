@@ -6,6 +6,7 @@ date:   2020-10-10 13:00:00 +0200
 categories: ios
 keywords: Xcode, tabs, window tabs, document tabs, nested tabs
 tags: ios tools
+image: "assets/2020-10-10/update_2025.webp" # Image for RSS
 comments: true
 ---
 

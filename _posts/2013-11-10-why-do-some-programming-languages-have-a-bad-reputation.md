@@ -6,10 +6,13 @@ date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
 tags: php programming
+image: "assets/2013-11-10/cover.jpg" # Image for RSS
 comments: true
 ---
 
 When I began my big journey of developing software I was only a bit experienced in **Atari BASIC**. It was a time when Google just started its business and layouts of websites were created with a high use of **HTML tables**. For me it was very cool to experiment with primitive internet technologies of these days. Since 2003 it has been how I expressed my creativity.
+
+![Code]({{site.url}}/assets/2013-11-10/cover.jpg)
 
 Some years after my humble beginnings I learned PHP and started designing dynamic websites. Then I realized that many people think about PHP programmers as non-professionals. I was wondering why they have such a bad reputation. Times have changed and today there is a strong PHP community in Poland as well as in other countries or worldwide, but some people still have mixed feelings about PHP. Since I also have opportunities to write code in JavaScript I noticed that many people think about that language in similar way as about PHP ten years ago.
 

@@ -36,3 +36,6 @@ exclude:
 
 paginate: 12
 paginate_path: "/page:num/"
+
+feed:
+  path: feed.rss

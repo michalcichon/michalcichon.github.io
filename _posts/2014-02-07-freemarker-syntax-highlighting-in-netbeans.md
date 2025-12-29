@@ -6,6 +6,7 @@ date:   2014-02-07 10:09:00 +0200
 categories: tools
 keywords: syntax, netbeans, lexer
 tags: programming
+image: "assets/2014-02-07/netbeans3.webp" # Image for RSS
 comments: true
 ---
 
