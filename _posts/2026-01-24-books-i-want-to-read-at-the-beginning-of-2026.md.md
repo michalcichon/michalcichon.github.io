@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Books I Want to Read at the Beginning of 2026"
-description: ""
+description: "A curated reading list for early 2026 focused on mastering the fundamentals of programming, systems, and AI. These books go beyond tutorials, offering deep insights into how Python, Linux, Docker, and large language models really work."
 date:   2026-01-24 15:00:00 +0200
 categories: notes
 keywords: books,reading list,technology,programming,software,engineering,python,docker,linux,artificial intelligence
