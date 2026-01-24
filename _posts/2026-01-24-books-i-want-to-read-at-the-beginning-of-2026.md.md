@@ -16,7 +16,6 @@ At the beginning of 2026, I want to slow down a bit and go deeper. Instead of sk
 
 <div class="book-block">
     <h2>"Learning Python: Powerful Object-Oriented Programming, 6th Edition" by Mark Lutz (2025)</h2>
-
     <p><img src="{{site.url}}/assets/2026-01-24/lutz.jpg" width="200" style="border-radius: 0; float: left; margin:0 20px 0 0;" />Python is often treated as an “easy” language, which sometimes leads to shallow understanding and sloppy mental models. I want to revisit Python properly, with a focus on its object model, execution semantics, and idiomatic structure. This book has a reputation for being thorough rather than trendy, which makes it a good antidote to copy-paste programming and framework-driven thinking.
     </p>
     <p>Mark Lutz’s book is extremely comprehensive, covering everything from the basics to advanced topics. The chapters are detailed and dense, with numerous examples and exercises that encourage deep thinking rather than superficial reading. It’s structured in a way that allows readers to build a strong conceptual foundation before diving into practical coding, making it an enduring reference rather than a quick tutorial.</p>
