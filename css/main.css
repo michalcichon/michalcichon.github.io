@@ -95,6 +95,12 @@ html, body {
 .footnotes ol { margin-left: 1.2em; }
 .footnote-backref { text-decoration: none; }
 
+.book-block::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #main-space article { font-size: 1.2rem; }
 
 /* Inline footnote refs */
@@ -547,6 +553,11 @@ p {
   margin-bottom: 0;
   line-height: 120%;
 }
+
+#main-space article .post-content {
+  display: block;
+}
+
 
 #main-space p.post-meta { 
   font-size: 14px;
