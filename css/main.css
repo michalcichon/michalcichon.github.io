@@ -101,6 +101,14 @@ html, body {
   clear: both;
 }
 
+.book-block p > img {
+  border-radius: 0 !important;
+  float: left !important;
+  margin: 10px 20px 0 0 !important;
+  max-width: 200px !important;
+  height: auto !important;
+}
+
 #main-space article { font-size: 1.2rem; }
 
 /* Inline footnote refs */
