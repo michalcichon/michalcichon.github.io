@@ -16,7 +16,9 @@ comments: true
 
 **There’s a moment in every developer’s career when you realize that both too little and too much engineering hurt a project just the same — only in different ways. Welcome to the never-ending dance between underengineering and overengineering.**
 
-![A way to choose]({{site.url}}/assets/2025-10-11/cover.webp)
+<div class="article-hero">
+    <img src="{{site.url}}/assets/2025-10-11/cover.webp" alt="A way to choose">
+</div>
 
 ## Don’t try to foresee too much
 

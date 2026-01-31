@@ -12,8 +12,9 @@ comments: true
 
 **Fifteen years ago, I took my first, clumsy steps into the world of IT. In this post, I look back on the mistakes I made, the lessons I learned the hard way, and how those early failures shaped the developer I am today.**
 
-
-![Tired and sleeping]({{site.url}}/assets/2024-12-08/a_tired_young_man.webp)
+<div class="article-hero">
+    <img src="{{site.url}}/assets/2024-12-08/a_tired_young_man.webp" alt="Tired and sleeping">
+</div>
 
 This text isn’t a made-up story. It’s about myself over 15 years ago, doing my best to gain experience in IT. It’s a reflection on what I did and why, the consequences of my actions, and what I learned from that experience.
 

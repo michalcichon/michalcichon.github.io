@@ -16,7 +16,23 @@ comments: true
   <img src="{{site.url}}/assets/2026-02-01/cover.jpg" alt="Paris Street; Rainy Day - Gustave Caillebotte">
 </div>
 
-## d
+## Ingredient 1: Knowing your team
+
+This may sound obvious, yet it's something worth checking as making this part properly might be a game changer. 
+
+## Ingredient 2: Being in sync
+
+sss
+
+## Ingredient 3: Communication architecture
+
+sss
+
+## Ingredient 4: Openess & ownership
+
+sss
+
+
 
 
 <!--

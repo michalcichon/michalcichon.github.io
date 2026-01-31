@@ -12,7 +12,9 @@ comments: true
 
 **A few months ago, I bought a computer. In theory, it was supposed to be our “home computer” — something we could use until my wife gets a new laptop from her work. It also ran Windows, so we could use applications that don’t run on my Mac — for example, some scientific programs my wife normally uses at work — and, potentially, a few games. In practice, however, the computer just ended up collecting dust at the bottom of my drawer.**
 
-![Some day]({{site.url}}/assets/2025-10-08/cover.webp)
+<div class="article-hero">
+    <img src="{{site.url}}/assets/2025-10-08/cover.webp" alt="Sunny day">
+</div>
 
 I don’t like wasting resources — whether it’s running water, our valuable time, or a powerful GPU sitting idle, waiting for a task. It’s always a bit painful to see. This makes me reflect on how we use our computers and what it actually means to use their resources wisely.
 

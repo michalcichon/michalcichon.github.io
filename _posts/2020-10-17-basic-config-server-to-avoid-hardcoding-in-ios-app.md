@@ -12,6 +12,10 @@ comments: true
 
 ***Hardcoding any information in a client application makes it more difficult to update or fix. The problem worsens when we regularly roll out new versions of the application. In such cases, we would need to track every build to ensure we don’t shut down any resources directly referenced in our source code from previous builds. Hardcoding is generally a bad idea.***
 
+<div class="article-hero">
+    <img src="{{site.url}}/assets/2020-10-17/cover.jpg" alt="Hero">
+</div>
+
 In this short tutorial, I will demonstrate how to build a simple configuration server to help avoid hardcoding values on the client side.
 
 ## Dependencies
