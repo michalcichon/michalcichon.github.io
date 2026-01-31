@@ -10,9 +10,11 @@ image: "assets/2026-01-24/cover.jpg" # Image for RSS
 comments: true
 ---
 
-![Federico Faruffini - La lettrice (1864-1865)]({{site.url}}/assets/2026-01-24/cover.jpg)
+**At the beginning of 2026, I want to slow down a bit and go deeper. Instead of skimming blog posts, docs, or hot takes, I’m deliberately choosing books that explain *how things work*, not just *how to use them*. This reading list reflects that mindset: fundamentals first, abstractions second.**
 
-At the beginning of 2026, I want to slow down a bit and go deeper. Instead of skimming blog posts, docs, or hot takes, I’m deliberately choosing books that explain *how things work*, not just *how to use them*. This reading list reflects that mindset: fundamentals first, abstractions second.
+<div class="article-hero">
+  <img src="{{site.url}}/assets/2026-01-24/cover.jpg" alt="Federico Faruffini - La lettrice (1864-1865)">
+</div>
 
 <div class="book-block">
     <h2>"Learning Python: Powerful Object-Oriented Programming, 6th Edition" by Mark Lutz (2025)</h2>
