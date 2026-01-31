@@ -18,13 +18,17 @@ comments: true
 
 ## Ingredient 1: Knowing your team
 
-This may sound obvious, yet it's something worth checking as making this part properly might be a game changer. 
+This may sound obvious, yet it’s worth checking, as doing it properly can be a game changer. Don't assume you know someone until you really get to know each other. It's way easier to work with someone when we spend a few minutes on a casual call.
 
-## Ingredient 2: Being in sync
 
-sss
 
-## Ingredient 3: Communication architecture
+
+## Ingredient 2: Communication architecture
+
+- regular syncs, progress and weekly presentations abot the process, challenges, priorities, and 
+- from our perspective: when we're stuck, being pro active 
+
+## Ingredient 3: Being in sync
 
 sss
 

@@ -13,7 +13,7 @@ comments: true
 **One of the most useful patterns in software development — and one that is available in many languages, not just Swift — is dependency injection. When I first learned about it over a decade ago, I started using it everywhere possible. It’s a simple idea with a surprisingly big impact. Here’s why it’s worth mastering.**
 
 <div class="article-hero">
-<img src="{{site.url}}/assets/2025-11-25/cover.webp" alt="Contemplating my code before morning coffee">
+    <img src="{{site.url}}/assets/2025-11-25/cover.webp" alt="Contemplating my code before morning coffee">
 </div>
 
 ## Why is it so useful?
