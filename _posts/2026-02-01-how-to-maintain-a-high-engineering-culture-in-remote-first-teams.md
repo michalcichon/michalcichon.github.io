@@ -35,13 +35,13 @@ It really helps keep focus during the week. I once worked with a very charismati
 - from our perspective: when we're stuck, being pro active 
 - challenge when 
 
-## Ingredient 3: Being in sync
+## Being in sync
 
-sss
+...
 
-## Ingredient 4: Openess & ownership
+## Openess & ownership
 
-sss
+...
 
 
 
