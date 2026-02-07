@@ -61,6 +61,52 @@ th, td {
   padding: 10px;
 }
 
+:root {
+  /* Light Mode Variables */
+  --dl-bg: #f9f9f9;
+  --dl-border: #eeeeee;
+  --dt-color: #333333;
+  --dd-color: #555555;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Variables */
+    --dl-bg: #1a1a1a;
+    --dl-border: #333333;
+    --dt-color: #94a3b8; /* Soft blue-grey for better readability */
+    --dd-color: #e2e8f0; /* Off-white for less eye strain */
+  }
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 12px 24px;
+  background-color: var(--dl-bg);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--dl-border);
+  transition: all 0.3s ease; /* Smooth transition when switching modes */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+dt {
+  font-weight: 700;
+  color: var(--dt-color);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
+
+dd {
+  margin: 0;
+  color: var(--dd-color);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
 /* Michal Cichon's Website */
 
 html, body {
