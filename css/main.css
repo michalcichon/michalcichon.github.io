@@ -1545,6 +1545,9 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   border-radius: 12px;
 }
 
+.article-hero.position-bottom img {
+  object-position: center bottom;
+}
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {

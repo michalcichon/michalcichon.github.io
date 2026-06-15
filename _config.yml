@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Michał Cichoń · iOS Software Engineer
+title: Michał Cichoń · Software Engineer & Software Architect
 author: Michał Cichoń
-description: Personal webpage of Michał Cichoń - an iOS Software Engineer from Kraków, Poland. I develop iOS apps in Objective-C and Swift.
+description: Personal webpage of Michał Cichoń - a Software Engineer & Software Architect from Kraków, Poland. Building AI-Powered Workflows. Background in Mobile Systems at Scale
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michalcichon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: michal_cichon
 github_username:  michalcichon
-keywords: Michal, Cichon, Krakow, iOS, CocoaTouch
+keywords: Michal, Cichon, Krakow, iOS, CocoaTouch, Swift, Objective-C, Architecture, AI, Workflow, Agent-based Systems, Software Engineering, Software Architecture, Mobile Development, Mobile Systems at Scale
 
 # Build settings
 markdown: kramdown
