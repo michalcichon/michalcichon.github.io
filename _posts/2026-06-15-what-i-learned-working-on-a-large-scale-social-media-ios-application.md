@@ -91,4 +91,6 @@ That’s a topic for a separate blog post, and I hope to share those insights so
 
 Over the past 10+ years, I’ve fixed many “impossible” issues: performance bottlenecks (especially in feeds and fast scrolling), ad-related issues that could have cost significant revenue, and numerous migrations of third-party integrations, among many others.
 
-I’m still primarily an engineer, and having a slightly different toolbox doesn’t fundamentally change how I think or what I aim to achieve. I’m still learning a lot, with a constant feeling that I can build on my experience and good practices.
+I’m still primarily an engineer, and having a slightly different toolbox doesn’t fundamentally change how I think or what I aim to achieve. I’m still growing, but my work is increasingly grounded in experience and proven engineering practices.
+
+The real engineering skill is not preventing complexity, but building systems and habits that can absorb it without breaking.
