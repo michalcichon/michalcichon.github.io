@@ -79,6 +79,14 @@ We can choose between MVVM, MVP, Clean Architecture, VIPER, or TCA, but beyond t
 
 Real engineering starts when we design tests that are flexible enough not to break with every small UI change, while still being meaningful enough to catch real regressions.
 
+## The Unique Challenges of Scale
+
+Working at this volume means even the most minor edge cases become daily realities. A few specific hurdles heavily defined my day-to-day experience:
+
+* **Scale Amplifies Edge Cases:** When millions of people use an app, a crash that has a seemingly impossible 0.01% chance of happening will inevitably occur hundreds of times. You can no longer ignore "unlikely" crash reports; at scale, they accumulate quickly into significant issues that demand investigation.
+* **Debugging Remote Configurations:** Because we relied heavily on A/B tests and experiments, much of the app's logic was driven by backend configurations. This made reproducing user-reported issues incredibly difficult. While Dependency Injection and the Repository pattern are lifesavers for mocking these remote states, investigations can still become massive time sinks. I learned that sometimes the most pragmatic engineering choice isn't to power through an endless debugging session—it’s to disable the experiment, roll back the changes, fix the issue in a controlled environment, and redeploy.
+* **The Versioning Balancing Act:** Versioning is a constant challenge on two fronts. At the system level, we couldn't just drop older iOS versions without heavily tracking adoption rates to avoid cutting off active users. On the backend API side, breaking changes are strictly off-limits. Deciding whether to extend an existing endpoint with new fields or spin up a completely new one is rarely a clear-cut choice. It requires taking things case by case and fostering tight communication between the client and backend teams to find the safest path forward.
+
 ## We Can Achieve Anything When We Stay Focused
 
 And finally, we are not lone planets. We are all connected. When we stay aligned, pair when necessary, and move toward the same goal, we can achieve a lot.
