@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Should I Open The Window?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Should I Open The Window?</h1>
+
+        <div class="input-section">
+            <div class="input-group">
+                <h2>Inside</h2>
+                <div class="control">
+                    <label for="temp-inside">Temperature (°C)</label>
+                    <div class="input-combo">
+                        <input type="range" id="temp-inside-slider" min="-10" max="40" value="20" step="0.5">
+                        <input type="number" id="temp-inside" min="-10" max="40" value="20" step="0.5">
+                    </div>
+                </div>
+                <div class="control">
+                    <label for="humidity-inside">Relative Humidity (%)</label>
+                    <div class="input-combo">
+                        <input type="range" id="humidity-inside-slider" min="0" max="100" value="60" step="1">
+                        <input type="number" id="humidity-inside" min="0" max="100" value="60" step="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <h2>Outside</h2>
+                <div class="control">
+                    <label for="temp-outside">Temperature (°C)</label>
+                    <div class="input-combo">
+                        <input type="range" id="temp-outside-slider" min="-10" max="40" value="15" step="0.5">
+                        <input type="number" id="temp-outside" min="-10" max="40" value="15" step="0.5">
+                    </div>
+                </div>
+                <div class="control">
+                    <label for="humidity-outside">Relative Humidity (%)</label>
+                    <div class="input-combo">
+                        <input type="range" id="humidity-outside-slider" min="0" max="100" value="80" step="1">
+                        <input type="number" id="humidity-outside" min="0" max="100" value="80" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2>Results</h2>
+            <div class="result-grid">
+                <div class="result-item">
+                    <span class="result-label">Inside Absolute Humidity:</span>
+                    <span class="result-value" id="abs-humidity-inside">—</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Outside Absolute Humidity:</span>
+                    <span class="result-value" id="abs-humidity-outside">—</span>
+                </div>
+            </div>
+            <div class="recommendation" id="recommendation">
+                <div class="recommendation-icon" id="recommendation-icon"></div>
+                <div class="recommendation-text" id="recommendation-text"></div>
+            </div>
+        </div>
+
+        <div class="graph-container">
+            <h2>Humidity Visualization</h2>
+            <svg id="humidity-graph" viewBox="0 0 400 200">
+                <!-- Graph will be rendered here by JavaScript -->
+            </svg>
+            <div class="graph-legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #3b82f6;"></span>
+                    <span>Inside</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #10b981;"></span>
+                    <span>Outside</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
