@@ -234,6 +234,40 @@ input[type="number"]:focus {
     border-radius: 4px;
 }
 
+.about-author {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-author h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.about-author p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.about-author a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.about-author a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .container {
