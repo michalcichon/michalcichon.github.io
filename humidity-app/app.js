@@ -12,10 +12,11 @@ function calculateAbsoluteHumidity(temperatureCelsius, relativeHumidity) {
     const actualVaporPressure = (relativeHumidity / 100) * saturationPressure;
 
     // Calculate absolute humidity in g/m³
-    // Formula: AH = (e * 1000 * Mw) / (R * T)
+    // Formula: AH = (e * 100 * Mw) / (R * T)
     // where: e = vapor pressure (hPa), Mw = molecular weight of water (18.01528 g/mol)
     // R = universal gas constant (8.31446 J/(mol·K)), T = temperature in Kelvin
-    const absoluteHumidity = (actualVaporPressure * 1000 * 18.01528) / ((temperatureCelsius + 273.15) * 8.31446);
+    // Note: 1 hPa = 100 Pa, so we multiply by 100 to convert to Pascals
+    const absoluteHumidity = (actualVaporPressure * 100 * 18.01528) / ((temperatureCelsius + 273.15) * 8.31446);
 
     return absoluteHumidity;
 }
