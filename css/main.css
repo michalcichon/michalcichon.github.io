@@ -1824,3 +1824,19 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   font-size: 0.95rem;
   padding: 0.25rem 0.5rem;
 }
+
+/* Badge styles */
+#main-space .badge-container {
+  text-align: left;
+}
+
+#main-space .badge-img {
+  height: 100px;
+  margin-right: 10px;
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  border-radius: 0;
+}
