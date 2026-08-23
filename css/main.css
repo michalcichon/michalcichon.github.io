@@ -1840,3 +1840,18 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   margin-left: 0 !important;
   border-radius: 0;
 }
+
+/* Menu text labels - hidden by default, shown in responsive mode */
+#menu .menu-text {
+  display: none;
+}
+
+#menu.responsive .menu-text {
+  display: inline;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+#menu.responsive li a img {
+  vertical-align: middle;
+}
