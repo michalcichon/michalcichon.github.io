@@ -35,7 +35,7 @@ exclude:
   - Gemfile.lock
 
 paginate: 12
-paginate_path: "/page:num/"
+paginate_path: "/blog/:num/"
 
 feed:
   path: feed.rss

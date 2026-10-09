@@ -4,36 +4,19 @@ function getScrollPosition() {
     return window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
 }
 
+function setMenuOpen(open) {
+    document.getElementById("site-nav").classList.toggle("open", open);
+    document.querySelector(".nav-toggle").setAttribute("aria-expanded", open);
+}
+
 function foldMenu() {
-    var menu = document.getElementById("menu");
     menuScrollPosition = getScrollPosition();
-    if (menu.className === "topnav") {
-        menu.className += " responsive";
-    } else {
-        menu.className = "topnav";
-    }
+    setMenuOpen(!document.getElementById("site-nav").classList.contains("open"));
 }
 
 function closeMenuIfOpened() {
-    var menu = document.getElementById("menu");
-    menu.className = "topnav";
+    setMenuOpen(false);
 }
-
-function init() {
-    setYearInFooter();
-}
-
-function setYearInFooter () {
-    var currentTime = new Date();
-    document.getElementById('currentYear').innerHTML = currentTime.getFullYear();
-}
-
-var readyStateCheckInterval = setInterval(function() {
-    if (document.readyState === "complete") {
-        clearInterval(readyStateCheckInterval);
-        init();
-    }
-}, 10);
 
 window.addEventListener("scroll", function (event) {
     var scroll = getScrollPosition()
