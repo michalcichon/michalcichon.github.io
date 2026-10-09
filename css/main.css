@@ -1735,3 +1735,21 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
   #main-space .pagination a.pagination__link:hover { color: #cc8eff; }
 }
 @media (prefers-reduced-motion: reduce) { .pagination__link { transition: none; } }
+
+/* ---- Sidebar polish: kicker headings, quiet links, pill tags ---- */
+.sidebar-card h3 { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 750; color: var(--card-muted); margin: 0 0 .9rem; }
+#main-space .blog-sidebar a:link, #main-space .blog-sidebar a:visited { color: var(--card-fg); border-bottom: 0; background: none; font-weight: 550; }
+#main-space .blog-sidebar a:hover { color: #58099a; }
+.blog-sidebar .sidebar-list { list-style: none; padding: 0; margin: 0; }
+.blog-sidebar .sidebar-list li { margin: 0 0 .8rem; line-height: 1.4; }
+.blog-sidebar .sidebar-list li:last-child { margin-bottom: 0; }
+.blog-sidebar img.post-bio__avatar { width: 64px; height: 64px; display: block; margin-bottom: .6rem; }
+.blog-sidebar .sidebar-card p { font-size: .92rem; line-height: 1.6; color: var(--card-muted); margin: .5rem 0 0; }
+.blog-sidebar .sidebar-card p strong { color: var(--card-fg); }
+.blog-sidebar .tag-cloud { display: flex; flex-wrap: wrap; gap: .45rem; }
+#main-space .blog-sidebar .tag-cloud a.tag { font-size: .8rem !important; font-weight: 500; padding: .2rem .7rem; border: 1px solid rgba(128,128,128,.3); border-radius: 999px; color: var(--card-muted); }
+#main-space .blog-sidebar .tag-cloud a.tag:hover { border-color: #58099a; color: #58099a; }
+@media (prefers-color-scheme: dark) {
+  #main-space .blog-sidebar a:hover, #main-space .blog-sidebar .tag-cloud a.tag:hover { color: #cc8eff; }
+  #main-space .blog-sidebar .tag-cloud a.tag:hover { border-color: #cc8eff; }
+}
