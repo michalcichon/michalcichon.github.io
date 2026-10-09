@@ -158,43 +158,18 @@
           {{content}}
         </div>
       </div>
-      <div class="push"></div>
     </div>
-    <div id="footer" class="footer">
-      <div class="footer-outer-wrapper">
-        <div class="footer-wrapper">
-          <div class="left">
-            <p>{{site.author}} &copy; <span id="currentYear">{{ site.time | date: '%Y' }}</span></p>
-          </div>
-          <div class="right">
-            <p>
-              <a href="https://twitter.com/michal_cichon">
-                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/twitter-logo.svg" width="20" height="20">
-                  Twitter
-                </object>
-              </a>
-              &nbsp;
-              <a href="https://github.com/michalcichon">
-                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/github-logo.svg" width="20" height="20">
-                  GitHub
-                </object>
-              </a>
-              &nbsp;
-              <a href="https://stackoverflow.com/users/2579827/michal-cichon">
-                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/stackoverflow-logo.svg" width="20" height="20">
-                  Stack Overflow
-                </object>
-              </a>
-              &nbsp;
-              <a href="https://www.linkedin.com/in/michalcichon">
-                <object class="footer-logo" type="image/svg+xml" data="{{site.baseurl}}/img/linkedin-logo.svg" width="20" height="20">
-                  LinkedIn
-                </object>
-              </a>
-            </p>
-          </div>
-        </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</span>
+        <nav class="site-footer__links" aria-label="Elsewhere">
+          <a href="https://www.linkedin.com/in/michalcichon">LinkedIn</a>
+          <a href="https://github.com/michalcichon">GitHub</a>
+          <a href="https://x.com/{{ site.twitter_username }}" rel="me">X</a>
+          <a href="https://mastodon.social/@mcichon" rel="me">Mastodon</a>
+          <a href="{{ '/feed.rss' | relative_url }}">RSS</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

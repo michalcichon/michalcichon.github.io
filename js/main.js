@@ -18,22 +18,6 @@ function closeMenuIfOpened() {
     setMenuOpen(false);
 }
 
-function init() {
-    setYearInFooter();
-}
-
-function setYearInFooter () {
-    var currentTime = new Date();
-    document.getElementById('currentYear').innerHTML = currentTime.getFullYear();
-}
-
-var readyStateCheckInterval = setInterval(function() {
-    if (document.readyState === "complete") {
-        clearInterval(readyStateCheckInterval);
-        init();
-    }
-}, 10);
-
 window.addEventListener("scroll", function (event) {
     var scroll = getScrollPosition()
     if (Math.abs(scroll - menuScrollPosition) > 250) {
