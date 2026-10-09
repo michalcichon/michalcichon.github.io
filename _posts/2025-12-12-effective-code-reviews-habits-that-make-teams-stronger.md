@@ -5,7 +5,7 @@ description: "A practical guide to building a healthy, effective code review cul
 date:   2025-12-12 15:00:00 +0200
 categories: software-development
 keywords: code review, pull requests, software quality, engineering practices, developer productivity, code review checklist, collaborative development, clean code, best practices, small PRs, team communication, software engineering
-tags: programming software-development
+tags: programming
 image: "assets/2025-12-12/cover.jpeg" # Image for RSS
 comments: true
 ---

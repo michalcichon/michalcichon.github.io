@@ -6,7 +6,7 @@ date:   2022-11-25 21:00:00 +0200
 background: "#f05138"
 categories: ios
 keywords: cocoaheads, ios, conference 
-tags: ios swift programming events
+tags: ios programming events
 image: "assets/2022-11-25/cocoaheads1.webp" # Image for RSS
 comments: true
 ---

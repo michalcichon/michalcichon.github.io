@@ -5,7 +5,7 @@ description: "Lessons learned from building and maintaining a large-scale social
 date:   2026-06-15 15:00:00 +0200
 categories: software-development
 keywords: ios, iphone, swift, mobile-development, software-engineering, software-architecture, social-media, large-scale-systems, product-development, engineering-culture
-tags: processes software-development technology ios engineering
+tags: processes ios engineering
 image: "assets/2026-06-15/cover.jpg" # Image for RSS
 comments: true
 published: true

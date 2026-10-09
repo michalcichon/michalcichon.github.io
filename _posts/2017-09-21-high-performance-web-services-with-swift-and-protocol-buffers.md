@@ -5,7 +5,7 @@ description: "Usually, when designing communication between a server and an iOS 
 date:   2017-09-21 10:09:00 +0200
 categories: ios
 keywords: swift, protobuf, gatling
-tags: ios swift programming
+tags: ios programming
 image: "assets/2017-09-21/blog.webp" # Image for RSS
 comments: true
 featured: true

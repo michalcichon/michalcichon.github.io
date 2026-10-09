@@ -5,7 +5,7 @@ description: "I have been working as a contractor software developer for many ye
 date:   2021-04-06 09:00:00 +0200
 categories: software-development
 keywords: code review, code evaluation, recruiting software developers
-tags: programming processes software-development
+tags: programming processes
 image: "assets/2021-04-06/cover.jpg" # Image for RSS
 comments: true
 ---

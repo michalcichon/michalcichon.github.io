@@ -5,7 +5,7 @@ description: "There’s a moment in every developer’s career when you realize 
 date:   2025-10-11 15:00:00 +0200
 categories: software-development
 keywords: overengineering, underengineering, software development
-tags: programming technology software-development
+tags: programming engineering
 image: "assets/2025-10-11/cover.jpg" # Image for RSS
 comments: true
 ---

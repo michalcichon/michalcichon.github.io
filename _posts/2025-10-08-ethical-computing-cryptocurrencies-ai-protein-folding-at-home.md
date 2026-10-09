@@ -5,7 +5,7 @@ description: "I bought a gaming PC — and ended up questioning how we use our c
 date:   2025-10-08 06:00:00 +0200
 categories: technology
 keywords: folding@home, cryptocurrencies, gpu, computing
-tags: miscellaneous technology computing 
+tags: miscellaneous engineering computing 
 image: "assets/2025-10-08/cover.jpg" # Image for RSS
 comments: true
 ---

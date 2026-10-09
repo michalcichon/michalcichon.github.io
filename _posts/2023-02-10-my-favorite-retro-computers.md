@@ -6,7 +6,7 @@ date:   2023-02-10 21:00:00 +0200
 background: "#ffffff"
 categories: retro
 keywords: retrogaming, retrocomputing, retro, old computers
-tags: retro gaming computing
+tags: retro-gaming computing
 image: "assets/2023-02-10/Commodore64-3.jpg" # Image for RSS
 comments: true
 ---

@@ -5,7 +5,7 @@ description: "When I first learned about it over a decade ago, I started using i
 date:   2025-11-25 15:00:00 +0200
 categories: software-development
 keywords: swift, dependency injection, di, design patterns
-tags: swift programming software-development
+tags: ios programming
 image: "assets/2025-11-25/cover.jpeg" # Image for RSS
 comments: true
 featured: true

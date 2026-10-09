@@ -5,7 +5,7 @@ description: "If you look at standard PHP functions you will find that there is 
 date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
-tags: php programming
+tags: programming
 image: "assets/2013-11-10/cover.jpg" # Image for RSS
 comments: true
 ---

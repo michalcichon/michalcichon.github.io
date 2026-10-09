@@ -5,7 +5,7 @@ description: "Working remotely in a distributed team has many benefits. We can m
 date:   2026-01-30 15:00:00 +0200
 categories: software-development
 keywords: engineering, engineering culture, remote teams
-tags: processes software-development
+tags: processes engineering
 image: "assets/2026-02-01/cover.jpg" # Image for RSS
 comments: true
 published: false
