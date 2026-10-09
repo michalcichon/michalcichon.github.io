@@ -1723,3 +1723,15 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 .blog-sidebar { padding: 1.75rem !important; gap: 1.75rem !important; background: rgba(128,128,128,.05) !important; border-color: rgba(128,128,128,.12) !important; }
 .blog-sidebar .sidebar-card + .sidebar-card { padding-top: 1.75rem !important; }
 .pagination { background: transparent; border: 0; margin: 2.5rem 0 2rem; padding: 0; }
+
+/* ---- Pagination: minimal outlined pills ---- */
+.pagination { gap: 1.25rem; border-top: 1px solid rgba(128,128,128,.2); padding-top: 1.75rem; margin-top: 1.5rem; }
+.pagination__info { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--card-muted); }
+.pagination__link { background: transparent; padding: .65rem 1.15rem; font-size: .9rem; border: 1px solid rgba(128,128,128,.35) !important; transition: border-color 160ms ease, color 160ms ease; }
+.pagination__link:hover { background: transparent; transform: none; border-color: #58099a !important; }
+#main-space .pagination a.pagination__link:hover { color: #58099a; }
+@media (prefers-color-scheme: dark) {
+  .pagination__link:hover { border-color: #cc8eff !important; }
+  #main-space .pagination a.pagination__link:hover { color: #cc8eff; }
+}
+@media (prefers-reduced-motion: reduce) { .pagination__link { transition: none; } }
