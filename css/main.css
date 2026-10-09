@@ -1944,3 +1944,7 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   #main-space article.post blockquote,
   #main-space article.post blockquote p { color: #b0b0b0; }
 }
+
+/* ---- Tag page ---- */
+.tag-page__title { text-align: left; font-size: 220%; margin: 0; }
+#main-space .tag-page p.tag-page__count { text-align: left; margin: .4rem 0 1.5rem; color: var(--card-muted); }
