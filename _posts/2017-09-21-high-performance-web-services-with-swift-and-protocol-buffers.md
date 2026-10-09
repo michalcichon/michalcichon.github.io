@@ -8,6 +8,7 @@ keywords: swift, protobuf, gatling
 tags: ios swift programming
 image: "assets/2017-09-21/blog.webp" # Image for RSS
 comments: true
+featured: true
 ---
 
 **Every decision connected with the choice of the technology stack is crucial because it has a huge impact on future system limitations which can be hard to predict. Usually, it is a good approach to stick with some battle-tested solutions, especially when we are working on a typical implementation. Everything can become more complicated when we have limited resources or a specific problem to solve.**
