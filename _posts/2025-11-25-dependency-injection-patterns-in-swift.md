@@ -8,6 +8,7 @@ keywords: swift, dependency injection, di, design patterns
 tags: swift programming software-development
 image: "assets/2025-11-25/cover.jpeg" # Image for RSS
 comments: true
+featured: true
 ---
 
 **One of the most useful patterns in software development — and one that is available in many languages, not just Swift — is dependency injection. When I first learned about it over a decade ago, I started using it everywhere possible. It’s a simple idea with a surprisingly big impact. Here’s why it’s worth mastering.**

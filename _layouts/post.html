@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div class="post-layout">
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -42,6 +43,44 @@ layout: default
   {% endif %}
 
 </article>
+
+<aside class="blog-sidebar">
+  <section class="sidebar-card" id="toc-card" hidden>
+    <h3>On this page</h3>
+    <ul class="sidebar-list toc" id="toc"></ul>
+  </section>
+  {% assign shown = 0 %}
+  {% capture related %}{% for p in site.posts %}{% if p.url != page.url and shown < 4 %}{% assign common = p.tags | where_exp: "t", "page.tags contains t" %}{% if common.size > 0 %}{% assign shown = shown | plus: 1 %}<li><a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a></li>{% endif %}{% endif %}{% endfor %}{% endcapture %}
+  {% if shown > 0 %}
+  <section class="sidebar-card">
+    <h3>Related posts</h3>
+    <ul class="sidebar-list">{{ related }}</ul>
+  </section>
+  {% endif %}
+</aside>
+</div>
+<script>
+(function () {
+  var hs = document.querySelectorAll('.post-content h2[id]');
+  if (hs.length < 3) return;
+  var toc = document.getElementById('toc'), links = {};
+  hs.forEach(function (h) {
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); toc.appendChild(li); links[h.id] = a;
+  });
+  document.getElementById('toc-card').hidden = false;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting) {
+        toc.querySelectorAll('.active').forEach(function (a) { a.classList.remove('active'); });
+        links[e.target.id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '0px 0px -75% 0px' });
+  hs.forEach(function (h) { io.observe(h); });
+})();
+</script>
 
 <div class="post-footer-actions">
   <div class="show-more-button">

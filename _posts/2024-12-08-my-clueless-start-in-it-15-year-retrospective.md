@@ -8,6 +8,7 @@ keywords: mentoring, experience, it
 tags: miscellaneous programming processes
 image: "assets/2024-12-08/a_tired_young_man.webp" # Image for RSS
 comments: true
+featured: true
 ---
 
 **Fifteen years ago, I took my first, clumsy steps into the world of IT. In this post, I look back on the mistakes I made, the lessons I learned the hard way, and how those early failures shaped the developer I am today.**
