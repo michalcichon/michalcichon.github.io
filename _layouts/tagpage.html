@@ -4,7 +4,7 @@ layout: default
 {% assign posts = site.tags[page.tag] %}
 <div class="blog tag-page">
   <h1 class="tag-page__title">#{{ page.tag }}</h1>
-  <p class="tag-page__count">{{ posts.size }} post{% if posts.size != 1 %}s{% endif %} · <a href="{{ '/' | relative_url }}">All posts</a></p>
+  <p class="tag-page__count">{{ posts.size }} post{% if posts.size != 1 %}s{% endif %} · <a href="{{ '/blog/' | relative_url }}">All posts</a></p>
   <ul class="post-grid">
     {% for post in posts %}
       <li class="post-card">

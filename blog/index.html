@@ -1,0 +1,91 @@
+---
+layout: default
+---
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+<div class="blog-layout">
+<div class="blog">
+  <ul class="post-grid">
+    {% for post in paginator.posts %}
+      <li class="post-card">
+        <a class="post-card__link" 
+          href="{{ post.url | relative_url }}" 
+          data-event="blog_list_click" 
+          data-section="blog_index" 
+          data-element="post" 
+          data-content="thumb" 
+          data-position="{{ forloop.index }}">
+          {% if post.image %}
+            <div class="post-card__cover">
+              <img
+                class="post-card__img"
+                src="{{ post.image | relative_url }}"
+                alt="{{ post.image_alt | default: post.title | escape }}"
+                loading="lazy"
+                decoding="async">
+            </div>
+          {% else %}
+            <span class="post-card__cover"></span>
+          {% endif %}
+          <div class="post-card__body">
+            <h2 class="post-card__title">{{ post.title | escape }}</h2>
+            <time class="post-card__date" datetime="{{ post.date }}">{{ post.date | date: date_format }}</time>
+            <p class="post-card__excerpt">{{ post.description }}</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <nav class="pagination" aria-label="Pagination">
+    {% if paginator.previous_page %}
+      <a class="pagination__link" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Newer</a>
+    {% endif %}
+
+    <span class="pagination__info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a class="pagination__link" href="{{ paginator.next_page_path | relative_url }}" rel="next">Older →</a>
+    {% endif %}
+  </nav>
+
+  <div class="post-footer-actions">
+    <div class="rss-button">
+      <a class="btn btn--solid" href="/feed.rss"
+        data-event="subscribe_click"
+        data-section="blog_index"
+        data-element="rss"
+        data-position="bottom_button">
+        <img src="/img/feed-icon.svg" alt="" class="btn__icon" width="18" height="18" loading="lazy" decoding="async">
+        Subscribe via RSS
+      </a>
+    </div>
+  </div>
+</div>
+<aside class="blog-sidebar">
+<section class="sidebar-card">
+  <img src="{{ '/img/michal.jpeg' | relative_url }}" alt="Michał Cichoń" class="post-bio__avatar" loading="lazy" decoding="async">
+  <p><strong>Michał Cichoń</strong> is a software engineer &amp; architect based in Kraków, Poland.</p>
+  <p>15+ years of experience across web, mobile and backend, now focused on AI systems that automate parts of the software development lifecycle.</p>
+  <p><a href="{{ '/about-me/' | relative_url }}">More about me →</a></p>
+</section>
+{% assign featured = site.posts | where: "featured", true %}
+{% if featured.size > 0 %}
+<section class="sidebar-card">
+  <h3>Featured posts</h3>
+  <ul class="sidebar-list">
+    {% for post in featured %}<li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+<section class="sidebar-card">
+  <h3>Topics</h3>
+  {% include tag-cloud.html %}
+</section>
+<section class="sidebar-card">
+  <h3>Contact me</h3>
+  <p>Questions, ideas or a project in mind? Get in touch:</p>
+  <p><a href="https://www.linkedin.com/in/michalcichon">LinkedIn</a> · <a href="https://github.com/michalcichon">GitHub</a> · <a href="https://mastodon.social/@mcichon" rel="me">Mastodon</a> · <a href="https://x.com/{{ site.twitter_username | default: 'michal_cichon' }}" rel="me">X</a> · <a href="/feed.rss">RSS</a></p>
+</section>
+</aside>
+</div>
