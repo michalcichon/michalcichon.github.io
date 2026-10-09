@@ -1823,3 +1823,14 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 #main-space article.post .highlight .c, #main-space article.post .highlight .c1, #main-space article.post .highlight .cm,
 #main-space article.post .highlight .cs, #main-space article.post .highlight .cp { color: var(--tk-com); font-style: italic; font-weight: 400; }
 @media (max-width: 600px) { #main-space article.post pre.highlight, #main-space article.post .highlight pre { padding: 1rem; font-size: .8rem; } }
+
+/* --- Post footer: prev/next + "All posts" link --- */
+.post-nav{ display:flex; gap:1rem; justify-content:space-between; margin-top:2rem; }
+#main-space .post-nav a, #main-space .post-nav a:link, #main-space .post-nav a:visited{ flex:1 1 0; display:block; padding:.8rem 1rem; border:1px solid var(--card-border, rgba(128,128,128,.3)); border-radius:12px; text-decoration:none; }
+.post-nav small{ display:block; opacity:.7; }
+.post-nav__next{ text-align:right; margin-left:auto; }
+.post-footer-actions{ gap:1.5rem; }
+#main-space .post-footer-link, #main-space .post-footer-link:link, #main-space .post-footer-link:visited{ display:inline-flex; align-items:center; gap:.4rem; font-weight:600; border-bottom:none; text-decoration:none; }
+.post-footer-link:hover{ text-decoration:underline !important; }
+.post-footer-link__icon{ display:block; }
+@media (max-width:600px){ .post-nav{ flex-direction:column; } }
