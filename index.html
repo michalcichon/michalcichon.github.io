@@ -6,6 +6,7 @@ redirect_from:
 ---
 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 
+<div class="blog-layout">
 <div class="blog">
   <ul class="post-grid">
     {% for post in paginator.posts %}
@@ -63,4 +64,13 @@ redirect_from:
       </a>
     </div>
   </div>
+</div>
+{% if paginator.page == 1 %}
+<aside class="blog-sidebar">
+  <img src="{{ '/img/michal.jpeg' | relative_url }}" alt="Michał Cichoń" class="post-bio__avatar" loading="lazy" decoding="async">
+  <p><strong>Michał Cichoń</strong> is a software engineer &amp; architect based in Kraków, Poland.</p>
+  <p>15+ years of experience across web, mobile and backend, now focused on AI systems that automate parts of the software development lifecycle.</p>
+  <p><a href="{{ '/about-me/' | relative_url }}">More about me →</a></p>
+</aside>
+{% endif %}
 </div>
