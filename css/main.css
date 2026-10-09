@@ -1993,3 +1993,18 @@ p.lead { margin-top: 0; color: var(--card-muted); }
 #main-space .blog p.post-card__excerpt { margin: 0; font-size: .94rem; line-height: 1.55; color: var(--card-muted); }
 @media (prefers-color-scheme: dark) { .post-card__link:hover .post-card__title { color: #cc8eff; } }
 @media (prefers-reduced-motion: reduce) { .post-card__img, .post-card__title { transition: none; } .post-card__link:hover .post-card__img { transform: none; } }
+
+/* ---- Blog redesign: featured first card + read-more cue ---- */
+.post-card__body::after { content: "Read article →"; margin-top: auto; padding-top: .6rem; font-size: .85rem; font-weight: 650; color: #58099a; }
+@media (prefers-color-scheme: dark) { .post-card__body::after { color: #cc8eff; } }
+.post-card__body { flex: 1; }
+.post-card--featured { grid-column: 1 / -1; }
+@media (min-width: 800px) {
+  .post-card--featured .post-card__link { flex-direction: row; }
+  .post-card--featured .post-card__cover { width: 56%; flex-shrink: 0; aspect-ratio: auto; min-height: 320px; }
+  .post-card--featured .post-card__body { justify-content: center; padding: 2.2rem; gap: .8rem; }
+  .post-card--featured .post-card__date::before { content: "Latest · "; color: #58099a; }
+  .post-card--featured .post-card__title { font-size: 1.9rem; letter-spacing: -.035em; -webkit-line-clamp: 3; }
+  #main-space .blog .post-card--featured p.post-card__excerpt { font-size: 1.05rem; -webkit-line-clamp: 4; }
+}
+@media (min-width: 800px) and (prefers-color-scheme: dark) { .post-card--featured .post-card__date::before { color: #cc8eff; } }

@@ -7,7 +7,7 @@ layout: default
 <div class="blog">
   <ul class="post-grid">
     {% for post in paginator.posts %}
-      <li class="post-card">
+      <li class="post-card{% if forloop.first and paginator.page == 1 %} post-card--featured{% endif %}">
         <a class="post-card__link" 
           href="{{ post.url | relative_url }}" 
           data-event="blog_list_click" 
