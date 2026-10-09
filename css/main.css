@@ -1978,3 +1978,18 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   .about-article time { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) { .about-article { transition: none; } }
+
+/* ---- Modern post cards (overrides; corners stay square) ---- */
+.post-grid { gap: 1.75rem; }
+.post-card__link { border-color: rgba(128,128,128,0.18); transition: background 160ms ease, border-color 160ms ease; }
+#main-space .blog a.post-card__link { border-bottom: 1px solid rgba(128,128,128,0.18); }
+.post-card__link:hover { border-color: rgba(128,128,128,0.4); }
+.post-card__img { transition: transform 400ms ease; }
+.post-card__link:hover .post-card__img { transform: scale(1.04); }
+.post-card__body { padding: 1.3rem 1.3rem 1.5rem; gap: .5rem; }
+.post-card__date { order: -1; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+.post-card__title { font-size: 1.2rem; font-weight: 650; letter-spacing: -.02em; line-height: 1.3; margin: 0; transition: color 160ms ease; }
+.post-card__link:hover .post-card__title { color: #58099a; }
+#main-space .blog p.post-card__excerpt { margin: 0; font-size: .94rem; line-height: 1.55; color: var(--card-muted); }
+@media (prefers-color-scheme: dark) { .post-card__link:hover .post-card__title { color: #cc8eff; } }
+@media (prefers-reduced-motion: reduce) { .post-card__img, .post-card__title { transition: none; } .post-card__link:hover .post-card__img { transform: none; } }
