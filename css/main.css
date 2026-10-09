@@ -1753,3 +1753,34 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
   #main-space .blog-sidebar a:hover, #main-space .blog-sidebar .tag-cloud a.tag:hover { color: #cc8eff; }
   #main-space .blog-sidebar .tag-cloud a.tag:hover { border-color: #cc8eff; }
 }
+
+/* ---- Blog post typography & rhythm ---- */
+#main-space article.post { -webkit-font-smoothing: antialiased; }
+#main-space article.post .post-header { margin-bottom: 2.25rem; }
+#main-space article.post h1.post-title { font-size: clamp(2.1rem, 4.2vw, 3.1rem); font-weight: 700; line-height: 1.12; letter-spacing: -.04em; text-align: left; margin: 0 0 1rem; }
+#main-space article.post p.post-meta { font-size: .85rem; letter-spacing: .02em; margin: 0; }
+#main-space article.post .tags { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
+#main-space article.post .tags span { background: none; border: 1px solid rgba(128,128,128,.3); border-radius: 999px; padding: .15rem .8rem; }
+#main-space article.post .tags a:hover span { border-color: #58099a; }
+
+#main-space article.post .post-content { font-size: 1.15rem; letter-spacing: -.005em; }
+#main-space article.post .post-content p { font-size: 1em; line-height: 1.8; margin: 0 0 1.4em; color: #26262b; }
+#main-space article.post .post-content > p:first-child { font-size: 1.3em; line-height: 1.6; margin-bottom: 1.6em; }
+#main-space article.post .post-content > p:first-child strong { font-weight: 500; }
+#main-space article.post .post-content h2 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; letter-spacing: -.03em; margin: 3.25rem 0 1rem; }
+#main-space article.post .post-content h3 { font-size: 1.4rem; font-weight: 650; line-height: 1.25; letter-spacing: -.02em; margin: 2.25rem 0 .75rem; }
+#main-space article.post .post-content h4 { font-size: 1.15rem; font-weight: 650; margin: 1.75rem 0 .5rem; }
+#main-space article.post .article-hero { margin: 0 0 2.5rem; }
+#main-space article.post .post-content p img { margin-top: 2rem; margin-bottom: 2rem; }
+#main-space article.post blockquote { border-left: 3px solid #58099a; padding-left: 1.25rem; margin: 2rem 0; font-size: 1.1em; line-height: 1.7; }
+#main-space article.post .post-content a:link, #main-space article.post .post-content a:visited { font-weight: 600; border-bottom: 0; background: none; text-decoration: underline; text-decoration-color: rgba(88,9,154,.35); text-underline-offset: 3px; }
+#main-space article.post .post-content a:hover { text-decoration-color: currentColor; }
+#main-space article.post .post-bio { margin-top: 4rem; border-radius: 0; box-shadow: none; background: rgba(128,128,128,.05); border-color: rgba(128,128,128,.2); }
+@media (prefers-color-scheme: dark) {
+  #main-space article.post .post-content p { color: #e6e6ea; }
+  #main-space article.post blockquote { border-left-color: #cc8eff; }
+  #main-space article.post .post-content a:link, #main-space article.post .post-content a:visited { text-decoration-color: rgba(204,142,255,.4); }
+  #main-space article.post .tags a:hover span { border-color: #cc8eff; }
+  #main-space article.post .post-bio { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.12); }
+}
+@media (max-width: 600px) { #main-space article.post .post-content { font-size: 1.05rem; } #main-space article.post .post-content h2 { font-size: 1.6rem; margin-top: 2.5rem; } }
