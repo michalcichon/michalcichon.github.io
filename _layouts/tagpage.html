@@ -2,12 +2,12 @@
 layout: default
 ---
 {% assign posts = site.tags[page.tag] %}
-<div class="blog tag-page">
+<div class="blog">
   <h1 class="tag-page__title">#{{ page.tag }}</h1>
   <p class="tag-page__count">{{ posts.size }} post{% if posts.size != 1 %}s{% endif %} · <a href="{{ '/blog/' | relative_url }}">All posts</a></p>
   <ul class="post-grid">
     {% for post in posts %}
-      <li class="post-card">
+      <li class="post-card{% if forloop.first %} post-card--featured{% endif %}">
         <a class="post-card__link" href="{{ post.url | relative_url }}">
           {% if post.image %}
             {% assign first = post.image | slice: 0, 1 %}{% if first == '/' %}{% assign img = post.image %}{% else %}{% assign img = post.image | prepend: '/' %}{% endif %}
