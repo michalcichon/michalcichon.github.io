@@ -65,7 +65,6 @@ redirect_from:
     </div>
   </div>
 </div>
-{% if paginator.page == 1 %}
 <aside class="blog-sidebar">
 <section class="sidebar-card">
   <img src="{{ '/img/michal.jpeg' | relative_url }}" alt="Michał Cichoń" class="post-bio__avatar" loading="lazy" decoding="async">
@@ -92,5 +91,4 @@ redirect_from:
   <p><a href="https://www.linkedin.com/in/michalcichon">LinkedIn</a> · <a href="https://github.com/michalcichon">GitHub</a> · <a href="https://mastodon.social/@mcichon" rel="me">Mastodon</a> · <a href="https://x.com/{{ site.twitter_username | default: 'michal_cichon' }}" rel="me">X</a> · <a href="/feed.rss">RSS</a></p>
 </section>
 </aside>
-{% endif %}
 </div>

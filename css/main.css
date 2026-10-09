@@ -1771,9 +1771,9 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   padding: 0.75rem 1rem;
 
   color: var(--pg-text);
-  background: var(--pg-bg);
-  border: 1px solid var(--pg-border);
-  border-radius: 14px;
+  background: rgba(128,128,128,0.06);
+  border: 1px solid rgba(128,128,128,0.2);
+  border-radius: 0;
 }
 
 /* Ensure global link styles don't leak in */
@@ -1854,13 +1854,14 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   vertical-align: middle;
 }
 
-/* about-me sidebar on first blog page, wide screens only */
+/* about-me sidebar on blog pages, wide screens only */
 .blog-sidebar { display: none; }
 @media (min-width: 1000px) {
   .blog-layout:has(.blog-sidebar) { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 2rem; align-items: start; }
-  .blog-sidebar { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: 1rem; }
-  .sidebar-card { padding: 1.2rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); font-size: .95rem; }
-  .sidebar-card h3 { margin: 0 0 .5rem; }
+  .blog-sidebar { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: 1rem; padding: 1.2rem; background: rgba(128,128,128,0.08); border: 1px solid rgba(128,128,128,0.2); }
+  .sidebar-card { font-size: .95rem; }
+  .sidebar-card + .sidebar-card { padding-top: 1.25rem; border-top: 1px solid rgba(128,128,128,0.25); }
+  .sidebar-card h3 { margin: 0 0 .5rem; font-weight: 700; }
   .sidebar-card .tag { display: inline-block; margin: 0 .5rem .3rem 0; }
   .sidebar-list { margin: 0; padding-left: 1.1rem; }
   .sidebar-list li { margin-bottom: .4rem; }
