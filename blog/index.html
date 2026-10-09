@@ -16,10 +16,11 @@ layout: default
           data-content="thumb" 
           data-position="{{ forloop.index }}">
           {% if post.image %}
+            {% assign first = post.image | slice: 0, 1 %}{% if first == '/' %}{% assign img = post.image %}{% else %}{% assign img = post.image | prepend: '/' %}{% endif %}
             <div class="post-card__cover">
               <img
                 class="post-card__img"
-                src="{{ post.image | relative_url }}"
+                src="{{ img | relative_url }}"
                 alt="{{ post.image_alt | default: post.title | escape }}"
                 loading="lazy"
                 decoding="async">

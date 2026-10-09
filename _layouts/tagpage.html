@@ -10,7 +10,8 @@ layout: default
       <li class="post-card">
         <a class="post-card__link" href="{{ post.url | relative_url }}">
           {% if post.image %}
-            <div class="post-card__cover"><img class="post-card__img" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}" loading="lazy" decoding="async"></div>
+            {% assign first = post.image | slice: 0, 1 %}{% if first == '/' %}{% assign img = post.image %}{% else %}{% assign img = post.image | prepend: '/' %}{% endif %}
+            <div class="post-card__cover"><img class="post-card__img" src="{{ img | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}" loading="lazy" decoding="async"></div>
           {% else %}
             <span class="post-card__cover"></span>
           {% endif %}
