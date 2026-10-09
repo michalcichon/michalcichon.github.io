@@ -1784,3 +1784,42 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
   #main-space article.post .post-bio { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.12); }
 }
 @media (max-width: 600px) { #main-space article.post .post-content { font-size: 1.05rem; } #main-space article.post .post-content h2 { font-size: 1.6rem; margin-top: 2.5rem; } }
+
+/* ---- Modern code blocks ---- */
+#main-space article.post {
+  --code-bg: #f6f6f9; --code-line: #e4e4ea; --code-fg: #24292f; --code-inline: rgba(128,128,128,.16);
+  --tk-kw: #cf222e; --tk-type: #953800; --tk-fn: #8250df; --tk-str: #0a3069; --tk-num: #0550ae; --tk-attr: #116329; --tk-com: #6e7781;
+}
+@media (prefers-color-scheme: dark) {
+  #main-space article.post {
+    --code-bg: #111115; --code-line: #26262e; --code-fg: #e6edf3;
+    --tk-kw: #ff7b72; --tk-type: #ffa657; --tk-fn: #d2a8ff; --tk-str: #a5d6ff; --tk-num: #79c0ff; --tk-attr: #7ee787; --tk-com: #8b949e;
+  }
+}
+#main-space article.post .highlighter-rouge { margin: 1.75rem 0; }
+#main-space article.post .highlighter-rouge .highlight,
+#main-space article.post pre:not(.highlight) { background: var(--code-bg); border: 1px solid var(--code-line); border-radius: 8px; overflow: hidden; }
+#main-space article.post pre.highlight, #main-space article.post .highlight pre { background: none; border: 0; border-radius: 0; margin: 0; padding: 1.15rem 1.4rem; font-size: .875rem; line-height: 1.7; color: var(--code-fg); }
+#main-space article.post pre:not(.highlight) { padding: 1.15rem 1.4rem; margin: 1.75rem 0; font-size: .875rem; line-height: 1.7; color: var(--code-fg); }
+#main-space article.post pre code { background: none; border: 0; padding: 0; font-size: inherit; color: inherit; }
+#main-space article.post :not(pre) > code { background: var(--code-inline); border: 0; border-radius: 5px; padding: .12em .4em; font-size: .88em; color: inherit; }
+
+#main-space article.post .highlight .k, #main-space article.post .highlight .kd, #main-space article.post .highlight .kc,
+#main-space article.post .highlight .kp, #main-space article.post .highlight .kr, #main-space article.post .highlight .kn,
+#main-space article.post .highlight .ow { color: var(--tk-kw); font-weight: 500; }
+#main-space article.post .highlight .kt, #main-space article.post .highlight .nc, #main-space article.post .highlight .no { color: var(--tk-type); font-weight: 400; }
+#main-space article.post .highlight .nf, #main-space article.post .highlight .fm { color: var(--tk-fn); font-weight: 400; }
+#main-space article.post .highlight .s, #main-space article.post .highlight .s1, #main-space article.post .highlight .s2,
+#main-space article.post .highlight .sb, #main-space article.post .highlight .sc, #main-space article.post .highlight .sd,
+#main-space article.post .highlight .se, #main-space article.post .highlight .sh, #main-space article.post .highlight .si,
+#main-space article.post .highlight .sx, #main-space article.post .highlight .ss { color: var(--tk-str); }
+#main-space article.post .highlight .m, #main-space article.post .highlight .mi, #main-space article.post .highlight .mf,
+#main-space article.post .highlight .mh, #main-space article.post .highlight .mo, #main-space article.post .highlight .il { color: var(--tk-num); }
+#main-space article.post .highlight .na, #main-space article.post .highlight .nb, #main-space article.post .highlight .bp,
+#main-space article.post .highlight .nt { color: var(--tk-attr); }
+#main-space article.post .highlight .nv, #main-space article.post .highlight .vc, #main-space article.post .highlight .vg,
+#main-space article.post .highlight .vi, #main-space article.post .highlight .nn, #main-space article.post .highlight .o,
+#main-space article.post .highlight .p, #main-space article.post .highlight .w { color: var(--code-fg); font-weight: 400; }
+#main-space article.post .highlight .c, #main-space article.post .highlight .c1, #main-space article.post .highlight .cm,
+#main-space article.post .highlight .cs, #main-space article.post .highlight .cp { color: var(--tk-com); font-style: italic; font-weight: 400; }
+@media (max-width: 600px) { #main-space article.post pre.highlight, #main-space article.post .highlight pre { padding: 1rem; font-size: .8rem; } }
