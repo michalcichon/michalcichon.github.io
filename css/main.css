@@ -2008,3 +2008,15 @@ p.lead { margin-top: 0; color: var(--card-muted); }
   #main-space .blog .post-card--featured p.post-card__excerpt { font-size: 1.05rem; -webkit-line-clamp: 4; }
 }
 @media (min-width: 800px) and (prefers-color-scheme: dark) { .post-card--featured .post-card__date::before { color: #cc8eff; } }
+
+/* ---- Blog index: one horizontal row per post (tag pages keep the card grid) ---- */
+.blog:not(.tag-page) .post-grid { grid-template-columns: 1fr; gap: 1rem; }
+.blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__link { flex-direction: row; }
+.blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__cover { width: 120px; flex-shrink: 0; aspect-ratio: auto; min-height: 100%; }
+.blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__body { justify-content: center; padding: 1rem 1.2rem; gap: .35rem; }
+.blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__body::after { display: none; }
+@media (min-width: 800px) {
+  .blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__cover { width: 240px; aspect-ratio: 16 / 9; min-height: 0; }
+  .blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__body { padding: 1.2rem 1.6rem; }
+}
+.blog:not(.tag-page) .post-card:not(.post-card--featured) .post-card__cover { display: none; }
