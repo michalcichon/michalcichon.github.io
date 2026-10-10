@@ -106,6 +106,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <script>
+      (function () {
+        var mq = matchMedia('(prefers-color-scheme: dark)');
+        function apply() {
+          document.documentElement.dataset.theme = localStorage.getItem('theme') || (mq.matches ? 'dark' : 'light');
+        }
+        apply();
+        mq.addEventListener('change', apply);
+      })();
+    </script>
+
     <!-- Styles & fonts -->
     <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}?t={{ site.time | date_to_xmlschema }}">
 
@@ -150,6 +161,7 @@
             <a href="{{site.baseurl}}/about-me/"{% if u == '/about-me/' %} class="active" aria-current="page"{% endif %} data-event="nav_click" data-section="topnav" data-element="about" data-position="menu">About me</a>
             <a href="https://www.linkedin.com/in/michalcichon" data-event="nav_click" data-section="topnav" data-element="linkedin" data-position="menu">LinkedIn ↗</a>
             <a href="{{ "/feed.rss" | relative_url }}" data-event="nav_click" data-section="topnav" data-element="rss" data-position="menu">RSS</a>
+            <a href="javascript:void(0);" id="theme-toggle" role="button" onclick="toggleTheme()" title="Switch light/dark mode" aria-label="Switch light/dark mode"></a>
           </nav>
         </div>
       </header>

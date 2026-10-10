@@ -24,3 +24,11 @@ window.addEventListener("scroll", function (event) {
         closeMenuIfOpened();
     }
 });
+
+function toggleTheme() {
+    var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    document.documentElement.dataset.theme = next;
+    var g = document.querySelector('iframe.giscus-frame');
+    if (g) g.contentWindow.postMessage({ giscus: { setConfig: { theme: next === 'dark' ? 'dark_dimmed' : 'light' } } }, 'https://giscus.app');
+}
