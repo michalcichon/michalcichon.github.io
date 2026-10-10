@@ -22,7 +22,7 @@
 <!-- Optional: auto light/dark -->
 <script>
   (function () {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDark = document.documentElement.dataset.theme === 'dark';
     const el = document.querySelector('#comments script[src*="giscus.app"]');
     if (el) el.setAttribute('data-theme', prefersDark ? 'dark_dimmed' : 'light');
   })();
