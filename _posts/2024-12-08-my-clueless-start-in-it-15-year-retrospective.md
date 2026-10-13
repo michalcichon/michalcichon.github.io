@@ -116,7 +116,7 @@ The experience taught me that technical ability is only part of becoming a good 
 
 ## Final thoughts
 
-When I work with junior developers today, I often spot that same quiet panic I felt 15 years ago.
+When I work with junior developers today, I sometimes recognize the same fear of looking incompetent that I felt at the beginning of my career.
 
 Inexperienced engineers rarely fail because they lack raw intelligence or technical capacity. They fail because they are terrified of looking incompetent. They would rather suffer in silence, burn themselves out, and guess in the dark than raise their hand and ask for direction.
 
