@@ -104,7 +104,17 @@ If I were handed that same vague, messy project today, my approach would be enti
 * **I build in public and deliver incrementally.** Instead of a multi-month "big bang" rewrite where everyone sits in the dark waiting for a grand reveal, I push small, verifiable changes early. If a project is going off the rails, everyone needs to see it in week two, not month three.
 * **I protect my boundaries and my health.** The most dangerous impulse of an eager developer is trying to compensate for broken management by burning personal health. I no longer hide "learning time" or quietly absorb impossible demands. Raising red flags early isn't stepping out of line—it is a core responsibility of an engineer.
 
-## Looking Back at the "Clueless" Juniors We Were
+## What This Experience Taught Me About Inexperienced Developers
+
+Over the past 15 years, I've worked with developers at all stages of their careers. Some juniors learned quickly and delivered excellent results from the start. Others needed more guidance—and that's perfectly normal.
+
+Looking back, I realize how much a little guidance could have changed my experience. Someone could have introduced me to basic tools like version control, explained why working late into the night wasn't a sustainable solution, encouraged me to challenge questionable decisions, and helped me break a large project into smaller tasks with clear milestones.
+
+Perhaps most importantly, someone could have helped me recognize when a project was too large or poorly defined for one inexperienced developer to handle alone.
+
+The experience taught me that technical ability is only part of becoming a good engineer. Knowing how to ask for help, question assumptions, manage scope, and communicate risks matters just as much. These are skills that experienced colleagues can help juniors develop—often before a difficult experience turns into a painful failure.
+
+## Final thoughts
 
 When I work with junior developers today, I often spot that same quiet panic I felt 15 years ago.
 
