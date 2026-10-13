@@ -94,7 +94,7 @@ Instead, a few days later, I received an email from the CEO informing me that wh
 
 I even considered giving the money back, feeling like I had let them down so badly. Thankfully, several wiser people advised me against it.
 
-### What That Failure Taught Me
+## What That Failure Taught Me
 
 It took me years to untangle what actually happened that summer. As a beginner, it’s easy to internalize systemic breakdowns as personal flaws. I assumed I failed because I wasn't smart enough or didn't work hard enough. Today, I see it for what it was: a complete collapse of communication, scope management, and professional boundaries.
 
@@ -104,7 +104,7 @@ If I were handed that same vague, messy project today, my approach would be enti
 * **I build in public and deliver incrementally.** Instead of a multi-month "big bang" rewrite where everyone sits in the dark waiting for a grand reveal, I push small, verifiable changes early. If a project is going off the rails, everyone needs to see it in week two, not month three.
 * **I protect my boundaries and my health.** The most dangerous impulse of an eager developer is trying to compensate for broken management by burning personal health. I no longer hide "learning time" or quietly absorb impossible demands. Raising red flags early isn't stepping out of line—it is a core responsibility of an engineer.
 
-### Looking Back at the "Clueless" Juniors We Were
+## Looking Back at the "Clueless" Juniors We Were
 
 When I work with junior developers today, I often spot that same quiet panic I felt 15 years ago.
 
