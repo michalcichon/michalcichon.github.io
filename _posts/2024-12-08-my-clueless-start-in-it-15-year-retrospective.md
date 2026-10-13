@@ -92,32 +92,27 @@ I expected the feedback wouldn’t be perfect and assumed I’d have a few thing
 
 Instead, a few days later, I received an email from the CEO informing me that what I had delivered was in such poor condition that it wasn’t worth fixing and the CMS would need to be completely rewritten by another developer. I didn’t receive payment for the next month, but they also didn’t ask me to return the money I had already been paid for the three weeks I reported.
 
-I even considered giving the money back, feeling like I had let them down so badly, but several people advised me against it.
+I even considered giving the money back, feeling like I had let them down so badly. Thankfully, several wiser people advised me against it.
 
-## What Did This Experience Teach Me?
+### What That Failure Taught Me
 
-First and foremost, if I were to take on a similar project today, I would spend the first few days fully focused on gathering requirements instead of trying to figure everything out on my own. This would involve reaching out to people who worked with the CMS daily, as well as decision-makers who had chosen to fund the project. It took me a long time to realize that my job wasn’t just about writing code. I also learned the importance of respecting my own time, valuing others’ time, ensuring the quality of the code I deliver, and taking care of my health.
+It took me years to untangle what actually happened that summer. As a beginner, it’s easy to internalize systemic breakdowns as personal flaws. I assumed I failed because I wasn't smart enough or didn't work hard enough. Today, I see it for what it was: a complete collapse of communication, scope management, and professional boundaries.
 
-Secondly, I would push for much greater transparency in project management. Since there was no willingness from “higher-ups” to regularly monitor progress, I should have proposed implementing a tool for tracking tasks so that progress would be visible and issues could be addressed earlier.
+If I were handed that same vague, messy project today, my approach would be entirely different—not because I carry a tidier checklist, but because my relationship with risk and work has fundamentally changed:
 
-Thirdly, the pace I imposed on myself often left me dissatisfied with the quality of what I delivered. I secretly hoped for a “second chance” to fix the mistakes.
+* **I stop moving when the scope is invisible.** Back then, I believed my job was to figure everything out in isolation. Today, if requirements are ambiguous, I don't hide in my room to guess—I pull stakeholders, editors, and decision-makers into a conversation before writing a single line of code.
+* **I build in public and deliver incrementally.** Instead of a multi-month "big bang" rewrite where everyone sits in the dark waiting for a grand reveal, I push small, verifiable changes early. If a project is going off the rails, everyone needs to see it in week two, not month three.
+* **I protect my boundaries and my health.** The most dangerous impulse of an eager developer is trying to compensate for broken management by burning personal health. I no longer hide "learning time" or quietly absorb impossible demands. Raising red flags early isn't stepping out of line—it is a core responsibility of an engineer.
 
-This project had many shortcomings. It actually took me a few years to realize that my failure wasn’t solely due to my lack of competence but also to the way the project was managed, the decisions that were made, and how communication was handled (which, back then, relied mostly on email).
+### Looking Back at the "Clueless" Juniors We Were
 
-In summary:
-- **Set expectations upfront**: Define what both sides expect, such as the amount of work the investor can afford and the timeline for delivering the project.
-- **Gather requirements**: Identify the problems users face and estimate solutions based on those insights.
-- **Plan milestones**: After collecting requirements and expectations, set milestones or discuss reducing the scope of work if necessary.
-- **Phased implementation**: The new CMS could have been rolled out in stages, allowing part of the editorial work to continue in the old CMS while key, problematic tasks were handled in the new CMS.
-- **Collaboration improvements**: Despite having two programmers, opportunities like regular code reviews were missed. These could have improved code quality and facilitated knowledge sharing.
-- **Undefined deadlines**: A lack of clear deadlines or specific expectations created unnecessary stress and uncertainty.
-- Most likely, the decision to use an existing CMS from another portal wasn’t the best idea. This decision should have been challenged, and alternatives considered—such as implementing the problematic functionalities from scratch or performing a thorough overhaul of the existing CMS, which could also have been done in phases.
+When I work with junior developers today, I often spot that same quiet panic I felt 15 years ago.
 
-## What Does This Experience Teach Me About Young People Without Experience?
+Inexperienced engineers rarely fail because they lack raw intelligence or technical capacity. They fail because they are terrified of looking incompetent. They would rather suffer in silence, burn themselves out, and guess in the dark than raise their hand and ask for direction.
 
-Over the past 15 years, I’ve worked with many developers, both juniors and those with over 20 years of experience. There were juniors who learned very quickly and delivered excellent results from the start, but that’s not always the case.
+As experienced engineers, our job isn't just to review code or assign tickets. It’s to build an environment where asking questions is expected, where unrealistic expectations are challenged openly, and where no one feels forced to sacrifice their sleep to mask a broken process.
 
-If I had someone back then to teach me good practices, advise me on the right tools—like for example using a code repository—explain that working late into the night isn’t a great idea, encourage me to challenge others’ ideas when necessary (like for example using the “new” CMS), and help me think about breaking a large task into smaller parts with clear milestones, this project most likely wouldn’t have ended in such a failure.
+Looking back, that summer was painful, exhausting, and embarrassing. But it shaped the way I think, communicate, and lead today. If sharing that messy reality helps even one developer set a boundary or ask for help a little sooner, every cringeworthy memory was worth it.
 
 ## Final thoughts
 
