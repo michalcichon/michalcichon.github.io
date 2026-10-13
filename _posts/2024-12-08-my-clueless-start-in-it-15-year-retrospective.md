@@ -113,11 +113,3 @@ Inexperienced engineers rarely fail because they lack raw intelligence or techni
 As experienced engineers, our job isn't just to review code or assign tickets. It’s to build an environment where asking questions is expected, where unrealistic expectations are challenged openly, and where no one feels forced to sacrifice their sleep to mask a broken process.
 
 Looking back, that summer was painful, exhausting, and embarrassing. But it shaped the way I think, communicate, and lead today. If sharing that messy reality helps even one developer set a boundary or ask for help a little sooner, every cringeworthy memory was worth it.
-
-## Final thoughts
-
-Some people, especially those without much experience, might prefer to try solving a problem on their own rather than seeking help from others. As experienced engineers, we sometimes need to take the initiative and encourage our younger colleagues to adopt a more proactive approach.
-
-No one is perfect, especially at the beginning. However, giving someone with the potential to grow a few good tips on how to work better often yields results much faster than you might expect.
-
-Looking back, I realize how valuable those early struggles were — not because they were pleasant, but because they shaped the way I think, learn, and collaborate today. If sharing my mistakes helps even one person avoid a detour or gain confidence in asking for help, then it’s worth every cringeworthy memory.
