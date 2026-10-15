@@ -2,11 +2,11 @@
 layout: post
 title:  "What If All Our Code Goes in .gitignore?"
 description: "What if AI makes code cheap enough to treat as a build artifact, and specifications, tests and contracts become the thing we maintain?"
-date:   2026-10-16 06:00:00 +0200
+date:   2026-10-15 15:00:00 +0200
 categories: software-development
 keywords: ai, llm, ai-agents, code-generation, specifications, testing, software-engineering, code-review, reproducible-builds, engineering-practices
 tags: ai engineering programming
-image: "assets/2026-10-16/cover.jpg" # Image for RSS
+image: "assets/2026-10-15/cover.jpg" # Image for RSS
 comments: true
 published: true
 ---
@@ -14,7 +14,7 @@ published: true
 **Imagine ‌opening ‌a ‌pull request that doesn't change a single line of code. It just updates a specification, a couple of tests, maybe some instructions for an AI agent. And when you merge it, the code is automatically generated, tested and deployed. Then you check out the repository again, and you don't see the implementation, because the entire `src/` directory is ignored by `.gitignore`. Sounds a bit scary, right?**
 
 <div class="article-hero">
-  <img src="{{site.url}}/assets/2026-10-16/cover.jpg" alt="Pieter Bruegel the Elder - The Tower of Babel (Rotterdam)">
+  <img src="{{site.url}}/assets/2026-10-15/cover.jpg" alt="Pieter Bruegel the Elder - The Tower of Babel (Rotterdam)">
 </div>
 
 ## We Have Always Cared About the Code
