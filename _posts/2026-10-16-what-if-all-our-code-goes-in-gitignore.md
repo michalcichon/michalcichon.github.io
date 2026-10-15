@@ -2,7 +2,7 @@
 layout: post
 title:  "What If All Our Code Goes in .gitignore?"
 description: "What if AI makes code cheap enough to treat as a build artifact, and specifications, tests and contracts become the thing we maintain?"
-date:   2026-10-15 12:00:00 +0200
+date:   2026-10-16 06:00:00 +0200
 categories: software-development
 keywords: ai, llm, ai-agents, code-generation, specifications, testing, software-engineering, code-review, reproducible-builds, engineering-practices
 tags: ai engineering programming
