@@ -11,7 +11,7 @@ comments: true
 published: true
 ---
 
-**Imagine ‌opening ‌a ‌pull request that doesn't change a single line of code. It just updates a specification, a couple of tests, maybe some instructions for an AI agent. And when you merge it, the code is automatically generated, tested and deployed. Then you check out the repository again, you don't see the implementation, because the entire `src/` directory is ignored by `.gitignore`. Sounds a bit scary, right?**
+**Imagine ‌opening ‌a ‌pull request that doesn't change a single line of code. It just updates a specification, a couple of tests, maybe some instructions for an AI agent. And when you merge it, the code is automatically generated, tested and deployed. Then you check out the repository again, and you don't see the implementation, because the entire `src/` directory is ignored by `.gitignore`. Sounds a bit scary, right?**
 
 <div class="article-hero">
   <img src="{{site.url}}/assets/2026-10-16/cover.jpg" alt="Pieter Bruegel the Elder - The Tower of Babel (Rotterdam)">
