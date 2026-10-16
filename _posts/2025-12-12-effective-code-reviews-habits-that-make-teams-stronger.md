@@ -8,6 +8,7 @@ keywords: code review, pull requests, software quality, engineering practices, d
 tags: programming
 image: "assets/2025-12-12/cover.jpeg" # Image for RSS
 comments: true
+featured: true
 ---
 
 **A healthy code review culture can transform a team. It improves code quality, spreads knowledge, and helps developers grow. But good code reviews don’t just happen. They come from habits, collaboration, and curiosity. Today I would like to share a few practical guidelines that can make your team’s review process smoother, more meaningful, and far more effective.**

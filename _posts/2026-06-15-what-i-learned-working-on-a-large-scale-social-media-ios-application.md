@@ -9,6 +9,7 @@ tags: processes ios engineering
 image: "assets/2026-06-15/cover.jpg" # Image for RSS
 comments: true
 published: true
+featured: true
 ---
 
 **I’ve been working as an iOS developer for over a decade. A few months ago, I decided to move into a different role. The transition was quickly followed by a demanding new project, so I put those thoughts aside for a while. Now, with some distance and perspective, I’d like to look back on the past few years and the lessons they taught me.**
