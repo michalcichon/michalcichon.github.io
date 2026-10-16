@@ -8,6 +8,7 @@ keywords: programming, vibe-coding, games, memory game, memo game
 tags: programming ai
 image: "assets/2025-10-01/thumbnail.png" # Image for RSS
 comments: true
+featured: true
 ---
 
 **Coding without actually writing any code sounds tempting — especially for those who don’t know how to code. It also seems like a nice approach to prototyping when we’re not familiar or proficient with a given technology but need quick results.**
