@@ -18,7 +18,7 @@ layout: default
       <div class="tags">
         {% for tag in page.tags %}
           {% capture tag_name %}{{ tag }}{% endcapture %}
-          <a href="/tag/{{ tag_name }}"><span class="highligher-rouge">#{{ tag_name }}</span></a>
+          <a href="/tag/{{ tag_name }}" data-tag="{{ tag_name }}"><span class="highligher-rouge">#{{ tag_name }}</span></a>
         {% endfor %}
       </div>
   </header>

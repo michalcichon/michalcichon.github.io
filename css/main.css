@@ -1786,3 +1786,28 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 /* Theme toggle: shows the icon of the mode you'd switch to */
 #theme-toggle::before { content: "\1F319"; }
 :where(html[data-theme="dark"]) #theme-toggle::before { content: "\2600\FE0F"; }
+
+/* Per-tag colour pairs: light bg/fg, dark bg/fg (post header only) */
+#main-space .tags a span { background-color: var(--tag-bg, rgba(100,100,100,.1)); color: var(--tag-fg, inherit); }
+.tags a[data-tag="ai"] { --tag-bg: #ede9fe; --tag-fg: #5b21b6; }
+.tags a[data-tag="backend"] { --tag-bg: #e0f2fe; --tag-fg: #075985; }
+.tags a[data-tag="computing"] { --tag-bg: #e2e8f0; --tag-fg: #334155; }
+.tags a[data-tag="engineering"] { --tag-bg: #ffedd5; --tag-fg: #9a3412; }
+.tags a[data-tag="events"] { --tag-bg: #fce7f3; --tag-fg: #9d174d; }
+.tags a[data-tag="ios"] { --tag-bg: #dbeafe; --tag-fg: #1e40af; }
+.tags a[data-tag="miscellaneous"] { --tag-bg: #f3f4f6; --tag-fg: #374151; }
+.tags a[data-tag="processes"] { --tag-bg: #fef9c3; --tag-fg: #854d0e; }
+.tags a[data-tag="programming"] { --tag-bg: #dcfce7; --tag-fg: #166534; }
+.tags a[data-tag="retro-gaming"] { --tag-bg: #ccfbf1; --tag-fg: #115e59; }
+.tags a[data-tag="tools"] { --tag-bg: #fee2e2; --tag-fg: #991b1b; }
+html[data-theme="dark"] .tags a[data-tag="ai"] { --tag-bg: #3b2a6b; --tag-fg: #ddd6fe; }
+html[data-theme="dark"] .tags a[data-tag="backend"] { --tag-bg: #12384f; --tag-fg: #bae6fd; }
+html[data-theme="dark"] .tags a[data-tag="computing"] { --tag-bg: #2d3748; --tag-fg: #cbd5e1; }
+html[data-theme="dark"] .tags a[data-tag="engineering"] { --tag-bg: #4d2a14; --tag-fg: #fed7aa; }
+html[data-theme="dark"] .tags a[data-tag="events"] { --tag-bg: #4d1d38; --tag-fg: #fbcfe8; }
+html[data-theme="dark"] .tags a[data-tag="ios"] { --tag-bg: #1e3159; --tag-fg: #bfdbfe; }
+html[data-theme="dark"] .tags a[data-tag="miscellaneous"] { --tag-bg: #2f3540; --tag-fg: #d1d5db; }
+html[data-theme="dark"] .tags a[data-tag="processes"] { --tag-bg: #463a12; --tag-fg: #fef08a; }
+html[data-theme="dark"] .tags a[data-tag="programming"] { --tag-bg: #173d27; --tag-fg: #bbf7d0; }
+html[data-theme="dark"] .tags a[data-tag="retro-gaming"] { --tag-bg: #134240; --tag-fg: #99f6e4; }
+html[data-theme="dark"] .tags a[data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecaca; }
