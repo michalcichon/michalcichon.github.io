@@ -1812,3 +1812,5 @@ html[data-theme="dark"] [data-tag="programming"] { --tag-bg: #173d27; --tag-fg: 
 html[data-theme="dark"] [data-tag="retro-gaming"] { --tag-bg: #134240; --tag-fg: #99f6e4; }
 html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecaca; }
 .tag-page__title { color: var(--tag-fg, inherit); }
+#main-space .blog-sidebar .tag-cloud a.tag[data-tag] { color: var(--tag-fg, var(--card-muted)); border-color: var(--tag-fg, rgba(128,128,128,.3)); }
+#main-space .blog-sidebar .tag-cloud a.tag[data-tag]:hover { background-color: var(--tag-bg, transparent); }
