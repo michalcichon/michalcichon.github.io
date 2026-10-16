@@ -86,7 +86,7 @@
 
     <!-- Robots & RSS -->
     <meta name="robots" content="index,follow,max-image-preview:large">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ '/feed.rss' | absolute_url }}" />
+    <link rel="alternate" type="application/atom+xml" title="RSS Feed" href="{{ '/feed.xml' | absolute_url }}" />
 
     <!-- Icons -->
     <link rel="icon" type="image/png" sizes="64x64" href="{{ '/icon.png' | absolute_url }}">
@@ -160,7 +160,7 @@
             <a href="{{site.baseurl}}/blog/"{% if u contains '/blog/' or page.layout == 'post' or page.layout == 'tagpage' %} class="active" aria-current="page"{% endif %} data-event="nav_click" data-section="topnav" data-element="blog" data-position="menu">Blog</a>
             <a href="{{site.baseurl}}/about-me/"{% if u == '/about-me/' %} class="active" aria-current="page"{% endif %} data-event="nav_click" data-section="topnav" data-element="about" data-position="menu">About me</a>
             <a href="https://www.linkedin.com/in/michalcichon" data-event="nav_click" data-section="topnav" data-element="linkedin" data-position="menu">LinkedIn ↗</a>
-            <a href="{{ "/feed.rss" | relative_url }}" data-event="nav_click" data-section="topnav" data-element="rss" data-position="menu">RSS</a>
+            <a href="{{ "/feed.xml" | relative_url }}" data-event="nav_click" data-section="topnav" data-element="rss" data-position="menu">RSS</a>
             <a href="javascript:void(0);" id="theme-toggle" role="button" onclick="toggleTheme()" title="Switch light/dark mode" aria-label="Switch light/dark mode"></a>
           </nav>
         </div>
@@ -179,7 +179,7 @@
           <a href="https://github.com/michalcichon">GitHub</a>
           <a href="https://x.com/{{ site.twitter_username }}" rel="me">X</a>
           <a href="https://mastodon.social/@mcichon" rel="me">Mastodon</a>
-          <a href="{{ '/feed.rss' | relative_url }}">RSS</a>
+          <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
         </nav>
       </div>
     </footer>
