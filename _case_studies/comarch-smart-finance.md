@@ -9,6 +9,9 @@ links:
   - title: Learn more
     url: https://www.comarch.pl/finanse/bankowosc/
     external: true
+images:
+  - src: /assets/case-studies/comarch-ios/appstore.png
+    alt: Comarch Smart Finance iOS banking app
 ---
 ## Context
 A banking application deployed at Splitska Banka and at one of the biggest banks in Poland. I was involved from 2012 to 2016.

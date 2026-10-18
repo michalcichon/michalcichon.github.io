@@ -9,6 +9,13 @@ links:
   - title: Comarch case study
     url: https://www.comarch.com/finance/case-studies/comarch-personal-finance-management-in-unicredit/
     external: true
+images:
+  - src: /assets/case-studies/comarch-pfm/pfm-1.png
+    alt: Comarch Personal Finance Management screen 1
+  - src: /assets/case-studies/comarch-pfm/pfm-2.png
+    alt: Comarch Personal Finance Management screen 2
+  - src: /assets/case-studies/comarch-pfm/pfm-3.png
+    alt: Comarch Personal Finance Management screen 3
 ---
 ## Context
 The frontend was an Angular single-page app optimized for banking data visualization. The backend, in Spring and Hibernate, categorized bank transactions. I was involved from 2011 to 2013.
