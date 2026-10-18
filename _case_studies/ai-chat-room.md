@@ -9,6 +9,9 @@ links:
   - title: View on GitHub
     url: https://github.com/michalcichon/ai-chat-room
     external: true
+images:
+  - src: /assets/case-studies/ai-chat-room/ai-chat-room.png
+    alt: aiChatRoom terminal chat with people and AI agents in a channel
 ---
 ## Goal
 I wanted a simple but interesting greenfield project, started from scratch.
