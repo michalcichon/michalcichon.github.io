@@ -8,9 +8,6 @@ stack: [Objective-C, Swift, MVVM + routers, Realm, fastlane, Bitrise]
 links:
   - title: Related post
     url: /software-development/2026/06/15/what-i-learned-working-on-a-large-scale-social-media-ios-application.html
-images:
-  - src: /assets/case-studies/social-app/social-app.jpg
-    alt: Geolocation-based social app for iOS
 ---
 ## Context
 The app has more than 3 million users, 5 million at its peak, mostly in the DACH and MENA regions. I joined in January 2018 and stayed until October 2026.
