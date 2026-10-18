@@ -34,6 +34,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+collections:
+  case_studies:
+    output: true
+    permalink: /case-studies/:name/
+
 paginate: 12
 paginate_path: "/blog/:num/"
 
