@@ -32,3 +32,17 @@ function toggleTheme() {
     var g = document.querySelector('iframe.giscus-frame');
     if (g) g.contentWindow.postMessage({ giscus: { setConfig: { theme: next === 'dark' ? 'dark_dimmed' : 'light' } } }, 'https://giscus.app');
 }
+
+// Case study images open full screen in a native <dialog>
+document.addEventListener("click", function (e) {
+    var lightbox = document.querySelector(".case-lightbox");
+    if (!lightbox) return;
+    var shot = e.target.closest(".case-shot img");
+    if (shot) {
+        lightbox.querySelector("img").src = shot.src;
+        lightbox.querySelector("img").alt = shot.alt;
+        lightbox.showModal();
+    } else if (e.target.closest(".case-lightbox")) {
+        lightbox.close();
+    }
+});

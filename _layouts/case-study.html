@@ -15,8 +15,9 @@ layout: default
   </div>
   {% if page.images %}
   <section class="case-shots">
-    {% for i in page.images %}<img src="{{ i.src | relative_url }}" alt="{{ i.alt }}" loading="lazy">{% endfor %}
+    {% for i in page.images %}<button type="button" class="case-shot" data-event="ui_click" data-section="case_study" data-element="image"><img src="{{ i.src | relative_url }}" alt="{{ i.alt }}" loading="lazy"></button>{% endfor %}
   </section>
+  <dialog class="case-lightbox"><img alt=""></dialog>
   {% endif %}
   <section class="case-body">{{ content }}</section>
   {% if page.links %}
