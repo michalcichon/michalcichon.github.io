@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="about">
+  <div class="about-hero">
+    <div>
+      <div class="about-eyebrow"><a href="{{ '/case-studies/' | relative_url }}" data-event="ui_click" data-section="case_study" data-element="back">Case studies</a></div>
+      <h1 class="case-title">{{ page.title }}</h1>
+      <p class="about-intro">{{ page.summary }}</p>
+      <div class="about-tags">
+        <span>{{ page.period }}</span>
+        {% for t in page.stack %}<span>{{ t }}</span>{% endfor %}
+      </div>
+    </div>
+  </div>
+  <section class="case-body">{{ content }}</section>
+  {% if page.links %}
+  <section class="about-nosep">
+    <div class="about-links">
+      {% for l in page.links %}
+        {% if l.external %}<a href="{{ l.url }}" target="_blank" rel="noreferrer" data-event="ui_click" data-section="case_study" data-element="link">{{ l.title }} ↗</a>
+        {% else %}<a href="{{ l.url | relative_url }}" data-event="ui_click" data-section="case_study" data-element="link">{{ l.title }} →</a>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>

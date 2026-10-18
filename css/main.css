@@ -1815,3 +1815,12 @@ html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecac
 .tag-page__title { color: var(--tag-fg, inherit); }
 #main-space .blog-sidebar .tag-cloud a.tag[data-tag] { color: var(--tag-fg, var(--card-muted)); border-color: var(--tag-fg, rgba(128,128,128,.3)); }
 #main-space .blog-sidebar .tag-cloud a.tag[data-tag]:hover { background-color: var(--tag-bg, transparent); }
+
+/* ---- Case studies ---- */
+.about h1.case-title { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+.case-body { max-width: 760px; }
+.case-body h2 { font-size: 1.4rem; margin: 2em 0 .5em; letter-spacing: -.03em; }
+.case-body h2:first-child { margin-top: 0; }
+.case-body p, .case-body li { color: var(--a-body); }
+.case-body ul { padding-left: 1.2em; }
+.case-body li { margin-bottom: .4em; }

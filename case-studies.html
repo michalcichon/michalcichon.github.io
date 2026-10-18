@@ -1,0 +1,24 @@
+---
+layout: default
+title: Case studies
+description: "Selected projects by Michał Cichoń: a social app for millions of users, banking apps, and an AI chat room."
+permalink: /case-studies/
+---
+<div class="about">
+  <div class="about-hero">
+    <div>
+      <div class="about-eyebrow">Selected work</div>
+      <h1 class="case-title">Case studies</h1>
+      <p class="about-intro">A few projects I learned the most from, and what I did in each.</p>
+    </div>
+  </div>
+  <section class="about-nosep">
+    {% assign studies = site.case_studies | sort: "order" %}
+    {% for c in studies %}
+    <div class="about-project">
+      <div><h3>{{ c.title }}</h3><p>{{ c.summary }}</p></div>
+      <a href="{{ c.url | relative_url }}" data-event="ui_click" data-section="case_studies" data-element="case" data-position="{{ forloop.index }}">Read case study →</a>
+    </div>
+    {% endfor %}
+  </section>
+</div>
