@@ -1824,3 +1824,7 @@ html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecac
 .case-body p, .case-body li { color: var(--a-body); }
 .case-body ul { padding-left: 1.2em; }
 .case-body li { margin-bottom: .4em; }
+
+/* Optional screenshots on case study pages */
+.case-shots { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; margin: 0 0 2rem; }
+.case-shots img { max-width: 100%; max-height: 520px; width: auto; height: auto; border-radius: 12px; border: 1px solid var(--a-line, rgba(128,128,128,.25)); }

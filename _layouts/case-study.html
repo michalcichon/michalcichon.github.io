@@ -13,6 +13,11 @@ layout: default
       </div>
     </div>
   </div>
+  {% if page.images %}
+  <section class="case-shots">
+    {% for i in page.images %}<img src="{{ i.src | relative_url }}" alt="{{ i.alt }}" loading="lazy">{% endfor %}
+  </section>
+  {% endif %}
   <section class="case-body">{{ content }}</section>
   {% if page.links %}
   <section class="about-nosep">
