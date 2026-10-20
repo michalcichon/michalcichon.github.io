@@ -102,10 +102,6 @@
     <link rel="me" href="https://x.com/{{ site.twitter_username | default: 'michal_cichon' }}">
     <meta name="fediverse:creator" content="@mcichon@mastodon.social">
 
-    <!-- Performance (fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <script>
       (function () {
         var mq = matchMedia('(prefers-color-scheme: dark)');
@@ -165,7 +161,7 @@
     {% endif %}
 
     <!-- JS -->
-    <script src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
+    <script defer src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
   </head>
   <body>
     <div class="wrapper">
