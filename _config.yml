@@ -20,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michalcichon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: michal_cichon
 github_username:  michalcichon
+linkedin_username: michalcichon
 keywords: Michal, Cichon, Krakow, iOS, CocoaTouch, Swift, Objective-C, Architecture, AI, Workflow, Agent-based Systems, Software Engineering, Software Architecture, Mobile Development, Mobile Systems at Scale
 
 # Build settings
