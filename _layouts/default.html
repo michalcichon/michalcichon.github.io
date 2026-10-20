@@ -114,7 +114,7 @@
     </script>
 
     <!-- Styles & fonts -->
-    <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}?t={{ site.time | date_to_xmlschema }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}">
 
     <!-- Article JSON-LD -->
     {% if page.layout == 'post' or page.collection == 'posts' %}
@@ -161,7 +161,7 @@
     {% endif %}
 
     <!-- JS -->
-    <script defer src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
+    <script defer src="{{ '/js/main.min.js' | relative_url }}"></script>
   </head>
   <body>
     <div class="wrapper">
