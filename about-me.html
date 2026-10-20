@@ -86,6 +86,26 @@ permalink: /about-me/
     </a>
   </section>
 
+  <section id="recommendations">
+    <div class="about-head">
+      <div class="about-label">05 / Recommendations</div>
+      <div>
+        <h2>What colleagues say.</h2>
+        <p class="about-copy">Words from designers, engineers, and managers I’ve worked with over the years.</p>
+      </div>
+    </div>
+    <div class="about-quotes">
+      {% for r in site.data.recommendations %}
+      <figure class="about-quote">
+        <blockquote>
+          {% for p in r.text %}<p>{{ p }}</p>{% endfor %}
+        </blockquote>
+        <figcaption><strong>{{ r.name }}</strong><span>{{ r.role }}{% if r.date %} · {{ r.date }}{% endif %}</span></figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+
   <section id="contact" class="about-nosep">
     <div class="about-contact">
       <div>

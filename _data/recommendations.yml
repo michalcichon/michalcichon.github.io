@@ -1,0 +1,55 @@
+- name: Tero Saarinen
+  role: Product Designer at ui.works®
+  date: September 28, 2026
+  text:
+    - "Michał brings experimental, fun UI ideas to life, and he knows when to challenge them, offering alternatives based on performance and technical feasibility. He's equally invested in shipping new features and holding on to high coding standards, and he balances the two well. He's a great sparring partner, whether for early feasibility checks or reviewing technical documentation. In refinement meetings he proactively fills gaps and makes sure technical scope is clear before implementation starts."
+    - "During our collaboration, he was an iOS engineer who actively shaped the code base to match the design system built in Figma. He was a key contributor to a real two-way exchange between design and engineering, ensuring that Figma and the implementation shared the same variable names, and that common components behaved as specified."
+- name: Dmitry Miller
+  role: Software Engineer at Jodel
+  date: November 27, 2025
+  text:
+    - "I had the pleasure of working with Michal for more than three years, and he is a highly knowledgeable mobile software developer. His deep, hands-on understanding of the iOS ecosystem — from UIKit to SwiftUI, as well as performance optimization and architectural best practices — consistently shows in the quality of his work. Michal approaches every task with precision, ownership, and a strong focus on delivering the best possible solution."
+- name: Mariam Abouelfadl
+  role: Head of Mobile at Jodel
+  date: November 7, 2025
+  text:
+    - "I had the pleasure of working with Michał for the past 4 years during part of his time as a Senior iOS Engineer at Jodel. I was his manager, and I can confidently say he is one of the strongest mobile engineers I’ve worked with. His depth of technical expertise consistently elevated the quality of our product."
+    - "Beyond his technical skills, what really sets Michał apart is his ownership, reliability, and ability to collaborate across functions. He consistently took on complex features, navigated ambiguity with ease, and delivered clean, scalable solutions. He was also a go-to resource for the team — always willing to mentor, review code thoughtfully, and share knowledge generously."
+    - "He was a true asset to our team. Any company would be lucky to have him — he brings not only engineering excellence but also humility, professionalism, and a positive attitude that uplifts everyone around him."
+    - "I wholeheartedly recommend Michał. He will immediately add value wherever he goes."
+- name: Igor
+  role: Software Engineer
+  date: October 26, 2025
+  text:
+    - "It was great working with Michal on our iOS project. He is a skilled and thoughtful developer who writes clean, reliable code and genuinely cares about building great user experiences. During our time working together, he consistently contributed great ideas in code reviews, and was always willing to take ownership of complex tasks. Any team would be lucky to have him."
+- name: Mohammad Khasawneh
+  role: iOS Engineer at Jodel
+  date: October 23, 2025
+  text:
+    - "Michal was my first iOS team lead and mentor, and I couldn't have asked for any better. Patient and very approachable, as well as always willing to share his knowledge. I learned so much from him be it technical or soft skills."
+- name: Shadi Altarsha
+  role: Senior Software Engineer at Reddit Infra
+  date: March 2, 2022
+  text:
+    - "I have worked very closely with Michal during my years at Jodel. A very smart and professional engineer. Always able to discover very tricky edge cases. Michal shipped a lot of great and big features which many iOS users are enjoying daily. Michal's technical solutions are very well engineered and clean. Was great working with Michal, and definitely would like to do it again."
+- name: Luís Rodrigues Soares
+  role: Lead Software Engineer at HERE Technologies
+  date: June 26, 2019
+  text:
+    - "I had the pleasure of working with Michał Cichoń during my tenure as CTO at Jodel, from 2018 to 2019. Michał worked as a Software Engineer in Jodel's iOS Team, a role which he performed to the best of my satisfaction. As a Software Engineer he participated in all aspects of Jodel's software development processes and always delivered work of an exceptional quality."
+    - "Perhaps the trait I enjoyed the most about working with Michał was his balanced approach to Software Engineering work. He always delivered high quality features with a great attention to detail, but always managed not to get lost in the parts which were not fundamental either to the problem at hand or to the user."
+    - "Besides his work in application development, I would also highlight Michał's contributions to technical architectural discussions and product refinement meetings, where he always maintained a bias for solutions which were sustainable and yet required a low effort to bring to production."
+    - "A great Engineer to work with, always available and ready to help in any circumstance, it was just a pleasure to have had Michał in my team; not only do I recommend Michał and his work, I would love the opportunity to work with him again."
+- name: Jan Freisler
+  role: GenAI Program Change Manager at Aptiv
+  date: December 19, 2017
+  text:
+    - "We have met with Michal when I was creating a new mobile department at finances sector at Comarch. He always was marking out as a great expert and reliable team member. Gradually he became a leader of a iOS developer team thanks to his strong focus on knowledge development and scrupulosity."
+    - "It was a pleasure to build innovative mobile banking solutions with Michal. I could always rely on his accurate assessment of the current project situation in the area of iOS applications. That is why we have succeeded in many implementation of mobile products."
+- name: Michael Martens
+  role: Freelancer with focus on digital product development
+  date: June 30, 2017
+  text:
+    - "If you need a thinking iOS Developer, here you go!"
+    - "I really like about Michał that he is not simply rushing into coding, but questions and thinks through user stories and tasks first, given that they are not well defined or potentially better approaches have not been considered."
+    - "In the two years working with him he was pointing out a ton of corner cases upfront, so that we were able to avoid many nasty pitfalls."
