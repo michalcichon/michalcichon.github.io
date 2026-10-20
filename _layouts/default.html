@@ -102,10 +102,6 @@
     <link rel="me" href="https://x.com/{{ site.twitter_username | default: 'michal_cichon' }}">
     <meta name="fediverse:creator" content="@mcichon@mastodon.social">
 
-    <!-- Performance (fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <script>
       (function () {
         var mq = matchMedia('(prefers-color-scheme: dark)');
@@ -118,7 +114,7 @@
     </script>
 
     <!-- Styles & fonts -->
-    <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}?t={{ site.time | date_to_xmlschema }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/main.min.css' | relative_url }}">
 
     <!-- Article JSON-LD -->
     {% if page.layout == 'post' or page.collection == 'posts' %}
@@ -165,7 +161,7 @@
     {% endif %}
 
     <!-- JS -->
-    <script src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
+    <script defer src="{{ '/js/main.min.js' | relative_url }}"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -173,7 +169,7 @@
       <header class="site-header">
         <div class="site-header__inner">
           <a class="site-brand" href="{{site.baseurl}}/" data-event="home_click" data-section="header" data-element="name" data-position="hero">
-            <img src="{{site.baseurl}}/img/michal.jpeg" alt="" width="36" height="36">
+            <img src="{{site.baseurl}}/img/michal.webp" alt="" width="36" height="36">
             <span>Michał Cichoń</span>
           </a>
           <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false" onclick="foldMenu()">&#9776;</button>

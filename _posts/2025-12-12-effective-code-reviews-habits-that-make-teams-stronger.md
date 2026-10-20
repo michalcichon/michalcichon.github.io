@@ -6,7 +6,7 @@ date:   2025-12-12 15:00:00 +0200
 categories: software-development
 keywords: code review, pull requests, software quality, engineering practices, developer productivity, code review checklist, collaborative development, clean code, best practices, small PRs, team communication, software engineering
 tags: programming
-image: "assets/2025-12-12/cover.jpeg" # Image for RSS
+image: "assets/2025-12-12/cover.webp" # Image for RSS
 comments: true
 featured: true
 ---
@@ -14,7 +14,7 @@ featured: true
 **A healthy code review culture can transform a team. It improves code quality, spreads knowledge, and helps developers grow. But good code reviews don’t just happen. They come from habits, collaboration, and curiosity. Today I would like to share a few practical guidelines that can make your team’s review process smoother, more meaningful, and far more effective.**
 
 <div class="article-hero">
-  <img src="{{site.url}}/assets/2025-12-12/cover.jpeg" alt="Team work">
+  <img src="{{site.url}}/assets/2025-12-12/cover.webp" alt="Team work">
 </div>
 
 ## Don’t Be Afraid to Ask Questions
@@ -55,7 +55,7 @@ A checklist makes the review process thorough without being overwhelming. Usuall
 
 ## Keep Pull Requests Small
 
-![Big pull request]({{site.url}}/assets/2025-12-12/big-pr.jpg)
+![Big pull request]({{site.url}}/assets/2025-12-12/big-pr.webp)
 
 Huge pull requests are stressful. Both to write and to review. They slow everything down and make it hard to spot issues. Reviewing bigger pull request takes more time, and it's way more challenging from the start.
 
@@ -75,7 +75,7 @@ develop
 
 ## Avoid “LGTM” Without Any Comments
 
-![LGTM]({{site.url}}/assets/2025-12-12/LGTM.png)
+![LGTM]({{site.url}}/assets/2025-12-12/LGTM.webp)
 
 Sometimes a PR really does look perfect. But adding only a “Looks Good To Me” comment can feel impersonal and unhelpful.
 

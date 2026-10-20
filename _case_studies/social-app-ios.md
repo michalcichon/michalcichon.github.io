@@ -9,7 +9,7 @@ links:
   - title: Related post
     url: /software-development/2026/06/15/what-i-learned-working-on-a-large-scale-social-media-ios-application.html
 images:
-  - src: /assets/case-studies/social-app/social-app.jpg
+  - src: /assets/case-studies/social-app/social-app.webp
     alt: Geolocation-based social app for iOS
 ---
 ## Context

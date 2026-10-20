@@ -6,14 +6,14 @@ date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages
 tags: programming
-image: "assets/2013-11-10/cover.jpg" # Image for RSS
+image: "assets/2013-11-10/cover.webp" # Image for RSS
 comments: true
 ---
 
 **When I began my big journey of developing software I was only a bit experienced in *Atari BASIC*. It was a time when Google just started its business and layouts of websites were created with a high use of *HTML tables*. For me it was very cool to experiment with primitive internet technologies of these days. Since 2003 it has been how I expressed my creativity.**
 
 <div class="article-hero">
-    <img src="{{site.url}}/assets/2013-11-10/cover.jpg" alt="Code">
+    <img src="{{site.url}}/assets/2013-11-10/cover.webp" alt="Code">
 </div>
 
 ## When Popularity Becomes a Liability

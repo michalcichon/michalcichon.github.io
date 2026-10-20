@@ -6,7 +6,7 @@ date:   2025-11-25 15:00:00 +0200
 categories: software-development
 keywords: swift, dependency injection, di, design patterns
 tags: ios programming
-image: "assets/2025-11-25/cover.jpeg" # Image for RSS
+image: "assets/2025-11-25/cover.webp" # Image for RSS
 comments: true
 ---
 

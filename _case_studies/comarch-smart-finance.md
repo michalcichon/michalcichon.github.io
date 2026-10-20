@@ -10,7 +10,7 @@ links:
     url: https://www.comarch.pl/finanse/bankowosc/
     external: true
 images:
-  - src: /assets/case-studies/comarch-ios/appstore.png
+  - src: /assets/case-studies/comarch-ios/appstore.webp
     alt: Comarch Smart Finance iOS banking app
 ---
 ## Context

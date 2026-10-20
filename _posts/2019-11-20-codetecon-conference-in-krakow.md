@@ -6,13 +6,13 @@ date:   2019-11-20 21:00:00 +0200
 categories: events
 keywords: codete, codetecon, conference 
 tags: programming events
-image: "assets/2019-11-20/IMG_2462.jpeg" # Image for RSS
+image: "assets/2019-11-20/IMG_2462.webp" # Image for RSS
 comments: true
 ---
 
 On November 15th I had a great opportunity to attend the 5th edition of CodeteCON.
 
-![CodeteCON #KRK5]({{site.url}}/assets/2019-11-20/IMG_2462.jpeg)
+![CodeteCON #KRK5]({{site.url}}/assets/2019-11-20/IMG_2462.webp)
 
 It is a technology conference dedicated to an IT community frequently organized in Krakow and Lublin. This time we had three tracks: Data Science, Front-end & Back-end, open lightning talks scene and a Friday After party! 
 

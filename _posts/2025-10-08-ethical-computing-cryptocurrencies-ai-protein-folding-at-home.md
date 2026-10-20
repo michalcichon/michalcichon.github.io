@@ -6,7 +6,7 @@ date:   2025-10-08 06:00:00 +0200
 categories: technology
 keywords: folding@home, cryptocurrencies, gpu, computing
 tags: miscellaneous engineering computing 
-image: "assets/2025-10-08/cover.jpg" # Image for RSS
+image: "assets/2025-10-08/cover.webp" # Image for RSS
 comments: true
 ---
 
@@ -53,7 +53,7 @@ As my gaming laptop runs Windows, I followed the Windows instructions.
 
 The installer works like any standard Windows setup — if you don’t need to change the installation directory, just click Next a few times, and eventually you’ll see a list of your machines.
 
-![Folding@Home: machines]({{site.url}}/assets/2025-10-08/machines.png)
+![Folding@Home: machines]({{site.url}}/assets/2025-10-08/machines.webp)
 
 Before you start folding, I recommend doing two things:
 
@@ -62,7 +62,7 @@ Before you start folding, I recommend doing two things:
 
 The registration form is available by clicking “**Login**” and then “**Register New Account**”. Before doing that, I recommend creating a passkey. A passkey is a unique identifier that ties your contributions directly to your account. You can generate one here: [https://apps.foldingathome.org/getpasskey](https://apps.foldingathome.org/getpasskey), and then return to the registration form where adding it is optional — but highly recommended.
 
-![Folding@Home: registration]({{site.url}}/assets/2025-10-08/registration.png)
+![Folding@Home: registration]({{site.url}}/assets/2025-10-08/registration.webp)
 
 * E-mail — your e-mail address. It can be different from the one you used when creating your passkey, but it doesn’t have to be.
 * Passphrase — simply your password (not the passkey!).
@@ -76,19 +76,19 @@ If for any reason you lose the link to the web panel, you can simply visit [http
 
 Next, click the small cog icon next to your machine list to open the settings. There, you can enable GPU processing, adjust the number of CPU cores to use, and tweak other available options.
 
-![Folding@Home: settings]({{site.url}}/assets/2025-10-08/settings.png)
+![Folding@Home: settings]({{site.url}}/assets/2025-10-08/settings.webp)
 
 Then click “**Fold All**” and watch your progress right on the same page.
 
-![Folding@Home: running]({{site.url}}/assets/2025-10-08/running.png)
+![Folding@Home: running]({{site.url}}/assets/2025-10-08/running.webp)
 
 You can always check your overall progress here: [https://v8-4.foldingathome.org/stats](https://v8-4.foldingathome.org/stats).
 
-![Folding@Home: stats]({{site.url}}/assets/2025-10-08/stats.png)
+![Folding@Home: stats]({{site.url}}/assets/2025-10-08/stats.webp)
 
 And if you’re curious what appears after clicking “**WU Award**” it’s basically a rather old-fashioned certificate. 😉
 
-![Folding@Home: certificate]({{site.url}}/assets/2025-10-08/certificate.jpg)
+![Folding@Home: certificate]({{site.url}}/assets/2025-10-08/certificate.webp)
 
 But what’s really cool is that you can take a peek at the protein being simulated on your machine!
 
