@@ -142,6 +142,28 @@
     </script>
     {% endif %}
 
+    <!-- Person JSON-LD -->
+    {% if page.url == '/' or page.url == '/about-me/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michał Cichoń",
+      "url": "{{ site.url }}/",
+      "image": {{ '/img/michal.jpeg' | absolute_url | jsonify }},
+      "jobTitle": "Software Engineer & Software Architect",
+      "description": {{ site.description | jsonify }},
+      "address": { "@type": "PostalAddress", "addressLocality": "Kraków", "addressCountry": "PL" },
+      "sameAs": [
+        "https://github.com/{{ site.github_username }}",
+        "https://www.linkedin.com/in/michalcichon",
+        "https://x.com/{{ site.twitter_username }}",
+        "https://mastodon.social/@mcichon"
+      ]
+    }
+    </script>
+    {% endif %}
+
     <!-- JS -->
     <script src="{{ '/js/main.min.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}"></script>
   </head>
