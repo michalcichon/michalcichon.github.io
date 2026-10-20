@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Michał Cichoń · Software Engineer & Software Architect
 author: Michał Cichoń
-description: Personal webpage of Michał Cichoń - a Software Engineer & Software Architect from Kraków, Poland. Building AI-Powered Workflows. Background in Mobile Systems at Scale
+description: Michał Cichoń, software engineer and architect from Kraków, Poland. Building AI-powered workflows; background in mobile systems at scale.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michalcichon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: michal_cichon
