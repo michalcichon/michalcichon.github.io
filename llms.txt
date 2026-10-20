@@ -1,0 +1,27 @@
+---
+layout: null
+---
+# {{ site.author }}
+
+> {{ site.description }}
+
+Personal site and blog. Posts are in English. Source: https://github.com/{{ site.github_username }}
+
+## Pages
+
+- [About me]({{ '/about-me/' | absolute_url }}): bio, experience, recommendations
+- [Case studies]({{ '/case-studies/' | absolute_url }}): selected projects
+- [Blog]({{ '/blog/' | absolute_url }}): all posts
+- [RSS feed]({{ '/feed.xml' | absolute_url }})
+
+## Case studies
+
+{% assign cs = site.case_studies | sort: 'order' -%}
+{% for c in cs -%}
+- [{{ c.title }}]({{ c.url | absolute_url }}): {{ c.summary }}
+{% endfor %}
+## Posts
+
+{% for p in site.posts -%}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.excerpt | strip_html | strip_newlines | truncate: 200 }}
+{% endfor %}

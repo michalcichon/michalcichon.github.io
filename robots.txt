@@ -3,3 +3,4 @@ Allow: /css/
 Allow: /img/
 Allow: /css/minified.css
 Allow: /js/main.min.js
+Sitemap: https://michalcichon.github.io/sitemap.xml
