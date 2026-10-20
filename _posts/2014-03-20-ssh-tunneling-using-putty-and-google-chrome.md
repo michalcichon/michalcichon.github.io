@@ -20,7 +20,7 @@ We will need a shell account obviously. There are plenty of providers, and unive
 
 First thing we need to do is creating connection. Open PuTTY and configure your connection by providing host address and port number. For SSH we usually use port `22`.
 
-![Step 1]({{site.url}}/assets/2014-03-20/tunnel-1.jpg)
+![Step 1]({{site.url}}/assets/2014-03-20/tunnel-1.webp)
 
 Go to *Connection → SSH → Tunnels* option in the tree view (left panel).
 

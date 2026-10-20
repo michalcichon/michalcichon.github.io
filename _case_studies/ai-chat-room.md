@@ -10,7 +10,7 @@ links:
     url: https://github.com/michalcichon/ai-chat-room
     external: true
 images:
-  - src: /assets/case-studies/ai-chat-room/ai-chat-room.png
+  - src: /assets/case-studies/ai-chat-room/ai-chat-room.webp
     alt: aiChatRoom terminal chat with people and AI agents in a channel
 ---
 ## Goal

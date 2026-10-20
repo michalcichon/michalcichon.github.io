@@ -6,7 +6,7 @@ date:   2026-01-30 15:00:00 +0200
 categories: software-development
 keywords: engineering, engineering culture, remote teams
 tags: processes engineering
-image: "assets/2026-02-01/cover.jpg" # Image for RSS
+image: "assets/2026-02-01/cover.webp" # Image for RSS
 comments: true
 published: false
 ---
@@ -14,7 +14,7 @@ published: false
 **Working remotely in a distributed team has many benefits. We can meet people from different countries and cultures, learn about their customs, and view many aspects of life from a different perspective. On the other hand, it removes the illusion of productivity. It exposes every weakness in communication, ownership, and trust.**
 
 <div class="article-hero">
-  <img src="{{site.url}}/assets/2026-02-01/cover.jpg" alt="Paris Street; Rainy Day - Gustave Caillebotte">
+  <img src="{{site.url}}/assets/2026-02-01/cover.webp" alt="Paris Street; Rainy Day - Gustave Caillebotte">
 </div>
 
 ## Knowing your team

@@ -10,11 +10,11 @@ links:
     url: https://www.comarch.com/finance/case-studies/comarch-personal-finance-management-in-unicredit/
     external: true
 images:
-  - src: /assets/case-studies/comarch-pfm/pfm-1.png
+  - src: /assets/case-studies/comarch-pfm/pfm-1.webp
     alt: Comarch Personal Finance Management screen 1
-  - src: /assets/case-studies/comarch-pfm/pfm-2.png
+  - src: /assets/case-studies/comarch-pfm/pfm-2.webp
     alt: Comarch Personal Finance Management screen 2
-  - src: /assets/case-studies/comarch-pfm/pfm-3.png
+  - src: /assets/case-studies/comarch-pfm/pfm-3.webp
     alt: Comarch Personal Finance Management screen 3
 ---
 ## Context
