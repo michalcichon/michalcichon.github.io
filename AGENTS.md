@@ -26,3 +26,4 @@ Personal blog: Jekyll site on GitHub Pages (`github-pages` gem, Ruby >= 3.2). Se
 - Use `relative_url` for internal links in templates.
 - Analytics hooks use `data-event` / `data-section` / `data-element` / `data-position` attributes; keep `data-section` accurate for the page it's on.
 - No tests or CI exist; verify visual changes with `./run.sh`.
+- SEO rules (description length, image weight, headings, etc.) live in `.claude/skills/seo-guardrails/SKILL.md`; read it before adding posts, images or pages.
