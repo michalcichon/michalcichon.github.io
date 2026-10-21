@@ -1469,8 +1469,16 @@ html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecac
 .case-lightbox::backdrop { background: rgba(0,0,0,.85); }
 .case-lightbox img { display: block; max-width: 96vw; max-height: 96vh; cursor: zoom-out; }
 
-/* Share links under the post: quiet text links */
-.post-share{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem; margin:2rem 0 1rem; font-size:.9rem; }
-.post-share > span{ opacity:.7; }
-#main-space .post-share a, #main-space .post-share a:link, #main-space .post-share a:visited{ font-weight:600; border-bottom:none; text-decoration:none; }
-.post-share a:hover{ text-decoration:underline !important; }
+/* Share buttons under the post: small pills with a brand-coloured outline */
+.post-share{ display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; margin:2rem 0 1rem; font-size:.8rem; }
+.post-share{ --c:currentColor; }
+.post-share > span{ opacity:.7; margin-right:.2rem; }
+.post-share a[data-element="facebook"]{ --c:#1877f2; }
+.post-share a[data-element="linkedin"]{ --c:#0a8fd8; }
+.post-share a[data-element="reddit"]{ --c:#ff4500; }
+#main-space .post-share a, #main-space .post-share a:link, #main-space .post-share a:visited{
+  padding:.2rem .65rem; border:1px solid var(--c); border-radius:999px; font-weight:600; text-decoration:none; color:var(--c);
+  transition:background-color .15s;
+}
+#main-space .post-share a:hover, #main-space .post-share a:focus-visible{ background:color-mix(in srgb, var(--c) 12%, transparent); }
+@media (prefers-reduced-motion: reduce){ #main-space .post-share a{ transition:none; } }
