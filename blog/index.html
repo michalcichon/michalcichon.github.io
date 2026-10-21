@@ -23,7 +23,7 @@ title: Blog
                 class="post-card__img"
                 src="{{ img | relative_url }}"
                 alt="{{ post.image_alt | default: post.title | escape }}"
-                loading="lazy"
+                {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
                 decoding="async">
             </div>
           {% else %}
