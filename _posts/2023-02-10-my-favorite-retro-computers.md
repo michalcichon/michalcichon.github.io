@@ -64,15 +64,3 @@ Last but certainly not least is my Raspberry Pi 3 Model B+. While it’s not a r
 What I appreciate most about these 8-bit machines is that, despite their limited video and sound capabilities, they can still be used to create impressive games and demos. There is a thriving community around these machines, and every year, new games are released. We now see applications that utilize the C64 and Atari 800XL's more sophisticated graphic modes, thanks to our deepened understanding of the hardware over the past 40 years.
 
 I am very sentimental about these old computers. Since I still have some space for them, I won’t be giving them away anytime soon, though I definitely won’t be expanding my collection either. 😄
-
-## Learn more...
-
-Find out more interesting facts about retro computers in the videos listed below.
-
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/BpXFB8ZEH30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/aZE0ziQLVqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/vH-D6GdkyCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/s2bTQK6vbKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
