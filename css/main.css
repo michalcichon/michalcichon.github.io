@@ -1374,7 +1374,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 /* ---- Modern code blocks ---- */
 #main-space article.post {
   --code-bg: #f6f6f9; --code-line: #e4e4ea; --code-fg: #24292f; --code-inline: rgba(128,128,128,.16);
-  --tk-kw: #cf222e; --tk-type: #953800; --tk-fn: #8250df; --tk-str: #0a3069; --tk-num: #0550ae; --tk-attr: #116329; --tk-com: #6e7781;
+  --tk-kw: #cf222e; --tk-type: #953800; --tk-fn: #8250df; --tk-str: #0a3069; --tk-num: #0550ae; --tk-attr: #116329; --tk-com: #57606a;
 }
 :where(html[data-theme="dark"]) #main-space article.post {
     --code-bg: #111115; --code-line: #26262e; --code-fg: #e6edf3;
@@ -1473,9 +1473,13 @@ html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecac
 .post-share{ display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; margin:2rem 0 1rem; font-size:.8rem; }
 .post-share{ --c:currentColor; }
 .post-share > span{ opacity:.7; margin-right:.2rem; }
-.post-share a[data-element="facebook"]{ --c:#1877f2; }
-.post-share a[data-element="linkedin"]{ --c:#0a8fd8; }
-.post-share a[data-element="reddit"]{ --c:#ff4500; }
+.post-share a[data-element="facebook"]{ --c:#0c5bd0; }
+.post-share a[data-element="linkedin"]{ --c:#0a6aa3; }
+.post-share a[data-element="reddit"]{ --c:#c93400; }
+/* Brand colours are too dark on the dark theme; use the lighter originals there. */
+:where(html[data-theme="dark"]) .post-share a[data-element="facebook"]{ --c:#4a90f7; }
+:where(html[data-theme="dark"]) .post-share a[data-element="linkedin"]{ --c:#0a8fd8; }
+:where(html[data-theme="dark"]) .post-share a[data-element="reddit"]{ --c:#ff4500; }
 #main-space .post-share a, #main-space .post-share a:link, #main-space .post-share a:visited{
   padding:.2rem .65rem; border:1px solid var(--c); border-radius:999px; font-weight:600; text-decoration:none; color:var(--c);
   transition:background-color .15s;
