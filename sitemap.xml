@@ -32,7 +32,7 @@ layout: null
   {% for file in site.static_files %}
     {% unless file.extname == ".html" or file.extname == ".pdf" %}{% continue %}{% endunless %}
     {% if file.path contains "/assets/" and file.extname == ".html" %}{% continue %}{% endif %}
-    {% if file.path == "/404.html" or file.path == "/googleb01a34bfc96e3455.html" %}{% continue %}{% endif %}
+    {% if file.path == "/404.html" %}{% continue %}{% endif %}
     <url>
       <loc>{{ file.path | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
       <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
