@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Clueless Start in IT: A 15-Year Retrospective"
-description: "Fifteen years ago, I took my first, clumsy steps into the world of IT. In this post, I look back on the mistakes I made, the lessons I learned the hard way, and how those early failures shaped the developer I am today."
+description: "Fifteen years ago I took my first clumsy steps into IT. A look back at my mistakes, the lessons learned the hard way, and how they shaped me as a developer."
 date:   2024-12-08 06:00:00 +0200
 categories: software-development
 keywords: mentoring, experience, it

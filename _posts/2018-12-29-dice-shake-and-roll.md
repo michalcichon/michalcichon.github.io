@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dice: shake and roll"
-description: "I have my own App Store Connect account since 2016 but I used to use it as my playground and testing environment. Sometimes I used this account to prepare test builds for my clients, but most of the time it was quite empty and abandoned. Now I decided to change it so I started to work on some side projects this year. One of them is Dice..."
+description: "After years of using my App Store Connect account as a playground, I started side projects this year. One of them is Dice, a simple shake-and-roll app."
 date:   2018-12-29 10:44:00 +0200
 categories: ios
 keywords: dice, roll the dice, shake and roll

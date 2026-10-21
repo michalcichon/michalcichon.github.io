@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why do some programming languages have a bad reputation?"
-description: "If you look at standard PHP functions you will find that there is a horrible mess. There is no naming strategy, functions have different order of parameters, there are many functions that do the same work but exist in the same super big scope..."
+description: "Standard PHP functions are a horrible mess: no naming strategy, inconsistent parameter order and many functions doing the same work in one huge scope."
 date:   2013-11-10 10:09:00 +0200
 categories: programming
 keywords: PHP, programming languages

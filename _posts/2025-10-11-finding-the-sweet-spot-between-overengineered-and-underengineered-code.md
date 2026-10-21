@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Finding the Sweet Spot: Between Overengineered and Underengineered Code"
-description: "There’s a moment in every developer’s career when you realize that both too little and too much engineering hurt a project just the same — only in different ways."
+description: "Too little engineering and too much engineering hurt a project just the same, only in different ways. How to find the sweet spot between them."
 date:   2025-10-11 15:00:00 +0200
 categories: software-development
 keywords: overengineering, underengineering, software development

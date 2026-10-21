@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Basic Configuration Server to Avoid Hardcoding in iOS Applications"
-description: "Hardcoding any information in a client application makes it more difficult to update or fix. The problem worsens when we regularly roll out new versions of the application. In such cases, we would need to track every build to ensure we don’t shut down any resources directly referenced in our source code from previous builds. Hardcoding is generally a bad idea...."
+description: "Hardcoding resources in an iOS client makes it hard to update or fix. A basic config server avoids that and keeps old builds working."
 date: 2020-10-17 08:00:00 +0200
 categories: ios
 keywords: iOS, hardcoding, config server, mariadb, swift app

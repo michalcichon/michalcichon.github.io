@@ -28,6 +28,16 @@ layout: default
     {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' | replace_first: '<img loading="lazy" decoding="async" ', '<img fetchpriority="high" ' }}
   </div>
 
+  {% assign share_url = page.url | absolute_url | uri_escape %}
+  {% assign share_title = page.title | uri_escape %}
+  <div class="post-share">
+    <span>Share:</span>
+    <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_title }}" target="_blank" rel="noopener noreferrer" data-event="share_click" data-section="post" data-element="x" data-position="post_end">X</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer" data-event="share_click" data-section="post" data-element="facebook" data-position="post_end">Facebook</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer" data-event="share_click" data-section="post" data-element="linkedin" data-position="post_end">LinkedIn</a>
+    <a href="https://www.reddit.com/submit?url={{ share_url }}&title={{ share_title }}" target="_blank" rel="noopener noreferrer" data-event="share_click" data-section="post" data-element="reddit" data-position="post_end">Reddit</a>
+  </div>
+
   <div class="post-bio">
     <img src="{{site.baseurl}}/img/michal.webp" alt="Michał Cichoń" class="post-bio__avatar" loading="lazy" decoding="async">
     <div class="post-bio__text">

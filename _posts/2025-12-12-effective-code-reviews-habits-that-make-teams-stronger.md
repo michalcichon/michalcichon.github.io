@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Effective Code Reviews: Habits That Make Teams Stronger"
-description: "A practical guide to building a healthy, effective code review culture. Learn how curiosity, communication, small pull requests, and a structured checklist can improve code quality, strengthen teamwork, and make the review process faster and more enjoyable."
+description: "A practical guide to a healthy code review culture: curiosity, communication, small pull requests and a checklist for better quality and teamwork."
 date:   2025-12-12 15:00:00 +0200
 categories: software-development
 keywords: code review, pull requests, software quality, engineering practices, developer productivity, code review checklist, collaborative development, clean code, best practices, small PRs, team communication, software engineering
