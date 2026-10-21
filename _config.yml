@@ -34,6 +34,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - AGENTS.md
+  - humidity-app/CLAUDE.md
 
 collections:
   case_studies:
