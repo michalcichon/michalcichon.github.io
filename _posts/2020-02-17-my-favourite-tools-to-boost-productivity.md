@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My favorite tools to boost productivity"
-description: "On my daily basis I use a lot of different tools which I believe boost my productivity. In this short article I would like to list them and give you a few words on why I choose to use them and how I benefit from using them."
+description: "The tools I use daily to boost my productivity, a few words on why I chose each of them and how I benefit from using them."
 date:   2020-02-17 09:00:00 +0200
 categories: ios
 keywords: productivity, zsh, iTerm2, vim, RescueTime, SourceTree, kdiff3

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to keep high engineering culture in remote first teams"
-description: "Working remotely in a distributed team has many benefits. We can meet people from different countries and cultures, learn about their customs, and view many aspects of life from a different perspective."
+description: "Working in a distributed team has many benefits, but keeping a high engineering culture remotely takes effort. Here is what works for me."
 date:   2026-01-30 15:00:00 +0200
 categories: software-development
 keywords: engineering, engineering culture, remote teams

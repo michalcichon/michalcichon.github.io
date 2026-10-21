@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Vibe-Coded a Game Using ChatGPT, Claude and Gemini"
-description: "Coding without actually writing any code sounds tempting. In this article, I tested the capabilities of three popular LLMs: ChatGPT 5, Claude (Sonnet 4.5), and Gemini (2.5 Pro)."
+description: "Coding without writing code sounds tempting. I tested three LLMs, ChatGPT 5, Claude (Sonnet 4.5) and Gemini (2.5 Pro), by having them build a game."
 date:   2025-10-01 06:00:00 +0200
 categories: programming
 keywords: programming, vibe-coding, games, memory game, memo game

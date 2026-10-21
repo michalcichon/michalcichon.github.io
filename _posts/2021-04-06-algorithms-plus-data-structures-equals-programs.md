@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Algorithms + Data structures = Programs"
-description: "I have been working as a contractor software developer for many years. In my job I have a lot of what I enjoy the most in my professional life - so called crème de la crème of software development which is writing programs. This process is almost never a single shot of typing what was thought, running, testing and pushing into the repository. It is obviously not as there are always nuances of what should be done..."
+description: "Writing programs is never a single shot of typing, running, testing and pushing. A contractor's view on the nuances of the crème de la crème of development."
 date:   2021-04-06 09:00:00 +0200
 categories: software-development
 keywords: code review, code evaluation, recruiting software developers

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ethical computing: cryptocurrencies, AI and protein folding at home"
-description: "I bought a gaming PC — and ended up questioning how we use our computers, our time, and our energy. From games to crypto mining, this is a story about finding purpose in computing."
+description: "I bought a gaming PC and ended up questioning how we use our computers, time and energy, from games to crypto mining to finding purpose in computing."
 date:   2025-10-08 06:00:00 +0200
 categories: technology
 keywords: folding@home, cryptocurrencies, gpu, computing

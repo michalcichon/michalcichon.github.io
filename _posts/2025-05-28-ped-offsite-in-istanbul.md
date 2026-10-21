@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PED offsite in Istanbul"
-description: "In the beginning of May this year, I had another opportunity to join my colleagues from our distributed team in one place—to brainstorm and also enjoy some quality time together."
+description: "In May I joined my colleagues from our distributed team in Istanbul to brainstorm and enjoy some quality time together."
 date:   2025-05-28 06:00:00 +0200
 categories: events
 keywords: ped, offsite

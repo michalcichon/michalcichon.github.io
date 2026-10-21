@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What I Learned Working on a Large-Scale Social Media iOS Application"
-description: "Lessons learned from building and maintaining a large-scale social media iOS application, including architecture, engineering practices, product development, and team collaboration."
+description: "Lessons from building a large-scale social media iOS app: architecture, engineering practices, product development and team collaboration."
 date:   2026-06-15 15:00:00 +0200
 categories: software-development
 keywords: ios, iphone, swift, mobile-development, software-engineering, software-architecture, social-media, large-scale-systems, product-development, engineering-culture
