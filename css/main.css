@@ -1175,6 +1175,8 @@ html[data-theme="dark"] {
 #main-space article.post .post-content ul,
 #main-space article.post .post-content ol { margin-bottom: 1.2em; }
 #main-space article.post .post-content li { margin-bottom: .4em; }
+#main-space article.post .post-content > p,
+#main-space article.post .post-content li { font-family: Charter, "Iowan Old Style", Georgia, serif; font-size: 1.05em; }
 #main-space article.post p.post-meta { color: #6b6b72; }
 #main-space article.post blockquote { color: #555; font-weight: 400; letter-spacing: 0; }
 #main-space article.post blockquote p { color: #555; }
