@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: Comarch Personal Finance Management
-order: 3
+order: 5
 period: "2011 – 2013"
 summary: A single-page app for visualizing banking data, with a backend that categorizes bank transactions. My first full-stack role.
 stack: [Angular, Spring, Hibernate, Oracle Database]

@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: Geolocation-based social app for iOS
-order: 1
+order: 2
 period: "2018 – 2026"
 summary: A social app with over 3 million users, built by cross-functional teams that decided with data. I worked on it for almost nine years, three of them as iOS chapter lead.
 stack: [Objective-C, Swift, MVVM + routers, Realm, fastlane, Bitrise]
