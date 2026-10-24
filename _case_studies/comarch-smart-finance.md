@@ -4,7 +4,7 @@ title: Comarch Smart Finance (iOS)
 order: 4
 period: "2012 – 2016"
 summary: An iOS banking app, deployed for two of the biggest banks in Croatia and Poland, and designed to work well offline.
-stack: [Objective-C, XIB, Custom views]
+stack: [Objective-C, XIBs, Core Data, Rest API, MVC]
 links:
   - title: Learn more
     url: https://www.comarch.pl/finanse/bankowosc/

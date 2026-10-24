@@ -4,7 +4,7 @@ title: SIMAPP (iPad)
 order: 3
 period: "2016"
 summary: A B2B iPad app that scientific sales reps use to present and sell medical devices, released to hundreds of users across multiple global regions.
-stack: [iPad]
+stack: [iPad, Objective-C, Office365 SDK, Core Data, RestKit]
 images:
   - src: /assets/case-studies/simapp/simapp-splash.webp
     alt: SIMAPP splash screen
