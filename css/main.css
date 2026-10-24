@@ -1492,3 +1492,5 @@ html[data-theme="dark"] [data-tag="tools"] { --tag-bg: #4d1f1f; --tag-fg: #fecac
 }
 #main-space .post-share a:hover, #main-space .post-share a:focus-visible{ background:color-mix(in srgb, var(--c) 12%, transparent); }
 @media (prefers-reduced-motion: reduce){ #main-space .post-share a{ transition:none; } }
+
+.post-content img:not(.article-hero img) { cursor: zoom-in; }

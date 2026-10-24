@@ -23,6 +23,8 @@ layout: default
       </div>
   </header>
 
+  <dialog class="case-lightbox"><img alt=""></dialog>
+
   <div class="post-content" itemprop="articleBody">
     {%- comment -%} Lazy-load every image except the first (likely the LCP cover) at build time; a JS fix would run after the browser already started fetching. {%- endcomment -%}
     {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' | replace_first: '<img loading="lazy" decoding="async" ', '<img fetchpriority="high" ' | replace: '<iframe ', '<iframe loading="lazy" ' }}
