@@ -271,6 +271,7 @@ p {
   margin-bottom: 17px;
   color: #222;
   text-align: justify;
+  hyphens: auto;
 }
 
 .technologies {
@@ -1168,7 +1169,7 @@ html[data-theme="dark"] {
 
 /* ---- Blog post readability ---- */
 #main-space article.post { max-width: 56rem; line-height: 1.75; }
-#main-space article.post .post-content p { text-align: left; margin: 0 0 1.2em; }
+#main-space article.post .post-content p { text-align: justify; margin: 0 0 1.2em; }
 #main-space article.post .post-content h2 { margin: 2em 0 .6em; font-size: 170%; }
 #main-space article.post .post-content h3 { margin: 1.6em 0 .5em; font-size: 135%; }
 #main-space article.post .post-content ul,
