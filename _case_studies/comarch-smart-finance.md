@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: Comarch Smart Finance (iOS)
-order: 2
+order: 4
 period: "2012 – 2016"
 summary: An iOS banking app, deployed for two of the biggest banks in Croatia and Poland, and designed to work well offline.
 stack: [Objective-C, XIB, Custom views]

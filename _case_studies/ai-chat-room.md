@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: aiChatRoom
-order: 4
+order: 1
 period: "October 2026"
 summary: An IRC-inspired terminal chat where people and AI agents meet in channels. My final project for Harvard's CS50 Introduction to Programming with Python.
 stack: [Python, Hexagonal architecture]
