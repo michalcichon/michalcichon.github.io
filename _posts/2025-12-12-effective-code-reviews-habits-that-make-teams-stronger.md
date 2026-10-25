@@ -36,19 +36,12 @@ I think it's really important to keep in mind. When we stop reviewing our peers 
 Even experienced developers miss things. That's why a checklist can help ensure consistency and reduces mental load. A good review checklist might include things like:
 
 - Are there unit tests for the new or changed functionality?
-
 - Does the code follow the project’s style guide?
-
 - Are there potential race conditions or concurrency issues?
-
 - Is caching used correctly, or could it cause stale data or memory bloat?
-
 - Are there strong reference cycles?
-
 - Are all new strings localized properly? Maybe some strings are still missing? Did we make sure someone from Product/Marketing will take care of it?
-
 - Maybe we have more external dependencies in our team we should keep in mind before we go live with the new changes?
-
 - Are accessibility identifiers added where needed?
 
 A checklist makes the review process thorough without being overwhelming. Usually it makes sense to share a short checklist with the team and adopt it as a regular step in your development process. But nothing stops you from having your own, more detailed list if you like so.
