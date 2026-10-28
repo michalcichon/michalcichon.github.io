@@ -1,4 +1,4 @@
-.PHONY: setup run icons all
+.PHONY: setup run start minify stop icons all
 
 # Check required tools and install gems. Does not install system tools.
 setup:
@@ -12,6 +12,23 @@ setup:
 # Minify CSS/JS and serve the site (scripts/run.sh minifies first).
 run:
 	scripts/run.sh
+
+# Serve in the background and return to the terminal (log: .jekyll.log).
+start:
+	@if [ -f .jekyll.pid ] && kill -0 $$(cat .jekyll.pid) 2>/dev/null; then \
+		echo "Already running (pid $$(cat .jekyll.pid))"; \
+	else \
+		sh scripts/reduce.sh; \
+		nohup bundle exec jekyll serve --host=127.0.0.1 >.jekyll.log 2>&1 & echo $$! >.jekyll.pid; \
+		echo "Started on http://127.0.0.1:4000 (pid $$(cat .jekyll.pid)); 'make stop' to stop"; \
+	fi
+
+# Re-minify CSS/JS; the running server rebuilds on file change.
+minify:
+	sh scripts/reduce.sh
+
+stop:
+	@if [ -f .jekyll.pid ]; then kill $$(cat .jekyll.pid) 2>/dev/null && echo Stopped || echo "Not running"; rm -f .jekyll.pid; else echo "Not running"; fi
 
 # Regenerate favicons from img/michal.jpeg (needs ImageMagick).
 icons:
