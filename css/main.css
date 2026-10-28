@@ -1357,7 +1357,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 #main-space article.post .tags span { background: none; border: 1px solid var(--tag-fg, currentColor); border-radius: 999px; padding: .15rem .8rem; }
 #main-space article.post .tags a:hover span { background: var(--tag-bg, rgba(100,100,100,.1)); }
 
-#main-space article.post .post-content { font-size: 1.15rem; letter-spacing: -.005em; }
+#main-space article.post .post-content { font-size: 1.25rem; letter-spacing: -.005em; }
 #main-space article.post .post-content p { font-size: 1em; line-height: 1.8; margin: 0 0 1.4em; color: #26262b; }
 #main-space article.post .post-content > p:first-child { font-size: 1.3em; line-height: 1.6; margin-bottom: 1.6em; }
 #main-space article.post .post-content > p:first-child strong { font-weight: 700; }
