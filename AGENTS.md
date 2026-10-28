@@ -4,6 +4,7 @@ Personal blog: Jekyll site on GitHub Pages (`github-pages` gem, Ruby >= 3.2). Se
 
 ## Commands
 - `scripts/run.sh` – minifies CSS/JS (`scripts/reduce.sh`) then `bundle exec jekyll serve` on 127.0.0.1.
+- `make start` / `make minify` / `make stop` / `make open` – background server workflow: start serves in the background, minify re-minifies CSS/JS (server rebuilds on change), stop kills it, open launches the browser.
 - `sh scripts/reduce.sh` – regenerates `css/main.min.css` and `js/main.min.js` from `css/main.css` / `js/main.js`.
 - `python scripts/generate_tags.py` – regenerates the `tag/` pages from post front matter.
 - `scripts/generate_icons.sh` – regenerates all favicons from `img/michal.jpeg` (needs ImageMagick).
