@@ -35,6 +35,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - AGENTS.md
+  - scripts
+  - Makefile
   - humidity-app/CLAUDE.md
 
 collections:

@@ -1,3 +1,5 @@
+cd "$(dirname "$0")/.."
+
 echo 'Minifying CSS...';
 reduce css/main.css > css/main.min.css
 

@@ -13,6 +13,8 @@ No plugins required.
 import glob
 import os
 
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+
 post_dir = '_posts/'
 tag_dir = 'tag/'
 
