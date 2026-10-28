@@ -35,5 +35,5 @@ These come from the SEOJuice audit of the site (`docs/public-report-*.pdf`). Che
 
 ## Other
 - Use `relative_url` for internal links in templates.
-- After adding tags, run `python generate_tags.py`; after CSS/JS edits, run `sh reduce.sh`.
-- Verify with `./run.sh`; there is no CI.
+- After adding tags, run `python scripts/generate_tags.py`; after CSS/JS edits, run `sh scripts/reduce.sh`.
+- Verify with `scripts/run.sh`; there is no CI.

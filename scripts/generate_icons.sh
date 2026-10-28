@@ -1,9 +1,9 @@
 #!/bin/sh
 # Regenerates favicon.ico, icon.png, apple-touch-icon.png and ms-icon-*.png from img/michal.jpeg.
 # Requires ImageMagick. The crop (WxH+X+Y, in source pixels) is tuned to the current photo;
-# override for a new one: CROP=1500x1500+300+50 ./generate_icons.sh
+# override for a new one: CROP=1500x1500+300+50 scripts/generate_icons.sh
 set -e
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 CROP=${CROP:-1700x1700+213+20}
 tmp=$(mktemp -t icon).png
 trap 'rm -f "$tmp"' EXIT
