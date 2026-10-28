@@ -1,4 +1,4 @@
-.PHONY: setup run start minify stop icons all
+.PHONY: setup run start minify stop open icons all
 
 # Check required tools and install gems. Does not install system tools.
 setup:
@@ -29,6 +29,10 @@ minify:
 
 stop:
 	@if [ -f .jekyll.pid ]; then kill $$(cat .jekyll.pid) 2>/dev/null && echo Stopped || echo "Not running"; rm -f .jekyll.pid; else echo "Not running"; fi
+
+# Open the site in the default browser (macOS).
+open:
+	open http://127.0.0.1:4000
 
 # Regenerate favicons from img/michal.jpeg (needs ImageMagick).
 icons:
