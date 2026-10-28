@@ -37,7 +37,11 @@ bundle install
 
 ```bash
 make setup   # check tools (ruby, bundler, python3, ImageMagick) and run bundle install
-make run     # minify CSS/JS, then serve on http://127.0.0.1:4000
+make run     # minify CSS/JS, then serve on http://127.0.0.1:4000 (foreground)
+make start   # same, but in the background; returns to the terminal (log: .jekyll.log)
+make minify  # re-minify CSS/JS; the running server rebuilds on change
+make open    # open the site in the default browser (macOS)
+make stop    # stop the background server started by make start
 make icons   # regenerate favicons from img/michal.jpeg (needs ImageMagick)
 make all     # icons, then minify CSS/JS and serve
 ```
