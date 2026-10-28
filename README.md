@@ -36,6 +36,7 @@ bundle install
 ## 🚀 Running Locally
 
 ```bash
+make setup   # check tools (ruby, bundler, python3, ImageMagick) and run bundle install
 make run     # minify CSS/JS, then serve on http://127.0.0.1:4000
 make icons   # regenerate favicons from img/michal.jpeg (needs ImageMagick)
 make all     # icons, then minify CSS/JS and serve
