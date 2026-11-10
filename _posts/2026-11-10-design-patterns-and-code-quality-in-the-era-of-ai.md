@@ -5,7 +5,7 @@ description: "How AI agents could change the way we think about design patterns,
 date:   2026-11-10 11:00:00 +0100
 categories: programming
 keywords: AI agents, agentic development, design patterns, code quality, software architecture, LLMs
-tags: ai programming software-architecture
+tags: ai programming engineering
 image: "assets/2026-11-10/banner.webp" # Image for RSS; placeholder until the banner is added
 comments: true
 ---
