@@ -2,7 +2,7 @@
 layout: post
 title:  "Design patterns and code quality in the era of AI"
 description: "How AI agents could change the way we think about design patterns, modularity, code quality, and human-readable software."
-date:   2026-11-10 21:00:00 +0100
+date:   2026-11-10 11:00:00 +0100
 categories: programming
 keywords: AI agents, agentic development, design patterns, code quality, software architecture, LLMs
 tags: ai programming software-architecture
@@ -11,6 +11,10 @@ comments: true
 ---
 
 **I’ve been working with AI agents for a while now, and I keep coming back to a question: if agents write more and more of our code, should we change the way we structure it? The principles we use today help humans understand and maintain software, but I wonder how well they serve the agents now doing some of that work.**
+
+<div class="article-hero">
+  <img src="{{site.url}}/assets/2026-11-10/banner.webp" alt="Vincent van Gogh - The Starry Night">
+</div>
 
 We usually discuss code quality from a human perspective. Someone needs to understand a method, review a change, or maintain a system several years after its original authors have left. Readability, modularity, and clean APIs help us manage that work.
 
