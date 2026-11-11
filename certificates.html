@@ -1,0 +1,35 @@
+---
+layout: default
+title: Certificates
+description: "Certificates and courses from Michał Cichoń: AWS, Anthropic, Cursor and Microsoft AI credentials, plus Go, Swift and DevOps training."
+permalink: /certificates/
+---
+<div class="about">
+  <div class="about-hero">
+    <div>
+      <div class="about-eyebrow">Certificates</div>
+      <h1>Certificates and courses.</h1>
+      <p class="about-intro">After more than a decade in iOS I moved to AI-powered developer workflows. These are the credentials and courses that came with that move. Where the issuer has a public page, the name links to it so you can verify it.</p>
+      <div class="about-links">
+        <a href="{{ '/about-me/' | relative_url }}" data-event="ui_click" data-section="certificates" data-element="back_to_about">← About me</a>
+      </div>
+    </div>
+  </div>
+
+  {% for g in site.data.certificates %}
+  <section id="{{ g.title | slugify }}">
+    <div class="about-head">
+      <div class="about-label">{{ forloop.index | prepend: '0' }} / {{ g.title }}</div>
+      <div>
+        <h2>{{ g.title }}</h2>
+        <p class="about-copy">{{ g.intro }}</p>
+      </div>
+    </div>
+    <div class="about-timeline">
+      {% for c in g.items %}
+      <div class="about-role"><time>{{ c.date }}</time><div><h3>{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noreferrer" data-event="ui_click" data-section="certificates" data-element="verify_credential">{{ c.name }} ↗</a>{% else %}{{ c.name }}{% endif %}</h3><p>{{ c.issuer }}</p></div></div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

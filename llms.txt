@@ -10,6 +10,7 @@ Personal site and blog. Posts are in English. Source: https://github.com/{{ site
 ## Pages
 
 - [About me]({{ '/about-me/' | absolute_url }}): bio, experience, recommendations
+- [Certificates]({{ '/certificates/' | absolute_url }}): AWS, Anthropic, Cursor, Microsoft and other credentials
 - [Case studies]({{ '/case-studies/' | absolute_url }}): selected projects
 - [Blog]({{ '/blog/' | absolute_url }}): all posts
 - [RSS feed]({{ '/feed.xml' | absolute_url }})
