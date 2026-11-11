@@ -1,0 +1,32 @@
+- title: Professional certifications
+  intro: Exams and accreditations from vendors, with a public verification page where one exists.
+  items:
+    - {name: AWS Certified AI Practitioner, issuer: Amazon Web Services, date: Nov 2026, url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/e5b3963ccd8d49e7ad354858058ffba1"}
+    - {name: Claude Certified Developer - Foundations, issuer: Anthropic, date: Aug 2026, url: "https://www.credly.com/badges/7ab97797-ec7f-4e49-b48f-9e792cc20d44"}
+    - {name: Cursor AI Forward Deployed Engineer Accreditation, issuer: Cursor, date: Jul 2026, url: "https://www.credential.net/ad4a820c-125a-4d24-88d8-c97a3427ee6c"}
+    - {name: "Microsoft Certified: Azure AI Fundamentals", issuer: Microsoft, date: Jun 2025, url: "https://learn.microsoft.com/api/credentials/share/en-us/michalcichon/743CB4411CB94072?sharingId"}
+- title: AI and agent courses
+  intro: Courses I took while moving from iOS to AI-powered developer workflows.
+  items:
+    - {name: "Model Context Protocol: Advanced Topics", issuer: Anthropic, date: May 2026, url: "https://verify.skilljar.com/c/c5c2zsp54co4"}
+    - {name: Introduction to agent skills, issuer: Anthropic, date: Mar 2026, url: "https://verify.skilljar.com/c/6uwxtu6yzgyd"}
+    - {name: Introduction to Model Context Protocol, issuer: Anthropic, date: Mar 2026, url: "https://verify.skilljar.com/c/92vqcvyzmprb"}
+    - {name: Claude Code in Action, issuer: Anthropic, date: Nov 2025, url: "https://verify.skilljar.com/c/e25vpy7vped3"}
+    - {name: Introduction to AI and Machine Learning on Google Cloud, issuer: Compendium Centrum Edukacyjne, date: Oct 2026}
+    - {name: Introduction to Transformer-Based Natural Language Processing, issuer: NVIDIA, date: Jan 2026, url: "https://learn.nvidia.com/certificates?id=kBeEAElgRo2WOh_omA_cjQ"}
+    - {name: AI-Assisted Software Engineer, issuer: Exadel, date: Dec 2025, url: "https://certificates.exadel.com/bf2ab5c2-4902-48f2-9363-2e30c02ef488"}
+    - {name: Generative AI for Software Engineers, issuer: Exadel, date: Dec 2025, url: "https://certificates.exadel.com/59181107-9e14-4791-8826-4e8429a369ae"}
+    - {name: Elements of AI, issuer: University of Helsinki, date: Jan 2020, url: "https://certificates.mooc.fi/validate/ggr1qrx81ha"}
+- title: Engineering and leadership courses
+  intro: Earlier learning around mobile, Go, functional programming and ways of working.
+  items:
+    - {name: Functional Programming Principles in Scala, issuer: Coursera, date: Jun 2020, url: "https://www.coursera.org/account/accomplishments/certificate/C6SMT64CTD6U"}
+    - {name: Applied Concurrency in Go, issuer: LinkedIn Learning, date: May 2022}
+    - {name: Practical Design Patterns in Swift, issuer: LinkedIn Learning, date: May 2022}
+    - {name: SwiftUI Essential Training, issuer: LinkedIn Learning, date: May 2021}
+    - {name: Learning Combine with Swift, issuer: LinkedIn Learning, date: May 2021}
+    - {name: GraphQL Essential Training, issuer: LinkedIn Learning, date: May 2021}
+    - {name: Go Essential Training, issuer: LinkedIn Learning, date: May 2021}
+    - {name: DevOps Foundations, issuer: LinkedIn Learning, date: Oct 2024}
+    - {name: Lean Foundations, issuer: LinkedIn Learning, date: Nov 2024}
+    - {name: Project Management Skills for Leaders, issuer: LinkedIn Learning, date: Nov 2024}
