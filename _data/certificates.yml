@@ -8,10 +8,10 @@
 - title: AI and agent courses
   intro: Courses I took while moving from iOS to AI-powered developer workflows.
   items:
-    - {name: "AI Reasoning Models: The Building Blocks for the Next Generation of AI Applications", issuer: LinkedIn Learning, date: Nov 2026}
-    - {name: Production-Ready AI Engineering, issuer: LinkedIn Learning, date: Nov 2026}
-    - {name: AI-Native Engineering Foundations, issuer: LinkedIn Learning, date: Nov 2026}
-    - {name: "AI Evaluations: Foundations and Practical Examples", issuer: LinkedIn Learning, date: Nov 2026}
+    - {name: "AI Reasoning Models: The Building Blocks for the Next Generation of AI Applications", issuer: LinkedIn Learning, date: Nov 2026, url: "https://www.linkedin.com/learning/certificates/abe0cdfb6ee8dc9f850dc5a372a7068593ad2d2562389dbd21de7fc91e4261b7"}
+    - {name: Production-Ready AI Engineering, issuer: LinkedIn Learning, date: Nov 2026, url: "https://www.linkedin.com/learning/certificates/cc0e1e1dcef62b18bb459190f911aafdac3fb8a8682f5cbc7a75868720480628"}
+    - {name: AI-Native Engineering Foundations, issuer: LinkedIn Learning, date: Nov 2026, url: "https://www.linkedin.com/learning/certificates/c172d1837b868398d12e544536486a8604460fcea2fdbe26017f3f201bcc83ee"}
+    - {name: "AI Evaluations: Foundations and Practical Examples", issuer: LinkedIn Learning, date: Nov 2026, url: "https://www.linkedin.com/learning/certificates/358641f01ef48ec8f6685cf673b27baabc3e781f487f0308dd5d9171e3fc4729"}
     - {name: Introduction to AI and Machine Learning on Google Cloud, issuer: Compendium Centrum Edukacyjne, date: Oct 2026}
     - {name: "Model Context Protocol: Advanced Topics", issuer: Anthropic, date: May 2026, url: "https://verify.skilljar.com/c/c5c2zsp54co4"}
     - {name: Introduction to agent skills, issuer: Anthropic, date: Mar 2026, url: "https://verify.skilljar.com/c/6uwxtu6yzgyd"}
@@ -24,13 +24,13 @@
 - title: Engineering and leadership courses
   intro: Earlier learning around mobile, Go, functional programming and ways of working.
   items:
-    - {name: Lean Foundations, issuer: LinkedIn Learning, date: Nov 2024}
-    - {name: Project Management Skills for Leaders, issuer: LinkedIn Learning, date: Nov 2024}
-    - {name: DevOps Foundations, issuer: LinkedIn Learning, date: Oct 2024}
-    - {name: Applied Concurrency in Go, issuer: LinkedIn Learning, date: May 2022}
-    - {name: Practical Design Patterns in Swift, issuer: LinkedIn Learning, date: May 2022}
-    - {name: SwiftUI Essential Training, issuer: LinkedIn Learning, date: May 2021}
-    - {name: Learning Combine with Swift, issuer: LinkedIn Learning, date: May 2021}
-    - {name: GraphQL Essential Training, issuer: LinkedIn Learning, date: May 2021}
-    - {name: Go Essential Training, issuer: LinkedIn Learning, date: May 2021}
+    - {name: Lean Foundations, issuer: LinkedIn Learning, date: Nov 2024, url: "https://www.linkedin.com/learning/certificates/1dd5761a112ef39a50a34f3c9e6638177d86a8313f7def200c3ab8ed9a00de25"}
+    - {name: Project Management Skills for Leaders, issuer: LinkedIn Learning, date: Nov 2024, url: "https://www.linkedin.com/learning/certificates/77eb4ad6e5ccec9a1c4dc5c6d2d2539b8bba03ad986187431304d280e42e9081"}
+    - {name: DevOps Foundations, issuer: LinkedIn Learning, date: Oct 2024, url: "https://www.linkedin.com/learning/certificates/1a98342ef4b6046ec6ac8a3ca20e96dc8fc721cea33e6a0f95ec7af4edf2533c"}
+    - {name: Applied Concurrency in Go, issuer: LinkedIn Learning, date: May 2022, url: "https://www.linkedin.com/learning/certificates/8158e82275f1227cec90c4ed828e2895132539394313da79222d8dea9dd4a50f"}
+    - {name: Practical Design Patterns in Swift, issuer: LinkedIn Learning, date: May 2022, url: "https://www.linkedin.com/learning/certificates/d274ee05a676684967d6adf3bb8c52d4a32d4a3fcf1973d9e112c4a8a0bb7141"}
+    - {name: SwiftUI Essential Training, issuer: LinkedIn Learning, date: May 2021, url: "https://www.linkedin.com/learning/certificates/d99d5a1b42de484ba8d553e1a3e318dc17d9ff66e9f13157041599f3d63096dd"}
+    - {name: Learning Combine with Swift, issuer: LinkedIn Learning, date: May 2021, url: "https://www.linkedin.com/learning/certificates/15c1d7590a908f2bfb6a0c67bb7b01040a6f0bf29bd554ff80c68963fec79d7a"}
+    - {name: GraphQL Essential Training, issuer: LinkedIn Learning, date: May 2021, url: "https://www.linkedin.com/learning/certificates/386cd1b7dfe442df5cb46d5360dc1c7d13786deb50aeee27e8ecebe0eebdd283"}
+    - {name: Go Essential Training, issuer: LinkedIn Learning, date: May 2021, url: "https://www.linkedin.com/learning/certificates/06d83bc44f5d157a61fca30dd01be6ced985cc8435f1eb5eea5c47ca26befe7f"}
     - {name: Functional Programming Principles in Scala, issuer: Coursera, date: Jun 2020, url: "https://www.coursera.org/account/accomplishments/certificate/C6SMT64CTD6U"}
