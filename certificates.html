@@ -27,7 +27,7 @@ permalink: /certificates/
     </div>
     <div class="about-timeline">
       {% for c in g.items %}
-      <div class="about-role"><time>{{ c.date }}</time><div><h3>{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noreferrer" data-event="ui_click" data-section="certificates" data-element="verify_credential">{{ c.name }} ↗</a>{% else %}{{ c.name }}{% endif %}</h3><p>{{ c.issuer }}</p></div></div>
+      <div class="about-role"><time>{{ c.date }}</time><div class="cert">{% if c.badge %}<img class="cert-badge" src="{{ '/img/badges/' | append: c.badge | append: '.webp' | relative_url }}" alt="{{ c.name }} badge" width="80" height="80" loading="lazy">{% endif %}<div><h3>{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noreferrer" data-event="ui_click" data-section="certificates" data-element="verify_credential">{{ c.name }} ↗</a>{% else %}{{ c.name }}{% endif %}</h3><p>{{ c.issuer }}</p></div></div></div>
       {% endfor %}
     </div>
   </section>

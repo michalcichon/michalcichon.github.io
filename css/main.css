@@ -1141,6 +1141,8 @@ html[data-theme="dark"] {
 .about-role { display: grid; grid-template-columns: 220px 1fr; gap: 50px; padding: 25px 0; border-bottom: 1px solid var(--a-line); }
 .about-role time { color: var(--a-muted); font-size: .86rem; }
 .about-role h3 { margin-bottom: 5px; }
+.about-role .cert { display: flex; align-items: center; gap: 18px; }
+.cert-badge { width: 80px; height: 80px; object-fit: contain; flex: none; }
 .about-project { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 25px 0; border-top: 1px solid var(--a-line); border-bottom: 1px solid var(--a-line); }
 .about-project h3 { margin-bottom: 6px; }
 .about-project .about-project-cta { white-space: nowrap; font-size: .88rem; color: var(--a-accent); }
