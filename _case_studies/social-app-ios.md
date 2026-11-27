@@ -21,10 +21,9 @@ I was an iOS chapter lead for around three years, and an engineer on the product
 ## What I worked on
 - Channels and real-time chat, built from scratch.
 - Many iterations of features that were already running.
-- Feed performance improvements.
-- Small experiments in feeds and in post details.
-- Boot time optimizations.
-- Investigations of long-lived crashes.
+- Performance improvements: feed and boot time optimizations.
+- Many A/B tests in feeds and post details. They often ran at the same time and could overlap, so I made sure they didn't interfere with each other or break the app.
+- Investigations of long-lived crashes, often requiring a deep dive into metrics and analytics to find the cause.
 - Many spikes exploring architecture, and applying MVVM to old modules.
 - Integrating obfuscation tools.
 - The whole build system, written in Ruby and integrated with Bitrise.
