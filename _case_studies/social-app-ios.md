@@ -22,13 +22,29 @@ I was an iOS chapter lead for around three years, and an engineer on the product
 - Channels and real-time chat, built from scratch.
 - Many iterations of features that were already running.
 - Feed performance improvements.
-- Small experiments in feeds and post details.
+- Small experiments in feeds and in post details.
+- Boot time optimizations.
+- Investigations of long-lived crashes.
+- Many spikes exploring architecture, and applying MVVM to old modules.
+- Integrating obfuscation tools.
+- The whole build system, written in Ruby and integrated with Bitrise.
 - A redesign and the introduction of dark mode.
+
+## What I owned
+For most of the time I owned a few features: chat, channels, the new-user experience, and versioning management with a strategy for old clients. I also started several initiatives to remove old feature flags and simplify the codebase.
+
+## What the team shipped
+- A private chat with a two-sided invitation flow, image sharing and voice memos.
+- Monetization: in-app purchases, subscriptions and paid features such as post boosts, read receipts and gifts.
+- User moderation, where trusted users review flagged content based on their reputation and karma.
+- Ads from Google Ad Manager, with banners from several external sources inserted into feeds.
+- Gradual migration from Objective-C to Swift, and SwiftUI for new and static screens.
 
 ## How we worked
 - **Data first.** Decisions came from user interviews and tracking, not opinions.
 - **Experiments.** Many A/B tests. Experiments sat behind feature flags and we measured engagement in selected cities.
-- **Stability.** We aimed for 99% crash-free sessions while mostly shipping new features.
+- **Release cadence.** New versions shipped every two weeks, with geo-targeted rollouts and market-specific segmentation.
+- **Stability.** We held a crash-free rate of about 99% while mostly shipping new features.
 
 ## Codebase
 It started as 100% Objective-C and was 99% Swift by 2026. The architecture was MVVM with routers, data lived in Realm, and releases ran through fastlane and Bitrise CI.
