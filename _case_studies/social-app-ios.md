@@ -32,7 +32,9 @@ I was an iOS chapter lead for around three years, and an engineer on the product
 ## What I owned
 For most of the time I owned a few features: chat, channels, the new-user experience, and versioning management with a strategy for old clients. I also started several initiatives to remove old feature flags and simplify the codebase.
 
-## What the team shipped
+## Other work I was involved in
+Features the wider product team shipped, where I contributed on the iOS side.
+
 - A private chat with a two-sided invitation flow, image sharing and voice memos.
 - Monetization: in-app purchases, subscriptions and paid features such as post boosts, read receipts and gifts.
 - User moderation, where trusted users review flagged content based on their reputation and karma.
